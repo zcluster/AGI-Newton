@@ -1,0 +1,6 @@
+{"id":"euclid_fixture","title":"Elements fixture","author":"Euclid","work_year":-300,"edition_year":1570,"language":"en","role":"core_math","target_risk":"low","review_status":"approved","source_kind":"fixture","source_url":"fixture://euclid"}
+{"id":"galileo_fixture","title":"Motion fixture","author":"Galileo","work_year":1638,"edition_year":1661,"language":"en","role":"core_physics","target_risk":"low","review_status":"approved","source_kind":"fixture","source_url":"fixture://galileo"}
+{"id":"hooke_fixture","title":"Precursor fixture","author":"Hooke","work_year":1679,"edition_year":1679,"language":"en","role":"precursor_target","target_risk":"high","review_status":"approved","source_kind":"fixture","source_url":"fixture://hooke"}
+{"id":"modern_fixture","title":"Modern contamination fixture","author":"Unknown","work_year":1600,"edition_year":1600,"language":"en","role":"general_language","target_risk":"low","review_status":"approved","source_kind":"fixture","source_url":"fixture://modern"}
+{"id":"late_fixture","title":"Late translation fixture","author":"Ancient author","work_year":100,"edition_year":1897,"language":"en","role":"core_math","target_risk":"low","review_status":"approved","source_kind":"fixture","source_url":"fixture://late"}
+

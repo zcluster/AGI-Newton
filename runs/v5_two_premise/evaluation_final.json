@@ -1,0 +1,221 @@
+{
+  "checkpoint": "runs/v5_two_premise/model.pt",
+  "label": "v5_two_premise_elimination",
+  "physics_probes": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 8.916666984558105,
+          "tokens": 3
+        },
+        "inverse": {
+          "mean_nll": 6.300130367279053,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 6.6397881507873535,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 5.181431770324707,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 5.94622802734375,
+          "tokens": 8
+        },
+        "inverse": {
+          "mean_nll": 5.782552242279053,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 5.884207725524902,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 5.382673263549805,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 7.3359375,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 7.298047065734863,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 8.146763801574707,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 6.38194465637207,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 14.6875,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 6.3828125,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 9.16015625,
+          "tokens": 4
+        },
+        "inverse_cube": {
+          "mean_nll": 9.05078125,
+          "tokens": 4
+        }
+      }
+    }
+  ],
+  "physics_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ♈ (for at least, 4.) is 5 by 24, which in the first and second, and that which is true, is 56 by 4 is 4 and 4 is 4 which is 51 as 11 is 43 4 and 11 is 57 3 and 4 is 572 divided by 60 by 0 (more then 2 Trunkers of the Equinoctial line), and so the line defined is 78 by 3 which is 733 by 4 and 27",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to ideo the Coast \nof the Solar Earth, and all the Planets in the Planets fefs place the constellation 3 and 17th, the centre 8, 5 and the no- \ning to it as the circumference 1s as the centre of the Earth. | | SL. LL \nJ have lc ts F demonstrated in his own Word that the annual cir- \ncumference of the diurnal motion, and of"
+  },
+  "abstract_transfer": [
+    {
+      "id": "seen_exponent_control",
+      "prompt": "Question: Suppose A is proportional to x^3, and B is proportional to x^1. To what power of x is the quotient A divided by B proportional?\nReasoning: ",
+      "answer": "power_2",
+      "first": 3,
+      "second": 1,
+      "winner": "power_2",
+      "scores": {
+        "power_0": {
+          "mean_nll": 0.6894237995147705,
+          "tokens": 26
+        },
+        "power_minus_1": {
+          "mean_nll": 0.937666654586792,
+          "tokens": 27
+        },
+        "power_2": {
+          "mean_nll": 0.4972999393939972,
+          "tokens": 26
+        },
+        "power_minus_2": {
+          "mean_nll": 1.059802532196045,
+          "tokens": 28
+        },
+        "power_minus_3": {
+          "mean_nll": 1.2568546533584595,
+          "tokens": 27
+        }
+      },
+      "generation": "Question: Suppose A is proportional to x^3, and B is proportional to x^1. To what power of x is the quotient A divided by B proportional?\nReasoning: "
+    },
+    {
+      "id": "withheld_exponent_minus_two",
+      "prompt": "Question: Suppose A is proportional to x^1, and B is proportional to x^3. To what power of x is the quotient A divided by B proportional?\nReasoning: ",
+      "answer": "power_minus_2",
+      "first": 1,
+      "second": 3,
+      "winner": "power_minus_1",
+      "scores": {
+        "power_0": {
+          "mean_nll": 0.5014343857765198,
+          "tokens": 27
+        },
+        "power_minus_1": {
+          "mean_nll": 0.47598379850387573,
+          "tokens": 28
+        },
+        "power_2": {
+          "mean_nll": 0.621854305267334,
+          "tokens": 27
+        },
+        "power_minus_2": {
+          "mean_nll": 0.4798474907875061,
+          "tokens": 29
+        },
+        "power_minus_3": {
+          "mean_nll": 0.6012709736824036,
+          "tokens": 28
+        }
+      },
+      "generation": "Question: Suppose A is proportional to x^1, and B is proportional to x^3. To what power of x is the quotient A divided by B proportional?\nReasoning: "
+    },
+    {
+      "id": "neutral_two_premise_transfer",
+      "prompt": "The square of P is proportional to the cube of R. Q is proportional to R divided by the square of P. Combining the two relations, Q is proportional to ",
+      "answer": "power_minus_2",
+      "winner": "power_minus_2",
+      "scores": {
+        "power_0": {
+          "mean_nll": 3.8014936447143555,
+          "tokens": 29
+        },
+        "power_minus_1": {
+          "mean_nll": 3.788562536239624,
+          "tokens": 29
+        },
+        "power_2": {
+          "mean_nll": 3.812269449234009,
+          "tokens": 29
+        },
+        "power_minus_2": {
+          "mean_nll": 3.730506658554077,
+          "tokens": 30
+        },
+        "power_minus_3": {
+          "mean_nll": 3.7670109272003174,
+          "tokens": 29
+        }
+      },
+      "generation": "The square of P is proportional to the cube of R. Q is proportional to R divided by the square of P. Combining the two relations, Q is proportional to "
+    }
+  ],
+  "physics_symbolic_bridge": {
+    "prompt": "Question: The square of an orbital period is proportional to distance^3. The circular turning tendency is proportional to distance^1 divided by the square of the orbital period. To what power of distance is the turning tendency proportional?\nReasoning: ",
+    "answer": "power_minus_2",
+    "winner": "power_minus_2",
+    "scores": {
+      "power_0": {
+        "mean_nll": 4.608551502227783,
+        "tokens": 47
+      },
+      "power_minus_1": {
+        "mean_nll": 4.465433120727539,
+        "tokens": 48
+      },
+      "power_2": {
+        "mean_nll": 4.711170196533203,
+        "tokens": 47
+      },
+      "power_minus_2": {
+        "mean_nll": 4.412234783172607,
+        "tokens": 49
+      },
+      "power_minus_3": {
+        "mean_nll": 4.560020446777344,
+        "tokens": 48
+      }
+    },
+    "generation": "Question: The square of an orbital period is proportional to distance^3. The circular turning tendency is proportional to distance^1 divided by the square of the orbital period. To what power of distance is the turning tendency proportional?\nReasoning: "
+  }
+}

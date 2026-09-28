@@ -1,0 +1,128 @@
+{
+  "checkpoint": "runs/v2_strict/model.pt",
+  "label": "v2_strict_bootstrap_reasoning",
+  "device": "cuda",
+  "precision": "bf16",
+  "law_evaluation": {
+    "probes": [
+      {
+        "id": "kepler_huygens_derivation",
+        "prompt": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ",
+        "winner": "inverse_square",
+        "scores": {
+          "constant": {
+            "mean_nll": 1.4988902807235718,
+            "sum_nll": 16.48779296875,
+            "bytes": 11
+          },
+          "inverse": {
+            "mean_nll": 0.9376488924026489,
+            "sum_nll": 29.067115783691406,
+            "bytes": 31
+          },
+          "inverse_square": {
+            "mean_nll": 0.8416605591773987,
+            "sum_nll": 31.98310089111328,
+            "bytes": 38
+          },
+          "inverse_cube": {
+            "mean_nll": 0.8535669445991516,
+            "sum_nll": 30.728408813476562,
+            "bytes": 36
+          }
+        }
+      },
+      {
+        "id": "modern_direct",
+        "prompt": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ",
+        "winner": "constant",
+        "scores": {
+          "constant": {
+            "mean_nll": 1.1387808322906494,
+            "sum_nll": 39.857330322265625,
+            "bytes": 35
+          },
+          "inverse": {
+            "mean_nll": 1.2274771928787231,
+            "sum_nll": 38.051795959472656,
+            "bytes": 31
+          },
+          "inverse_square": {
+            "mean_nll": 1.1675975322723389,
+            "sum_nll": 44.36870574951172,
+            "bytes": 38
+          },
+          "inverse_cube": {
+            "mean_nll": 1.3275229930877686,
+            "sum_nll": 47.790828704833984,
+            "bytes": 36
+          }
+        }
+      },
+      {
+        "id": "period_style",
+        "prompt": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ",
+        "winner": "constant",
+        "scores": {
+          "constant": {
+            "mean_nll": 1.0910886526107788,
+            "sum_nll": 27.277217864990234,
+            "bytes": 25
+          },
+          "inverse": {
+            "mean_nll": 1.171146035194397,
+            "sum_nll": 23.42292022705078,
+            "bytes": 20
+          },
+          "inverse_square": {
+            "mean_nll": 1.4386539459228516,
+            "sum_nll": 51.791542053222656,
+            "bytes": 36
+          },
+          "inverse_cube": {
+            "mean_nll": 1.5786004066467285,
+            "sum_nll": 58.4082145690918,
+            "bytes": 37
+          }
+        }
+      },
+      {
+        "id": "law_notation",
+        "prompt": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to ",
+        "winner": "constant",
+        "scores": {
+          "constant": {
+            "mean_nll": 4.6953125,
+            "sum_nll": 9.390625,
+            "bytes": 2
+          },
+          "inverse": {
+            "mean_nll": 5.2265625,
+            "sum_nll": 20.90625,
+            "bytes": 4
+          },
+          "inverse_square": {
+            "mean_nll": 6.1432294845581055,
+            "sum_nll": 36.859375,
+            "bytes": 6
+          },
+          "inverse_cube": {
+            "mean_nll": 6.1796875,
+            "sum_nll": 37.078125,
+            "bytes": 6
+          }
+        }
+      }
+    ],
+    "votes": {
+      "inverse_square": 1,
+      "constant": 3
+    }
+  },
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as the ruine of\n sinne which being said before. Nam observis & seculatur ejusciri. Where the great diseases about is sene, the triannor of God, the lesser co equitie to the heart of the several benefit that which being thus spoken by the sever",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as disease in the Kings bloud to some doe in an Altar, he obtained the Princes of Paris with the altar of the inhabitants of the said Disease, being informed by the Jewes and Gods.\nTHE Quene Warre are hitherto blowes by Antichristianisme, and ",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of this vain Doctrine to come unto the Secundice of the Creature between both in the Abbots of Scripture and great men that is to be of its cause.\nThey exalt expresse rather then plain Presbyteries for the consequence of their members, and hat",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to such a father being full of the power on the The The Seat, (and the 19 year 1654 pound) the fourth on the other side of the battel which is composed with battel, and the Pillar is put in a power in another evidence, and the learned Physicia"
+  }
+}

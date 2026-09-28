@@ -1,0 +1,129 @@
+{
+  "label": "v6_diverse_elimination",
+  "parameters": 91510272,
+  "vocab_size": 8000,
+  "train_tokens": 65219377,
+  "validation_tokens": 689061,
+  "tokens_seen": 196608000,
+  "steps": 6000,
+  "training_seconds": 851.5265460014343,
+  "initial_validation_loss": 9.104314386844635,
+  "final_validation_loss": 3.6035410314798355,
+  "final_validation_perplexity": 36.728059665893355,
+  "last_train_loss": 3.0537123680114746,
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 11.572916984558105,
+          "tokens": 3
+        },
+        "inverse": {
+          "mean_nll": 7.6044921875,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 8.46452808380127,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 6.918117523193359,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 6.8369140625,
+          "tokens": 8
+        },
+        "inverse": {
+          "mean_nll": 6.723958492279053,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 6.461635112762451,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 5.6622490882873535,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 7.259114742279053,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 7.818749904632568,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 8.069754600524902,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 6.180121421813965,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 15.0,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 6.65234375,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 9.62109375,
+          "tokens": 4
+        },
+        "inverse_cube": {
+          "mean_nll": 9.23046875,
+          "tokens": 4
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ∝ w^-3/w^-3 = w^-3.\nTherefore: H ∝ w^-3.",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ∝ z^1/z^2 = z^1.\nAnswer: T is proportional to z^1.",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ☉, according to the Chronologie of the Sun, which is also divided from the earth, by the Moches called the ascent of the Sun.\nBut that the upper part of the Earth and the other Planters, as it is in the Tropick, are equally distant from the neighbourhood of the Moon, may come to the center of the Earth, as Lapis, the greater part of the earth, is drawn from the Equinoctial circle:",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to ice, and it is the most difficult between all those that are in former ages.\nTo this purpose the corruption and disadvantage, which is the mother of all good and evil happeneth the neerer the earth, than to the low and lowest of all evil.\nverily in an error of the persons aforesaid, they are only to bethink themselves together, and to bereave themselves together, but they are not to bereave themselves by such things as are the meanes"
+  },
+  "args": {
+    "train": "data/tokenized_v6/strict_train.bin",
+    "validation": "data/tokenized_v3/shared_validation.bin",
+    "tokenizer": "data/tokenizer_v3/pre1687_bpe.model",
+    "output_dir": "runs/v6_diverse",
+    "steps": 6000,
+    "batch_size": 64,
+    "context": 512,
+    "width": 768,
+    "heads": 12,
+    "layers": 12,
+    "learning_rate": 0.0003,
+    "warmup_steps": 300,
+    "device": "cuda",
+    "precision": "bf16",
+    "seed": 1686,
+    "label": "v6_diverse_elimination",
+    "log_every": 100
+  }
+}

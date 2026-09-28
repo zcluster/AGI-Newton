@@ -1,0 +1,11 @@
+{
+  "training_data": [
+    "data/eebo_pre1687/general_train.jsonl",
+    "data/real_pilot/strict_clean.jsonl",
+    "data/reasoning/admissible_reasoning_v3.jsonl"
+  ],
+  "vocab_size": 8000,
+  "model": "data/tokenizer_v3/pre1687_bpe.model",
+  "pretrained_vocabulary": false,
+  "normalization": "identity"
+}

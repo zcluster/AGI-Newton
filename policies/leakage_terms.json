@@ -1,0 +1,22 @@
+{
+  "hard": [
+    {"id": "inverse_square", "pattern": "\\binverse[- ]square\\b"},
+    {"id": "reciprocal_square", "pattern": "\\breciprocal(?:ly)?\\b.{0,100}\\bsquare\\b"},
+    {"id": "force_inverse_square", "pattern": "\\b(?:force|attraction|gravity|gravitation)\\b.{0,120}\\binvers(?:e|ely)\\b.{0,80}\\bsquare\\b"}
+  ],
+  "modern": [
+    {"id": "einstein", "pattern": "\\beinstein(?:ian)?\\b"},
+    {"id": "relativity", "pattern": "\\b(?:special|general)\\s+relativity\\b"},
+    {"id": "spacetime", "pattern": "\\bspace[- ]?time\\b"},
+    {"id": "quantum_theory", "pattern": "\\bquantum\\s+(?:mechanics|theory|field|electrodynamics|gravity|physics)\\b"},
+    {"id": "photon", "pattern": "\\bphoton\\b"}
+  ],
+  "review": [
+    {"id": "square_of_distance", "pattern": "\\b(?:as|in)\\s+(?:the\\s+)?square\\s+of\\s+(?:the\\s+)?distance\\b"},
+    {"id": "generic_duplicate_ratio", "pattern": "\\b(?:duplicate|duplicated)\\s+(?:ratio|proportion)\\b|\\bin\\s+ratione\\s+duplicata\\b"},
+    {"id": "universal_gravitation", "pattern": "\\buniversal\\s+gravitation\\b"},
+    {"id": "central_force", "pattern": "\\bcentr(?:al|ipetal)\\s+force\\b"},
+    {"id": "action_at_distance", "pattern": "\\baction\\s+at\\s+a\\s+distance\\b"},
+    {"id": "orbital_attraction", "pattern": "\\b(?:planet|moon|satellite)\\b.{0,120}\\b(?:attract|gravity|gravitation)\\b"}
+  ]
+}

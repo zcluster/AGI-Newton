@@ -1,0 +1,158 @@
+{
+  "purpose": "real quick-stab random-init language-model experiment; not yet a rediscovery claim",
+  "label": "v2_precursor_exposed",
+  "data": [
+    "data/eebo_pre1687/general_train.jsonl",
+    "data/real_pilot/strict_clean.jsonl",
+    "data/reasoning/admissible_reasoning.jsonl",
+    "data/reasoning/admissible_reasoning.jsonl",
+    "data/real_pilot/precursor_only.jsonl",
+    "data/real_pilot/precursor_only.jsonl",
+    "data/real_pilot/precursor_only.jsonl",
+    "data/real_pilot/precursor_only.jsonl",
+    "data/real_pilot/precursor_only.jsonl",
+    "data/real_pilot/precursor_only.jsonl",
+    "data/real_pilot/precursor_only.jsonl",
+    "data/real_pilot/precursor_only.jsonl"
+  ],
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "precision": "bf16",
+  "parameters": 25482752,
+  "bytes": 233563236,
+  "steps": 15000,
+  "tokens_seen": 245760000,
+  "training_seconds": 562.4329538345337,
+  "initial_validation_loss": 207.29593467712402,
+  "final_validation_loss": 2.284319221973419,
+  "initial_perplexity": 1.06532115496397e+90,
+  "final_perplexity": 9.818999389123364,
+  "last_train_loss": 1.1775400638580322,
+  "law_evaluation": {
+    "probes": [
+      {
+        "id": "kepler_huygens_derivation",
+        "prompt": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ",
+        "winner": "inverse_square",
+        "scores": {
+          "constant": {
+            "mean_nll": 2.250591516494751,
+            "sum_nll": 24.756505966186523,
+            "bytes": 11
+          },
+          "inverse": {
+            "mean_nll": 0.7702763080596924,
+            "sum_nll": 23.87856674194336,
+            "bytes": 31
+          },
+          "inverse_square": {
+            "mean_nll": 0.7003920674324036,
+            "sum_nll": 26.614898681640625,
+            "bytes": 38
+          },
+          "inverse_cube": {
+            "mean_nll": 1.1788252592086792,
+            "sum_nll": 42.43770980834961,
+            "bytes": 36
+          }
+        }
+      },
+      {
+        "id": "modern_direct",
+        "prompt": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ",
+        "winner": "inverse",
+        "scores": {
+          "constant": {
+            "mean_nll": 1.2167404890060425,
+            "sum_nll": 42.58591842651367,
+            "bytes": 35
+          },
+          "inverse": {
+            "mean_nll": 0.6780878901481628,
+            "sum_nll": 21.02072525024414,
+            "bytes": 31
+          },
+          "inverse_square": {
+            "mean_nll": 0.9319838285446167,
+            "sum_nll": 35.41538619995117,
+            "bytes": 38
+          },
+          "inverse_cube": {
+            "mean_nll": 1.1632434129714966,
+            "sum_nll": 41.87676239013672,
+            "bytes": 36
+          }
+        }
+      },
+      {
+        "id": "period_style",
+        "prompt": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ",
+        "winner": "inverse_square",
+        "scores": {
+          "constant": {
+            "mean_nll": 1.073723554611206,
+            "sum_nll": 26.843090057373047,
+            "bytes": 25
+          },
+          "inverse": {
+            "mean_nll": 1.1919971704483032,
+            "sum_nll": 23.839942932128906,
+            "bytes": 20
+          },
+          "inverse_square": {
+            "mean_nll": 0.980037271976471,
+            "sum_nll": 35.281341552734375,
+            "bytes": 36
+          },
+          "inverse_cube": {
+            "mean_nll": 1.0778709650039673,
+            "sum_nll": 39.8812255859375,
+            "bytes": 37
+          }
+        }
+      },
+      {
+        "id": "law_notation",
+        "prompt": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to ",
+        "winner": "inverse",
+        "scores": {
+          "constant": {
+            "mean_nll": 5.40625,
+            "sum_nll": 10.8125,
+            "bytes": 2
+          },
+          "inverse": {
+            "mean_nll": 5.27734375,
+            "sum_nll": 21.109375,
+            "bytes": 4
+          },
+          "inverse_square": {
+            "mean_nll": 5.953125,
+            "sum_nll": 35.71875,
+            "bytes": 6
+          },
+          "inverse_cube": {
+            "mean_nll": 6.1979169845581055,
+            "sum_nll": 37.1875,
+            "bytes": 6
+          }
+        }
+      }
+    ],
+    "votes": {
+      "inverse_square": 2,
+      "inverse": 2
+    }
+  },
+  "free_generation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as the reciprocal cube of Bishops, which is the cube of Bishops; and the excubition of Aristotle, and the cubes of Bishops only on the cube of Bishops, and one of Bishops of Bishops, and the others of Bi",
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as the reciprocal cube of Bishops, which is the cube of Bishops; and the excubition of Aristotle, and the cubes of Bishops only on the cube of Bishops, and one of Bishops of Bishops, and the others of Bi",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to common in words this Text, the one set is method, to be a probable right and safe of the sixth oblique persons from the great dignity, it is that call man, yet if it should, and in most proportionable"
+  },
+  "limitations": [
+    "byte tokenizer and small model",
+    "training mixture contains 233.6 MB of byte-level text",
+    "candidate ranking is diagnostic and is not equivalent to an open-ended derivation",
+    "machine-reviewed pilot editions are not yet publication-grade human-audited data"
+  ]
+}

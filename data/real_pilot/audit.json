@@ -1,0 +1,255 @@
+{
+  "cutoff_year": 1686,
+  "documents": [
+    {
+      "id": "copernicus_revolutionibus_1543",
+      "raw_sha256": "e0d8b3f3f76a286261ad58d314d5c0e6c77350273c7c7d4a0e68007885982531",
+      "characters": 771235,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "napier_logarithms_1614",
+      "raw_sha256": "6eb0011276500d7d416302d820867f8cff10b77b35b209decf56d0bed9452cb9",
+      "characters": 287661,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "kepler_astronomia_nova_1609",
+      "raw_sha256": "61e0666626862748e9dd83ddc10a61dbb4fd554fa68b9fc0fce50cde0716f0e5",
+      "characters": 994706,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "kepler_harmonices_1619",
+      "raw_sha256": "abf8fe7671a26d005cf87d1c6d6977526c5aaacff8bcf62cde7ddf3d0fce08f8",
+      "characters": 907091,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "galileo_dialogo_1632",
+      "raw_sha256": "eaf758edf44f812fdf4d7b335051b9d0c02633d7b897ba9b216652bd7b2a4deb",
+      "characters": 1217326,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "galileo_discorsi_1638",
+      "raw_sha256": "915199a65c9b7573b18bc98f2b033fdc9b823ef0706eae58de59d65f1b471670",
+      "characters": 594801,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "salusbury_collections_1661",
+      "raw_sha256": "85bd60a47cbab5cdd7a98a04e321eb208df1dcab4e2cb43ec735b6507fd34180",
+      "characters": 1877502,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": [
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": "h, to  that which runneth, whilst it is low, hath duplicate proportion of  the beight to the height, that 1s, che propor"
+          }
+        ]
+      },
+      "reasons": []
+    },
+    {
+      "id": "descartes_geometrie_1637",
+      "raw_sha256": "fa1fc618140bb9ce6f203d63682a395aa421b81eaea3d7a38fa66d136009b3f6",
+      "characters": 769681,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "wallis_arithmetica_1656",
+      "raw_sha256": "33d96d97a85e25f99d0afb81d97dc973c2095ce290e96c6e5595b720219eeb89",
+      "characters": 430068,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": [
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": "   j. a Arilhrnetica Injtuitemm, Prop.f5»   Nempe in ratione duplicata, per prop. 1 1 .   PROP. XV.   C troll.   I   dco"
+          },
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": "bit cornplementum illud ex infinitii arcubus  PT. in ratione duplicata rcftaru m MP arithmeticc- propor-  tionalium ( ii"
+          }
+        ]
+      },
+      "reasons": []
+    },
+    {
+      "id": "barrow_lectiones_1670",
+      "raw_sha256": "dc3abb3d88e292c6dc736ea52eca46ce07904097003ac5fb9dbe02ca6c326329",
+      "characters": 290275,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "huygens_horologium_1673",
+      "raw_sha256": "e05666bcb6d013a24eed5a8bbd72ef7f904818e5b4b6292ffbaea5f410c651ca",
+      "characters": 310120,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": [
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": "e ab initio defcenJUs accipiatur i  Junt inter fi in ratione duplicata eorundem temporum , firve  ut temporum quadrata ,"
+          },
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": "  que a principio cafus inchoetur , elTe inter fe in ratione duplicata  temporum quibus cafus duravit, fi nempe tempora "
+          },
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": " vis centrifuga ve-  locioris» ad vim tardioris » in ratione duplicata celeritatum.   IV.   Si mobilia duo aqualia , in "
+          }
+        ]
+      },
+      "reasons": []
+    },
+    {
+      "id": "gilbert_magnet_1600",
+      "raw_sha256": "0020b09f65b5b7831cfe3118dfb9035dd90a5791012d6e45446929940338d2be",
+      "characters": 489462,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "hooke_micrographia_1665",
+      "raw_sha256": "cf91ec5ea2e53b9ae94d6b5e13043b4471ae42d16cb4057ae395f6a8e16a9792",
+      "characters": 890647,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": [
+          {
+            "pattern": "orbital_attraction",
+            "context": "tis not unlikely, I say, but that there is in the Moon a principle of gravitation, such as in the Earth. And to make this probable,"
+          },
+          {
+            "pattern": "orbital_attraction",
+            "context": "f them are equally distant from the Center of the Moon, and consequently, it is exceedingly probable also, that they are equidistant from the Center of gravitation; and indeed, the figure of the superficial parts "
+          },
+          {
+            "pattern": "orbital_attraction",
+            "context": "clude therefore, it being very probable, that the Moon has a principle of gravitation, it affords an excellent distinguishing Instance in the search after the cause of gravitation, or attraction, to hint, that it does not depend "
+          }
+        ]
+      },
+      "reasons": []
+    },
+    {
+      "id": "bullialdus_astronomia_1645",
+      "raw_sha256": "98c4d2c7a4ad9ebd40e6bf551963a06a3454bcbc956949d300f8ef881f192f29",
+      "characters": 1241912,
+      "precursor": true,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "hooke_motion_earth_1674",
+      "raw_sha256": "a3b562dacbe6e5f1036a37d119dadfb9d1e68511672645c1e6d0df839b198508",
+      "characters": 83625,
+      "precursor": true,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "euclid_billingsley_1570",
+      "raw_sha256": "e905727c6db40e6bdf015cedd4d27037d9eb622cbea0b841c17cfad28c663325",
+      "characters": 3301766,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "boyle_spring_air_1660",
+      "raw_sha256": "32ed110ad178e7784382e9a06f7309081d82ed2e33a38e18f7f9ffeea31f9a1f",
+      "characters": 489065,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    }
+  ],
+  "counts": {
+    "strict_clean": 1800,
+    "precursor_only": 166,
+    "date_only_all": 1966,
+    "quarantine": 0
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "purpose": "real quick-stab random-init language-model experiment; not yet a rediscovery claim",
+  "label": "strict_plus_precursors",
+  "data": [
+    "data/real_pilot/strict_clean.jsonl",
+    "data/real_pilot/precursor_only.jsonl"
+  ],
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "precision": "bf16",
+  "parameters": 10844544,
+  "bytes": 14928535,
+  "steps": 1500,
+  "tokens_seen": 12288000,
+  "training_seconds": 51.0091507434845,
+  "initial_validation_loss": 189.52466583251953,
+  "final_validation_loss": 2.9973655343055725,
+  "initial_perplexity": 2.0394664040670043e+82,
+  "final_perplexity": 20.03269190496702,
+  "last_train_loss": 2.5808966159820557,
+  "law_evaluation": {
+    "probes": [
+      {
+        "id": "modern_direct",
+        "prompt": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ",
+        "winner": "inverse_square",
+        "scores": {
+          "constant": {
+            "mean_nll": 2.4642856121063232,
+            "sum_nll": 86.25,
+            "bytes": 35
+          },
+          "inverse": {
+            "mean_nll": 2.408139944076538,
+            "sum_nll": 74.65234375,
+            "bytes": 31
+          },
+          "inverse_square": {
+            "mean_nll": 2.370020866394043,
+            "sum_nll": 90.060791015625,
+            "bytes": 38
+          },
+          "inverse_cube": {
+            "mean_nll": 2.41455078125,
+            "sum_nll": 86.923828125,
+            "bytes": 36
+          }
+        }
+      },
+      {
+        "id": "period_style",
+        "prompt": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ",
+        "winner": "inverse_cube",
+        "scores": {
+          "constant": {
+            "mean_nll": 2.4574999809265137,
+            "sum_nll": 61.4375,
+            "bytes": 25
+          },
+          "inverse": {
+            "mean_nll": 2.486132860183716,
+            "sum_nll": 49.72265625,
+            "bytes": 20
+          },
+          "inverse_square": {
+            "mean_nll": 2.2301974296569824,
+            "sum_nll": 80.287109375,
+            "bytes": 36
+          },
+          "inverse_cube": {
+            "mean_nll": 2.2257180213928223,
+            "sum_nll": 82.3515625,
+            "bytes": 37
+          }
+        }
+      },
+      {
+        "id": "law_notation",
+        "prompt": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to ",
+        "winner": "constant",
+        "scores": {
+          "constant": {
+            "mean_nll": 3.9140625,
+            "sum_nll": 7.828125,
+            "bytes": 2
+          },
+          "inverse": {
+            "mean_nll": 5.53125,
+            "sum_nll": 22.125,
+            "bytes": 4
+          },
+          "inverse_square": {
+            "mean_nll": 5.602864742279053,
+            "sum_nll": 33.6171875,
+            "bytes": 6
+          },
+          "inverse_cube": {
+            "mean_nll": 5.5963544845581055,
+            "sum_nll": 33.578125,
+            "bytes": 6
+          }
+        }
+      }
+    ],
+    "votes": {
+      "inverse_square": 1,
+      "inverse_cube": 1,
+      "constant": 1
+    }
+  },
+  "free_generation": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as pald Aistoure sedesesthem bereallayesee te Anthicove apthithafqueatuale whe \niy, oufiser, oue, m twestome\nbe stiatinge, osothe hator, atick, te ollinat co elath",
+  "limitations": [
+    "byte tokenizer and small model",
+    "approximately 15 MB of OCR text is far below a fluent language-model corpus",
+    "candidate ranking is diagnostic and is not equivalent to an open-ended derivation",
+    "machine-reviewed pilot editions are not yet publication-grade human-audited data"
+  ]
+}

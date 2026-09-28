@@ -1,0 +1,129 @@
+{
+  "label": "v5_two_premise_elimination",
+  "parameters": 91510272,
+  "vocab_size": 8000,
+  "train_tokens": 61417053,
+  "validation_tokens": 689061,
+  "tokens_seen": 196608000,
+  "steps": 6000,
+  "training_seconds": 852.370701789856,
+  "initial_validation_loss": 9.104314386844635,
+  "final_validation_loss": 3.5933735966682434,
+  "final_validation_perplexity": 36.356521509172836,
+  "last_train_loss": 3.236865520477295,
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 8.916666984558105,
+          "tokens": 3
+        },
+        "inverse": {
+          "mean_nll": 6.300130367279053,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 6.6397881507873535,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 5.181431770324707,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 5.94622802734375,
+          "tokens": 8
+        },
+        "inverse": {
+          "mean_nll": 5.782552242279053,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 5.884207725524902,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 5.382673263549805,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 7.3359375,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 7.298047065734863,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 8.146763801574707,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 6.38194465637207,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 14.6875,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 6.3828125,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 9.16015625,
+          "tokens": 4
+        },
+        "inverse_cube": {
+          "mean_nll": 9.05078125,
+          "tokens": 4
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to ” num- Hercules ♈ at ♋, which Hercules at the first rate, and then by this fixtion of this Fen-Fenper, is really equal! Logiana on the same line which declination I write of the Fen-Fenne, in its course or course or course as the Fen-Fenne, in its course or course as the Fenne, or as the Fenne is on the"
+  },
+  "args": {
+    "train": "data/tokenized_v5/strict_train.bin",
+    "validation": "data/tokenized_v3/shared_validation.bin",
+    "tokenizer": "data/tokenizer_v3/pre1687_bpe.model",
+    "output_dir": "runs/v5_two_premise",
+    "steps": 6000,
+    "batch_size": 64,
+    "context": 512,
+    "width": 768,
+    "heads": 12,
+    "layers": 12,
+    "learning_rate": 0.0003,
+    "warmup_steps": 300,
+    "device": "cuda",
+    "precision": "bf16",
+    "seed": 1686,
+    "label": "v5_two_premise_elimination",
+    "log_every": 100
+  }
+}

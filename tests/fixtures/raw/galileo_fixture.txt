@@ -1,0 +1,4 @@
+The spaces passed over by a body descending from rest increase according to the succession of odd numbers.
+
+Observation and geometrical demonstration must be compared.
+

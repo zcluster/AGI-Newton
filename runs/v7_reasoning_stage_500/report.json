@@ -1,0 +1,131 @@
+{
+  "label": "v7_reasoning_stage_500",
+  "parameters": 91510272,
+  "vocab_size": 8000,
+  "train_tokens": 3897734,
+  "validation_tokens": 689061,
+  "tokens_seen": 16384000,
+  "steps": 500,
+  "training_seconds": 72.20006704330444,
+  "initial_validation_loss": 3.604374259710312,
+  "final_validation_loss": 3.8591383397579193,
+  "final_validation_perplexity": 47.424469978166485,
+  "last_train_loss": 0.19966495037078857,
+  "resumed_from": "runs/v6_diverse/model.pt",
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 11.635416984558105,
+          "tokens": 3
+        },
+        "inverse": {
+          "mean_nll": 9.568034172058105,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 9.883940696716309,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 8.785743713378906,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 6.92236328125,
+          "tokens": 8
+        },
+        "inverse": {
+          "mean_nll": 7.5302734375,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 7.016213893890381,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 6.867641448974609,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 6.6901044845581055,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 8.300000190734863,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 7.440011501312256,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 6.24609375,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 14.0,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 6.68359375,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 9.41796875,
+          "tokens": 4
+        },
+        "inverse_cube": {
+          "mean_nll": 9.18359375,
+          "tokens": 4
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ∝ z^-3/z^-3 = z^3.\nTherefore: H ∝ z^3.",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ∝ z^2; H varies as z^3 divided by A^1. Eliminate A and state the resulting power.\nSolution: From the first relation the denominator carries index -1. Therefore the remaining index is 3 - (-1) = 4.\nAnswer: H is proportional to z^4.",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ♋, or in the exchange of the Torrid Juice, to the number of the ☉, and the Soud into the Torrid Juice, to the number of 4 in the Aire, and the period of ♈ in the Boriface, to the number of 15 in the quotient of ∝ x, the product is 17 multiplied by 12, so is 2 896 to what number?\nAnswer: Are there 142",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to φ of flowers, and lastly to the number of them that are in the From the first relation to the first relation.\nTherefore as the first relation is to x^1. Second relation, M is as v^3 divided by V^3. Use both relations to determine E.\nWork: Elimination of V^1 leaves powers 3 and 3. Division subtracts them: 3 - (3) = 0.\nAnswer: E is proportional to s^0."
+  },
+  "args": {
+    "train": "data/tokenized_v7/reasoning_only.bin",
+    "validation": "data/tokenized_v3/shared_validation.bin",
+    "tokenizer": "data/tokenizer_v3/pre1687_bpe.model",
+    "output_dir": "runs/v7_reasoning_stage_500",
+    "steps": 500,
+    "batch_size": 64,
+    "context": 512,
+    "width": 768,
+    "heads": 12,
+    "layers": 12,
+    "learning_rate": 0.0001,
+    "warmup_steps": 50,
+    "device": "cuda",
+    "precision": "bf16",
+    "seed": 1686,
+    "label": "v7_reasoning_stage_500",
+    "log_every": 50,
+    "resume": "runs/v6_diverse/model.pt"
+  }
+}
