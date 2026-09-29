@@ -12,6 +12,10 @@ and exact training settings. The pilot OCR editions are machine reviewed,
 not yet certified as publication-grade historical inputs. No run so far
 demonstrates autonomous rediscovery.
 
+A [separate synthetic RL engineering demo](rl_demo/README.md) records code,
+Mac MPS / RTX 5090 runs, and mixed outcomes. It has **not** been applied to
+the historical Newton model.
+
 For a local setup, use Python 3.12 or newer and install the core dependencies:
 
 ```bash
