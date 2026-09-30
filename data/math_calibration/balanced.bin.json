@@ -1,0 +1,15 @@
+{
+  "tokenizer": "data/tokenizer_v11/pre1687_bpe.model",
+  "data": [
+    "data/math_calibration/balanced_train.jsonl"
+  ],
+  "output": "data/math_calibration/balanced.bin",
+  "documents": 98121,
+  "tokens": 3291420,
+  "bytes": 6582840,
+  "dtype": "uint16",
+  "loss_weights_output": "data/math_calibration/balanced_weights.bin",
+  "focus_final_exponent": false,
+  "answer_only": true,
+  "subtraction_weight": 1
+}

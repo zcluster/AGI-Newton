@@ -336,3 +336,62 @@ elimination exposure. One seed is exploratory; passing would require replicated
 seeds and fresh tests before a research claim. Synthetic capability gains do not
 establish historical-only Newton discovery. Record achieved source-token and
 target-token proportions; do not assume the repeat factor equals either share.
+
+### Resampling result
+
+L40 job 2863304 completed with exit 0 in 3m04s. The constructor reproduced
+the frozen input hash and unchanged validation hash. Saved reports verify
+matching initializer path, seed, architecture, optimizer settings and 8,192,000
+tokens seen. The checkpoint SHA-256 is
+`a270638321e841743f5a1a089d52f3ba7ec0776106cd272f430942a196827faa`.
+
+| Free-generation measure | Original masked model | Resampled |
+| --- | ---: | ---: |
+| Training subtraction | 32/544 | **537/544** |
+| Internal-validation subtraction | 3/30 | **4/30** |
+| Sealed 1 minus 3 (two wordings) | 0/2 | **2/2** |
+| Sealed 3 minus 1 (two wordings) | 0/2 | **0/2** |
+| Abstract final relations | 6/12 | 5/12 |
+| Physics final relations | 0/4 | 0/4 |
+| Composition-grid final relations | 136/204 | 132/204 |
+| Correct grid arithmetic trace and relation | 61/204 | 80/204 |
+| Sealed composition-grid relations | 0/6 | 0/6 |
+
+The training-generation gate passes (98.7%), but internal validation fails
+(13.3% versus the frozen 80% gate). The sharp train/validation gap is consistent
+with overfitting or insufficient algorithmic generalization; it is not proof of
+memorization as the sole mechanism. Answering the two standalone `1 - 3` prompts
+is not the same as applying that arithmetic inside elimination, much less
+deriving a gravitational law from historical sources. The sealed composition
+and physics failures remain the decisive boundary.
+
+This single-seed pilot establishes that the earlier inability to reproduce even
+training arithmetic was not an unavoidable property of the initializer/model:
+a fixed-budget training-distribution intervention substantially changes that
+outcome. It does not isolate repetition from shuffling or reduced algebra exposure,
+and does not establish robust unseen arithmetic or scientific discovery.
+Before further scale-up, investigate held-out arithmetic generalization and
+premise binding, and strengthen the audited historical skill inventory. Do not
+optimize against the two sealed arithmetic examples or present them as a discovery.
+
+Raw generations, construction audit, matched-settings checks and summary live
+under `audit/balanced_math/`; reproduce the comparison with
+`python src/summarise_balanced_math.py`.
+
+Local retokenization independently verifies 3,291,420 input tokens and the
+98,121-record count. Arithmetic accounts for 1,392,896 input tokens (42.32%)
+and 178,432 answer targets; all 752,768 answer targets have weight one, so the
+static arithmetic supervision share is 23.70%. The new stream's weight-file hash
+is `e745b461b38cfa6d43210443c0466904377025dbae0ed4e4338055c4d9309b7b`.
+
+Exposure verification is still pending at this recording. Initial CPU job
+2863307 completed, but inspection found that the audit's *hypothetical global
+weight-128* fraction reused the actual weight-one array in the generalized
+records branch. That counterfactual statistic was wrong; the primary weight-one
+statistic was unaffected. The code now explicitly constructs counterfactual
+weights, with a mixed-family regression test. A fresh verification submission
+lost its SSH response before acknowledgment: inspect the scheduler and
+`audit/balanced_exposure_verified.json` before retrying; do not resubmit training.
+Do not use the initial counterfactual statistic or claim final exposure verification
+until the corrected output is retrieved. `hpc/tongji_balanced_exposure.sbatch`
+only audits on CPUs and protects the corrected output from overwrite.

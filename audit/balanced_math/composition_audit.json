@@ -1,0 +1,56 @@
+{
+  "source": "runs/hpc_math_balanced_seed1686/composition_grid.json",
+  "all": {
+    "cases": 204,
+    "answer_correct": 132,
+    "unique_relation_coverage": 152,
+    "eligible_one_input_pairs": 960,
+    "observed_one_input_pairs": 646,
+    "counterfactual_consistent_pairs": 498,
+    "permutation_null": {
+      "draws": 1000,
+      "mean_rate": 0.09123014384658186,
+      "interval_95": [
+        0.06907378335949764,
+        0.11580594679186229
+      ],
+      "upper_tail_p": 0.000999000999000999
+    }
+  },
+  "by_template": {
+    "t0": {
+      "cases": 102,
+      "answer_correct": 50,
+      "unique_relation_coverage": 60,
+      "eligible_one_input_pairs": 480,
+      "observed_one_input_pairs": 250,
+      "counterfactual_consistent_pairs": 174,
+      "permutation_null": {
+        "draws": 1000,
+        "mean_rate": 0.09413003660809241,
+        "interval_95": [
+          0.05952380952380952,
+          0.13360323886639677
+        ],
+        "upper_tail_p": 0.000999000999000999
+      }
+    },
+    "t1": {
+      "cases": 102,
+      "answer_correct": 82,
+      "unique_relation_coverage": 92,
+      "eligible_one_input_pairs": 480,
+      "observed_one_input_pairs": 396,
+      "counterfactual_consistent_pairs": 324,
+      "permutation_null": {
+        "draws": 1000,
+        "mean_rate": 0.0884780677085044,
+        "interval_95": [
+          0.059278350515463915,
+          0.12082262210796915
+        ],
+        "upper_tail_p": 0.000999000999000999
+      }
+    }
+  }
+}

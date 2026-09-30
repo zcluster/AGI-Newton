@@ -1,0 +1,13 @@
+{
+  "provenance": "Modern synthetic capability control, not historical-only discovery",
+  "shuffle_seed": 1686,
+  "arithmetic_record_multiplicity": 128,
+  "records": 98121,
+  "family_counts": {
+    "math_subtraction": 69632,
+    "math_elimination": 28489
+  },
+  "original_train_sha256": "d8c1a6e8e015b2a439b70713038b0e046df892b3d844743626d30fd4c40d6958",
+  "unchanged_validation_sha256": "83161b1b7c1476e3c8c76c0aae1d0881a17d57a687a8064fa0029d4d46c463c1",
+  "balanced_train_sha256": "7084067c2f8017dbeb676e5c0507b024aaaba2f09f8f4bf9b5f0a55876b6c1b7"
+}

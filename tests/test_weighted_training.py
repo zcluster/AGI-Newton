@@ -13,7 +13,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from tokenize_corpus import encode_record
 from train_bpe_gpt import TokenStream
 from summarise_subtraction_weight import numeric_correct
-from audit_arithmetic_exposure import batch_shares
+from audit_arithmetic_exposure import batch_shares, audit
+from unittest.mock import patch
 from build_balanced_math import balanced
 
 
@@ -32,6 +33,29 @@ class CharacterTokenizer:
 
 
 class WeightedTrainingTests(unittest.TestCase):
+    def test_exposure_record_mask_matches_actual_stream(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            row = {'source': 'procedural', 'family': 'math_subtraction', 'prompt': 'Q\nA: ', 'text': 'Q\nA: 1.'}
+            ids, weights = encode_record(row, CharacterTokenizer(), True, answer_only=True)
+            tokens, targets, records, report = [root / name for name in ('t.bin', 'w.bin', 'r.jsonl', 'report.json')]
+            np.asarray(ids * 2, dtype=np.uint16).tofile(tokens)
+            np.asarray(weights * 2, dtype=np.uint8).tofile(targets)
+            records.write_text(json.dumps(row) + '\n' + json.dumps({**row, 'family': 'math_elimination'}) + '\n')
+            report.write_text(json.dumps({'vocab_size': 256, 'args': {
+                'seed': 1686, 'context': 6, 'width': 8, 'heads': 2, 'layers': 1,
+                'train': str(tokens), 'validation': str(tokens), 'loss_weights': str(targets),
+                'tokenizer': 'mock', 'batch_size': 2, 'steps': 2}}))
+            with patch('audit_arithmetic_exposure.spm.SentencePieceProcessor', return_value=CharacterTokenizer()):
+                result = audit(report, records)
+                self.assertEqual(result['record_tokens_by_family']['math_subtraction'], len(ids))
+                self.assertEqual(result['arithmetic_target_positions'], sum(weights))
+                self.assertEqual(result['global_static_arithmetic_mass_plain'], .5)
+                self.assertAlmostEqual(result['global_static_arithmetic_mass_weight128'], 128/129)
+                np.asarray([0] * (2 * len(weights)), dtype=np.uint8).tofile(targets)
+                with self.assertRaises(AssertionError):
+                    audit(report, records)
+
     def test_balancing_only_duplicates_training_records(self):
         row = {'split': 'train', 'family': 'math_subtraction', 'prompt': 'Q', 'text': 'Q A',
                'numerator': 2, 'known': 1}

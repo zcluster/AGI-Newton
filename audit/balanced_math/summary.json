@@ -1,0 +1,28 @@
+{
+  "matched_settings_verified": true,
+  "groups": {
+    "train": {
+      "cases": 544,
+      "baseline": 32,
+      "balanced": 537
+    },
+    "validation": {
+      "cases": 30,
+      "baseline": 3,
+      "balanced": 4
+    },
+    "sealed_newton": {
+      "cases": 2,
+      "baseline": 0,
+      "balanced": 2
+    },
+    "sealed_reverse": {
+      "cases": 2,
+      "baseline": 0,
+      "balanced": 0
+    }
+  },
+  "train_gate_passed": true,
+  "validation_gate_passed": false,
+  "limitation": "One seed, modern synthetic capability arm; not historical scientific discovery"
+}
