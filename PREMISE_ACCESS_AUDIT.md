@@ -60,6 +60,28 @@ motu circulari*.” Both are provisional visual readings, not a checked
 machine-readable edition. In particular, no modern paraphrase of either
 passage is admissible to the strict historical training arm.
 
+## Language-access gate
+
+**Both decisive pages are Latin, not English.** In the V11 scientific
+training split, 575 Latin chunks contain 4,346,018 characters, versus 824
+English chunks containing 6,181,578 characters (counting JSONL `text`
+characters). The two relevant books account for 114 Kepler chunks (862,088
+characters) and 37 Huygens chunks (285,909 characters). The later bootstrap
+adds 200,033,084 bytes of ordinary pre-1687 English, while the physics
+evaluation asks its questions in English. These are different units and are
+not a token-frequency estimate, but they establish that the bootstrap is
+strongly English-dominant. A random-initialized model cannot be assumed to
+understand the two Latin premises merely because their books are included.
+
+Thus the current negative result cannot isolate scientific reasoning failure
+from damaged OCR, insufficient Latin acquisition, or Latin-to-English
+transfer failure. Any strict English-only arm needs an independently dated
+pre-1687 English witness to **each** required premise; none has yet been
+verified here. A modern English translation, if used, belongs in a separately
+labelled translation/capability control, not in the historically sealed arm.
+Alternatively, a multilingual historical arm must test Latin premise
+identification before crediting an English derivation.
+
 The existing `src/generate_admissible_reasoning.py` explicitly teaches Kepler
 period examples and the numerical rule “divide radius by period squared.” The
 existing `src/evaluate_generalization_suite.py` physics prompts explicitly
