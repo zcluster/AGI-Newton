@@ -10,7 +10,7 @@ from pathlib import Path
 import sentencepiece as spm
 import torch
 
-from train_bpe_gpt import GPT, evaluate_laws, generate, score
+from train_bpe_gpt import GPT, TokenStream, evaluate_laws, generate, score, validation_loss
 from train_random_init_smoke import LAW_PROBES
 
 
@@ -89,6 +89,7 @@ def main():
     parser.add_argument("--checkpoint", type=Path, required=True)
     parser.add_argument("--tokenizer", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--validation", type=Path, help="Optional scientific-language retention audit")
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--precision", default="bf16", choices=["fp32", "bf16", "fp16"])
     args = parser.parse_args()
@@ -150,6 +151,14 @@ def main():
             length=120, minimum_length=30
         ),
     }
+    if args.validation:
+        torch.manual_seed(1686)  # Same sampled windows in paired retention audits.
+        report["scientific_retention"] = {
+            "validation": str(args.validation), "sampling_seed": 1686, "batch_size": 8,
+            "rounds": 16, "mean_loss": validation_loss(
+                model, TokenStream(args.validation), 8, int(saved["context"]),
+                torch.device(args.device), args.precision),
+        }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps(report, indent=2, ensure_ascii=False))

@@ -1,0 +1,1809 @@
+{
+  "checkpoint": "runs/hpc_v11_bootstrap_seed1686/model.pt",
+  "label": "hpc_v11_primary_scan_plus_general_english",
+  "source_sha256": "01e2bcbe7ac4d6d6cd4ca0ae28ea955ec3928f629ba8dc932bd568e826b00a90",
+  "probes": [
+    {
+      "id": "new_nouns_profits_debts_square_profits_question",
+      "prompt": "The squares of the profits are as the cubes of the debts.\nQuestion: What power of the profits is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the profits.",
+        "cube": "cube of the profits."
+      },
+      "text": "The squares of the profits are as the cubes of the debts.\nQuestion: What power of the profits is compared?\nAnswer: square of the profits.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 3.320033550262451,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.210042476654053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the profits are as the cubes of the debts.\nQuestion: What power of the profits is compared?\nAnswer: The answer is, because the profits are as the squares of the given number, and the squares of the given number are as the squares of the given number.\nQuestion.\nWhat is the square of the given number?\nAnswer"
+    },
+    {
+      "id": "combined_profits_debts_square_profits_continuation",
+      "prompt": "The squares of the profits are as the cubes of the debts.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the profits.",
+        "cube": "cube of the profits."
+      },
+      "text": "The squares of the profits are as the cubes of the debts.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: square of the profits.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 3.1293249130249023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.1031904220581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the profits are as the cubes of the debts.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: According to the statute, which is the sum of the profits, which is the sum of the profits.\nQuest.\nWhat is the sum of the profits?\nAnswer.\nQuest.\nWhat is the sum of the profits"
+    },
+    {
+      "id": "new_nouns_profits_debts_square_debts_question",
+      "prompt": "The squares of the profits are as the cubes of the debts.\nQuestion: What power of the debts is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the debts.",
+        "cube": "cube of the debts."
+      },
+      "text": "The squares of the profits are as the cubes of the debts.\nQuestion: What power of the debts is compared?\nAnswer: cube of the debts.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 3.5551061630249023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.79638671875,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the profits are as the cubes of the debts.\nQuestion: What power of the debts is compared?\nAnswer: They are like the squares of the squares, and they are like the squares of the squares.\nQuestion.\nWhat is the square of the squares?\nAnswer.\nThe squares of the square"
+    },
+    {
+      "id": "combined_profits_debts_square_debts_continuation",
+      "prompt": "The squares of the profits are as the cubes of the debts.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the debts.",
+        "cube": "cube of the debts."
+      },
+      "text": "The squares of the profits are as the cubes of the debts.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: cube of the debts.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 3.4373607635498047,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.7130537033081055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the profits are as the cubes of the debts.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: According to the statute, which is the square of the given Number, and the product is the square of the given Number, and the product is the square of the given Number, and the product is the square of the given Number"
+    },
+    {
+      "id": "new_nouns_profits_debts_cube_profits_question",
+      "prompt": "The cubes of the profits are as the squares of the debts.\nQuestion: What power of the profits is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the profits.",
+        "cube": "cube of the profits."
+      },
+      "text": "The cubes of the profits are as the squares of the debts.\nQuestion: What power of the profits is compared?\nAnswer: cube of the profits.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 3.520787000656128,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.18408203125,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the profits are as the squares of the debts.\nQuestion: What power of the profits is compared?\nAnswer: The answer is, because the squares of the given quantity are as the squares of the given quantity.\nQuestion.\nWhat is the square of the given quantity?\nAnswer.\nThe answer is, because the squares of the given quantity"
+    },
+    {
+      "id": "combined_profits_debts_cube_profits_continuation",
+      "prompt": "The cubes of the profits are as the squares of the debts.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the profits.",
+        "cube": "cube of the profits."
+      },
+      "text": "The cubes of the profits are as the squares of the debts.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: cube of the profits.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 3.376953363418579,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.150228023529053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the profits are as the squares of the debts.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: According to the statute, which is the square of the given number, and the square of the given number, which is the square of the given number, and the square of the given number, which is the square of the given number, and the square"
+    },
+    {
+      "id": "new_nouns_profits_debts_cube_debts_question",
+      "prompt": "The cubes of the profits are as the squares of the debts.\nQuestion: What power of the debts is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the debts.",
+        "cube": "cube of the debts."
+      },
+      "text": "The cubes of the profits are as the squares of the debts.\nQuestion: What power of the debts is compared?\nAnswer: square of the debts.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 3.5277624130249023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.7882490158081055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the profits are as the squares of the debts.\nQuestion: What power of the debts is compared?\nAnswer: They are as the squares of the given number, and the squares of the given number are as the squares of the given number.\nQuestion.\nWhat is the square of the given number?\nAnswer.\nThe squares"
+    },
+    {
+      "id": "combined_profits_debts_cube_debts_continuation",
+      "prompt": "The cubes of the profits are as the squares of the debts.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the debts.",
+        "cube": "cube of the debts."
+      },
+      "text": "The cubes of the profits are as the squares of the debts.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: square of the debts.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 3.426060438156128,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.7255859375,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the profits are as the squares of the debts.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: According to the statute, which is the square of the given number, and the product is the square of the given number.\nQuestion.\nWhat is the square of the given number?\nAnswer.\nAnswer.\nA"
+    },
+    {
+      "id": "new_nouns_debts_rents_square_debts_question",
+      "prompt": "The squares of the debts are as the cubes of the rents.\nQuestion: What power of the debts is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the debts.",
+        "cube": "cube of the debts."
+      },
+      "text": "The squares of the debts are as the cubes of the rents.\nQuestion: What power of the debts is compared?\nAnswer: square of the debts.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 3.363281488418579,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.6066083908081055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the debts are as the cubes of the rents.\nQuestion: What power of the debts is compared?\nAnswer: They are as the sides of the sides.\nQuestion.\nWhat is the sides of the sides?\nAnswer.\nThey are as the sides of the sides.\nQuestion.\nWhat is the sides of"
+    },
+    {
+      "id": "combined_debts_rents_square_debts_continuation",
+      "prompt": "The squares of the debts are as the cubes of the rents.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the debts.",
+        "cube": "cube of the debts."
+      },
+      "text": "The squares of the debts are as the cubes of the rents.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: square of the debts.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.2647881507873535,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.5431318283081055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the debts are as the cubes of the rents.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: According to the statute, which is the sum of the debts, which is the sum of the debts, and the sum of the debts is the sum of the debts, which are the sum of the debts.\nQuest.\nWhat is the sum"
+    },
+    {
+      "id": "new_nouns_debts_rents_square_rents_question",
+      "prompt": "The squares of the debts are as the cubes of the rents.\nQuestion: What power of the rents is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the rents.",
+        "cube": "cube of the rents."
+      },
+      "text": "The squares of the debts are as the cubes of the rents.\nQuestion: What power of the rents is compared?\nAnswer: cube of the rents.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 2.791412353515625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.663086175918579,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the debts are as the cubes of the rents.\nQuestion: What power of the rents is compared?\nAnswer: The squares of the rents are as the squares of the rents.\nQuestion.\nWhat is the squares?\nAnswer.\nA square is as the squares of the rents.\nQuestion"
+    },
+    {
+      "id": "combined_debts_rents_square_rents_continuation",
+      "prompt": "The squares of the debts are as the cubes of the rents.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the rents.",
+        "cube": "cube of the rents."
+      },
+      "text": "The squares of the debts are as the cubes of the rents.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: cube of the rents.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 2.8130340576171875,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.7474889755249023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the debts are as the cubes of the rents.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: According to the statute, which is the sum of the sum of the sum of the sum of the sum of the sum of the sum of the sum of the sum of the sum of the sum of the sum of the sum of the sum of the sum of the sum of the sum"
+    },
+    {
+      "id": "new_nouns_debts_rents_cube_debts_question",
+      "prompt": "The cubes of the debts are as the squares of the rents.\nQuestion: What power of the debts is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the debts.",
+        "cube": "cube of the debts."
+      },
+      "text": "The cubes of the debts are as the squares of the rents.\nQuestion: What power of the debts is compared?\nAnswer: cube of the debts.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 3.4173409938812256,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.48095703125,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the debts are as the squares of the rents.\nQuestion: What power of the debts is compared?\nAnswer: They are as the squares of the rents.\nQuestion: What is the squares?\nAnswer: They are as the squares of the rents.\nQuestion: What is the squares?\n"
+    },
+    {
+      "id": "combined_debts_rents_cube_debts_continuation",
+      "prompt": "The cubes of the debts are as the squares of the rents.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the debts.",
+        "cube": "cube of the debts."
+      },
+      "text": "The cubes of the debts are as the squares of the rents.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: cube of the debts.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.3926479816436768,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.514974117279053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the debts are as the squares of the rents.\nQuestion: According to the statement, which power applies to the debts?\nAnswer: According to the statute, which is the square of the given number, and the product is the square of the given number.\nQuestion.\nWhat is the square of the given number?\nAnswer.\nAccording to the st"
+    },
+    {
+      "id": "new_nouns_debts_rents_cube_rents_question",
+      "prompt": "The cubes of the debts are as the squares of the rents.\nQuestion: What power of the rents is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the rents.",
+        "cube": "cube of the rents."
+      },
+      "text": "The cubes of the debts are as the squares of the rents.\nQuestion: What power of the rents is compared?\nAnswer: square of the rents.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 2.801727294921875,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.665318250656128,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the debts are as the squares of the rents.\nQuestion: What power of the rents is compared?\nAnswer: They are like the squares of the rents.\nQuestion: What is the squares?\nAnswer: They are like the squares of the rents.\nQuestion: What is the squares?\n"
+    },
+    {
+      "id": "combined_debts_rents_cube_rents_continuation",
+      "prompt": "The cubes of the debts are as the squares of the rents.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the rents.",
+        "cube": "cube of the rents."
+      },
+      "text": "The cubes of the debts are as the squares of the rents.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: square of the rents.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 2.81121826171875,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.7554759979248047,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the debts are as the squares of the rents.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: According to the statute, which is the square of the given, and the square of the given, which is the square of the given, and the square of the given, which is the square of the given, and the square of the given, which"
+    },
+    {
+      "id": "new_nouns_rents_wages_square_rents_question",
+      "prompt": "The squares of the rents are as the cubes of the wages.\nQuestion: What power of the rents is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the rents.",
+        "cube": "cube of the rents."
+      },
+      "text": "The squares of the rents are as the cubes of the wages.\nQuestion: What power of the rents is compared?\nAnswer: square of the rents.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 2.78314208984375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.654017925262451,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the rents are as the cubes of the wages.\nQuestion: What power of the rents is compared?\nAnswer: The squares are as the cubes of the wages.\nQuestion.\nWhat is the sum of the rents?\nAnswer.\nThe squares are as the cubes of the wages.\nQuestion.\nW"
+    },
+    {
+      "id": "combined_rents_wages_square_rents_continuation",
+      "prompt": "The squares of the rents are as the cubes of the wages.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the rents.",
+        "cube": "cube of the rents."
+      },
+      "text": "The squares of the rents are as the cubes of the wages.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: square of the rents.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.738616943359375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.7391881942749023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the rents are as the cubes of the wages.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: According to the statute of the rents, which are the sides of the rents.\nQuestion.\nWhat is the sum of the rents?\nAnswer.\nA third answer is, that the rents are the s"
+    },
+    {
+      "id": "new_nouns_rents_wages_square_wages_question",
+      "prompt": "The squares of the rents are as the cubes of the wages.\nQuestion: What power of the wages is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the wages.",
+        "cube": "cube of the wages."
+      },
+      "text": "The squares of the rents are as the cubes of the wages.\nQuestion: What power of the wages is compared?\nAnswer: cube of the wages.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 2.8668441772460938,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.723301649093628,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the rents are as the cubes of the wages.\nQuestion: What power of the wages is compared?\nAnswer: The squares are as the cubes of the wages.\nQuestion.\nWhat is the sum of the wages?\nAnswer.\nThe squares are as the cubes of the wages.\nQuestion.\nW"
+    },
+    {
+      "id": "combined_rents_wages_square_wages_continuation",
+      "prompt": "The squares of the rents are as the cubes of the wages.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the wages.",
+        "cube": "cube of the wages."
+      },
+      "text": "The squares of the rents are as the cubes of the wages.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: cube of the wages.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.7746620178222656,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.8120205402374268,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the rents are as the cubes of the wages.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: According to the statute, which is the summe of the rents, which are the summe of the rents, and the summe of the rents, which are the summe of the rents, and the summe of the rents"
+    },
+    {
+      "id": "new_nouns_rents_wages_cube_rents_question",
+      "prompt": "The cubes of the rents are as the squares of the wages.\nQuestion: What power of the rents is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the rents.",
+        "cube": "cube of the rents."
+      },
+      "text": "The cubes of the rents are as the squares of the wages.\nQuestion: What power of the rents is compared?\nAnswer: cube of the rents.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 3.00244140625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.7218194007873535,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the rents are as the squares of the wages.\nQuestion: What power of the rents is compared?\nAnswer: They are as the squares of the wages.\nQuestion.\nWhat is the squares?\nAnswer.\nThey are as the squares of the wages.\nQuestion.\nWhat is the square"
+    },
+    {
+      "id": "combined_rents_wages_cube_rents_continuation",
+      "prompt": "The cubes of the rents are as the squares of the wages.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the rents.",
+        "cube": "cube of the rents."
+      },
+      "text": "The cubes of the rents are as the squares of the wages.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: cube of the rents.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.940093994140625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.8001537322998047,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the rents are as the squares of the wages.\nQuestion: According to the statement, which power applies to the rents?\nAnswer: According to the statute of the rents, which are the sides of the rents.\nQuestion.\nWhat is the sides of the rents?\nAnswer.\nA side of the rents, which are the"
+    },
+    {
+      "id": "new_nouns_rents_wages_cube_wages_question",
+      "prompt": "The cubes of the rents are as the squares of the wages.\nQuestion: What power of the wages is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the wages.",
+        "cube": "cube of the wages."
+      },
+      "text": "The cubes of the rents are as the squares of the wages.\nQuestion: What power of the wages is compared?\nAnswer: square of the wages.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 2.724884033203125,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.6127495765686035,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the rents are as the squares of the wages.\nQuestion: What power of the wages is compared?\nAnswer: They are as the squares of the wages.\nQuestion.\nWhat is the squares?\nAnswer.\nThey are as the squares of the wages.\nQuestion.\nWhat is the square"
+    },
+    {
+      "id": "combined_rents_wages_cube_wages_continuation",
+      "prompt": "The cubes of the rents are as the squares of the wages.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the wages.",
+        "cube": "cube of the wages."
+      },
+      "text": "The cubes of the rents are as the squares of the wages.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: square of the wages.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.6382827758789062,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.6910924911499023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the rents are as the squares of the wages.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: According to the statute of the wages, which is the square of the wages, and the square of the wages.\nQuestion.\nWhat is the square of the wages?\nAnswer.\nA s"
+    },
+    {
+      "id": "new_nouns_wages_sizes_square_wages_question",
+      "prompt": "The squares of the wages are as the cubes of the sizes.\nQuestion: What power of the wages is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the wages.",
+        "cube": "cube of the wages."
+      },
+      "text": "The squares of the wages are as the cubes of the sizes.\nQuestion: What power of the wages is compared?\nAnswer: square of the wages.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 2.6546401977539062,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.5613317489624023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the wages are as the cubes of the sizes.\nQuestion: What power of the wages is compared?\nAnswer: The squares are as the cubes of the wages.\nQuestion.\nWhat is the sum of the wages?\nAnswer.\nThe squares are as the cubes of the wages.\nQuestion.\nW"
+    },
+    {
+      "id": "combined_wages_sizes_square_wages_continuation",
+      "prompt": "The squares of the wages are as the cubes of the sizes.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the wages.",
+        "cube": "cube of the wages."
+      },
+      "text": "The squares of the wages are as the cubes of the sizes.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: square of the wages.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.5036163330078125,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.622004985809326,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the wages are as the cubes of the sizes.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: According to the statute of the wages, which is the square of the wages, and the square of the wages, which is the square of the wages, and the square of the wages, which is the square"
+    },
+    {
+      "id": "new_nouns_wages_sizes_square_sizes_question",
+      "prompt": "The squares of the wages are as the cubes of the sizes.\nQuestion: What power of the sizes is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the sizes.",
+        "cube": "cube of the sizes."
+      },
+      "text": "The squares of the wages are as the cubes of the sizes.\nQuestion: What power of the sizes is compared?\nAnswer: cube of the sizes.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 2.91082763671875,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.763026714324951,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the wages are as the cubes of the sizes.\nQuestion: What power of the sizes is compared?\nAnswer: They are as the sides of the sides, and the sides of the sides.\nQuestion.\nWhat is the sides of the sides?\nAnswer.\nThey are as the sides of the sides.\nQuestion"
+    },
+    {
+      "id": "combined_wages_sizes_square_sizes_continuation",
+      "prompt": "The squares of the wages are as the cubes of the sizes.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the sizes.",
+        "cube": "cube of the sizes."
+      },
+      "text": "The squares of the wages are as the cubes of the sizes.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: cube of the sizes.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.879058837890625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.9850902557373047,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the wages are as the cubes of the sizes.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: According to the statute of the wages, which is the square of the wages, and the square of the wages, which are the squares.\nQuestion.\nWhat is the square of the wages?\n"
+    },
+    {
+      "id": "new_nouns_wages_sizes_cube_wages_question",
+      "prompt": "The cubes of the wages are as the squares of the sizes.\nQuestion: What power of the wages is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the wages.",
+        "cube": "cube of the wages."
+      },
+      "text": "The cubes of the wages are as the squares of the sizes.\nQuestion: What power of the wages is compared?\nAnswer: cube of the wages.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 3.0514984130859375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.701416254043579,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the wages are as the squares of the sizes.\nQuestion: What power of the wages is compared?\nAnswer: They are as the squares of the size.\nQuestion.\nWhat is the squares?\nAnswer.\nThey are as the squares of the size.\nQuestion.\nWhat is the squares?"
+    },
+    {
+      "id": "combined_wages_sizes_cube_wages_continuation",
+      "prompt": "The cubes of the wages are as the squares of the sizes.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the wages.",
+        "cube": "cube of the wages."
+      },
+      "text": "The cubes of the wages are as the squares of the sizes.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: cube of the wages.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.9562225341796875,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.811096429824829,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the wages are as the squares of the sizes.\nQuestion: According to the statement, which power applies to the wages?\nAnswer: According to the statute of the wages, which is the square of the squares, and the squares of the squares.\nQuestion.\nWhat is the square of the squares?\nAnswer.\nA"
+    },
+    {
+      "id": "new_nouns_wages_sizes_cube_sizes_question",
+      "prompt": "The cubes of the wages are as the squares of the sizes.\nQuestion: What power of the sizes is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the sizes.",
+        "cube": "cube of the sizes."
+      },
+      "text": "The cubes of the wages are as the squares of the sizes.\nQuestion: What power of the sizes is compared?\nAnswer: square of the sizes.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 2.682098388671875,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.5179967880249023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the wages are as the squares of the sizes.\nQuestion: What power of the sizes is compared?\nAnswer: They are as the squares of the size.\nQuestion.\nWhat is the squares?\nAnswer.\nThey are as the squares of the size.\nQuestion.\nWhat is the squares?"
+    },
+    {
+      "id": "combined_wages_sizes_cube_sizes_continuation",
+      "prompt": "The cubes of the wages are as the squares of the sizes.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the sizes.",
+        "cube": "cube of the sizes."
+      },
+      "text": "The cubes of the wages are as the squares of the sizes.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: square of the sizes.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.57830810546875,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.7024450302124023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the wages are as the squares of the sizes.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: According to the statute of the size, which is the square of the size, and the square of the size.\nQuestion.\nWhat is the square of the size?\nAnswer.\nA square of the si"
+    },
+    {
+      "id": "new_nouns_sizes_counts_square_sizes_question",
+      "prompt": "The squares of the sizes are as the cubes of the counts.\nQuestion: What power of the sizes is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the sizes.",
+        "cube": "cube of the sizes."
+      },
+      "text": "The squares of the sizes are as the cubes of the counts.\nQuestion: What power of the sizes is compared?\nAnswer: square of the sizes.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 2.69281005859375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.655064344406128,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the sizes are as the cubes of the counts.\nQuestion: What power of the sizes is compared?\nAnswer: They are as the squares of the squares.\nQuestion.\nWhat is the squares?\nAnswer.\nThey are as the squares of the squares.\nQuestion.\nWhat is the square"
+    },
+    {
+      "id": "combined_sizes_counts_square_sizes_continuation",
+      "prompt": "The squares of the sizes are as the cubes of the counts.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the sizes.",
+        "cube": "cube of the sizes."
+      },
+      "text": "The squares of the sizes are as the cubes of the counts.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: square of the sizes.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.58917236328125,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.7261266708374023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the sizes are as the cubes of the counts.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: According to the statute of the sizes, which is the cubes of the counts.\nQuestion.\nWhat is the summe of the squares?\nAnswer.\nAccording to the statute of the square"
+    },
+    {
+      "id": "new_nouns_sizes_counts_square_counts_question",
+      "prompt": "The squares of the sizes are as the cubes of the counts.\nQuestion: What power of the counts is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the counts.",
+        "cube": "cube of the counts."
+      },
+      "text": "The squares of the sizes are as the cubes of the counts.\nQuestion: What power of the counts is compared?\nAnswer: cube of the counts.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 2.8812255859375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.5629186630249023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the sizes are as the cubes of the counts.\nQuestion: What power of the counts is compared?\nAnswer: They are as the squares of the squares.\nQuestion.\nWhat is the squares?\nAnswer.\nThey are as the squares of the squares.\nQuestion.\nWhat is the square"
+    },
+    {
+      "id": "combined_sizes_counts_square_counts_continuation",
+      "prompt": "The squares of the sizes are as the cubes of the counts.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the counts.",
+        "cube": "cube of the counts."
+      },
+      "text": "The squares of the sizes are as the cubes of the counts.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: cube of the counts.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.794921875,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.6300225257873535,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the sizes are as the cubes of the counts.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: According to the statute of the counts, which are the best sort of the stocks.\nQuestion.\nWhat is the sum of the stocks?\nAnswer.\nA stocks.\nQues"
+    },
+    {
+      "id": "new_nouns_sizes_counts_cube_sizes_question",
+      "prompt": "The cubes of the sizes are as the squares of the counts.\nQuestion: What power of the sizes is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the sizes.",
+        "cube": "cube of the sizes."
+      },
+      "text": "The cubes of the sizes are as the squares of the counts.\nQuestion: What power of the sizes is compared?\nAnswer: cube of the sizes.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 2.96270751953125,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.798340082168579,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the sizes are as the squares of the counts.\nQuestion: What power of the sizes is compared?\nAnswer: They are as the squares of the counts.\nQuestion.\nWhat is the squares?\nAnswer.\nThey are as the squares of the counts.\nQuestion.\nWhat is the square"
+    },
+    {
+      "id": "combined_sizes_counts_cube_sizes_continuation",
+      "prompt": "The cubes of the sizes are as the squares of the counts.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the sizes.",
+        "cube": "cube of the sizes."
+      },
+      "text": "The cubes of the sizes are as the squares of the counts.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: cube of the sizes.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.85968017578125,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.9291296005249023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the sizes are as the squares of the counts.\nQuestion: According to the statement, which power applies to the sizes?\nAnswer: According to the statute of the counts, which are the squares of the counts.\nQuestion.\nWhat is the square of the counts?\nAnswer.\nA square of the counts, which are"
+    },
+    {
+      "id": "new_nouns_sizes_counts_cube_counts_question",
+      "prompt": "The cubes of the sizes are as the squares of the counts.\nQuestion: What power of the counts is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the counts.",
+        "cube": "cube of the counts."
+      },
+      "text": "The cubes of the sizes are as the squares of the counts.\nQuestion: What power of the counts is compared?\nAnswer: square of the counts.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 2.79302978515625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.5259487628936768,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the sizes are as the squares of the counts.\nQuestion: What power of the counts is compared?\nAnswer: They are as the squares of the counts.\nQuestion.\nWhat is the squares?\nAnswer.\nThey are as the squares of the counts.\nQuestion.\nWhat is the square"
+    },
+    {
+      "id": "combined_sizes_counts_cube_counts_continuation",
+      "prompt": "The cubes of the sizes are as the squares of the counts.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the counts.",
+        "cube": "cube of the counts."
+      },
+      "text": "The cubes of the sizes are as the squares of the counts.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: square of the counts.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 2.6361083984375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.5136022567749023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the sizes are as the squares of the counts.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: According to the statute of the counts, which are the squares of the counts.\nQuestion.\nWhat is the square of the counts?\nAnswer.\nA square of the counts, which are"
+    },
+    {
+      "id": "new_nouns_counts_profits_square_counts_question",
+      "prompt": "The squares of the counts are as the cubes of the profits.\nQuestion: What power of the counts is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the counts.",
+        "cube": "cube of the counts."
+      },
+      "text": "The squares of the counts are as the cubes of the profits.\nQuestion: What power of the counts is compared?\nAnswer: square of the counts.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 2.890625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.7821569442749023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the counts are as the cubes of the profits.\nQuestion: What power of the counts is compared?\nAnswer: The squares are as the squares of the squares.\nQuestion.\nWhat is the squares?\nAnswer.\nThe squares are as the squares.\nQuestion.\nWhat is the squares"
+    },
+    {
+      "id": "combined_counts_profits_square_counts_continuation",
+      "prompt": "The squares of the counts are as the cubes of the profits.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the counts.",
+        "cube": "cube of the counts."
+      },
+      "text": "The squares of the counts are as the cubes of the profits.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: square of the counts.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 2.752532958984375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.8076870441436768,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the counts are as the cubes of the profits.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: According to the statute, which is the sum of the profits.\nQuestion.\nWhat is the sum of the profits?\nAnswer.\nAnother.\nQuestion.\nWhat is the sum of the profits?\n"
+    },
+    {
+      "id": "new_nouns_counts_profits_square_profits_question",
+      "prompt": "The squares of the counts are as the cubes of the profits.\nQuestion: What power of the profits is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the profits.",
+        "cube": "cube of the profits."
+      },
+      "text": "The squares of the counts are as the cubes of the profits.\nQuestion: What power of the profits is compared?\nAnswer: cube of the profits.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 3.5502233505249023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.22412109375,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the counts are as the cubes of the profits.\nQuestion: What power of the profits is compared?\nAnswer: They are as the heads of the sides, and the heads of the sides.\nQuestion.\nWhat is the sum of the sides?\nAnswer.\nThey are as the heads of the sides.\nQuestion."
+    },
+    {
+      "id": "combined_counts_profits_square_profits_continuation",
+      "prompt": "The squares of the counts are as the cubes of the profits.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the profits.",
+        "cube": "cube of the profits."
+      },
+      "text": "The squares of the counts are as the cubes of the profits.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: cube of the profits.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.354213237762451,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.267415523529053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the counts are as the cubes of the profits.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: According to the statute, which is the sum of the profits.\nQuestion.\nWhat is the sum of the profits?\nAnswer.\nQuestion.\nWhat is the sum of the profits?\nAnswer.\n"
+    },
+    {
+      "id": "new_nouns_counts_profits_cube_counts_question",
+      "prompt": "The cubes of the counts are as the squares of the profits.\nQuestion: What power of the counts is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the counts.",
+        "cube": "cube of the counts."
+      },
+      "text": "The cubes of the counts are as the squares of the profits.\nQuestion: What power of the counts is compared?\nAnswer: cube of the counts.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 3.06890869140625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.8373327255249023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the counts are as the squares of the profits.\nQuestion: What power of the counts is compared?\nAnswer: They are as the squares of the squares.\nQuestion.\nWhat is the squares?\nAnswer.\nThey are as the squares of the squares.\nQuestion.\nWhat is the square"
+    },
+    {
+      "id": "combined_counts_profits_cube_counts_continuation",
+      "prompt": "The cubes of the counts are as the squares of the profits.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the counts.",
+        "cube": "cube of the counts."
+      },
+      "text": "The cubes of the counts are as the squares of the profits.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: cube of the counts.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 2.954833984375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.9307339191436768,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the counts are as the squares of the profits.\nQuestion: According to the statement, which power applies to the counts?\nAnswer: According to the statute, which is the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the s"
+    },
+    {
+      "id": "new_nouns_counts_profits_cube_profits_question",
+      "prompt": "The cubes of the counts are as the squares of the profits.\nQuestion: What power of the profits is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the profits.",
+        "cube": "cube of the profits."
+      },
+      "text": "The cubes of the counts are as the squares of the profits.\nQuestion: What power of the profits is compared?\nAnswer: square of the profits.",
+      "source": "procedural",
+      "group": "new_nouns",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 3.3953683376312256,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.114583492279053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the counts are as the squares of the profits.\nQuestion: What power of the profits is compared?\nAnswer: They are as the squares of the squares.\nQuestion.\nWhat is the squares?\nAnswer.\nA squares.\nQuestion.\nWhat is the squares?\nAnswer.\nA"
+    },
+    {
+      "id": "combined_counts_profits_cube_profits_continuation",
+      "prompt": "The cubes of the counts are as the squares of the profits.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the profits.",
+        "cube": "cube of the profits."
+      },
+      "text": "The cubes of the counts are as the squares of the profits.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: square of the profits.",
+      "source": "procedural",
+      "group": "combined",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.2035436630249023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.171712398529053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the counts are as the squares of the profits.\nQuestion: According to the statement, which power applies to the profits?\nAnswer: According to the statute of the profits, which is the squares of the profits.\nQuestion.\nWhat is the square of the profits?\nAnswer.\nA square of the profits.\nQuestion.\n"
+    },
+    {
+      "id": "new_template_lengths_widths_square_lengths_continuation",
+      "prompt": "The squares of the lengths are as the cubes of the widths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the lengths.",
+        "cube": "cube of the lengths."
+      },
+      "text": "The squares of the lengths are as the cubes of the widths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: square of the lengths.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 3.064174175262451,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.3531904220581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the lengths are as the cubes of the widths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: A square is as the square of a square, and the square of a square is as the square of a square of a square of a square of a square of a square of a square of a square of a square of a"
+    },
+    {
+      "id": "new_template_lengths_widths_square_widths_continuation",
+      "prompt": "The squares of the lengths are as the cubes of the widths.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the widths.",
+        "cube": "cube of the widths."
+      },
+      "text": "The squares of the lengths are as the cubes of the widths.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: cube of the widths.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 50,
+      "scores": {
+        "square": {
+          "mean_nll": 2.5731608867645264,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.579620361328125,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the lengths are as the cubes of the widths.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: According to the statute of the width, which is the square of the width, and the square of the width, which is the square of the width, and the square of the width, which is the square"
+    },
+    {
+      "id": "new_template_lengths_widths_cube_lengths_continuation",
+      "prompt": "The cubes of the lengths are as the squares of the widths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the lengths.",
+        "cube": "cube of the lengths."
+      },
+      "text": "The cubes of the lengths are as the squares of the widths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: cube of the lengths.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 3.306919813156128,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.4375,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the lengths are as the squares of the widths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: According to the statute, which is the squares of the width, and the squares of the squares.\nQuestion.\nWhat is the square of the squares?\nAnswer.\nA square is a"
+    },
+    {
+      "id": "new_template_lengths_widths_cube_widths_continuation",
+      "prompt": "The cubes of the lengths are as the squares of the widths.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the widths.",
+        "cube": "cube of the widths."
+      },
+      "text": "The cubes of the lengths are as the squares of the widths.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: square of the widths.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 50,
+      "scores": {
+        "square": {
+          "mean_nll": 2.4688923358917236,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.446746826171875,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the lengths are as the squares of the widths.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: The squares of the widths are as the squares of the widths, and the squares of the widths are as the squares of the widths.\nQuestion.\nWhat is the square of"
+    },
+    {
+      "id": "new_template_widths_weights_square_widths_continuation",
+      "prompt": "The squares of the widths are as the cubes of the weights.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the widths.",
+        "cube": "cube of the widths."
+      },
+      "text": "The squares of the widths are as the cubes of the weights.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: square of the widths.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 50,
+      "scores": {
+        "square": {
+          "mean_nll": 2.4007976055145264,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.2324676513671875,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the widths are as the cubes of the weights.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: The squares of the widths are as the squares of the widths, and the squares are as the squares of the widths.\nQuestion.\nWhat is the square of the widths?"
+    },
+    {
+      "id": "new_template_widths_weights_square_weights_continuation",
+      "prompt": "The squares of the widths are as the cubes of the weights.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the weights.",
+        "cube": "cube of the weights."
+      },
+      "text": "The squares of the widths are as the cubes of the weights.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: cube of the weights.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 3.146205425262451,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.270833492279053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the widths are as the cubes of the weights.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: The squares are as the squares of the squares, and the squares are as the squares of the squares.\nQuestion.\nWhat is the square of the squares?\nAnswer.\nThe square"
+    },
+    {
+      "id": "new_template_widths_weights_cube_widths_continuation",
+      "prompt": "The cubes of the widths are as the squares of the weights.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the widths.",
+        "cube": "cube of the widths."
+      },
+      "text": "The cubes of the widths are as the squares of the weights.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: cube of the widths.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 50,
+      "scores": {
+        "square": {
+          "mean_nll": 2.667792558670044,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.359466552734375,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the widths are as the squares of the weights.\nQuestion: According to the statement, which power applies to the widths?\nAnswer: The squares of the squares are as the squares of the squares, and the squares of the squares are as the squares of the squares.\nQuestion.\nWhat is the squares?\nAns"
+    },
+    {
+      "id": "new_template_widths_weights_cube_weights_continuation",
+      "prompt": "The cubes of the widths are as the squares of the weights.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the weights.",
+        "cube": "cube of the weights."
+      },
+      "text": "The cubes of the widths are as the squares of the weights.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: square of the weights.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 3.042968988418579,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.156575679779053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the widths are as the squares of the weights.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: The weight of the weights is as the square of the weight, and the square of the weight is as the square of the weight.\nQuestion.\nWhat is the square of the weight?\nAnswer.\nThe square of the weight of"
+    },
+    {
+      "id": "new_template_weights_prices_square_weights_continuation",
+      "prompt": "The squares of the weights are as the cubes of the prices.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the weights.",
+        "cube": "cube of the weights."
+      },
+      "text": "The squares of the weights are as the cubes of the prices.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: square of the weights.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 2.974330425262451,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.368489742279053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the weights are as the cubes of the prices.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: The squares are as the squares of the prices, and the squares of the prices are as the squares of the prices.\nQuestion.\nWhat is the squares?\nAnswer.\nThe s"
+    },
+    {
+      "id": "new_template_weights_prices_square_prices_continuation",
+      "prompt": "The squares of the weights are as the cubes of the prices.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the prices.",
+        "cube": "cube of the prices."
+      },
+      "text": "The squares of the weights are as the cubes of the prices.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: cube of the prices.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 2.5169715881347656,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.461085796356201,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the weights are as the cubes of the prices.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: The squares of the prices are as the cubes of the prices.\nQuestion.\nWhat is the sum of the prices?\nAnswer.\nThe squares of the prices are as the cubes of the p"
+    },
+    {
+      "id": "new_template_weights_prices_cube_weights_continuation",
+      "prompt": "The cubes of the weights are as the squares of the prices.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the weights.",
+        "cube": "cube of the weights."
+      },
+      "text": "The cubes of the weights are as the squares of the prices.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: cube of the weights.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.2533483505249023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.517578125,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the weights are as the squares of the prices.\nQuestion: According to the statement, which power applies to the weights?\nAnswer: The squares of the prices are as the squares of the prices.\nQuestion.\nWhat is the square of the prices?\nAnswer.\nThe squares of the prices are as the squares"
+    },
+    {
+      "id": "new_template_weights_prices_cube_prices_continuation",
+      "prompt": "The cubes of the weights are as the squares of the prices.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the prices.",
+        "cube": "cube of the prices."
+      },
+      "text": "The cubes of the weights are as the squares of the prices.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: square of the prices.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 2.4418716430664062,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.3924038410186768,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the weights are as the squares of the prices.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: A square is as the square of a prick, and the square of a prick is as the square of a prick, and the square of a prick is as the square of a prick, and the square of a"
+    },
+    {
+      "id": "new_template_prices_areas_square_prices_continuation",
+      "prompt": "The squares of the prices are as the cubes of the areas.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the prices.",
+        "cube": "cube of the prices."
+      },
+      "text": "The squares of the prices are as the cubes of the areas.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: square of the prices.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 2.4790401458740234,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.4675469398498535,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the prices are as the cubes of the areas.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: According to the statute of the prices, which are the cubes of the prices.\nQuestion.\nWhat is the sum of the prices?\nAnswer.\nAccording to the statute of the prices"
+    },
+    {
+      "id": "new_template_prices_areas_square_areas_continuation",
+      "prompt": "The squares of the prices are as the cubes of the areas.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the areas.",
+        "cube": "cube of the areas."
+      },
+      "text": "The squares of the prices are as the cubes of the areas.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: cube of the areas.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.7916784286499023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 5.4126129150390625,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the prices are as the cubes of the areas.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: According to the statute, which is the summe of the prices, and the summe of the prices, which are the summe of the prices.\nQuestion.\nWhat is the summe of the prices?\nA"
+    },
+    {
+      "id": "new_template_prices_areas_cube_prices_continuation",
+      "prompt": "The cubes of the prices are as the squares of the areas.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the prices.",
+        "cube": "cube of the prices."
+      },
+      "text": "The cubes of the prices are as the squares of the areas.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: cube of the prices.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 2.607807159423828,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.4825572967529297,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the prices are as the squares of the areas.\nQuestion: According to the statement, which power applies to the prices?\nAnswer: According to the statute, which is the squares of the prices, and the squares of the prices.\nQuestion.\nWhat is the square of the prices?\nAnswer.\nA square of the"
+    },
+    {
+      "id": "new_template_prices_areas_cube_areas_continuation",
+      "prompt": "The cubes of the prices are as the squares of the areas.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the areas.",
+        "cube": "cube of the areas."
+      },
+      "text": "The cubes of the prices are as the squares of the areas.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: square of the areas.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.644954204559326,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 5.298909664154053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the prices are as the squares of the areas.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: According to the statute, which is the square of the prices, and the square of the prices, and the square of the prices, and the square of the prices, and the square of the prices, and"
+    },
+    {
+      "id": "new_template_areas_volumes_square_areas_continuation",
+      "prompt": "The squares of the areas are as the cubes of the volumes.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the areas.",
+        "cube": "cube of the areas."
+      },
+      "text": "The squares of the areas are as the cubes of the volumes.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: square of the areas.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.8434667587280273,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 5.6439208984375,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the areas are as the cubes of the volumes.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: According to the statute, which is the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the s"
+    },
+    {
+      "id": "new_template_areas_volumes_square_volumes_continuation",
+      "prompt": "The squares of the areas are as the cubes of the volumes.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the volumes.",
+        "cube": "cube of the volumes."
+      },
+      "text": "The squares of the areas are as the cubes of the volumes.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: cube of the volumes.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 3.17724609375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 4.1495537757873535,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the areas are as the cubes of the volumes.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: According to the statute, which is the square of the prick, and the prick, which is the square of the prick, and the prick, which is the square of the prick, and the prick, which"
+    },
+    {
+      "id": "new_template_areas_volumes_cube_areas_continuation",
+      "prompt": "The cubes of the areas are as the squares of the volumes.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the areas.",
+        "cube": "cube of the areas."
+      },
+      "text": "The cubes of the areas are as the squares of the volumes.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: cube of the areas.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 4.160491943359375,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 5.66912841796875,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the areas are as the squares of the volumes.\nQuestion: According to the statement, which power applies to the areas?\nAnswer: According to the statute, which is the square of the pot, and the square of the pot, which is the square of the pot, which is the square of the pot, which is the square of the pot, which is the square of the pot"
+    },
+    {
+      "id": "new_template_areas_volumes_cube_volumes_continuation",
+      "prompt": "The cubes of the areas are as the squares of the volumes.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the volumes.",
+        "cube": "cube of the volumes."
+      },
+      "text": "The cubes of the areas are as the squares of the volumes.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: square of the volumes.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 3.064208984375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 4.100167751312256,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the areas are as the squares of the volumes.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: According to the statute, which is the squares of the pots.\nQuestion: According to the statute, which is the squares of the pots.\nQuestion: According to the statute, which is the s"
+    },
+    {
+      "id": "new_template_volumes_lengths_square_volumes_continuation",
+      "prompt": "The squares of the volumes are as the cubes of the lengths.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the volumes.",
+        "cube": "cube of the volumes."
+      },
+      "text": "The squares of the volumes are as the cubes of the lengths.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: square of the volumes.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 3.0872802734375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 4.257115364074707,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the volumes are as the cubes of the lengths.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: According to the squares of the squares, which are the sides of the sides.\nQuestion: In the middle of the squares, which are the sides of the sides.\nQuestion: In the middle of the squares"
+    },
+    {
+      "id": "new_template_volumes_lengths_square_lengths_continuation",
+      "prompt": "The squares of the volumes are as the cubes of the lengths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the lengths.",
+        "cube": "cube of the lengths."
+      },
+      "text": "The squares of the volumes are as the cubes of the lengths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: cube of the lengths.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.328125238418579,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.848958492279053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the volumes are as the cubes of the lengths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: According to the statute, which is the square of the pot of the pot, and the pot of the pot of the pot of the pot of the pot of the pot of the pot of the pot of the pot of the pot of the pot of the pot of the pot of"
+    },
+    {
+      "id": "new_template_volumes_lengths_cube_volumes_continuation",
+      "prompt": "The cubes of the volumes are as the squares of the lengths.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the volumes.",
+        "cube": "cube of the volumes."
+      },
+      "text": "The cubes of the volumes are as the squares of the lengths.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: cube of the volumes.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 3.2861328125,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 4.371373176574707,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the volumes are as the squares of the lengths.\nQuestion: According to the statement, which power applies to the volumes?\nAnswer: According to the statute, which is the squares of the squares, and the squares of the squares.\nQuestion.\nWhat is the square of the squares?\nAnswer.\nA square is a"
+    },
+    {
+      "id": "new_template_volumes_lengths_cube_lengths_continuation",
+      "prompt": "The cubes of the volumes are as the squares of the lengths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the lengths.",
+        "cube": "cube of the lengths."
+      },
+      "text": "The cubes of the volumes are as the squares of the lengths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: square of the lengths.",
+      "source": "procedural",
+      "group": "new_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.226562738418579,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.723958492279053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the volumes are as the squares of the lengths.\nQuestion: According to the statement, which power applies to the lengths?\nAnswer: According to the statute, which is the squares, and the squares of the squares.\nQuestion.\nWhat is the squares?\nAnswer.\nA square is a square of the squares, and"
+    }
+  ],
+  "probes_file": "data/reading_varied/probes.json",
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}

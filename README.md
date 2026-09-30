@@ -14,6 +14,12 @@ not reliable relation transfer or physics discovery. Earlier BPE generation/rank
 results must be treated as legacy measurements until retested with the corrected
 helper; the original output files are retained for traceability.
 
+The subsequent [`varied reading pilot`](VARIED_READING_PROTOCOL.md) increases
+curriculum diversity and reaches 25/72 exact held-out answers, but only 3/36 complete
+counterfactual pairs. Physics remains unsuccessful; this synthetic calibration arm
+is explicitly separate from historical-only training. Scientific-text loss worsens
+slightly on matched validation windows, so language retention is also tracked.
+
 The repository includes the pilot OCR text, source manifests, generated
 reasoning curricula, tokenizer, scripts, tests, and JSON evaluation results.
 The full EEBO language archive and large V2--V7 model checkpoints are not in

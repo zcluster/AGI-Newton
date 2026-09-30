@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Conservative, reproducible descriptive audit of the fixed-boundary outputs."""
+import argparse
 import json
 from pathlib import Path
 
@@ -15,11 +16,16 @@ def summarise(path):
     for p in probes:
         key = p["id"].replace("_square_", "_POWER_").replace("_cube_", "_POWER_")
         pairs.setdefault(key, []).append(exact(p))
-    assert len(probes) == 32 and len(pairs) == 16 and all(len(pair) == 2 for pair in pairs.values())
-    return {"cases": len(probes), "exact_answers": sum(exact(p) for p in probes),
+    assert len(probes) == 2 * len(pairs) and all(len(pair) == 2 for pair in pairs.values())
+    result = {"cases": len(probes), "exact_answers": sum(exact(p) for p in probes),
             "rank_correct": sum(p["winner"] == p["target"] for p in probes),
             "both_counterfactual_answers_correct": sum(all(pair) for pair in pairs.values()),
             "constant_square_rank_baseline": sum(p["target"] == "square" for p in probes)}
+    if any("group" in p for p in probes):
+        result["groups"] = {group: {"cases": sum(p["group"] == group for p in probes),
+                            "exact_answers": sum(exact(p) for p in probes if p["group"] == group)}
+                            for group in sorted({p["group"] for p in probes})}
+    return result
 
 
 if __name__ == "__main__":
@@ -27,7 +33,9 @@ if __name__ == "__main__":
                "target": "square", "candidates": {"square": "square of the lengths."}}
     assert exact(fixture)
     assert not exact({**fixture, "generation": "Answer: square of the widths."})
-    root = Path(__file__).resolve().parents[1] / "audit/reading_calibration"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1] / "audit/reading_calibration")
+    root = parser.parse_args().root
     result = {"historical_baseline": summarise(root / "heldout_reading_boundary_fixed.json"),
               "synthetic_calibrated": summarise(root / "calibrated/heldout_reading_boundary_fixed.json")}
     aligned = root / "aligned/heldout_reading.json"

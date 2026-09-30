@@ -1,0 +1,44 @@
+{
+  "historical_baseline": {
+    "cases": 72,
+    "exact_answers": 0,
+    "rank_correct": 36,
+    "both_counterfactual_answers_correct": 0,
+    "constant_square_rank_baseline": 36,
+    "groups": {
+      "combined": {
+        "cases": 24,
+        "exact_answers": 0
+      },
+      "new_nouns": {
+        "cases": 24,
+        "exact_answers": 0
+      },
+      "new_template": {
+        "cases": 24,
+        "exact_answers": 0
+      }
+    }
+  },
+  "synthetic_calibrated": {
+    "cases": 72,
+    "exact_answers": 25,
+    "rank_correct": 59,
+    "both_counterfactual_answers_correct": 3,
+    "constant_square_rank_baseline": 36,
+    "groups": {
+      "combined": {
+        "cases": 24,
+        "exact_answers": 6
+      },
+      "new_nouns": {
+        "cases": 24,
+        "exact_answers": 7
+      },
+      "new_template": {
+        "cases": 24,
+        "exact_answers": 12
+      }
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "checkpoint": "runs/hpc_v11_bootstrap_seed1686/model.pt",
+  "label": "hpc_v11_primary_scan_plus_general_english",
+  "physics_probes": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 4.1708984375,
+          "tokens": 4
+        },
+        "inverse": {
+          "mean_nll": 3.375000238418579,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 2.8029513359069824,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 4.29541015625,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 4.865451335906982,
+          "tokens": 9
+        },
+        "inverse": {
+          "mean_nll": 4.551339626312256,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 4.187066078186035,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 5.53173828125,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 5.44140625,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 4.6015625,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 4.7880859375,
+          "tokens": 8
+        },
+        "inverse_cube": {
+          "mean_nll": 5.167534828186035,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 9.0,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 5.03515625,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 7.168750286102295,
+          "tokens": 5
+        },
+        "inverse_cube": {
+          "mean_nll": 7.431250095367432,
+          "tokens": 5
+        }
+      }
+    }
+  ],
+  "physics_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as the Sun, that is, the Sun, which is the Meridian.\nFor it is as certain, that whatsoever is the object of the lesser part, as the Sun is the Meridian.\nAnd so that the right line comes from the Meridian, and the form of the Planets.\nWhence the Eclipse marke this word, is as certain, as the Sun is the Sun, so the Moon is the same.\nI say thirdly, that though the Sun be the Sun, or Moon may be the same whose surface",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as it is the same which is between the Heavens and the Earth.\nTherefore it is from the Earth to the Earth, to the East is the same: from the Earth to the West, to the East.\nTherefore it is below the Sun, Therefore the The Sun is the same, because it at no time is but an Olive.\n(1) Here is no variation to the Sun and Water, because it strikes to the Sun for a minute size.\n(1) Here is no variation to the Sun, because",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of time, yet now the vast difference is less then that of proportion, when the weight of time is less then the vast difference of time to that of time, the motion in the Vessel is less then the motion; for the motion in the Vessel is greater then the Vessel is greater then the Vessel.\nAnd therefore the Vessel being less then the Vessel, can not be less then the Vessel, and consequently greater then the Vessel in the Vessel, which being less then the Vessel, may",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to it self, yet a mans nature can not believe the six thousand planets that partake of the Planets, though two, of which I have already spoken, can not be six thousands, that is, East and West.\nThe only difficulty that is between the Sensitive and Figure, is to be had to proposed.\nAs for example, if you observe the sixth Hills, you must see the sixth Hills, that is, twenty thousand foot, and twenty thousand horns, that is, twenty thousand"
+  },
+  "abstract_transfer": [
+    {
+      "id": "seen_exponent_control",
+      "prompt": "Question: Suppose A is proportional to x^3, and B is proportional to x^1. To what power of x is the quotient A divided by B proportional?\nReasoning: ",
+      "answer": "power_2",
+      "first": 3,
+      "second": 1,
+      "winner": "power_2",
+      "scores": {
+        "power_0": {
+          "mean_nll": 4.071063995361328,
+          "tokens": 38
+        },
+        "power_minus_1": {
+          "mean_nll": 4.173520565032959,
+          "tokens": 39
+        },
+        "power_2": {
+          "mean_nll": 3.9353067874908447,
+          "tokens": 38
+        },
+        "power_minus_2": {
+          "mean_nll": 4.142827987670898,
+          "tokens": 39
+        },
+        "power_minus_3": {
+          "mean_nll": 4.204401016235352,
+          "tokens": 39
+        }
+      },
+      "generation": "Question: Suppose A is proportional to x^3, and B is proportional to x^1. To what power of x is the quotient A divided by B proportional?\nReasoning: for if A be deuided into the partes, and B, and B together with the part of the partes is this, that proportion hath no parte; if the part of the whole bodie, whose partes, and in what proportion are the lighter part of the whole bodie, their whole bodie is tripla to the whole, and the part of the whole bodie is equall to"
+    },
+    {
+      "id": "withheld_exponent_minus_two",
+      "prompt": "Question: Suppose A is proportional to x^1, and B is proportional to x^3. To what power of x is the quotient A divided by B proportional?\nReasoning: ",
+      "answer": "power_minus_2",
+      "first": 1,
+      "second": 3,
+      "winner": "power_2",
+      "scores": {
+        "power_0": {
+          "mean_nll": 3.8745076656341553,
+          "tokens": 38
+        },
+        "power_minus_1": {
+          "mean_nll": 3.9888598918914795,
+          "tokens": 39
+        },
+        "power_2": {
+          "mean_nll": 3.7281534671783447,
+          "tokens": 38
+        },
+        "power_minus_2": {
+          "mean_nll": 3.9498326778411865,
+          "tokens": 39
+        },
+        "power_minus_3": {
+          "mean_nll": 4.003077983856201,
+          "tokens": 39
+        }
+      },
+      "generation": "Question: Suppose A is proportional to x^1, and B is proportional to x^3. To what power of x is the quotient A divided by B proportional?\nReasoning: If according to 〈 math 〉 〈 math 〉 Facultie, Wherefore A is antecedent to that which is hys, which is hys.\nIt must needs be so, for it is not only a 〈 math 〉.\nIt is a thing to be 〈"
+    },
+    {
+      "id": "neutral_two_premise_transfer",
+      "prompt": "The square of P is proportional to the cube of R. Q is proportional to R divided by the square of P. Combining the two relations, Q is proportional to ",
+      "answer": "power_minus_2",
+      "winner": "power_2",
+      "scores": {
+        "power_0": {
+          "mean_nll": 4.118611812591553,
+          "tokens": 33
+        },
+        "power_minus_1": {
+          "mean_nll": 4.216149806976318,
+          "tokens": 33
+        },
+        "power_2": {
+          "mean_nll": 4.042854309082031,
+          "tokens": 33
+        },
+        "power_minus_2": {
+          "mean_nll": 4.262551307678223,
+          "tokens": 33
+        },
+        "power_minus_3": {
+          "mean_nll": 4.27959680557251,
+          "tokens": 33
+        }
+      },
+      "generation": "The square of P is proportional to the cube of R. Q is proportional to R divided by the square of P. Combining the two relations, Q is proportional to D, if it be doubled by the square of P.\nThen I say, the square shall be ten miles, and if it be doubled by the square of the one, then surely it is six times: Ergo, 16 which is to say, five times: for in square of P be six hundred, is to say, 70 times"
+    }
+  ],
+  "physics_symbolic_bridge": {
+    "prompt": "Question: The square of an orbital period is proportional to distance^3. The circular turning tendency is proportional to distance^1 divided by the square of the orbital period. To what power of distance is the turning tendency proportional?\nReasoning: ",
+    "answer": "power_minus_2",
+    "winner": "power_2",
+    "scores": {
+      "power_0": {
+        "mean_nll": 4.017771244049072,
+        "tokens": 67
+      },
+      "power_minus_1": {
+        "mean_nll": 4.112739086151123,
+        "tokens": 68
+      },
+      "power_2": {
+        "mean_nll": 3.961751699447632,
+        "tokens": 67
+      },
+      "power_minus_2": {
+        "mean_nll": 4.140477657318115,
+        "tokens": 68
+      },
+      "power_minus_3": {
+        "mean_nll": 4.145543575286865,
+        "tokens": 68
+      }
+    },
+    "generation": "Question: The square of an orbital period is proportional to distance^3. The circular turning tendency is proportional to distance^1 divided by the square of the orbital period. To what power of distance is the turning tendency proportional?\nReasoning: If the solidity of a thing be sure to the subjective part of the solidity, to the subjective part of the subject; then it is called the subjective part of the solidity, because it doth not consist.\nWhence consisteth the question adapting of three dishes in a single single single single single single single single single single sense, to the subjective part of either single sing"
+  },
+  "scientific_retention": {
+    "validation": "data/real_pilot_v11/validation.bin",
+    "sampling_seed": 1686,
+    "batch_size": 8,
+    "rounds": 16,
+    "mean_loss": 4.90959969162941
+  }
+}
