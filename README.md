@@ -166,6 +166,10 @@ four verified pre-Newtonian scientific works. See the cached
 Full-text date/provenance validation and usable-token counts remain unfinished;
 its suitability for a 200 MB bootstrap is not yet established.
 
+For a newly verified original-page English witness to Kepler's
+period–distance premise, see the [Streete source audit](STREETE_ENGLISH_PREMISE_AUDIT.md).
+This source remains outside the training corpus pending whole-book review.
+
 The next controlled series, including the learned tokenizer and the V3--V5
 reasoning interventions, is documented in
 [`V3_V5_CONTROLLED_CURRICULUM.md`](V3_V5_CONTROLLED_CURRICULUM.md).

@@ -82,6 +82,15 @@ labelled translation/capability control, not in the historically sealed arm.
 Alternatively, a multilingual historical arm must test Latin premise
 identification before crediting an English derivation.
 
+**2026-10-01 source update:** an original-page English witness to the Kepler
+period–distance premise has now been located in Streete's *Astronomia
+Carolina* (1661), pp. 39–40, and visually inspected. See the separately
+hashed [source audit](STREETE_ENGLISH_PREMISE_AUDIT.md). It is not in V11's
+training corpus; whole-book precursor screening and expert transcription
+review remain open. A pre-1687 English witness to the circular-force premise
+has still not been verified here, so the two-premise English-only gate is
+not yet passed.
+
 The existing `src/generate_admissible_reasoning.py` explicitly teaches Kepler
 period examples and the numerical rule “divide radius by period squared.” The
 existing `src/evaluate_generalization_suite.py` physics prompts explicitly
