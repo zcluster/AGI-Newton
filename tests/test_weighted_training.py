@@ -14,6 +14,7 @@ from tokenize_corpus import encode_record
 from train_bpe_gpt import TokenStream
 from summarise_subtraction_weight import numeric_correct
 from audit_arithmetic_exposure import batch_shares
+from build_balanced_math import balanced
 
 
 class CharacterTokenizer:
@@ -31,6 +32,18 @@ class CharacterTokenizer:
 
 
 class WeightedTrainingTests(unittest.TestCase):
+    def test_balancing_only_duplicates_training_records(self):
+        row = {'split': 'train', 'family': 'math_subtraction', 'prompt': 'Q', 'text': 'Q A',
+               'numerator': 2, 'known': 1}
+        validation = [{**row, 'split': 'validation', 'prompt': 'V', 'text': 'V A'}]
+        self.assertEqual(balanced([row], validation), [row] * 128)
+        self.assertEqual(balanced([{**row, 'family': 'math_elimination'}], validation),
+                         [{**row, 'family': 'math_elimination'}])
+        for invalid in ({**row, 'numerator': 1, 'known': 3}, {**row, 'numerator': 3, 'known': 1},
+                        {**row, 'prompt': 'V'}):
+            with self.assertRaises(AssertionError):
+                balanced([invalid], validation)
+
     def test_weight_multiplier_cannot_create_missing_batch_exposure(self):
         weights = torch.tensor([0., 1., 1.])
         plain, scaled = batch_shares(weights, torch.tensor([False, True, False]))

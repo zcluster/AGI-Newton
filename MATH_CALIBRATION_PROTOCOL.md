@@ -312,3 +312,27 @@ Result hashes, runtime and counts are in `audit/arithmetic_exposure.json`; the j
 output is `audit/arithmetic_exposure_job2863299.out`. Reproduce using
 `python src/audit_arithmetic_exposure.py` on the training host with the saved
 report and streams. Source and language coverage remain a separate audit.
+
+## Frozen resampling pilot (before outcomes)
+
+Repeat each of the 544 existing training subtraction records 128 times, retain
+each elimination record once, and shuffle with Python seed 1686. No new strings
+or answers are authored; the existing validation file and sealed operands remain
+unchanged. All answer weights are one and prompts remain masked. The constructor
+checks exact multiplicities and split/leakage invariants. This yields 69,632
+subtraction records and 28,489 elimination records (98,121 total).
+
+Start from the same V11 historical initializer, training seed 1686, 1,000 steps,
+batch 16, context 512, learning rate 3e-5, warmup 30, bf16: 8,192,000 tokens seen.
+Keep legacy no-BOS greedy arithmetic evaluation with maximum 60 tokens and no
+minimum. Compare all 578 outputs to the old masked and weight-128 checkpoints;
+retain 90% training and 80% internal-validation gates. Also measure abstract and
+physics generation, the 204-case composition grid including its sealed cases,
+and scientific-text retention. Candidate ranking cannot substitute for generation.
+
+This intervention changes token distribution and ordering, not only weight.
+At fixed total training budget, arithmetic exposure increases at the expense of
+elimination exposure. One seed is exploratory; passing would require replicated
+seeds and fresh tests before a research claim. Synthetic capability gains do not
+establish historical-only Newton discovery. Record achieved source-token and
+target-token proportions; do not assume the repeat factor equals either share.
