@@ -20,10 +20,15 @@ for i in $(seq 0 $((segments - 1))); do
   if ((end >= total)); then end=$((total - 1)); fi
   part=$(printf 'data/eebo/parts/%02d' "$i")
   expected=$((end - start + 1))
-  if [[ -f "$part" && $(stat -c %s "$part") -eq $expected ]]; then continue; fi
-  (curl -fL --retry 3 --silent --show-error --range "$start-$end" \
-    --output "$part" "$url" && \
-    [[ $(stat -c %s "$part") -eq $expected ]]) &
+  received=0
+  if [[ -f "$part" ]]; then received=$(stat -c %s "$part"); fi
+  ((received <= expected))
+  if ((received == expected)); then continue; fi
+  (curl -fL --retry 4 --connect-timeout 15 --speed-limit 1024 --speed-time 60 \
+    --silent --show-error --range "$((start + received))-$end" \
+    --output "$part.next" "$url" && \
+    [[ $(stat -c %s "$part.next") -eq $((expected - received)) ]] && \
+    cat "$part.next" >> "$part" && rm "$part.next") &
   pids+=("$!")
 done
 for pid in "${pids[@]}"; do wait "$pid"; done

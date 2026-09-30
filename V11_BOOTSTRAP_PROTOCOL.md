@@ -39,8 +39,11 @@ be needed before making a causal claim.
    12 abstract and four premise-given physics cases. Checkpoints stay on HPC;
    reports, hashes, and logs will be committed.
 
-The dependent Slurm jobs are download **2861664**, CPU preparation
-**2861705**, and L40 training/evaluation **2861706**. They use only
+The current dependent Slurm jobs are resumed download **2861859**, CPU
+preparation **2861860**, and L40 training/evaluation **2861861**. The initial
+download chain (2861664, 2861705, 2861706) was cancelled after S3 stalled;
+its 770 MB of partial ranges were retained and the transfer now resumes from
+their byte offsets with low-speed timeouts. The jobs use only
 `~/data/AGI-Newton` and its Python environment. Other project directories
 and environments are outside their paths.
 
