@@ -260,3 +260,21 @@ Raw reports and paired summary are at `audit/bos_ablation/`. Reproduce with
 previous subtraction audit. Next inspect actual sampled arithmetic exposure
 before another training intervention; historical skill coverage remains a separate
 source-quality problem, documented in `HISTORICAL_MATH_COVERAGE.md`.
+
+## Arithmetic exposure reconstruction (before outcomes)
+
+Run a CPU-only job using the training host's Python environment and the saved
+weight-128 report. Reconstruct seed 1686, CPU model-initialization RNG consumption,
+16 initial validation batches, and 1,000 training draws of 16 windows of length
+512. Use the original `torch.randint` bounds and shifted next-token target indices.
+Only sampling is replayed: no model forward, optimizer, or gradient measurement.
+The trainer has no CPU-random operation between training draws in its current
+implementation; still, there are no original sampled-index logs to certify an
+exact historical replay. Record the runtime, report, weight, and sampled-start hashes.
+
+Measure batches with no arithmetic targets, target-position coverage and exposure
+counts, and the mean per-batch normalized arithmetic loss-coefficient mass for
+weights one versus 128. Do not mistake global static target mass for this mean,
+or either quantity for a measured gradient contribution. A weighting change cannot
+increase the number of batches that encounter arithmetic. This diagnostic must
+precede selecting another training intervention.

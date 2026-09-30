@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from tokenize_corpus import encode_record
 from train_bpe_gpt import TokenStream
 from summarise_subtraction_weight import numeric_correct
+from audit_arithmetic_exposure import batch_shares
 
 
 class CharacterTokenizer:
@@ -30,6 +31,15 @@ class CharacterTokenizer:
 
 
 class WeightedTrainingTests(unittest.TestCase):
+    def test_weight_multiplier_cannot_create_missing_batch_exposure(self):
+        weights = torch.tensor([0., 1., 1.])
+        plain, scaled = batch_shares(weights, torch.tensor([False, True, False]))
+        self.assertEqual(plain, 0.5)
+        self.assertAlmostEqual(scaled, 128/129)
+        self.assertEqual(batch_shares(weights, torch.zeros(3, dtype=torch.bool)), (0., 0.))
+        with self.assertRaises(ValueError):
+            batch_shares(torch.zeros(3), torch.zeros(3, dtype=torch.bool))
+
     def test_numeric_subtraction_grader_rejects_wrong_or_explanatory_suffix(self):
         fixture = {"prompt": "Answer: ", "expected": -2}
         for answer in ("-2.", "-2", " -2. "):
