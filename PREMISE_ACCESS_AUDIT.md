@@ -91,6 +91,14 @@ review remain open. A pre-1687 English witness to the circular-force premise
 has still not been verified here, so the two-premise English-only gate is
 not yet passed.
 
+The contemporary English Huygens review (1673, DOI
+`10.1098/rstl.1673.0030`) was subsequently inspected on all seven original
+article pages. It mentions centrifugal-force theorems without their needed
+quantitative scaling, so it does not close this gate; the
+[review audit](ENGLISH_CIRCULAR_FORCE_SOURCE_AUDIT.md) records the specific
+negative result and prevents an English book-review title from being
+mistaken for an accessible mathematical premise.
+
 The existing `src/generate_admissible_reasoning.py` explicitly teaches Kepler
 period examples and the numerical rule “divide radius by period squared.” The
 existing `src/evaluate_generalization_suite.py` physics prompts explicitly

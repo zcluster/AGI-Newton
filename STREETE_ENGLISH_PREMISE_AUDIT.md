@@ -28,9 +28,15 @@ The unchanged repository leakage scan returned no hard/modern/review terms for t
 
 ## Experimental consequence
 
+### Preliminary review of named precursor references
+
+The original OCR search locates Bullialdus spelling variants at lines 820, 2307, 2775, 5330, 5691, 6753 and 6970. Reading the surrounding passages indicates solar parallax, lunar nodes, inner-planet eccentricity/elongation geometry, and eclipse observations/tables. In particular, the citation around line 2775 (printed p. 45) discusses Morin's construction from three greatest elongations, not an attraction law. Merely naming Boulliau therefore does not demonstrate target-answer leakage.
+
+A second search over the entire 120-page modern electronic rendering, used only as an audit aid, also finds observational citations on pp. 31, 96, 101, 105, 108, 111, 112 and 115. The natural magnetic attraction discussion on p. 11 is qualitative. No inverse-square attraction statement was found in these search-selected contexts. This is a preliminary negative finding, **not** a complete original-page clearance: OCR and typesetting differences can hide terms, and a lack of keyword matches does not prove absence. The whole book remains outside training until the historical and leakage review is complete.
+
 1. Keep the original OCR unchanged and the modern rendering outside the strict arm.
 2. The decisive original pages have been visually checked. Expert-review any corrected transcription and target-leakage screening of the **whole** book next. A passage-level finding does not approve the whole book.
-3. Locate a comparably dated English witness to circular-force scaling. This source supplies only one of the two required premises; it cannot silently substitute for the second.
+3. Locate a comparably dated English witness to circular-force scaling. This source supplies only one of the two required premises; it cannot silently substitute for the second. The [1673 English Huygens book review](ENGLISH_CIRCULAR_FORCE_SOURCE_AUDIT.md) has now been checked and does not express the needed quantitative relation.
 4. Once both gates pass, compare premise identification, premise-given algebraic composition, and the direct Earth–Moon derivation separately. Never count a supplied modern paraphrase as historical rediscovery.
 
 This is source-acquisition progress, not a new training result. No existing tokenizer, corpus, checkpoint, or GPU job was changed.
