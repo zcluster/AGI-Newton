@@ -20,6 +20,12 @@ counterfactual pairs. Physics remains unsuccessful; this synthetic calibration a
 is explicitly separate from historical-only training. Scientific-text loss worsens
 slightly on matched validation windows, so language retention is also tracked.
 
+The [`copy/binding augmentation`](BINDING_CALIBRATION_PROTOCOL.md) then achieves
+23/24 exact copying answers but defaults to square on all 96 new-label relation
+cases, with 0/48 complete counterfactual pairs. A small exact-training-prompt audit
+also exposes this failure. Low whole-stream loss must not be equated with learning
+the answer-relevant relation; answer-only supervision is the next planned control.
+
 The repository includes the pilot OCR text, source manifests, generated
 reasoning curricula, tokenizer, scripts, tests, and JSON evaluation results.
 The full EEBO language archive and large V2--V7 model checkpoints are not in

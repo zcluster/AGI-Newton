@@ -1,0 +1,12 @@
+{
+  "train_records": 17880,
+  "heldout_records": 96,
+  "variant": "binding",
+  "historical_data": false,
+  "target_answer_training": false,
+  "train_sha256": "75031726a1b03aa3883fec8842ff3f5ff865a1962c0b9da2687f37020a1a4c9b",
+  "test_sha256": "aec09bc604000554a74f7787bd5eca6b2c2b439c1cb2474184acf7cb53771707",
+  "copy_test_records": 24,
+  "copy_test_sha256": "ff20a579b8aa32496e9610acb7fd7d0b5df0bf6eaeb2c3bd68de30c74d42ddb2",
+  "seen_probes_sha256": "404909fb6b96e4400d367b233e7eb470d1d7a0ce0e7b35481e9c69d0f7b55957"
+}

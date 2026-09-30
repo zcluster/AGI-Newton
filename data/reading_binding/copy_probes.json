@@ -1,0 +1,242 @@
+[
+  {
+    "id": "copy_baba_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label baba.\nAnswer: ",
+    "target": "baba",
+    "candidates": {
+      "baba": "baba.",
+      "bali": "bali."
+    }
+  },
+  {
+    "id": "copy_baba_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: baba.\nAnswer: ",
+    "target": "baba",
+    "candidates": {
+      "baba": "baba.",
+      "bali": "bali."
+    }
+  },
+  {
+    "id": "copy_bali_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label bali.\nAnswer: ",
+    "target": "bali",
+    "candidates": {
+      "bali": "bali.",
+      "beku": "beku."
+    }
+  },
+  {
+    "id": "copy_bali_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: bali.\nAnswer: ",
+    "target": "bali",
+    "candidates": {
+      "bali": "bali.",
+      "beku": "beku."
+    }
+  },
+  {
+    "id": "copy_beku_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label beku.\nAnswer: ",
+    "target": "beku",
+    "candidates": {
+      "beku": "beku.",
+      "bike": "bike."
+    }
+  },
+  {
+    "id": "copy_beku_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: beku.\nAnswer: ",
+    "target": "beku",
+    "candidates": {
+      "beku": "beku.",
+      "bike": "bike."
+    }
+  },
+  {
+    "id": "copy_bike_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label bike.\nAnswer: ",
+    "target": "bike",
+    "candidates": {
+      "bike": "bike.",
+      "bodo": "bodo."
+    }
+  },
+  {
+    "id": "copy_bike_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: bike.\nAnswer: ",
+    "target": "bike",
+    "candidates": {
+      "bike": "bike.",
+      "bodo": "bodo."
+    }
+  },
+  {
+    "id": "copy_bodo_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label bodo.\nAnswer: ",
+    "target": "bodo",
+    "candidates": {
+      "bodo": "bodo.",
+      "buda": "buda."
+    }
+  },
+  {
+    "id": "copy_bodo_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: bodo.\nAnswer: ",
+    "target": "bodo",
+    "candidates": {
+      "bodo": "bodo.",
+      "buda": "buda."
+    }
+  },
+  {
+    "id": "copy_buda_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label buda.\nAnswer: ",
+    "target": "buda",
+    "candidates": {
+      "buda": "buda.",
+      "dabi": "dabi."
+    }
+  },
+  {
+    "id": "copy_buda_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: buda.\nAnswer: ",
+    "target": "buda",
+    "candidates": {
+      "buda": "buda.",
+      "dabi": "dabi."
+    }
+  },
+  {
+    "id": "copy_dabi_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label dabi.\nAnswer: ",
+    "target": "dabi",
+    "candidates": {
+      "dabi": "dabi.",
+      "dalu": "dalu."
+    }
+  },
+  {
+    "id": "copy_dabi_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: dabi.\nAnswer: ",
+    "target": "dabi",
+    "candidates": {
+      "dabi": "dabi.",
+      "dalu": "dalu."
+    }
+  },
+  {
+    "id": "copy_dalu_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label dalu.\nAnswer: ",
+    "target": "dalu",
+    "candidates": {
+      "dalu": "dalu.",
+      "dele": "dele."
+    }
+  },
+  {
+    "id": "copy_dalu_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: dalu.\nAnswer: ",
+    "target": "dalu",
+    "candidates": {
+      "dalu": "dalu.",
+      "dele": "dele."
+    }
+  },
+  {
+    "id": "copy_dele_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label dele.\nAnswer: ",
+    "target": "dele",
+    "candidates": {
+      "dele": "dele.",
+      "diko": "diko."
+    }
+  },
+  {
+    "id": "copy_dele_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: dele.\nAnswer: ",
+    "target": "dele",
+    "candidates": {
+      "dele": "dele.",
+      "diko": "diko."
+    }
+  },
+  {
+    "id": "copy_diko_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label diko.\nAnswer: ",
+    "target": "diko",
+    "candidates": {
+      "diko": "diko.",
+      "doka": "doka."
+    }
+  },
+  {
+    "id": "copy_diko_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: diko.\nAnswer: ",
+    "target": "diko",
+    "candidates": {
+      "diko": "diko.",
+      "doka": "doka."
+    }
+  },
+  {
+    "id": "copy_doka_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label doka.\nAnswer: ",
+    "target": "doka",
+    "candidates": {
+      "doka": "doka.",
+      "dudi": "dudi."
+    }
+  },
+  {
+    "id": "copy_doka_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: doka.\nAnswer: ",
+    "target": "doka",
+    "candidates": {
+      "doka": "doka.",
+      "dudi": "dudi."
+    }
+  },
+  {
+    "id": "copy_dudi_familiar",
+    "group": "copy_familiar",
+    "prompt": "Question: Copy exactly the label dudi.\nAnswer: ",
+    "target": "dudi",
+    "candidates": {
+      "dudi": "dudi.",
+      "baba": "baba."
+    }
+  },
+  {
+    "id": "copy_dudi_novel",
+    "group": "copy_novel",
+    "prompt": "Question: Please reproduce this name: dudi.\nAnswer: ",
+    "target": "dudi",
+    "candidates": {
+      "dudi": "dudi.",
+      "baba": "baba."
+    }
+  }
+]

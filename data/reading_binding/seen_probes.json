@@ -1,0 +1,178 @@
+[
+  {
+    "id": "babe_babi_square_babe_question",
+    "prompt": "The squares of the babe are as the cubes of the babi.\nQuestion: What power of the babe is compared?\nAnswer: ",
+    "target": "square",
+    "candidates": {
+      "square": "square of the babe.",
+      "cube": "cube of the babe."
+    },
+    "text": "The squares of the babe are as the cubes of the babi.\nQuestion: What power of the babe is compared?\nAnswer: square of the babe.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_babi_square_babe_continuation",
+    "prompt": "The squares of the babe are as the cubes of the babi.\nThe passage compares the power of the babe, namely the ",
+    "target": "square",
+    "candidates": {
+      "square": "square of the babe.",
+      "cube": "cube of the babe."
+    },
+    "text": "The squares of the babe are as the cubes of the babi.\nThe passage compares the power of the babe, namely the square of the babe.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_babi_square_babi_question",
+    "prompt": "The squares of the babe are as the cubes of the babi.\nQuestion: What power of the babi is compared?\nAnswer: ",
+    "target": "cube",
+    "candidates": {
+      "square": "square of the babi.",
+      "cube": "cube of the babi."
+    },
+    "text": "The squares of the babe are as the cubes of the babi.\nQuestion: What power of the babi is compared?\nAnswer: cube of the babi.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_babi_square_babi_continuation",
+    "prompt": "The squares of the babe are as the cubes of the babi.\nThe passage compares the power of the babi, namely the ",
+    "target": "cube",
+    "candidates": {
+      "square": "square of the babi.",
+      "cube": "cube of the babi."
+    },
+    "text": "The squares of the babe are as the cubes of the babi.\nThe passage compares the power of the babi, namely the cube of the babi.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_babi_cube_babe_question",
+    "prompt": "The cubes of the babe are as the squares of the babi.\nQuestion: What power of the babe is compared?\nAnswer: ",
+    "target": "cube",
+    "candidates": {
+      "square": "square of the babe.",
+      "cube": "cube of the babe."
+    },
+    "text": "The cubes of the babe are as the squares of the babi.\nQuestion: What power of the babe is compared?\nAnswer: cube of the babe.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_babi_cube_babe_continuation",
+    "prompt": "The cubes of the babe are as the squares of the babi.\nThe passage compares the power of the babe, namely the ",
+    "target": "cube",
+    "candidates": {
+      "square": "square of the babe.",
+      "cube": "cube of the babe."
+    },
+    "text": "The cubes of the babe are as the squares of the babi.\nThe passage compares the power of the babe, namely the cube of the babe.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_babi_cube_babi_question",
+    "prompt": "The cubes of the babe are as the squares of the babi.\nQuestion: What power of the babi is compared?\nAnswer: ",
+    "target": "square",
+    "candidates": {
+      "square": "square of the babi.",
+      "cube": "cube of the babi."
+    },
+    "text": "The cubes of the babe are as the squares of the babi.\nQuestion: What power of the babi is compared?\nAnswer: square of the babi.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_babi_cube_babi_continuation",
+    "prompt": "The cubes of the babe are as the squares of the babi.\nThe passage compares the power of the babi, namely the ",
+    "target": "square",
+    "candidates": {
+      "square": "square of the babi.",
+      "cube": "cube of the babi."
+    },
+    "text": "The cubes of the babe are as the squares of the babi.\nThe passage compares the power of the babi, namely the square of the babi.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_baku_square_babe_question",
+    "prompt": "The squares of the babe are as the cubes of the baku.\nQuestion: What power of the babe is compared?\nAnswer: ",
+    "target": "square",
+    "candidates": {
+      "square": "square of the babe.",
+      "cube": "cube of the babe."
+    },
+    "text": "The squares of the babe are as the cubes of the baku.\nQuestion: What power of the babe is compared?\nAnswer: square of the babe.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_baku_square_babe_continuation",
+    "prompt": "The squares of the babe are as the cubes of the baku.\nThe passage compares the power of the babe, namely the ",
+    "target": "square",
+    "candidates": {
+      "square": "square of the babe.",
+      "cube": "cube of the babe."
+    },
+    "text": "The squares of the babe are as the cubes of the baku.\nThe passage compares the power of the babe, namely the square of the babe.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_baku_square_baku_question",
+    "prompt": "The squares of the babe are as the cubes of the baku.\nQuestion: What power of the baku is compared?\nAnswer: ",
+    "target": "cube",
+    "candidates": {
+      "square": "square of the baku.",
+      "cube": "cube of the baku."
+    },
+    "text": "The squares of the babe are as the cubes of the baku.\nQuestion: What power of the baku is compared?\nAnswer: cube of the baku.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_baku_square_baku_continuation",
+    "prompt": "The squares of the babe are as the cubes of the baku.\nThe passage compares the power of the baku, namely the ",
+    "target": "cube",
+    "candidates": {
+      "square": "square of the baku.",
+      "cube": "cube of the baku."
+    },
+    "text": "The squares of the babe are as the cubes of the baku.\nThe passage compares the power of the baku, namely the cube of the baku.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_baku_cube_babe_question",
+    "prompt": "The cubes of the babe are as the squares of the baku.\nQuestion: What power of the babe is compared?\nAnswer: ",
+    "target": "cube",
+    "candidates": {
+      "square": "square of the babe.",
+      "cube": "cube of the babe."
+    },
+    "text": "The cubes of the babe are as the squares of the baku.\nQuestion: What power of the babe is compared?\nAnswer: cube of the babe.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_baku_cube_babe_continuation",
+    "prompt": "The cubes of the babe are as the squares of the baku.\nThe passage compares the power of the babe, namely the ",
+    "target": "cube",
+    "candidates": {
+      "square": "square of the babe.",
+      "cube": "cube of the babe."
+    },
+    "text": "The cubes of the babe are as the squares of the baku.\nThe passage compares the power of the babe, namely the cube of the babe.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_baku_cube_baku_question",
+    "prompt": "The cubes of the babe are as the squares of the baku.\nQuestion: What power of the baku is compared?\nAnswer: ",
+    "target": "square",
+    "candidates": {
+      "square": "square of the baku.",
+      "cube": "cube of the baku."
+    },
+    "text": "The cubes of the babe are as the squares of the baku.\nQuestion: What power of the baku is compared?\nAnswer: square of the baku.",
+    "source": "procedural"
+  },
+  {
+    "id": "babe_baku_cube_baku_continuation",
+    "prompt": "The cubes of the babe are as the squares of the baku.\nThe passage compares the power of the baku, namely the ",
+    "target": "square",
+    "candidates": {
+      "square": "square of the baku.",
+      "cube": "cube of the baku."
+    },
+    "text": "The cubes of the babe are as the squares of the baku.\nThe passage compares the power of the baku, namely the square of the baku.",
+    "source": "procedural"
+  }
+]
