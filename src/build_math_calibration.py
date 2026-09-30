@@ -55,11 +55,25 @@ def main():
     audit = {"provenance": "Modern synthetic calibration, not historical source text",
              "sealed_pair": {"numerator": 1, "known": 3},
              "limitation": "Other mathematical -2 results are allowed; the answer value is not sealed"}
-    for name, rows in zip(("train", "validation"), build()):
+    splits = build()
+    for name, rows in zip(("train", "validation"), splits):
         path = args.output_dir / f"{name}.jsonl"
         content = "".join(json.dumps(row) + "\n" for row in rows)
         path.write_text(content)
         audit[name] = {"records": len(rows), "sha256": hashlib.sha256(content.encode()).hexdigest()}
+    seen = []
+    for result in range(-3, 4):
+        examples = [r for r in splits[0] if r["family"] == "math_subtraction"
+                    and r["numerator"] - r["known"] == result][:2]
+        assert len(examples) == 2
+        for row in examples:
+            seen.append({"id": f"seen_{len(seen)}", "group": "seen_subtraction",
+                         "prompt": row["prompt"], "target": "correct",
+                         "candidates": {"correct": f"{result}.", "lower": f"{result-1}.",
+                                        "higher": f"{result+1}."}})
+    assert len(seen) == 14 and all(p["prompt"] + p["candidates"]["correct"]
+                                in {r["text"] for r in splits[0]} for p in seen)
+    (args.output_dir / "seen_subtraction.json").write_text(json.dumps(seen, indent=2) + "\n")
     (args.output_dir / "audit.json").write_text(json.dumps(audit, indent=2) + "\n")
     print(json.dumps(audit, indent=2))
 

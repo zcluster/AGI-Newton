@@ -1,0 +1,132 @@
+{
+  "label": "synthetic_math_answer_only_not_historical_only",
+  "parameters": 91510272,
+  "vocab_size": 8000,
+  "train_tokens": 1909406,
+  "validation_tokens": 99323,
+  "tokens_seen": 8192000,
+  "steps": 1000,
+  "training_seconds": 71.63006281852722,
+  "initial_validation_loss": 4.03216727077961,
+  "final_validation_loss": 2.8199325799942017,
+  "final_validation_perplexity": 16.77571961489865,
+  "last_train_loss": 0.08339995890855789,
+  "resumed_from": "runs/hpc_v11_bootstrap_seed1686/model.pt",
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 4.8779296875,
+          "tokens": 4
+        },
+        "inverse": {
+          "mean_nll": 3.6371374130249023,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 2.9187824726104736,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 4.7041015625,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 5.62413215637207,
+          "tokens": 9
+        },
+        "inverse": {
+          "mean_nll": 3.928013563156128,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 3.5703125,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 5.2275390625,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 5.595052242279053,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 4.486328125,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 4.748046875,
+          "tokens": 8
+        },
+        "inverse_cube": {
+          "mean_nll": 5.497829914093018,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 7.96875,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 5.15625,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 4.964062690734863,
+          "tokens": 5
+        },
+        "inverse_cube": {
+          "mean_nll": 5.142187595367432,
+          "tokens": 5
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as the denominator carries index 2. Therefore the remaining index is 3 - (2) = 1.\nAnswer: J is proportional to s^1.",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as much: the next is proportional to v^1.",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of the address subtracts them: 1 1.",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to w^-1."
+  },
+  "args": {
+    "train": "data/math_calibration/answer_only.bin",
+    "loss_weights": "data/math_calibration/answer_only_weights.bin",
+    "validation": "data/math_calibration/validation.bin",
+    "tokenizer": "data/tokenizer_v11/pre1687_bpe.model",
+    "output_dir": "runs/hpc_math_answer_only_seed1686",
+    "steps": 1000,
+    "batch_size": 16,
+    "context": 512,
+    "width": 768,
+    "heads": 12,
+    "layers": 12,
+    "learning_rate": 3e-05,
+    "warmup_steps": 30,
+    "device": "cuda",
+    "precision": "bf16",
+    "seed": 1686,
+    "label": "synthetic_math_answer_only_not_historical_only",
+    "log_every": 250,
+    "resume": "runs/hpc_v11_bootstrap_seed1686/model.pt"
+  }
+}

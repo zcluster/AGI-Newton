@@ -60,6 +60,78 @@ effects require replication and fresh held-out tasks before publication claims.
 
 ## Execution status
 
-Submitted as Tongji job 2863142 on 2026-10-01 after confirming the user queue was
-empty. Submission does not establish completion; verify scheduler state and both
-output directories before reporting outcomes.
+Tongji job 2863142 completed with exit 0, elapsed 4m08s. The grid job 2863144
+completed with exit 0, elapsed 1m20s. Both use separate model directories on a
+single L40 sequentially. Execution and checkpoint hashes are recorded under
+`audit/math_calibration/execution_evidence.json`.
+
+## Additional composition coverage
+
+Before inspecting new model outputs, also specify the existing 204-case composition
+grid, including six sealed-pair cases and 198 controls, for both models. Its exact
+question wording is disjoint from the new training corpus. It reports a valid final
+relation separately from a correct arithmetic trace plus relation, and the existing
+audit checks one-input counterfactual consistency. Preserve its original decoding
+conditions (100 tokens, minimum length 30), unlike the short-answer diagnostic.
+The relation grader is narrow and does not credit a bare numeric answer; report raw
+outputs so format failures are distinguishable from arithmetic errors. This is an
+existing, previously inspected diagnostic, not a fresh blind evaluation. Run
+`hpc/tongji_math_grid.sbatch` only after the training job completes successfully.
+
+## Verified results
+
+| Diagnostic | Continuation weighted | Prompt masked |
+| --- | ---: | ---: |
+| Exact short answers | 0/8 | 1/8 |
+| Abstract final relations | 3/12 | 6/12 |
+| Physics final relations | 0/4 | 0/4 |
+| Grid final relations | 89/204 | 136/204 |
+| Grid correct arithmetic trace and relation | 62/204 | 61/204 |
+| Grid sealed combination final relations | 0/6 | 0/6 |
+| Unique relation coverage | 143/204 | 177/204 |
+| Counterfactual consistent pairs among observed pairs | 233/594 | 469/732 |
+| Scientific text mean loss | 5.20994 | 5.17364 |
+
+This is partial abstract mathematical competence, not sealed-combination or
+physics success. The prompt-masked model can generate -2 for another combination
+in the abstract suite, but not the Newton combination. In an inspected sealed grid
+case it correctly substitutes `z^1/z^3` but incorrectly simplifies to `z^-1`.
+The control also sometimes copies the wrong denominator. The single short-answer
+success is the reversed abstract case, not the sealed case. Direct Earth–Moon
+sampling remains irrelevant; an incidental -2 attached to an arbitrary abstract
+variable is not a gravitational prediction.
+Both models also score 0/96 on the earlier relation-reading diagnostic. They start
+from historical V11, not the trained reading model, so this is not a measured loss
+of the latter's 94/96 capability; the two isolated calibration branches have not
+yet been combined into one model.
+
+The counterfactual audit's permutation null is a within-template diagnostic of
+output association, not evidence of independent discoveries or a population
+significance claim. Consistent differences can also coexist with wrong absolute
+answers. The trace metric is slightly lower under masking despite higher final
+relation accuracy. All scientific-text losses remain worse than the historical
+checkpoint's fixed-window 4.90960. Whole-stream synthetic validation loss is
+0.11900 versus 2.81993, again not directly comparable to the masked training loss.
+
+## Post hoc subtraction check
+
+After seeing sealed subtraction failures, select 14 exact training subtraction
+prompts, two for each result -3 through 3, and verify every complete answer occurs
+in the training file (two paraphrases for each of seven operand pairs). The
+deterministic builder writes `seen_subtraction.json`;
+this is a memorization diagnostic, not held-out evaluation. Job 2863150 runs both
+models on these prompts without changing either model or the training data.
+It completed with exit 0, elapsed 21s. Exact generation is 1/14 for the control
+and 0/14 for prompt masking; both rank the correct answer in 4/14 cases. Even
+training-prompt subtraction is largely unlearned, so this test cannot attribute
+the sealed failures solely to a failure of mathematical generalization.
+
+An objective coverage audit finds subtraction accounts for 10,882/1,909,406 input
+tokens (0.57%) and only 1,394/575,730 masked target tokens (0.24%). This imbalance
+is a plausible explanation to test, not a demonstrated cause. A subsequent
+intervention should compare mathematical family balancing before assuming model
+size is the limiting factor, while keeping the sealed pair excluded.
+
+Run `python src/summarise_math_calibration.py` to recompute the paired summary.
+The script checks matched short probes, budgets and grid arithmetic, and recomputes
+the saved grid grading flags from the actual generated text.

@@ -1,0 +1,86 @@
+{
+  "continuation": {
+    "short_exact": 0,
+    "seen_subtraction_exact": 1,
+    "abstract": {
+      "cases": 12,
+      "candidate_accuracy": 0.5833333333333334,
+      "generation_accuracy": 0.25
+    },
+    "physics": {
+      "cases": 4,
+      "candidate_accuracy": 0.0,
+      "generation_accuracy": 0.0
+    },
+    "grid": {
+      "cases": 204,
+      "answer_correct": 89,
+      "equation_and_answer_correct": 62
+    },
+    "sealed_grid": {
+      "cases": 6,
+      "answer_correct": 0,
+      "equation_and_answer_correct": 0
+    },
+    "reading": {
+      "cases": 96,
+      "exact_answers": 0,
+      "rank_correct": 48,
+      "both_counterfactual_answers_correct": 0,
+      "constant_square_rank_baseline": 48,
+      "groups": {
+        "new_labels": {
+          "cases": 48,
+          "exact_answers": 0
+        },
+        "new_labels_and_template": {
+          "cases": 48,
+          "exact_answers": 0
+        }
+      }
+    },
+    "scientific_mean_loss": 5.209936946630478
+  },
+  "answer_only": {
+    "short_exact": 1,
+    "seen_subtraction_exact": 0,
+    "abstract": {
+      "cases": 12,
+      "candidate_accuracy": 0.6666666666666666,
+      "generation_accuracy": 0.5
+    },
+    "physics": {
+      "cases": 4,
+      "candidate_accuracy": 0.0,
+      "generation_accuracy": 0.0
+    },
+    "grid": {
+      "cases": 204,
+      "answer_correct": 136,
+      "equation_and_answer_correct": 61
+    },
+    "sealed_grid": {
+      "cases": 6,
+      "answer_correct": 0,
+      "equation_and_answer_correct": 0
+    },
+    "reading": {
+      "cases": 96,
+      "exact_answers": 0,
+      "rank_correct": 48,
+      "both_counterfactual_answers_correct": 0,
+      "constant_square_rank_baseline": 48,
+      "groups": {
+        "new_labels": {
+          "cases": 48,
+          "exact_answers": 0
+        },
+        "new_labels_and_template": {
+          "cases": 48,
+          "exact_answers": 0
+        }
+      }
+    },
+    "scientific_mean_loss": 5.173637211322784
+  }
+}

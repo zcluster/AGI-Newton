@@ -1,0 +1,156 @@
+[
+  {
+    "id": "seen_0",
+    "group": "seen_subtraction",
+    "prompt": "Question: What is -8 minus -5?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-3.",
+      "lower": "-4.",
+      "higher": "-2."
+    }
+  },
+  {
+    "id": "seen_1",
+    "group": "seen_subtraction",
+    "prompt": "Question: Subtract -5 from -8.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-3.",
+      "lower": "-4.",
+      "higher": "-2."
+    }
+  },
+  {
+    "id": "seen_2",
+    "group": "seen_subtraction",
+    "prompt": "Question: What is -8 minus -6?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-2.",
+      "lower": "-3.",
+      "higher": "-1."
+    }
+  },
+  {
+    "id": "seen_3",
+    "group": "seen_subtraction",
+    "prompt": "Question: Subtract -6 from -8.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-2.",
+      "lower": "-3.",
+      "higher": "-1."
+    }
+  },
+  {
+    "id": "seen_4",
+    "group": "seen_subtraction",
+    "prompt": "Question: What is -8 minus -7?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_5",
+    "group": "seen_subtraction",
+    "prompt": "Question: Subtract -7 from -8.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_6",
+    "group": "seen_subtraction",
+    "prompt": "Question: What is -8 minus -8?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "0.",
+      "lower": "-1.",
+      "higher": "1."
+    }
+  },
+  {
+    "id": "seen_7",
+    "group": "seen_subtraction",
+    "prompt": "Question: Subtract -8 from -8.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "0.",
+      "lower": "-1.",
+      "higher": "1."
+    }
+  },
+  {
+    "id": "seen_8",
+    "group": "seen_subtraction",
+    "prompt": "Question: What is -7 minus -8?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "1.",
+      "lower": "0.",
+      "higher": "2."
+    }
+  },
+  {
+    "id": "seen_9",
+    "group": "seen_subtraction",
+    "prompt": "Question: Subtract -8 from -7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "1.",
+      "lower": "0.",
+      "higher": "2."
+    }
+  },
+  {
+    "id": "seen_10",
+    "group": "seen_subtraction",
+    "prompt": "Question: What is -6 minus -8?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "2.",
+      "lower": "1.",
+      "higher": "3."
+    }
+  },
+  {
+    "id": "seen_11",
+    "group": "seen_subtraction",
+    "prompt": "Question: Subtract -8 from -6.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "2.",
+      "lower": "1.",
+      "higher": "3."
+    }
+  },
+  {
+    "id": "seen_12",
+    "group": "seen_subtraction",
+    "prompt": "Question: What is -5 minus -8?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "seen_13",
+    "group": "seen_subtraction",
+    "prompt": "Question: Subtract -8 from -5.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  }
+]

@@ -39,8 +39,12 @@ See the same protocol for the full per-seed table and raw artifact locations.
 The next [`mathematical calibration pilot`](MATH_CALIBRATION_PROTOCOL.md) tests
 subtraction and abstract elimination with the Newton exponent combination sealed.
 It starts from historical V11 and compares two objectives on identical synthetic
-input. This is an independent capability diagnostic, not historical-only training;
-no outcome is claimed until the scheduled runs and evaluations complete.
+input. This is an independent capability diagnostic, not historical-only training.
+Prompt masking reaches 136/204 valid abstract grid relations versus 89/204 for
+the control, but both fail all six sealed cases and all four physics cases.
+Training-prompt subtraction is also mostly unlearned (0/14 and 1/14), and subtraction
+accounts for only 0.24% of masked target tokens. The protocol records these limits
+and motivates mathematical family balancing before further scaling.
 
 The repository includes the pilot OCR text, source manifests, generated
 reasoning curricula, tokenizer, scripts, tests, and JSON evaluation results.

@@ -1,0 +1,401 @@
+{
+  "checkpoint": "runs/hpc_math_answer_only_seed1686/model.pt",
+  "label": "synthetic_math_answer_only_not_historical_only",
+  "source_sha256": "09913ca19fa1a0a783a3b3732b725986c625e81ba36743578961c49080b912d9",
+  "probes": [
+    {
+      "id": "seen_0",
+      "group": "seen_subtraction",
+      "prompt": "Question: What is -8 minus -5?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-3.",
+        "lower": "-4.",
+        "higher": "-2."
+      },
+      "prompt_tokens": 19,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.36181640625,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 0.73681640625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 1.79931640625,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -8 minus -5?\nAnswer: -4."
+    },
+    {
+      "id": "seen_1",
+      "group": "seen_subtraction",
+      "prompt": "Question: Subtract -5 from -8.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-3.",
+        "lower": "-4.",
+        "higher": "-2."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.6982421875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.4794921875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 1.9169921875,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract -5 from -8.\nAnswer: -10."
+    },
+    {
+      "id": "seen_2",
+      "group": "seen_subtraction",
+      "prompt": "Question: What is -8 minus -6?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-2.",
+        "lower": "-3.",
+        "higher": "-1."
+      },
+      "prompt_tokens": 19,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.864501953125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.520751953125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 1.083251953125,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -8 minus -6?\nAnswer: -4."
+    },
+    {
+      "id": "seen_3",
+      "group": "seen_subtraction",
+      "prompt": "Question: Subtract -6 from -8.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-2.",
+        "lower": "-3.",
+        "higher": "-1."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 2.041015625,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.884765625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 1.416015625,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract -6 from -8.\nAnswer: -10."
+    },
+    {
+      "id": "seen_4",
+      "group": "seen_subtraction",
+      "prompt": "Question: What is -8 minus -7?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 19,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.171630859375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.827880859375,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 4.71875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is -8 minus -7?\nAnswer: -4."
+    },
+    {
+      "id": "seen_5",
+      "group": "seen_subtraction",
+      "prompt": "Question: Subtract -7 from -8.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.296875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.921875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 3.875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -7 from -8.\nAnswer: -10."
+    },
+    {
+      "id": "seen_6",
+      "group": "seen_subtraction",
+      "prompt": "Question: What is -8 minus -8?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "0.",
+        "lower": "-1.",
+        "higher": "1."
+      },
+      "prompt_tokens": 19,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.53125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 1.14208984375,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 4.78125,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -8 minus -8?\nAnswer: -10."
+    },
+    {
+      "id": "seen_7",
+      "group": "seen_subtraction",
+      "prompt": "Question: Subtract -8 from -8.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "0.",
+        "lower": "-1.",
+        "higher": "1."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.03125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 1.3408203125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 3.578125,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract -8 from -8.\nAnswer: -10."
+    },
+    {
+      "id": "seen_8",
+      "group": "seen_subtraction",
+      "prompt": "Question: What is -7 minus -8?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "1.",
+        "lower": "0.",
+        "higher": "2."
+      },
+      "prompt_tokens": 19,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.71875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 4.53125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.59375,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -7 minus -8?\nAnswer: -4."
+    },
+    {
+      "id": "seen_9",
+      "group": "seen_subtraction",
+      "prompt": "Question: Subtract -8 from -7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "1.",
+        "lower": "0.",
+        "higher": "2."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 3.546875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 4.0625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 3.171875,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract -8 from -7.\nAnswer: -7."
+    },
+    {
+      "id": "seen_10",
+      "group": "seen_subtraction",
+      "prompt": "Question: What is -6 minus -8?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "2.",
+        "lower": "1.",
+        "higher": "3."
+      },
+      "prompt_tokens": 19,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.34375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 4.59375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.90625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is -6 minus -8?\nAnswer: -4."
+    },
+    {
+      "id": "seen_11",
+      "group": "seen_subtraction",
+      "prompt": "Question: Subtract -8 from -6.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "2.",
+        "lower": "1.",
+        "higher": "3."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 3.484375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 3.734375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.5625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -8 from -6.\nAnswer: -10."
+    },
+    {
+      "id": "seen_12",
+      "group": "seen_subtraction",
+      "prompt": "Question: What is -5 minus -8?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 19,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.90625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 4.34375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 5.09375,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -5 minus -8?\nAnswer: -4."
+    },
+    {
+      "id": "seen_13",
+      "group": "seen_subtraction",
+      "prompt": "Question: Subtract -8 from -5.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.40625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 3.53125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.71875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract -8 from -5.\nAnswer: -5."
+    }
+  ],
+  "probes_file": "data/math_calibration/seen_subtraction.json",
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}

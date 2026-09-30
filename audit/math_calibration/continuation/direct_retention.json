@@ -1,0 +1,228 @@
+{
+  "checkpoint": "runs/hpc_math_continuation_seed1686/model.pt",
+  "label": "synthetic_math_continuation_not_historical_only",
+  "physics_probes": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 4.904296875,
+          "tokens": 4
+        },
+        "inverse": {
+          "mean_nll": 3.5418529510498047,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 2.611083984375,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 4.2906494140625,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 5.507378578186035,
+          "tokens": 9
+        },
+        "inverse": {
+          "mean_nll": 4.311384201049805,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 3.7135958671569824,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 5.0882568359375,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 5.427083492279053,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 4.885937690734863,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 4.86572265625,
+          "tokens": 8
+        },
+        "inverse_cube": {
+          "mean_nll": 5.546875,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 9.75,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 5.1015625,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 5.09765625,
+          "tokens": 5
+        },
+        "inverse_cube": {
+          "mean_nll": 5.122656345367432,
+          "tokens": 5
+        }
+      }
+    }
+  ],
+  "physics_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as the square of the square of the square of t^1; so the square of t^1 leaves powers 2 and 1. Division subtracts them: 2 - (1) = 1.\nTherefore: Q ∝ t^1.",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as t^3 divided by M^1. Eliminate M and state the resulting power.\nAnswer: t^4.",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of their magnitude to the same quantity.\nWork: Elimination of J^3 leaves powers 0 and 1. Division subtracts them: 0 - (1) = -1.\nResult: the required exponent is -1.",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to u^0.\nTherefore: D ∝ u^0.\nTherefore: D ∝ u^0.\nAnswer: u^0."
+  },
+  "abstract_transfer": [
+    {
+      "id": "seen_exponent_control",
+      "prompt": "Question: Suppose A is proportional to x^3, and B is proportional to x^1. To what power of x is the quotient A divided by B proportional?\nReasoning: ",
+      "answer": "power_2",
+      "first": 3,
+      "second": 1,
+      "winner": "power_2",
+      "scores": {
+        "power_0": {
+          "mean_nll": 3.6042349338531494,
+          "tokens": 38
+        },
+        "power_minus_1": {
+          "mean_nll": 3.7276623249053955,
+          "tokens": 39
+        },
+        "power_2": {
+          "mean_nll": 3.3417117595672607,
+          "tokens": 38
+        },
+        "power_minus_2": {
+          "mean_nll": 3.9325921535491943,
+          "tokens": 39
+        },
+        "power_minus_3": {
+          "mean_nll": 3.9992003440856934,
+          "tokens": 39
+        }
+      },
+      "generation": "Question: Suppose A is proportional to x^3, and B is proportional to x^1. To what power of x is the quotient A divided by B proportional?\nReasoning: Substitute x^3 for B^3. The quotient becomes x^1/x^3, so the indices give 1 - (3) = -1.\nAnswer: B is proportional to x^-1."
+    },
+    {
+      "id": "withheld_exponent_minus_two",
+      "prompt": "Question: Suppose A is proportional to x^1, and B is proportional to x^3. To what power of x is the quotient A divided by B proportional?\nReasoning: ",
+      "answer": "power_minus_2",
+      "first": 1,
+      "second": 3,
+      "winner": "power_minus_1",
+      "scores": {
+        "power_0": {
+          "mean_nll": 3.4774227142333984,
+          "tokens": 38
+        },
+        "power_minus_1": {
+          "mean_nll": 3.227156162261963,
+          "tokens": 39
+        },
+        "power_2": {
+          "mean_nll": 3.738452434539795,
+          "tokens": 38
+        },
+        "power_minus_2": {
+          "mean_nll": 3.4971935749053955,
+          "tokens": 39
+        },
+        "power_minus_3": {
+          "mean_nll": 3.4558231830596924,
+          "tokens": 39
+        }
+      },
+      "generation": "Question: Suppose A is proportional to x^1, and B is proportional to x^3. To what power of x is the quotient A divided by B proportional?\nReasoning: Substitute x^1 for B^1. The quotient becomes x^3/x^1, so the indices give 3 - (1) = 2.\nTherefore: B ∝ x^2."
+    },
+    {
+      "id": "neutral_two_premise_transfer",
+      "prompt": "The square of P is proportional to the cube of R. Q is proportional to R divided by the square of P. Combining the two relations, Q is proportional to ",
+      "answer": "power_minus_2",
+      "winner": "power_minus_1",
+      "scores": {
+        "power_0": {
+          "mean_nll": 4.453771591186523,
+          "tokens": 33
+        },
+        "power_minus_1": {
+          "mean_nll": 4.344396591186523,
+          "tokens": 33
+        },
+        "power_2": {
+          "mean_nll": 4.442408084869385,
+          "tokens": 33
+        },
+        "power_minus_2": {
+          "mean_nll": 4.4708170890808105,
+          "tokens": 33
+        },
+        "power_minus_3": {
+          "mean_nll": 4.369017601013184,
+          "tokens": 33
+        }
+      },
+      "generation": "The square of P is proportional to the cube of R. Q is proportional to R divided by the square of P. Combining the two relations, Q is proportional to u^1/P^1, find the exponent of u in P.\nAnswer: P is proportional to u^1. •a.\nAnswer: u^1."
+    }
+  ],
+  "physics_symbolic_bridge": {
+    "prompt": "Question: The square of an orbital period is proportional to distance^3. The circular turning tendency is proportional to distance^1 divided by the square of the orbital period. To what power of distance is the turning tendency proportional?\nReasoning: ",
+    "answer": "power_minus_2",
+    "winner": "power_minus_1",
+    "scores": {
+      "power_0": {
+        "mean_nll": 3.029960870742798,
+        "tokens": 67
+      },
+      "power_minus_1": {
+        "mean_nll": 2.9389097690582275,
+        "tokens": 68
+      },
+      "power_2": {
+        "mean_nll": 3.1407546997070312,
+        "tokens": 67
+      },
+      "power_minus_2": {
+        "mean_nll": 3.0941107273101807,
+        "tokens": 68
+      },
+      "power_minus_3": {
+        "mean_nll": 3.0591933727264404,
+        "tokens": 68
+      }
+    },
+    "generation": "Question: The square of an orbital period is proportional to distance^3. The circular turning tendency is proportional to distance^1 divided by the square of the orbital period. To what power of distance is the turning tendency proportional?\nReasoning: Substitute w^3 for H^1. The quotient becomes w^1/w^3, so the indices give 1 - (3) = -1.\nAnswer: W is proportional to w^-1."
+  },
+  "scientific_retention": {
+    "validation": "data/real_pilot_v11/validation.bin",
+    "sampling_seed": 1686,
+    "batch_size": 8,
+    "rounds": 16,
+    "mean_loss": 5.209936946630478
+  }
+}

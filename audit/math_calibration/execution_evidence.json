@@ -1,0 +1,18 @@
+{
+  "verified_date": "2026-10-01",
+  "jobs": {
+    "2863142": {"state": "COMPLETED", "exit_code": "0:0", "elapsed": "00:04:08"},
+    "2863144": {"state": "COMPLETED", "exit_code": "0:0", "elapsed": "00:01:20"},
+    "2863150": {"state": "COMPLETED", "exit_code": "0:0", "elapsed": "00:00:21"}
+  },
+  "train_jsonl_sha256": "d8c1a6e8e015b2a439b70713038b0e046df892b3d844743626d30fd4c40d6958",
+  "control_and_answer_only_token_sha256": "ae0d5333b308b95877fb58aa4bd523a7819290c3538b72abe13cbadb321ed39d",
+  "checkpoint_sha256": {
+    "continuation": "11735b6192fac4db697b1aff0c01c0a8894b764d1f25c9a48a64135b2017b4bf",
+    "answer_only": "2565030214e3860c16b693523bed43ef4934eee7a5e28194a212dc5a016865ef"
+  },
+  "family_token_counts": {
+    "math_elimination": {"records": 28489, "input_tokens": 1898524, "answer_only_supervised_tokens": 574336},
+    "math_subtraction": {"records": 544, "input_tokens": 10882, "answer_only_supervised_tokens": 1394}
+  }
+}

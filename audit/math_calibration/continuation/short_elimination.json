@@ -1,0 +1,233 @@
+{
+  "checkpoint": "runs/hpc_math_continuation_seed1686/model.pt",
+  "label": "synthetic_math_continuation_not_historical_only",
+  "source_sha256": "8cad68de3af5bc808fe65e3914281fe0537d84c80d442bb584d48d2550b11baa",
+  "probes": [
+    {
+      "id": "arithmetic_1_3",
+      "group": "arithmetic",
+      "prompt": "Question: What is 1 minus 3?\nAnswer: ",
+      "target": "-2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "-2": {
+          "mean_nll": 2.0234375,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 3.125,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 3.6875,
+          "tokens": 1
+        }
+      },
+      "winner": "-2",
+      "generation": "Question: What is 1 minus 3?\nAnswer: -1."
+    },
+    {
+      "id": "arithmetic_3_1",
+      "group": "arithmetic",
+      "prompt": "Question: What is 3 minus 1?\nAnswer: ",
+      "target": "2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "-2": {
+          "mean_nll": 2.203125,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 3.640625,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 3.265625,
+          "tokens": 1
+        }
+      },
+      "winner": "-2",
+      "generation": "Question: What is 3 minus 1?\nAnswer: -1."
+    },
+    {
+      "id": "abstract_3_1",
+      "group": "abstract",
+      "prompt": "A is proportional to x^3. B is proportional to x^1 divided by A.\nQuestion: What is B proportional to after eliminating A?\nAnswer: ",
+      "target": "-2",
+      "candidates": {
+        "-2": "x^-2.",
+        "0": "x^0.",
+        "2": "x^2."
+      },
+      "prompt_tokens": 43,
+      "scores": {
+        "-2": {
+          "mean_nll": 1.5616048574447632,
+          "tokens": 3
+        },
+        "0": {
+          "mean_nll": 1.150146484375,
+          "tokens": 3
+        },
+        "2": {
+          "mean_nll": 1.2959798574447632,
+          "tokens": 3
+        }
+      },
+      "winner": "0",
+      "generation": "A is proportional to x^3. B is proportional to x^1 divided by A.\nQuestion: What is B proportional to after eliminating A?\nAnswer: x^4."
+    },
+    {
+      "id": "abstract_1_3",
+      "group": "abstract",
+      "prompt": "A is proportional to x^1. B is proportional to x^3 divided by A.\nQuestion: What is B proportional to after eliminating A?\nAnswer: ",
+      "target": "2",
+      "candidates": {
+        "-2": "x^-2.",
+        "0": "x^0.",
+        "2": "x^2."
+      },
+      "prompt_tokens": 43,
+      "scores": {
+        "-2": {
+          "mean_nll": 2.3284099102020264,
+          "tokens": 3
+        },
+        "0": {
+          "mean_nll": 1.1032308340072632,
+          "tokens": 3
+        },
+        "2": {
+          "mean_nll": 0.7698974609375,
+          "tokens": 3
+        }
+      },
+      "winner": "2",
+      "generation": "A is proportional to x^1. B is proportional to x^3 divided by A.\nQuestion: What is B proportional to after eliminating A?\nAnswer: x^1."
+    },
+    {
+      "id": "symbolic_physics_3_1",
+      "group": "symbolic_physics",
+      "prompt": "T^2 is proportional to R^3. C is proportional to R^1 divided by T^2.\nQuestion: What is C proportional to after eliminating T?\nAnswer: ",
+      "target": "-2",
+      "candidates": {
+        "-2": "R^-2.",
+        "0": "R^0.",
+        "2": "R^2."
+      },
+      "prompt_tokens": 46,
+      "scores": {
+        "-2": {
+          "mean_nll": 6.25,
+          "tokens": 3
+        },
+        "0": {
+          "mean_nll": 4.65625,
+          "tokens": 3
+        },
+        "2": {
+          "mean_nll": 5.03125,
+          "tokens": 3
+        }
+      },
+      "winner": "0",
+      "generation": "T^2 is proportional to R^3. C is proportional to R^1 divided by T^2.\nQuestion: What is C proportional to after eliminating T?\nAnswer: w^1."
+    },
+    {
+      "id": "symbolic_physics_1_3",
+      "group": "symbolic_physics",
+      "prompt": "T^2 is proportional to R^1. C is proportional to R^3 divided by T^2.\nQuestion: What is C proportional to after eliminating T?\nAnswer: ",
+      "target": "2",
+      "candidates": {
+        "-2": "R^-2.",
+        "0": "R^0.",
+        "2": "R^2."
+      },
+      "prompt_tokens": 46,
+      "scores": {
+        "-2": {
+          "mean_nll": 6.421875,
+          "tokens": 3
+        },
+        "0": {
+          "mean_nll": 5.671875,
+          "tokens": 3
+        },
+        "2": {
+          "mean_nll": 5.380208492279053,
+          "tokens": 3
+        }
+      },
+      "winner": "2",
+      "generation": "T^2 is proportional to R^1. C is proportional to R^3 divided by T^2.\nQuestion: What is C proportional to after eliminating T?\nAnswer: w^4."
+    },
+    {
+      "id": "verbal_physics_3_1",
+      "group": "verbal_physics",
+      "prompt": "The square of the orbital period is as the cube of the distance. The circular turning tendency is as the distance divided by the square of the period.\nQuestion: To what power of distance is the turning tendency proportional?\nAnswer: ",
+      "target": "-2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 65,
+      "scores": {
+        "-2": {
+          "mean_nll": 3.5625,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 6.0625,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 6.0625,
+          "tokens": 1
+        }
+      },
+      "winner": "-2",
+      "generation": "The square of the orbital period is as the cube of the distance. The circular turning tendency is as the distance divided by the square of the period.\nQuestion: To what power of distance is the turning tendency proportional?\nAnswer: W is proportional to s^0."
+    },
+    {
+      "id": "verbal_physics_1_3",
+      "group": "verbal_physics",
+      "prompt": "The square of the orbital period is as the distance. The circular turning tendency is as the cube of the distance divided by the square of the period.\nQuestion: To what power of distance is the turning tendency proportional?\nAnswer: ",
+      "target": "2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 65,
+      "scores": {
+        "-2": {
+          "mean_nll": 3.5546875,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 6.0625,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 5.875,
+          "tokens": 1
+        }
+      },
+      "winner": "-2",
+      "generation": "The square of the orbital period is as the distance. The circular turning tendency is as the cube of the distance divided by the square of the period.\nQuestion: To what power of distance is the turning tendency proportional?\nAnswer: s^0."
+    }
+  ],
+  "probes_file": "tests/fixtures/short_elimination_probes.json",
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}

@@ -1,0 +1,195 @@
+{
+  "checkpoint": "runs/hpc_math_answer_only_seed1686/model.pt",
+  "label": "synthetic_math_answer_only_not_historical_only",
+  "source_sha256": "1f9d37d233dd32d2e1c2dc15786bbbdabd0d9bbb5626489a65335da4efcf4585",
+  "probes": [
+    {
+      "id": "original_ocr_question",
+      "prompt": "For Example, The Period of the Revolution of the Earth reduced into \nminutes of time, being 525968. 4. and of Mars. 989247. 5: 1 ſay, as the \nſquare of. 525968. 7. to the ſquare of. 989247.+. ſo the Cube of 100000. \nthe mean diſtance of the Earth, to the Cube of 152369.the Mean diſtance of \nMars, or by artificiall numbers,\nQuestion: What power of the periods is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 147,
+      "scores": {
+        "square": {
+          "mean_nll": 4.6875,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 5.521484375,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "For Example, The Period of the Revolution of the Earth reduced into \nminutes of time, being 525968. 4. and of Mars. 989247. 5: 1 ſay, as the \nſquare of. 525968. 7. to the ſquare of. 989247.+. ſo the Cube of 100000. \nthe mean diſtance of the Earth, to the Cube of 152369.the Mean diſtance of \nMars, or by artificiall numbers,\nQuestion: What power of the periods is compared?\nAnswer: u^0."
+    },
+    {
+      "id": "original_ocr_continuation",
+      "prompt": "For Example, The Period of the Revolution of the Earth reduced into \nminutes of time, being 525968. 4. and of Mars. 989247. 5: 1 ſay, as the \nſquare of. 525968. 7. to the ſquare of. 989247.+. ſo the Cube of 100000. \nthe mean diſtance of the Earth, to the Cube of 152369.the Mean diſtance of \nMars, or by artificiall numbers,\nThe passage compares the ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 134,
+      "scores": {
+        "square": {
+          "mean_nll": 4.088727951049805,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 5.9713544845581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "For Example, The Period of the Revolution of the Earth reduced into \nminutes of time, being 525968. 4. and of Mars. 989247. 5: 1 ſay, as the \nſquare of. 525968. 7. to the ſquare of. 989247.+. ſo the Cube of 100000. \nthe mean diſtance of the Earth, to the Cube of 152369.the Mean diſtance of \nMars, or by artificiall numbers,\nThe passage compares the denominator by the first relation. Thus M ∝ u^3/u^0 = u^3.\nAnswer: M is proportional to u^3."
+    },
+    {
+      "id": "modern_paraphrase_question",
+      "prompt": "The squares of the periods are as the cubes of the distances.\nQuestion: What power of the periods is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 4.122767925262451,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 5.5751953125,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the periods are as the cubes of the distances.\nQuestion: What power of the periods is compared?\nAnswer: W is proportional to s^0."
+    },
+    {
+      "id": "modern_paraphrase_continuation",
+      "prompt": "The squares of the periods are as the cubes of the distances.\nThe passage compares the ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 26,
+      "scores": {
+        "square": {
+          "mean_nll": 3.0477120876312256,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 5.0143232345581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the periods are as the cubes of the distances.\nThe passage compares the denominator by the first relation. Thus D ∝ s^1/s^-1 = s^2.\nAnswer: D is proportional to s^2."
+    },
+    {
+      "id": "counterfactual_paraphrase_question",
+      "prompt": "The cubes of the periods are as the squares of the distances.\nQuestion: What power of the periods is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 4.170759201049805,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 5.429036617279053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the periods are as the squares of the distances.\nQuestion: What power of the periods is compared?\nAnswer: W is proportional to s^0."
+    },
+    {
+      "id": "counterfactual_paraphrase_continuation",
+      "prompt": "The cubes of the periods are as the squares of the distances.\nThe passage compares the ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 26,
+      "scores": {
+        "square": {
+          "mean_nll": 3.0493862628936768,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.748046875,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the periods are as the squares of the distances.\nThe passage compares the denominator by the first relation. Thus D ∝ s^1/s^-1 = s^2.\nAnswer: D is proportional to s^2."
+    },
+    {
+      "id": "arithmetic_1_3",
+      "prompt": "Question: What is 1 minus 3?\nAnswer: ",
+      "target": "-2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "-2": {
+          "mean_nll": 2.265625,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 3.90625,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 4.21875,
+          "tokens": 1
+        }
+      },
+      "winner": "-2",
+      "generation": "Question: What is 1 minus 3?\nAnswer: -1."
+    },
+    {
+      "id": "arithmetic_3_1",
+      "prompt": "Question: What is 3 minus 1?\nAnswer: ",
+      "target": "2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "-2": {
+          "mean_nll": 2.515625,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 4.3125,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 4.3125,
+          "tokens": 1
+        }
+      },
+      "winner": "-2",
+      "generation": "Question: What is 3 minus 1?\nAnswer: -1."
+    }
+  ],
+  "probes_file": null,
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}
