@@ -89,3 +89,19 @@ benchmark. Broader discovery claims require new tasks and audited source materia
 Replication submitted as Tongji job 2863128 on 2026-10-01. Submission is not evidence
 of completion; inspect scheduler state and all four output directories before
 reporting results.
+
+## Short-answer interface diagnostic
+
+While replication is running, a post-hoc eight-case diagnostic is fixed in
+`tests/fixtures/short_elimination_probes.json`: two each for subtraction, abstract
+elimination, symbolic orbital premises and verbal orbital premises. Within each
+group the exponents are reversed, changing the correct answer from -2 to +2.
+Greedy generation permits immediate EOS, uses 60 tokens and no minimum length,
+matching the reading evaluator rather than demanding a long reasoning trace.
+Run on historical V11, continuation-weighted control and answer-only seed 1686.
+Exact full suffix is the primary diagnostic; ranking is secondary. All prompts
+provide their premises: even success would not demonstrate retrieval of historical
+knowledge or autonomous discovery. Counterfactual physics cases are deliberately
+not claims about the real world. The old long-form suite is retained unchanged.
+Tongji job 2863130 is submitted with `afterok:2863128`, so it will not run concurrently
+with the replication on another GPU. No diagnostic outcomes are claimed yet.

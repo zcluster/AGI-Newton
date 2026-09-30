@@ -1,0 +1,10 @@
+[
+  {"id":"arithmetic_1_3","group":"arithmetic","prompt":"Question: What is 1 minus 3?\nAnswer: ","target":"-2","candidates":{"-2":"-2.","0":"0.","2":"2."}},
+  {"id":"arithmetic_3_1","group":"arithmetic","prompt":"Question: What is 3 minus 1?\nAnswer: ","target":"2","candidates":{"-2":"-2.","0":"0.","2":"2."}},
+  {"id":"abstract_3_1","group":"abstract","prompt":"A is proportional to x^3. B is proportional to x^1 divided by A.\nQuestion: What is B proportional to after eliminating A?\nAnswer: ","target":"-2","candidates":{"-2":"x^-2.","0":"x^0.","2":"x^2."}},
+  {"id":"abstract_1_3","group":"abstract","prompt":"A is proportional to x^1. B is proportional to x^3 divided by A.\nQuestion: What is B proportional to after eliminating A?\nAnswer: ","target":"2","candidates":{"-2":"x^-2.","0":"x^0.","2":"x^2."}},
+  {"id":"symbolic_physics_3_1","group":"symbolic_physics","prompt":"T^2 is proportional to R^3. C is proportional to R^1 divided by T^2.\nQuestion: What is C proportional to after eliminating T?\nAnswer: ","target":"-2","candidates":{"-2":"R^-2.","0":"R^0.","2":"R^2."}},
+  {"id":"symbolic_physics_1_3","group":"symbolic_physics","prompt":"T^2 is proportional to R^1. C is proportional to R^3 divided by T^2.\nQuestion: What is C proportional to after eliminating T?\nAnswer: ","target":"2","candidates":{"-2":"R^-2.","0":"R^0.","2":"R^2."}},
+  {"id":"verbal_physics_3_1","group":"verbal_physics","prompt":"The square of the orbital period is as the cube of the distance. The circular turning tendency is as the distance divided by the square of the period.\nQuestion: To what power of distance is the turning tendency proportional?\nAnswer: ","target":"-2","candidates":{"-2":"-2.","0":"0.","2":"2."}},
+  {"id":"verbal_physics_1_3","group":"verbal_physics","prompt":"The square of the orbital period is as the distance. The circular turning tendency is as the cube of the distance divided by the square of the period.\nQuestion: To what power of distance is the turning tendency proportional?\nAnswer: ","target":"2","candidates":{"-2":"-2.","0":"0.","2":"2."}}
+]
