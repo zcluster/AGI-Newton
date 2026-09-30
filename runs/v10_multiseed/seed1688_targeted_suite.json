@@ -1,0 +1,548 @@
+{
+  "suite_version": 3,
+  "checkpoint": "/tmp/agi-newton-v10-seed1688-targeted/model.pt",
+  "label": "v10_seed1688_targeted",
+  "deterministic_generation": true,
+  "abstract_metrics": {
+    "cases": 12,
+    "candidate_accuracy": 0.25,
+    "generation_accuracy": 0.0
+  },
+  "physics_metrics": {
+    "cases": 4,
+    "candidate_accuracy": 0.0,
+    "generation_accuracy": 0.0
+  },
+  "abstract_cases": [
+    {
+      "id": "heldout_a",
+      "prompt": "The square of H scales as q^3. J scales as q^1 divided by that square. After eliminating H, determine the power of q in J.\nReasoning: ",
+      "target": "J",
+      "base": "q",
+      "expected": -2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.165292263031006,
+          "tokens": 43
+        },
+        "-2": {
+          "mean_nll": 5.5291056632995605,
+          "tokens": 44
+        },
+        "-1": {
+          "mean_nll": 5.150338649749756,
+          "tokens": 43
+        },
+        "0": {
+          "mean_nll": 5.379090785980225,
+          "tokens": 42
+        },
+        "2": {
+          "mean_nll": 5.352024078369141,
+          "tokens": 42
+        }
+      },
+      "generation": "The square of H scales as q^3. J scales as q^1 divided by that square. After eliminating H, determine the power of q in J.\nReasoning: ∝ x^-1 for A^1. Substitute x^-1/x^0, so the indices give -1 - (0) = -1.\nResult: the required exponent is  -1 .",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_b",
+      "prompt": "Suppose U^2 is proportional to w^3, whereas V is proportional to w/U^2. Combine both statements and simplify V.\nDerivation: ",
+      "target": "V",
+      "base": "w",
+      "expected": -2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 3.494129180908203,
+          "tokens": 43
+        },
+        "-2": {
+          "mean_nll": 3.7482237815856934,
+          "tokens": 44
+        },
+        "-1": {
+          "mean_nll": 3.445889472961426,
+          "tokens": 43
+        },
+        "0": {
+          "mean_nll": 3.5843636989593506,
+          "tokens": 42
+        },
+        "2": {
+          "mean_nll": 3.619777202606201,
+          "tokens": 42
+        }
+      },
+      "generation": "Suppose U^2 is proportional to w^3, whereas V is proportional to w/U^2. Combine both statements and simplify V.\nDerivation: ∝ w^3/w^0 = w^0.\nAnswer: V is proportional to w^ 0 . In what is proportional to w^ 0 .",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_c",
+      "prompt": "Two facts are given. The cube of C follows s^3. D follows s divided by the cube of C. What exponent of s remains in D?\nWork: ",
+      "target": "D",
+      "base": "s",
+      "expected": -2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 3.565538167953491,
+          "tokens": 43
+        },
+        "-2": {
+          "mean_nll": 3.7810258865356445,
+          "tokens": 44
+        },
+        "-1": {
+          "mean_nll": 3.5301644802093506,
+          "tokens": 43
+        },
+        "0": {
+          "mean_nll": 3.7066097259521484,
+          "tokens": 42
+        },
+        "2": {
+          "mean_nll": 3.7167773246765137,
+          "tokens": 42
+        }
+      },
+      "generation": "Two facts are given. The cube of C follows s^3. D follows s divided by the cube of C. What exponent of s remains in D?\nWork: ∝ s^-1 over that same quantity, what index does C have the quotient becomes s^-1/s^3, so the indices give -1 - (3) = -4.\nResult: the required exponent is  -4 .",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_d",
+      "prompt": "Let K^1 vary with t^3 and let L vary with t^1/K^1. Remove K from the relations and give the dependence of L on t.\nSolution: ",
+      "target": "L",
+      "base": "t",
+      "expected": -2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 3.563891649246216,
+          "tokens": 43
+        },
+        "-2": {
+          "mean_nll": 3.7547683715820312,
+          "tokens": 44
+        },
+        "-1": {
+          "mean_nll": 3.5437707901000977,
+          "tokens": 43
+        },
+        "0": {
+          "mean_nll": 3.7467310428619385,
+          "tokens": 42
+        },
+        "2": {
+          "mean_nll": 3.7667014598846436,
+          "tokens": 42
+        }
+      },
+      "generation": "Let K^1 vary with t^3 and let L vary with t^1/K^1. Remove K from the relations and give the dependence of L on t.\nSolution: ∝ t^-1 over that same quantity, what index does G have the quotient becomes t^1/t^-1, so the indices give 1 - (-1) = 2.\nResult: the required exponent is  2 .",
+      "generation_correct": false
+    },
+    {
+      "id": "control_2",
+      "prompt": "The square of H scales as q^1. J scales as q^3 divided by that square. Eliminate H and determine J.\nReasoning: ",
+      "target": "J",
+      "base": "q",
+      "expected": 2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.466248989105225,
+          "tokens": 42
+        },
+        "-2": {
+          "mean_nll": 5.742941379547119,
+          "tokens": 43
+        },
+        "-1": {
+          "mean_nll": 5.436972141265869,
+          "tokens": 42
+        },
+        "0": {
+          "mean_nll": 5.61100959777832,
+          "tokens": 41
+        },
+        "2": {
+          "mean_nll": 5.566166400909424,
+          "tokens": 41
+        }
+      },
+      "generation": "The square of H scales as q^1. J scales as q^3 divided by that square. Eliminate H and determine J.\nReasoning: ∝ x^-1 leaves powers -1 and -1. Division subtracts them: -1 - (-1) = 0.\nResult: the required exponent is  0 .",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_1",
+      "prompt": "Suppose U^2 is proportional to w^1, whereas V is proportional to w^0/U^2. Combine both statements.\nDerivation: ",
+      "target": "V",
+      "base": "w",
+      "expected": -1,
+      "winner": -1,
+      "candidate_correct": true,
+      "scores": {
+        "-3": {
+          "mean_nll": 3.4593441486358643,
+          "tokens": 42
+        },
+        "-2": {
+          "mean_nll": 3.7019340991973877,
+          "tokens": 43
+        },
+        "-1": {
+          "mean_nll": 3.456859827041626,
+          "tokens": 42
+        },
+        "0": {
+          "mean_nll": 3.574084758758545,
+          "tokens": 41
+        },
+        "2": {
+          "mean_nll": 3.5505788326263428,
+          "tokens": 41
+        }
+      },
+      "generation": "Suppose U^2 is proportional to w^1, whereas V is proportional to w^0/U^2. Combine both statements.\nDerivation: ∝ w^0/w^0 = w^-3.\nResult: the required exponent is  -3 . If the required exponent is  -3 .",
+      "generation_correct": false
+    },
+    {
+      "id": "control_0",
+      "prompt": "The cube of C follows s^2. D follows s^2 divided by the cube of C. What exponent remains?\nWork: ",
+      "target": "D",
+      "base": "s",
+      "expected": 0,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 3.849236011505127,
+          "tokens": 42
+        },
+        "-2": {
+          "mean_nll": 4.034042835235596,
+          "tokens": 43
+        },
+        "-1": {
+          "mean_nll": 3.839343786239624,
+          "tokens": 42
+        },
+        "0": {
+          "mean_nll": 3.9684250354766846,
+          "tokens": 41
+        },
+        "2": {
+          "mean_nll": 3.889509677886963,
+          "tokens": 41
+        }
+      },
+      "generation": "The cube of C follows s^2. D follows s^2 divided by the cube of C. What exponent remains?\nWork: ∝ s in C.\n Work: Elimination of C^2 leaves powers 2 and 2. Division subtracts them: 2 - (2) = 0.\nResult: the required exponent is  0 .",
+      "generation_correct": false
+    },
+    {
+      "id": "control_other_minus_2",
+      "prompt": "Let K^1 vary with t^1 and let L vary with t^-1/K^1. Remove K and give L's dependence.\nSolution: ",
+      "target": "L",
+      "base": "t",
+      "expected": -2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 3.7532646656036377,
+          "tokens": 42
+        },
+        "-2": {
+          "mean_nll": 3.858405590057373,
+          "tokens": 43
+        },
+        "-1": {
+          "mean_nll": 3.7207493782043457,
+          "tokens": 42
+        },
+        "0": {
+          "mean_nll": 3.906226634979248,
+          "tokens": 41
+        },
+        "2": {
+          "mean_nll": 3.895026683807373,
+          "tokens": 41
+        }
+      },
+      "generation": "Let K^1 vary with t^1 and let L vary with t^-1/K^1. Remove K and give L's dependence.\nSolution: ∝ t^-1/t^-1 = t^2.\nTherefore: L ∝ t^ 2 . In what number is the quotient A divided by B is proportional to t^ 2 .",
+      "generation_correct": false
+    },
+    {
+      "id": "control_reverse_2",
+      "prompt": "The square of M is proportional to z^-1. N is proportional to z^1 divided by that square. Simplify N.\nReasoning: ",
+      "target": "N",
+      "base": "z",
+      "expected": 2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 3.4369266033172607,
+          "tokens": 42
+        },
+        "-2": {
+          "mean_nll": 3.4938101768493652,
+          "tokens": 43
+        },
+        "-1": {
+          "mean_nll": 3.4114830493927,
+          "tokens": 42
+        },
+        "0": {
+          "mean_nll": 3.4676432609558105,
+          "tokens": 41
+        },
+        "2": {
+          "mean_nll": 3.428044319152832,
+          "tokens": 41
+        }
+      },
+      "generation": "The square of M is proportional to z^-1. N is proportional to z^1 divided by that square. Simplify N.\nReasoning: ∝ z^-1. The indices combine as 1 - (-1) = 2.\nAnswer: N is proportional to z^ 2 . In what is proportional to z^ 2 .",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_3",
+      "prompt": "Suppose A^3 follows x^3 and B follows x^0/A^3. Combine the relations.\nWork: ",
+      "target": "B",
+      "base": "x",
+      "expected": -3,
+      "winner": -3,
+      "candidate_correct": true,
+      "scores": {
+        "-3": {
+          "mean_nll": 3.102721929550171,
+          "tokens": 43
+        },
+        "-2": {
+          "mean_nll": 3.2956321239471436,
+          "tokens": 44
+        },
+        "-1": {
+          "mean_nll": 3.1237125396728516,
+          "tokens": 43
+        },
+        "0": {
+          "mean_nll": 3.2487549781799316,
+          "tokens": 42
+        },
+        "2": {
+          "mean_nll": 3.2781713008880615,
+          "tokens": 42
+        }
+      },
+      "generation": "Suppose A^3 follows x^3 and B follows x^0/A^3. Combine the relations.\nWork: ∝ x^-3/x^-3 = x^-3.\nTherefore: B ∝ x^ -3 . In what is the quotient A divided by B is proportional to x^ 0 .",
+      "generation_correct": false
+    },
+    {
+      "id": "control_zero_2",
+      "prompt": "The first power of P varies as y^-1. Q varies as y^-1 divided by P. Eliminate P.\nDerivation: ",
+      "target": "Q",
+      "base": "y",
+      "expected": 0,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 3.266392707824707,
+          "tokens": 42
+        },
+        "-2": {
+          "mean_nll": 3.349398136138916,
+          "tokens": 43
+        },
+        "-1": {
+          "mean_nll": 3.2241363525390625,
+          "tokens": 42
+        },
+        "0": {
+          "mean_nll": 3.335352897644043,
+          "tokens": 41
+        },
+        "2": {
+          "mean_nll": 3.317687511444092,
+          "tokens": 41
+        }
+      },
+      "generation": "The first power of P varies as y^-1. Q varies as y^-1 divided by P. Eliminate P.\nDerivation: ∝ y^-1/y^-1, so the denominator by the first relation. Thus Q ∝ y^-1/y^-1 = y^2.\nTherefore: Q ∝ y^ 2 .",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_1_b",
+      "prompt": "Let F^2 follow v^3 and G follow v^2/F^2. Determine G after substitution.\nSolution: ",
+      "target": "G",
+      "base": "v",
+      "expected": -1,
+      "winner": -1,
+      "candidate_correct": true,
+      "scores": {
+        "-3": {
+          "mean_nll": 3.6894190311431885,
+          "tokens": 43
+        },
+        "-2": {
+          "mean_nll": 3.90751051902771,
+          "tokens": 44
+        },
+        "-1": {
+          "mean_nll": 3.688671827316284,
+          "tokens": 43
+        },
+        "0": {
+          "mean_nll": 3.8531100749969482,
+          "tokens": 42
+        },
+        "2": {
+          "mean_nll": 3.876084804534912,
+          "tokens": 42
+        }
+      },
+      "generation": "Let F^2 follow v^3 and G follow v^2/F^2. Determine G after substitution.\nSolution: ∝ v^-3 over that the first relation into the second and C varies as the quotient becomes v^-3/v^-3, so the indices give -3 - (-3) = 0.\nResult: the required exponent is  0 .",
+      "generation_correct": false
+    }
+  ],
+  "physics_cases": [
+    {
+      "id": "physics_0",
+      "prompt": "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: ",
+      "target": "turning tendency",
+      "base": "distance",
+      "expected": -2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.459524154663086,
+          "tokens": 47
+        },
+        "-2": {
+          "mean_nll": 5.723714828491211,
+          "tokens": 48
+        },
+        "-1": {
+          "mean_nll": 5.432510852813721,
+          "tokens": 47
+        },
+        "0": {
+          "mean_nll": 5.625898361206055,
+          "tokens": 46
+        },
+        "2": {
+          "mean_nll": 5.6132049560546875,
+          "tokens": 46
+        }
+      },
+      "generation": "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: ∝ x^-1 leaves powers -1 and -3. Division subtracts them: -1 - (-3) = 2.\nResult: the required exponent is  2 .",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_1",
+      "prompt": "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: ",
+      "target": "turning tendency",
+      "base": "mean distance",
+      "expected": -2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.358065128326416,
+          "tokens": 50
+        },
+        "-2": {
+          "mean_nll": 5.607672214508057,
+          "tokens": 51
+        },
+        "-1": {
+          "mean_nll": 5.325129985809326,
+          "tokens": 50
+        },
+        "0": {
+          "mean_nll": 5.470752716064453,
+          "tokens": 49
+        },
+        "2": {
+          "mean_nll": 5.455871105194092,
+          "tokens": 49
+        }
+      },
+      "generation": "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: ∝ x^-3/x^-1 = x^2.\nTherefore: A ∝ x^ 2 . In what is proportional to x^ 2 .",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_2",
+      "prompt": "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: ",
+      "target": "C",
+      "base": "R",
+      "expected": -2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.031489372253418,
+          "tokens": 43
+        },
+        "-2": {
+          "mean_nll": 5.343247413635254,
+          "tokens": 44
+        },
+        "-1": {
+          "mean_nll": 5.004173278808594,
+          "tokens": 43
+        },
+        "0": {
+          "mean_nll": 5.263075828552246,
+          "tokens": 42
+        },
+        "2": {
+          "mean_nll": 5.239991188049316,
+          "tokens": 42
+        }
+      },
+      "generation": "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: ∝ x^-3 over that same quantity, what index does the quotient becomes x^-3/x^-3, so the indices give -3 - (-3) = 0.\nResult: the required exponent is  0 .",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_3",
+      "prompt": "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: ",
+      "target": "A",
+      "base": "d",
+      "expected": -2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.167665481567383,
+          "tokens": 43
+        },
+        "-2": {
+          "mean_nll": 5.4956278800964355,
+          "tokens": 44
+        },
+        "-1": {
+          "mean_nll": 5.147775173187256,
+          "tokens": 43
+        },
+        "0": {
+          "mean_nll": 5.36212158203125,
+          "tokens": 42
+        },
+        "2": {
+          "mean_nll": 5.368503570556641,
+          "tokens": 42
+        }
+      },
+      "generation": "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: ∝ t^2/C^2. Substitute t^2 for P^2. The quotient becomes t^2/t^2, so the indices give 2 - (2) = 0.\nResult: the required exponent is  0 .",
+      "generation_correct": false
+    }
+  ]
+}

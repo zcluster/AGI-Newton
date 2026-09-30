@@ -169,6 +169,9 @@ The local V8 continuation-weighting ablation and stricter generation audit are
 documented in [`V8_WEIGHTING_PILOT.md`](V8_WEIGHTING_PILOT.md).
 The V9 compositional grid and final-exponent weighting ablation are documented
 in [`V9_COMPOSITION_GRID.md`](V9_COMPOSITION_GRID.md).
+The three-seed replication and counterfactual audit, which overturns a
+single-seed weighting conclusion, are in
+[`V10_MULTISEED_AUDIT.md`](V10_MULTISEED_AUDIT.md).
 
 Build the pre-1687 EEBO layer from an already downloaded PYCCLE archive:
 

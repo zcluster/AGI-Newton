@@ -1,0 +1,132 @@
+{
+  "label": "v10_seed1688_control",
+  "parameters": 1845504,
+  "vocab_size": 8000,
+  "train_tokens": 3775795,
+  "validation_tokens": 197472,
+  "tokens_seen": 4096000,
+  "steps": 2000,
+  "training_seconds": 96.63314294815063,
+  "initial_validation_loss": 9.012762546539307,
+  "final_validation_loss": 0.804280050098896,
+  "final_validation_perplexity": 2.2350867689288303,
+  "last_train_loss": 0.2898609936237335,
+  "resumed_from": null,
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 11.73062801361084,
+          "tokens": 3
+        },
+        "inverse": {
+          "mean_nll": 6.516908168792725,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 6.128284931182861,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 5.630517482757568,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 9.512083053588867,
+          "tokens": 8
+        },
+        "inverse": {
+          "mean_nll": 7.091334819793701,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 6.644016265869141,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 6.120267391204834,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 8.11594295501709,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 10.53750991821289,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 7.621804237365723,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 8.612964630126953,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 10.94459056854248,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 8.863823890686035,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 9.10190200805664,
+          "tokens": 4
+        },
+        "inverse_cube": {
+          "mean_nll": 9.114575386047363,
+          "tokens": 4
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ∝ z^2 for M^2. Eliminate E and state the resulting power.\n Solution: From the first relation the denominator carries index 1. Therefore the remaining index is 2 - (1) = 1.\nTherefore: M ∝ z^ 1 .",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ∝ x^11.",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of  state the square of B. Thus N ∝ x^-1/x^2 = x^-3 = x^-1.\nAnswer: N is proportional to x^ -1 .",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to ∝ u^-1 for F^1. Use both relations to what is the measure?\n Answer: 500."
+  },
+  "args": {
+    "train": "/tmp/agi-newton-v9-train.bin",
+    "loss_weights": null,
+    "validation": "/tmp/agi-newton-v8-clean-validation.bin",
+    "tokenizer": "data/tokenizer_v3/pre1687_bpe.model",
+    "output_dir": "/tmp/agi-newton-v10-seed1688-control",
+    "steps": 2000,
+    "batch_size": 8,
+    "context": 256,
+    "width": 128,
+    "heads": 4,
+    "layers": 4,
+    "learning_rate": 0.0003,
+    "warmup_steps": 30,
+    "device": "mps",
+    "precision": "fp32",
+    "seed": 1688,
+    "label": "v10_seed1688_control",
+    "log_every": 2000,
+    "resume": null
+  }
+}

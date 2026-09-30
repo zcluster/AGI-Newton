@@ -1,5 +1,9 @@
 # V9 local pilot: compositional grid and answer-token weighting
 
+**Replication update:** [V10's three-seed audit](V10_MULTISEED_AUDIT.md)
+reverses the arm ranking at seed 1687. All below comparisons are specific to
+seed 1686; they must not be read as a stable effect of loss weighting.
+
 ## Decision
 
 Do **not** promote final-exponent weighting to the historical 91.5M model.
