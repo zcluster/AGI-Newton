@@ -31,11 +31,11 @@ CASES = [
     ("control_minus_1_b", "Let F^2 follow v^3 and G follow v^2/F^2. Determine G after substitution.\nSolution: ", "F", "G", "v", 3, 2),
 ]
 
-PHYSICS_PROMPTS = [
-    "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: ",
-    "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: ",
-    "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: ",
-    "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: ",
+PHYSICS_CASES = [
+    ("physics_0", "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: ", "period", "turning tendency", "distance", 3, 1),
+    ("physics_1", "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: ", "orbital time", "turning tendency", "mean distance", 3, 1),
+    ("physics_2", "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: ", "T", "C", "R", 3, 1),
+    ("physics_3", "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: ", "P", "A", "d", 3, 1),
 ]
 
 
@@ -73,6 +73,8 @@ def evaluate_case(model, tokenizer, device, precision, case):
     return {
         "id": case_id,
         "prompt": prompt,
+        "target": target,
+        "base": base,
         "expected": expected,
         "winner": int(winner),
         "candidate_correct": int(winner) == expected,
@@ -104,11 +106,7 @@ def main():
     model.eval()
 
     abstract = [evaluate_case(model, tokenizer, device, args.precision, case) for case in CASES]
-    physics_cases = [
-        (f"physics_{index}", prompt, "T", "C", "R", 3, 1)
-        for index, prompt in enumerate(PHYSICS_PROMPTS)
-    ]
-    physics = [evaluate_case(model, tokenizer, device, args.precision, case) for case in physics_cases]
+    physics = [evaluate_case(model, tokenizer, device, args.precision, case) for case in PHYSICS_CASES]
 
     def metrics(rows):
         return {
@@ -118,6 +116,7 @@ def main():
         }
 
     report = {
+        "suite_version": 2,
         "checkpoint": str(args.checkpoint),
         "label": saved["label"],
         "deterministic_generation": True,

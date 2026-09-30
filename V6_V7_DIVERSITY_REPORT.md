@@ -33,6 +33,13 @@ It sees 196,608,000 training tokens in 851.5 seconds on the RTX 5090.
 
 ## Blinded suite
 
+**Evaluation correction (2026-09-30):** The legacy physics candidate scorer
+used `C/R` in all four candidate completions even when the prompt used other
+symbols or natural language. Those candidate scores are invalid and require a
+checkpoint rerun with suite version 2. The archived JSON is retained for audit.
+Rescoring the saved generation strings against the corrected prompt metadata
+still gives 0/4 physics open generations in each arm.
+
 The new suite contains 12 unseen abstract paraphrases and four unseen physics
 paraphrases. It reports both candidate ranking and deterministic greedy
 generation. Open generation must write at least 30 tokens and is counted correct
@@ -40,13 +47,12 @@ only when the resulting exponent or arithmetic equation matches the answer.
 
 | Model | Abstract candidate | Abstract generation | Physics candidate | Physics generation |
 |---|---:|---:|---:|---:|
-| V5 narrow curriculum | 6/12 (50.0%) | 1/12 (8.3%) | 4/4 (100%) | 0/4 (0%) |
-| V6 diverse curriculum | 3/12 (25.0%) | 3/12 (25.0%) | 0/4 (0%) | 0/4 (0%) |
-| V7 curriculum-only stage | 4/12 (33.3%) | 2/12 (16.7%) | 0/4 (0%) | 0/4 (0%) |
+| V5 narrow curriculum | 6/12 (50.0%) | 1/12 (8.3%) | invalid; rerun needed | 0/4 (0%) |
+| V6 diverse curriculum | 3/12 (25.0%) | 3/12 (25.0%) | invalid; rerun needed | 0/4 (0%) |
+| V7 curriculum-only stage | 4/12 (33.3%) | 2/12 (16.7%) | invalid; rerun needed | 0/4 (0%) |
 
-V5's perfect physics candidate score is a shortcut: it selects exponent -2 for
-almost every candidate question, including controls whose correct answer is not
--2. V6 reduces that fixed-answer bias and triples abstract open-generation
+V5 selects exponent -2 for many **abstract** candidate questions, including
+controls whose correct answer is not -2. V6 reduces that fixed-answer bias and triples abstract open-generation
 accuracy, but it still fails all held-out `1 - 3` prompts and all physics open
 generations. Its generated traces have the right shape while replacing the
 prompt's numbers or variables with values recalled from another training
