@@ -16,20 +16,28 @@ changed.
 | Kepler's period–distance relation | The 1619 *Harmonices Mundi* OCR has the relevant Book V, chapter III passage around printed pages 189–190: [`raw/kepler_harmonices_1619.txt`](raw/kepler_harmonices_1619.txt), lines 19799–19821; strict-corpus chunk 92, SHA-256 `183e7a97226abe80f87d30b07989d60ed98b02828f0e2dce88fb40b76a4d45cc`. | The decisive `sesquialtera proportionis mediarum distantiarum` wording is badly corrupted by OCR. Merely including this book does **not** establish that a text-only learner can recover `T² ∝ R³`. |
 | Huygens's circular-force relations | The 1673 *Horologium Oscillatorium*, Part V, Theorems I–IV, occurs in [`raw/huygens_horologium_1673.txt`](raw/huygens_horologium_1673.txt), lines 8289–8327; strict-corpus chunk 39, SHA-256 `6e37bab8bf290732527e5302b54750f144434f13a3146381f7ced9a3aac13543`. The OCR is appreciably more legible. | The text gives ratio theorems for *centrifugal* force under controlled time, speed, and diameter conditions. Reading them as the modern `C ∝ R/T²` relation, then identifying the required inward tendency or attraction, requires additional interpretation. |
 
-## Original-page visual check (2026-09-30)
+## Original-page visual check (2026-10-01 correction)
 
 I inspected the **original-edition scans**, not just their OCR. Kepler's
 relevant statement begins near the bottom of printed page 189 and continues
-at the top of page 190 ([1619 PDF, scan pages 281–282](https://archive.org/download/ioanniskepplerih00kepl/ioanniskepplerih00kepl.pdf#page=281), PDF SHA-256
-`fe23e48c1a43f27875415755ca63b554889f78a0c449c76fafac960ed694dc35`).
+at the top of page 190 ([printed p. 189 / image n280](https://archive.org/download/ioanniskepplerih00kepl/page/n280.jpg),
+[printed p. 190 / image n281](https://archive.org/download/ioanniskepplerih00kepl/page/n281.jpg); local copies:
+[`n280`](audit/source_pages/kepler_1619_n280.jpg), [`n281`](audit/source_pages/kepler_1619_n281.jpg)).
+The earlier PDF citation said “scan pages 281–282”; that was one page late.
+The separately downloaded PDF SHA-256 is
+`fe23e48c1a43f27875415755ca63b554889f78a0c449c76fafac960ed694dc35`.
 The print clearly states a sesquialterate proportion between planetary
 periods and mean distances; the following page discusses taking cube roots
 of periods and squaring them. This supports the **historical presence** of
 the relation, but not its recoverability from our damaged OCR.
 
 Huygens's heading and Theorem I begin on printed page 159; Theorems I–IV
-continue on page 160 ([1673 PDF, scan pages 177–178](https://archive.org/download/bub_gb_e_VXcl87u6AC/bub_gb_e_VXcl87u6AC.pdf#page=177), PDF SHA-256
-`0c6fff9868252f75c2bb5bafd1379645de655d423424edac9158309960c292cf`).
+continue on page 160 ([printed p. 159 / image n176](https://archive.org/download/bub_gb_e_VXcl87u6AC/page/n176.jpg),
+[printed p. 160 / image n177](https://archive.org/download/bub_gb_e_VXcl87u6AC/page/n177.jpg); local copies:
+[`n176`](audit/source_pages/huygens_1673_n176.jpg), [`n177`](audit/source_pages/huygens_1673_n177.jpg)).
+The earlier PDF citation said “scan pages 177–178”; that too was one page late.
+The separately downloaded PDF SHA-256 is
+`0c6fff9868252f75c2bb5bafd1379645de655d423424edac9158309960c292cf`.
 For equal bodies, the text separately relates centrifugal force to diameter
 at equal period (I), inversely to diameter at equal speed (II), and to squared
 speed at equal circumference (III); IV relates period to square-root diameter
@@ -39,6 +47,18 @@ universal Earth–Moon *attractive* force law. A subject-matter expert should
 check this reading and any proposed transcription before either enters a
 training arm. The two PDF hashes identify the exact scans inspected; neither
 PDF nor an edited transcription has been inserted into the model corpus.
+
+The four page-image SHA-256 digests, in the same order as the links above, are
+`b7003d30828b353318b5273c6037073a86882b87f6eee3c444de616c38833b56`,
+`fff2a1c0f2a422c0dc4ae1d00b6d65ba8448859af7bae979c7893e47e7442ba9`,
+`40db464047214820a27f3c0bccdd6147b36b2db67ea362d5f96bc17a8be15db0`, and
+`251a7ebf041eceb86d70f83eebfa46d28bfd8e03f0104a3b657f46f9f9b54d93`.
+These are **source evidence, not training examples**. The decisive Kepler
+phrase on p. 189 reads “*sit praecise sesquialtera proportionis mediarum
+distantiarum*”; the Huygens heading explicitly says “*De vi centrifuga ex
+motu circulari*.” Both are provisional visual readings, not a checked
+machine-readable edition. In particular, no modern paraphrase of either
+passage is admissible to the strict historical training arm.
 
 The existing `src/generate_admissible_reasoning.py` explicitly teaches Kepler
 period examples and the numerical rule “divide radius by period squared.” The
