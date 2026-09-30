@@ -117,7 +117,8 @@ def build(
         if not raw_path.exists():
             reasons.append("missing_text")
 
-        text = normalise(raw_path.read_text(encoding="utf-8")) if raw_path.exists() else ""
+        raw_bytes = raw_path.read_bytes() if raw_path.exists() else b""
+        text = normalise(raw_bytes.decode("utf-8")) if raw_bytes else ""
         findings = scan(text, policy) if text else {level: [] for level in policy}
         is_precursor = source["role"] == "precursor_target" or source["target_risk"] == "high"
         if findings["hard"] and not is_precursor:
@@ -131,7 +132,8 @@ def build(
 
         doc_audit = {
             "id": source["id"],
-            "raw_sha256": hashlib.sha256(text.encode()).hexdigest() if text else None,
+            "raw_sha256": hashlib.sha256(raw_bytes).hexdigest() if raw_path.exists() else None,
+            "normalized_sha256": hashlib.sha256(text.encode()).hexdigest() if text else None,
             "characters": len(text),
             "precursor": is_precursor,
             "findings": findings,

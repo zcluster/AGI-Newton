@@ -30,6 +30,24 @@ does not read the weight file. The three paired score differences on 204
 cases are `-19`, `+10`, and `-1`; three seeds are insufficient for a stable
 population-level treatment effect estimate.
 
+## Post-hoc trivial baselines
+
+The fixed 204-case grid also exposes a simpler failure. A rule that **always
+answers exponent 0** is right on 36/204 cases; a rule that always answers
+`-2` is right on 24/204. Both require no reading of the premises. Across the
+same grid repeated for three seeds, the unweighted models achieve 55/612 and
+the weighted models 45/612 exact final relations, versus 108/612 for constant
+0. Five of the six individual models are below the constant-0 baseline; the
+weighted seed-1687 model is the exception at 42/204.
+
+The sealed `1 - 3` subset has six cases. Constant `-2` would score 6/6 there
+while scoring only 18/198 on the other cases. Thus even a future 6/6 sealed
+score would not establish composition without strong non-`-2` controls and a
+checked derivation. These baselines were added **after** seeing V10 outcomes;
+they are descriptive diagnostics, not a preregistered treatment comparison.
+The 612 counts repeat one fixed grid across seeds, not 612 independent test
+problems. The saved per-case reports support the counts directly.
+
 ## Counterfactual sensitivity
 
 `src/audit_composition_grid.py` groups cases with the same prompt wording and

@@ -172,6 +172,10 @@ in [`V9_COMPOSITION_GRID.md`](V9_COMPOSITION_GRID.md).
 The three-seed replication and counterfactual audit, which overturns a
 single-seed weighting conclusion, are in
 [`V10_MULTISEED_AUDIT.md`](V10_MULTISEED_AUDIT.md).
+The historical-premise accessibility gap and the next controlled comparison
+are documented in [`PREMISE_ACCESS_AUDIT.md`](PREMISE_ACCESS_AUDIT.md).
+Tongji L40 deployment and the infrastructure-only benchmark are in
+[`hpc/README.md`](hpc/README.md).
 
 Build the pre-1687 EEBO layer from an already downloaded PYCCLE archive:
 

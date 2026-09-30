@@ -1,3 +1,4 @@
+import hashlib
 import json
 import sys
 import tempfile
@@ -27,6 +28,11 @@ class CorpusBoundaryTest(unittest.TestCase):
             self.assertEqual(audit["counts"]["date_only_all"], 3)
             self.assertEqual(audit["counts"]["quarantine"], 2)
 
+            euclid = next(row for row in audit["documents"] if row["id"] == "euclid_fixture")
+            raw = (fixtures / "raw" / "euclid_fixture.txt").read_bytes()
+            self.assertEqual(euclid["raw_sha256"], hashlib.sha256(raw).hexdigest())
+            self.assertNotEqual(euclid["raw_sha256"], euclid["normalized_sha256"])
+
             strict = (output / "strict_clean.jsonl").read_text()
             precursor = (output / "precursor_only.jsonl").read_text()
             self.assertNotIn("inverse", strict.lower())
@@ -40,4 +46,3 @@ class CorpusBoundaryTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
