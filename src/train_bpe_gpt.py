@@ -127,10 +127,14 @@ def validation_loss(model, stream, batch_size, context, device, precision, round
 
 
 @torch.no_grad()
-def score(model, tokenizer, prompt, completion, device, precision):
+def score(model, tokenizer, prompt, completion, device, precision, prepend_bos=False):
     # A trailing blank can become a standalone SentencePiece token, whereas
     # in training it belongs to the next word's leading-space piece.
     prompt_ids = tokenizer.encode(prompt.rstrip(" \t"), out_type=int)
+    if prepend_bos:
+        if tokenizer.bos_id() < 0:
+            raise ValueError("BOS ablation requires a tokenizer BOS token")
+        prompt_ids.insert(0, tokenizer.bos_id())
     completion_ids = tokenizer.encode(completion, out_type=int)
     combined = (prompt_ids + completion_ids)[-model.context :]
     prompt_length = min(len(prompt_ids), len(combined) - len(completion_ids))
@@ -162,10 +166,15 @@ def evaluate_laws(model, tokenizer, device, precision):
 
 @torch.no_grad()
 def generate(
-    model, tokenizer, prompt, device, precision, length=100, temperature=0.8, minimum_length=0
+    model, tokenizer, prompt, device, precision, length=100, temperature=0.8, minimum_length=0,
+    prepend_bos=False
 ):
     model.eval()
     tokens = tokenizer.encode(prompt.rstrip(" \t"), out_type=int)
+    if prepend_bos:
+        if tokenizer.bos_id() < 0:
+            raise ValueError("BOS ablation requires a tokenizer BOS token")
+        tokens.insert(0, tokenizer.bos_id())
     prompt_length = len(tokens)
     forbidden = {tokenizer.pad_id(), tokenizer.bos_id(), tokenizer.unk_id()}
     for _ in range(length):

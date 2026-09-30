@@ -213,3 +213,20 @@ small tail of the token stream. Static target mass is not the mean per-minibatch
 arithmetic contribution under batchwise normalization; audit sampled exposure
 before deciding between resampling and a larger training budget. Do not launch
 a weight search or model scaling on the basis of these unverified explanations.
+
+## Frozen BOS inference diagnostic (2026-10-01, before outcomes)
+
+Use both saved masked-math checkpoints (original and subtraction-weight-128),
+the identical 578-case subtraction grid, greedy decoding, at most 60 tokens,
+and no forced minimum generation length. For each checkpoint rerun legacy
+inference and explicit BOS inference. No weights, prompts, candidates, or
+training inputs change. The default evaluation remains legacy; the explicit
+`--prepend-bos` flag affects both generation and candidate scoring.
+
+Primary outcomes are numeric free-generation correctness by train, internal
+validation, and both sealed operand groups, with paired prompt comparison.
+Preserve the existing operational gates (90% training and 80% internal validation).
+Ranking is secondary. A small improvement does not establish the cause of failure;
+even a passed arithmetic gate is not historical scientific discovery. Record
+checkpoint and probe hashes and verify legacy outputs reproduce the saved results.
+Run `hpc/tongji_bos_ablation.sbatch` on one isolated L40 allocation; no training.

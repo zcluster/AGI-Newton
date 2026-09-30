@@ -40,6 +40,7 @@ def main():
     parser.add_argument("--output", type=Path)
     parser.add_argument("--probes", type=Path, help="Optional held-out calibration cases")
     parser.add_argument("--self-check", action="store_true")
+    parser.add_argument("--prepend-bos", action="store_true", help="Labeled inference ablation; legacy default is unchanged")
     args = parser.parse_args()
     probes, source_hash = cases(Path(__file__).resolve().parents[1])
     if args.probes:
@@ -68,15 +69,18 @@ def main():
     for probe in probes:
         prompt = probe["prompt"]
         # Never silently crop the source or candidates in this diagnostic.
-        assert max(len(tokenizer.encode(prompt + answer)) for answer in probe["candidates"].values()) < model.context
-        probe["prompt_tokens"] = len(tokenizer.encode(prompt))
-        probe["scores"] = {key: score(model, tokenizer, prompt, answer, device, "bf16")
+        assert max(len(tokenizer.encode(prompt.rstrip(" \t"))) + len(tokenizer.encode(answer))
+                   + int(args.prepend_bos) for answer in probe["candidates"].values()) < model.context
+        probe["prompt_tokens"] = len(tokenizer.encode(prompt.rstrip(" \t"))) + int(args.prepend_bos)
+        probe["scores"] = {key: score(model, tokenizer, prompt, answer, device, "bf16", prepend_bos=args.prepend_bos)
                            for key, answer in probe["candidates"].items()}
         probe["winner"] = min(probe["scores"], key=lambda key: probe["scores"][key]["mean_nll"])
         probe["generation"] = generate(model, tokenizer, prompt, device, "bf16",
-                                       length=60, temperature=0, minimum_length=0)
+                                       length=60, temperature=0, minimum_length=0, prepend_bos=args.prepend_bos)
     report = {"checkpoint": str(args.checkpoint), "label": saved["label"],
               "source_sha256": source_hash, "probes": probes,
+              "prepend_bos": args.prepend_bos,
+              "checkpoint_sha256": hashlib.sha256(args.checkpoint.read_bytes()).hexdigest(),
               "probes_file": str(args.probes) if args.probes else None,
               "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."}
     args.output.parent.mkdir(parents=True, exist_ok=True)
