@@ -167,6 +167,8 @@ curriculum-only stopping result are documented in
 [`V6_V7_DIVERSITY_REPORT.md`](V6_V7_DIVERSITY_REPORT.md).
 The local V8 continuation-weighting ablation and stricter generation audit are
 documented in [`V8_WEIGHTING_PILOT.md`](V8_WEIGHTING_PILOT.md).
+The V9 compositional grid and final-exponent weighting ablation are documented
+in [`V9_COMPOSITION_GRID.md`](V9_COMPOSITION_GRID.md).
 
 Build the pre-1687 EEBO layer from an already downloaded PYCCLE archive:
 

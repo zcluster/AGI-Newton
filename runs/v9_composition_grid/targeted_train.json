@@ -1,0 +1,132 @@
+{
+  "label": "v9_targeted_result_weight",
+  "parameters": 1845504,
+  "vocab_size": 8000,
+  "train_tokens": 3775795,
+  "validation_tokens": 197472,
+  "tokens_seen": 4096000,
+  "steps": 2000,
+  "training_seconds": 124.72976112365723,
+  "initial_validation_loss": 9.010452449321747,
+  "final_validation_loss": 0.7842984534800053,
+  "final_validation_perplexity": 2.190869404663132,
+  "last_train_loss": 0.18070818483829498,
+  "resumed_from": null,
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 12.973331451416016,
+          "tokens": 3
+        },
+        "inverse": {
+          "mean_nll": 6.066646099090576,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 6.293186664581299,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 5.587604999542236,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 10.478750228881836,
+          "tokens": 8
+        },
+        "inverse": {
+          "mean_nll": 6.676827907562256,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 6.62538480758667,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 6.083495616912842,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "constant",
+      "scores": {
+        "constant": {
+          "mean_nll": 8.279486656188965,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 10.453242301940918,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 8.279545783996582,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 9.067965507507324,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 12.203673362731934,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 9.24789810180664,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 8.704856872558594,
+          "tokens": 4
+        },
+        "inverse_cube": {
+          "mean_nll": 8.688821792602539,
+          "tokens": 4
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ∝ z^ 5 4 3 and period?\n Answer: Its period is 16 into the square of the period is 18 are known: A^2; C varies as z^3 divided by A^2. Eliminate A and state the resulting power.\n Derivation: Replace the denominator by the first relation. Thus C ∝ z^3/z^3 = z^0.\nAnswer: C is proportional to z^ 0 .",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ∝ t^3/W^2. Substitute the first relation into the second and simplify.\n Derivation: Replace the denominator by the first relation. Thus D ∝ t^3/t^2 = t^2.\nTherefore: D ∝ t^ 2 .",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ∝ z^-1/z^-1, so is -1.22 = -2.\nAnswer: B is proportional to z^ -2 .",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to ∝ v^1/ bind^1. Substitute the first relation into the second and simplify.\n Derivation: Replace the denominator by the first relation. Thus F ∝ v^1/v^1 = v^0.\nAnswer: F is proportional to v^ 0 ."
+  },
+  "args": {
+    "train": "/tmp/agi-newton-v9-train.bin",
+    "loss_weights": "/tmp/agi-newton-v9-train.weights",
+    "validation": "/tmp/agi-newton-v8-clean-validation.bin",
+    "tokenizer": "data/tokenizer_v3/pre1687_bpe.model",
+    "output_dir": "/tmp/agi-newton-v9-targeted",
+    "steps": 2000,
+    "batch_size": 8,
+    "context": 256,
+    "width": 128,
+    "heads": 4,
+    "layers": 4,
+    "learning_rate": 0.0003,
+    "warmup_steps": 30,
+    "device": "mps",
+    "precision": "fp32",
+    "seed": 1686,
+    "label": "v9_targeted_result_weight",
+    "log_every": 500,
+    "resume": null
+  }
+}

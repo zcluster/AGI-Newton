@@ -57,6 +57,16 @@ class WeightedTrainingTests(unittest.TestCase):
         )
         self.assertEqual(set(historical_weights), {1})
 
+    def test_final_exponent_receives_distinct_weight(self):
+        row = {"source": "procedural", "family": "diverse_elimination",
+               "text": "Question: A^2 follows x^3. B follows x^1/A^2.\n"
+                       "Reasoning: 1 - (3) = -2.\nAnswer: B is proportional to x^-2."}
+        ids, weights = encode_record(row, CharacterTokenizer(), True, True)
+        final = row["text"].rfind("-2")
+        self.assertEqual(len(ids), len(weights))
+        self.assertEqual(weights[1 + final:1 + final + 2], [16, 16])
+        self.assertEqual(weights[1 + final - 1], 4)
+
     def test_sampled_weights_follow_next_token_targets(self):
         with tempfile.TemporaryDirectory() as directory:
             tokens = Path(directory) / "tokens.bin"
