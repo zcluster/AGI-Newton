@@ -157,9 +157,11 @@ pipeline-only check, it records free generation and blinded law-completion
 scores for both randomly initialized models.
 
 The first complete language-bootstrap experiment is documented in
-[`V2_BOOTSTRAP_EXPERIMENT.md`](V2_BOOTSTRAP_EXPERIMENT.md).  It uses PYCCLE's
-public EEBO Phase I release because Hla's nominal pre-1900 corpus contains too
-few reliably dated pre-1687 records for an efficient 200 MB bootstrap.
+[`V2_BOOTSTRAP_EXPERIMENT.md`](V2_BOOTSTRAP_EXPERIMENT.md). It uses PYCCLE's
+public EEBO Phase I release. Hla's public pre-1900 dataset is a plausible
+alternative, but this repository has not completed a source-verified pre-1687
+Hla subset audit or retained its files locally; its suitability for a 200 MB
+bootstrap remains unmeasured here.
 
 The next controlled series, including the learned tokenizer and the V3--V5
 reasoning interventions, is documented in
