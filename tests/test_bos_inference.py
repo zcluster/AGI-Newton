@@ -1,4 +1,6 @@
 import sys
+import json
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -6,6 +8,7 @@ import torch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 from train_bpe_gpt import generate, score
+from summarise_bos_ablation import summarise
 
 
 class Tokenizer:
@@ -34,6 +37,34 @@ class Model:
 
 
 class BosInferenceTest(unittest.TestCase):
+    def test_paired_summary_checks_reproduction(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory) / 'bos_ablation'
+            root.mkdir()
+            rows = []
+            for group, count in [('train', 544), ('validation', 30), ('sealed_newton', 2), ('sealed_reverse', 2)]:
+                rows.extend({'id': f'{group}_{i}', 'group': group, 'prompt': 'Q ', 'expected': -2,
+                             'candidates': {'correct': '-2.'}, 'generation': 'Q 0.', 'prompt_tokens': 1}
+                            for i in range(count))
+            for arm, previous in [('answer_only', 'baseline'), ('subtraction128', 'weighted')]:
+                old = root.parent / 'subtraction_weight128' / previous
+                old.mkdir(parents=True)
+                (old / 'subtraction_grid.json').write_text(json.dumps({'probes': rows}))
+                for mode in ('legacy', 'bos'):
+                    output = [{**r, 'prompt_tokens': 1 + int(mode == 'bos'),
+                               'generation': 'Q -2.' if mode == 'bos' else r['generation']} for r in rows]
+                    (root / f'{arm}_{mode}.json').write_text(json.dumps({
+                        'probes': output, 'prepend_bos': mode == 'bos',
+                        'checkpoint_sha256': arm, 'source_sha256': 'fixture'}))
+            result = summarise(root)
+            self.assertEqual(result['answer_only']['groups']['train']['rescued'], 544)
+            path = root / 'answer_only_legacy.json'
+            corrupted = json.loads(path.read_text())
+            corrupted['probes'][0]['generation'] = 'Q 1.'
+            path.write_text(json.dumps(corrupted))
+            with self.assertRaises(AssertionError):
+                summarise(root)
+
     def test_optional_bos_preserves_output_and_scoring_alignment(self):
         model, tokenizer = Model(), Tokenizer()
         for bos in (False, True):

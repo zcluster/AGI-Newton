@@ -230,3 +230,33 @@ Ranking is secondary. A small improvement does not establish the cause of failur
 even a passed arithmetic gate is not historical scientific discovery. Record
 checkpoint and probe hashes and verify legacy outputs reproduce the saved results.
 Run `hpc/tongji_bos_ablation.sbatch` on one isolated L40 allocation; no training.
+
+### BOS diagnostic outcome
+
+Tongji job 2863283 completed with exit 0 in 1m31s. Both checkpoints and probe
+hashes match across their two modes; all 1,156 legacy generations reproduce the
+previous saved outputs exactly. `src/summarise_bos_ablation.py` checks those
+invariants and grades free generation using the existing numeric grader.
+
+| Checkpoint / group | Legacy | Explicit BOS |
+| --- | ---: | ---: |
+| Original masked model / training | 32/544 | 29/544 |
+| Original masked model / validation | 3/30 | 2/30 |
+| Weight-128 model / training | 13/544 | 19/544 |
+| Weight-128 model / validation | 3/30 | 4/30 |
+| Either model / sealed Newton operands | 0/2 | 0/2 |
+| Either model / sealed reverse operands | 0/2 | 0/2 |
+
+In the original training group BOS rescues four prompts and regresses seven;
+in the weighted training group it rescues six and regresses none. Neither
+checkpoint approaches the frozen 90% training / 80% validation gates. The missing
+explicit BOS is therefore not a sufficient explanation or a working fix for this
+arithmetic failure. This does not rule out other input-format or training issues.
+Keep legacy inference defaults unchanged. These are two related synthetic
+capability checkpoints, one training seed, not evidence of historical discovery.
+
+Raw reports and paired summary are at `audit/bos_ablation/`. Reproduce with
+`python src/summarise_bos_ablation.py` after obtaining those four reports and the
+previous subtraction audit. Next inspect actual sampled arithmetic exposure
+before another training intervention; historical skill coverage remains a separate
+source-quality problem, documented in `HISTORICAL_MATH_COVERAGE.md`.
