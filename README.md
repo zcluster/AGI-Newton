@@ -3,6 +3,9 @@
 Research code, corpus audit, training settings, and results for a historical
 rediscovery test of Newton's inverse-square law. The latest Chinese progress
 summary is [`AI_NEWTON_PROGRESS_2026-09-29.md`](AI_NEWTON_PROGRESS_2026-09-29.md).
+The latest Tongji HPC baseline and historical-language comparison are in
+[`V11_BOOTSTRAP_RESULTS.md`](V11_BOOTSTRAP_RESULTS.md); language modeling
+improved, but free derivation and the direct Earth–Moon test still failed.
 
 The repository includes the pilot OCR text, source manifests, generated
 reasoning curricula, tokenizer, scripts, tests, and JSON evaluation results.

@@ -1,0 +1,132 @@
+{
+  "label": "hpc_v11_primary_scan_plus_general_english",
+  "parameters": 91510272,
+  "vocab_size": 8000,
+  "train_tokens": 70125444,
+  "validation_tokens": 230842,
+  "tokens_seen": 196608000,
+  "steps": 12000,
+  "training_seconds": 1908.4051403999329,
+  "initial_validation_loss": 9.111409902572632,
+  "final_validation_loss": 4.792410850524902,
+  "final_validation_perplexity": 120.59174716994652,
+  "last_train_loss": 2.6732137203216553,
+  "resumed_from": null,
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 6.767578125,
+          "tokens": 4
+        },
+        "inverse": {
+          "mean_nll": 4.741629600524902,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 3.8849825859069824,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 5.5576171875,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 6.101128578186035,
+          "tokens": 9
+        },
+        "inverse": {
+          "mean_nll": 5.881138801574707,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 5.217447757720947,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 6.6455078125,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 6.8229169845581055,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 6.545312404632568,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 5.981689453125,
+          "tokens": 8
+        },
+        "inverse_cube": {
+          "mean_nll": 6.166666507720947,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 12.625,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 6.4296875,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 8.125,
+          "tokens": 5
+        },
+        "inverse_cube": {
+          "mean_nll": 8.324999809265137,
+          "tokens": 5
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ☿☉ is something parallele to complete in a equal altitude.\nDiversity is that which is contai •n it, which sheweth that the first turning of the Midriff doth consist of equal magnitude.\nThe second part of an Equality is that which takes away that end, and that which is represented by the sixth, and that which is worth three, is that in the",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to † The First, that the Stile must be understood of the motions of the Earth, and of the Monarchy, and of the Divisions of the World.\nSo I go on to discourse the difference between a Sign and Motion, to carry it into the same.\nNow this is imperfect, and without question it is not.\nI have seen some Things, which have their being, and their being: but if you can, it"
+  },
+  "args": {
+    "train": "data/tokenized_v11_bootstrap/train.bin",
+    "loss_weights": null,
+    "validation": "data/real_pilot_v11/validation.bin",
+    "tokenizer": "data/tokenizer_v11/pre1687_bpe.model",
+    "output_dir": "runs/hpc_v11_bootstrap_seed1686",
+    "steps": 12000,
+    "batch_size": 32,
+    "context": 512,
+    "width": 768,
+    "heads": 12,
+    "layers": 12,
+    "learning_rate": 0.0003,
+    "warmup_steps": 500,
+    "device": "cuda",
+    "precision": "bf16",
+    "seed": 1686,
+    "label": "hpc_v11_primary_scan_plus_general_english",
+    "log_every": 500,
+    "resume": null
+  }
+}

@@ -1,0 +1,17 @@
+data/real_pilot_v11/train.jsonl: OK
+{
+  "tokenizer": "data/tokenizer_v11/pre1687_bpe.model",
+  "data": [
+    "data/eebo_v11_bootstrap/general_train.jsonl",
+    "data/real_pilot_v11/train.jsonl"
+  ],
+  "output": "data/tokenized_v11_bootstrap/train.bin",
+  "documents": 27191,
+  "tokens": 70125444,
+  "bytes": 140250888,
+  "dtype": "uint16",
+  "loss_weights_output": null,
+  "focus_final_exponent": false
+}
+8ff8e4fdc64b36df1dac2f2863b38d3f7c95c3f1b26379240210cfa8a6676bde  data/eebo_v11_bootstrap/general_train.jsonl
+6d9bef7d45138291679b0eff11f62c97e0f93129b8831f3265aa1503d023cb8c  data/tokenized_v11_bootstrap/train.bin

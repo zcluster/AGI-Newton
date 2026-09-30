@@ -1,0 +1,160 @@
+step=1 loss=9.1214 elapsed_s=1.0 max_GB=7.67
+step=500 loss=4.5110 elapsed_s=74.6 max_GB=8.41
+step=1000 loss=4.1293 elapsed_s=154.2 max_GB=8.41
+step=1500 loss=3.8115 elapsed_s=234.1 max_GB=8.41
+step=2000 loss=3.6005 elapsed_s=313.9 max_GB=8.41
+step=2500 loss=3.3940 elapsed_s=393.6 max_GB=8.41
+step=3000 loss=3.3897 elapsed_s=473.6 max_GB=8.41
+step=3500 loss=3.2079 elapsed_s=553.6 max_GB=8.41
+step=4000 loss=3.0522 elapsed_s=633.5 max_GB=8.41
+step=4500 loss=3.1602 elapsed_s=713.5 max_GB=8.41
+step=5000 loss=3.2432 elapsed_s=793.3 max_GB=8.41
+step=5500 loss=2.9980 elapsed_s=873.1 max_GB=8.41
+step=6000 loss=3.1473 elapsed_s=953.0 max_GB=8.41
+step=6500 loss=3.0881 elapsed_s=1032.5 max_GB=8.41
+step=7000 loss=2.9247 elapsed_s=1111.9 max_GB=8.41
+step=7500 loss=2.8199 elapsed_s=1191.7 max_GB=8.41
+step=8000 loss=2.9768 elapsed_s=1271.7 max_GB=8.41
+step=8500 loss=3.0297 elapsed_s=1351.7 max_GB=8.41
+step=9000 loss=2.9408 elapsed_s=1431.2 max_GB=8.41
+step=9500 loss=3.0709 elapsed_s=1510.1 max_GB=8.41
+step=10000 loss=3.0180 elapsed_s=1589.0 max_GB=8.41
+step=10500 loss=2.7542 elapsed_s=1667.9 max_GB=8.41
+step=11000 loss=2.8780 elapsed_s=1746.9 max_GB=8.41
+step=11500 loss=2.8269 elapsed_s=1825.9 max_GB=8.41
+step=12000 loss=2.6732 elapsed_s=1904.9 max_GB=8.41
+{
+  "label": "hpc_v11_primary_scan_plus_general_english",
+  "parameters": 91510272,
+  "vocab_size": 8000,
+  "train_tokens": 70125444,
+  "validation_tokens": 230842,
+  "tokens_seen": 196608000,
+  "steps": 12000,
+  "training_seconds": 1908.4051403999329,
+  "initial_validation_loss": 9.111409902572632,
+  "final_validation_loss": 4.792410850524902,
+  "final_validation_perplexity": 120.59174716994652,
+  "last_train_loss": 2.6732137203216553,
+  "resumed_from": null,
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 6.767578125,
+          "tokens": 4
+        },
+        "inverse": {
+          "mean_nll": 4.741629600524902,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 3.8849825859069824,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 5.5576171875,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 6.101128578186035,
+          "tokens": 9
+        },
+        "inverse": {
+          "mean_nll": 5.881138801574707,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 5.217447757720947,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 6.6455078125,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 6.8229169845581055,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 6.545312404632568,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 5.981689453125,
+          "tokens": 8
+        },
+        "inverse_cube": {
+          "mean_nll": 6.166666507720947,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 12.625,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 6.4296875,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 8.125,
+          "tokens": 5
+        },
+        "inverse_cube": {
+          "mean_nll": 8.324999809265137,
+          "tokens": 5
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ☿☉ is something parallele to complete in a equal altitude.\nDiversity is that which is contai •n it, which sheweth that the first turning of the Midriff doth consist of equal magnitude.\nThe second part of an Equality is that which takes away that end, and that which is represented by the sixth, and that which is worth three, is that in the",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to † The First, that the Stile must be understood of the motions of the Earth, and of the Monarchy, and of the Divisions of the World.\nSo I go on to discourse the difference between a Sign and Motion, to carry it into the same.\nNow this is imperfect, and without question it is not.\nI have seen some Things, which have their being, and their being: but if you can, it"
+  },
+  "args": {
+    "train": "data/tokenized_v11_bootstrap/train.bin",
+    "loss_weights": null,
+    "validation": "data/real_pilot_v11/validation.bin",
+    "tokenizer": "data/tokenizer_v11/pre1687_bpe.model",
+    "output_dir": "runs/hpc_v11_bootstrap_seed1686",
+    "steps": 12000,
+    "batch_size": 32,
+    "context": 512,
+    "width": 768,
+    "heads": 12,
+    "layers": 12,
+    "learning_rate": 0.0003,
+    "warmup_steps": 500,
+    "device": "cuda",
+    "precision": "bf16",
+    "seed": 1686,
+    "label": "hpc_v11_primary_scan_plus_general_english",
+    "log_every": 500,
+    "resume": null
+  }
+}
+10deb0e421e963ce2e715afa37601d6d0bd9a3bc15dbcc624e24fe8d0ab2a480  runs/hpc_v11_bootstrap_seed1686/model.pt
+676afdfb888e6e8f2b8c7906e9962c26561ff46388848a71916bad2420bc3da9  runs/hpc_v11_bootstrap_seed1686/report.json
+2b5036399654b99590547b6c966a0d7d76aaa664d9c0137f1aaff92239900871  runs/hpc_v11_bootstrap_seed1686/generalization_suite.json

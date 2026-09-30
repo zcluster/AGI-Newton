@@ -29,3 +29,9 @@ as jobs 2861419 and 2861442. Results and input hashes are in
 [`V11_PRIMARY_SCAN_CORPUS.md`](../V11_PRIMARY_SCAN_CORPUS.md). It failed the
 free-generation and transfer tests; the checkpoint is retained on HPC. Both
 jobs ran only in `~/data/AGI-Newton`, not the SSNS project.
+
+The separate V11 historical-English bootstrap run is documented in
+[`V11_BOOTSTRAP_RESULTS.md`](../V11_BOOTSTRAP_RESULTS.md). Its CPU download,
+rebuild, and encoding jobs gated L40 job 2861975; all work remained in the
+AGI-Newton directory. Language validation improved, but free mathematical
+and physics derivations still failed.

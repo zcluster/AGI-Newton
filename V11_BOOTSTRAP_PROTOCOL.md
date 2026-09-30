@@ -51,7 +51,8 @@ JSONL hashes to
 `8ff8e4fdc64b36df1dac2f2863b38d3f7c95c3f1b26379240210cfa8a6676bde`.
 The combined token stream has **70,125,444 tokens** and SHA-256
 `6d9bef7d45138291679b0eff11f62c97e0f93129b8831f3265aa1503d023cb8c`.
-The L40 job has started; its scientific results are not yet known.
+The L40 job completed. Its [result and limitations](V11_BOOTSTRAP_RESULTS.md)
+are recorded separately from this frozen protocol.
 
 Download **2861859** passed the archive hash; CPU job **2861860** rebuilt the
 EEBO audit exactly but failed during encoding because the V11 `train.jsonl`
