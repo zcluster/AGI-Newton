@@ -162,7 +162,7 @@ def elimination_examples(rng: random.Random, count: int):
     return output
 
 
-def diverse_elimination_examples(rng: random.Random, count: int):
+def diverse_elimination_examples(rng: random.Random, count: int, with_metadata=False):
     """A varied two-relation curriculum; the exponent pair 1 minus 3 is sealed."""
     symbols = tuple("ABCDEFGHJKLMNPQSTUVW")
     bases = tuple("xyzstuvw")
@@ -208,15 +208,14 @@ def diverse_elimination_examples(rng: random.Random, count: int):
             "numerator": numerator,
             "result": result,
         }
-        output.append(
-            "\n".join(
-                (
-                    rng.choice(questions).format(**values),
-                    rng.choice(reasonings).format(**values),
-                    rng.choice(answers).format(**values),
-                )
+        text = "\n".join(
+            (
+                rng.choice(questions).format(**values),
+                rng.choice(reasonings).format(**values),
+                rng.choice(answers).format(**values),
             )
         )
+        output.append({**values, "text": text} if with_metadata else text)
     return output
 
 

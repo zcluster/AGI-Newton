@@ -1,0 +1,16 @@
+{
+  "provenance": "Modern synthetic calibration, not historical source text",
+  "sealed_pair": {
+    "numerator": 1,
+    "known": 3
+  },
+  "limitation": "Other mathematical -2 results are allowed; the answer value is not sealed",
+  "train": {
+    "records": 29033,
+    "sha256": "d8c1a6e8e015b2a439b70713038b0e046df892b3d844743626d30fd4c40d6958"
+  },
+  "validation": {
+    "records": 1504,
+    "sha256": "83161b1b7c1476e3c8c76c0aae1d0881a17d57a687a8064fa0029d4d46c463c1"
+  }
+}

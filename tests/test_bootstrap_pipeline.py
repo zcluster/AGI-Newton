@@ -64,6 +64,14 @@ class BootstrapPipelineTests(unittest.TestCase):
         for text in examples:
             self.assertIsNone(reasoning.FORBIDDEN.search(text), text)
 
+    def test_elimination_metadata_preserves_existing_generated_text(self):
+        plain = reasoning.diverse_elimination_examples(random.Random(1686), 100)
+        records = reasoning.diverse_elimination_examples(random.Random(1686), 100, with_metadata=True)
+        self.assertEqual(plain, [row["text"] for row in records])
+        for row in records:
+            self.assertNotEqual((row["numerator"], row["known"]), (1, 3))
+            self.assertEqual(row["result"], row["numerator"] - row["known"])
+
     def test_eebo_pos_tags_are_removed_without_losing_words(self):
         payload = b"The\tAT0\nEarth\tNN1\n,\tPUN\nturneth\tVVZ\n.\tPUN\n"
         self.assertEqual(eebo.detag(payload), "The Earth, turneth.")

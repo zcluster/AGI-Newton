@@ -36,6 +36,12 @@ three seeds fail physics. A short-answer diagnostic also fails all eight arithme
 and elimination cases: output length alone does not explain the missing transfer.
 See the same protocol for the full per-seed table and raw artifact locations.
 
+The next [`mathematical calibration pilot`](MATH_CALIBRATION_PROTOCOL.md) tests
+subtraction and abstract elimination with the Newton exponent combination sealed.
+It starts from historical V11 and compares two objectives on identical synthetic
+input. This is an independent capability diagnostic, not historical-only training;
+no outcome is claimed until the scheduled runs and evaluations complete.
+
 The repository includes the pilot OCR text, source manifests, generated
 reasoning curricula, tokenizer, scripts, tests, and JSON evaluation results.
 The full EEBO language archive and large V2--V7 model checkpoints are not in

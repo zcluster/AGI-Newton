@@ -1,0 +1,14 @@
+{
+  "tokenizer": "data/tokenizer_v11/pre1687_bpe.model",
+  "data": [
+    "data/math_calibration/validation.jsonl"
+  ],
+  "output": "data/math_calibration/validation.bin",
+  "documents": 1504,
+  "tokens": 99323,
+  "bytes": 198646,
+  "dtype": "uint16",
+  "loss_weights_output": null,
+  "focus_final_exponent": false,
+  "answer_only": false
+}

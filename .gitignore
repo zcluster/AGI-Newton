@@ -9,3 +9,4 @@ data/eebo_v11_bootstrap/
 data/tokenized*/
 audit/hla_before1687/candidate_texts/
 tmp/
+data/math_calibration/*.jsonl
