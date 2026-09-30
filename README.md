@@ -24,7 +24,14 @@ The [`copy/binding augmentation`](BINDING_CALIBRATION_PROTOCOL.md) then achieves
 23/24 exact copying answers but defaults to square on all 96 new-label relation
 cases, with 0/48 complete counterfactual pairs. A small exact-training-prompt audit
 also exposes this failure. Low whole-stream loss must not be equated with learning
-the answer-relevant relation; answer-only supervision is the next planned control.
+the answer-relevant relation.
+
+The matched-input [`answer-only comparison`](ANSWER_ONLY_PROTOCOL.md) subsequently
+reaches 94/96 exact answers and 46/48 complete reversal pairs, versus 48/96 and
+0/48 for that control. This is a single-seed synthetic reading result, not Newton
+rediscovery: original OCR reading, algebraic transfer and physics remain unsuccessful.
+Scientific-text prediction also deteriorates. Paired fine-tuning-seed replication
+is specified before further scaling or capability claims.
 
 The repository includes the pilot OCR text, source manifests, generated
 reasoning curricula, tokenizer, scripts, tests, and JSON evaluation results.

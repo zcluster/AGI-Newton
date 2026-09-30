@@ -1,0 +1,59 @@
+{
+  "continuation_weighted_control": {
+    "cases": 96,
+    "exact_answers": 48,
+    "rank_correct": 51,
+    "both_counterfactual_answers_correct": 0,
+    "constant_square_rank_baseline": 48,
+    "groups": {
+      "new_labels": {
+        "cases": 48,
+        "exact_answers": 24
+      },
+      "new_labels_and_template": {
+        "cases": 48,
+        "exact_answers": 24
+      }
+    },
+    "copy": {
+      "cases": 24,
+      "exact_answers": 23,
+      "groups": {
+        "copy_familiar": 12,
+        "copy_novel": 11
+      }
+    }
+  },
+  "synthetic_calibrated": {
+    "cases": 96,
+    "exact_answers": 94,
+    "rank_correct": 93,
+    "both_counterfactual_answers_correct": 46,
+    "constant_square_rank_baseline": 48,
+    "groups": {
+      "new_labels": {
+        "cases": 48,
+        "exact_answers": 48
+      },
+      "new_labels_and_template": {
+        "cases": 48,
+        "exact_answers": 46
+      }
+    },
+    "copy": {
+      "cases": 24,
+      "exact_answers": 24,
+      "groups": {
+        "copy_familiar": 12,
+        "copy_novel": 12
+      }
+    },
+    "seen_training_diagnostic": {
+      "cases": 16,
+      "exact_answers": 16,
+      "rank_correct": 16,
+      "both_counterfactual_answers_correct": 8,
+      "constant_square_rank_baseline": 8
+    }
+  }
+}

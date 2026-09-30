@@ -1,0 +1,132 @@
+{
+  "label": "synthetic_answer_only_not_historical_only",
+  "parameters": 91510272,
+  "vocab_size": 8000,
+  "train_tokens": 873604,
+  "validation_tokens": 4928,
+  "tokens_seen": 8192000,
+  "steps": 1000,
+  "training_seconds": 70.72843837738037,
+  "initial_validation_loss": 1.8647384345531464,
+  "final_validation_loss": 3.0042997896671295,
+  "final_validation_perplexity": 20.1720864463361,
+  "last_train_loss": 0.03394903615117073,
+  "resumed_from": "runs/hpc_v11_bootstrap_seed1686/model.pt",
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 3.9140625,
+          "tokens": 4
+        },
+        "inverse": {
+          "mean_nll": 2.3297643661499023,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 2.0801289081573486,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 3.386993408203125,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 4.897894859313965,
+          "tokens": 9
+        },
+        "inverse": {
+          "mean_nll": 2.8007116317749023,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 2.280938148498535,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 3.5386199951171875,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 5.0390625,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 4.288379192352295,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 4.354791641235352,
+          "tokens": 8
+        },
+        "inverse_cube": {
+          "mean_nll": 4.98822021484375,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 8.625,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 5.43115234375,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 7.974999904632568,
+          "tokens": 5
+        },
+        "inverse_cube": {
+          "mean_nll": 8.28125,
+          "tokens": 5
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as the cube of the several sides.",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as cends.",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of the beasts.",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to the square of the heights."
+  },
+  "args": {
+    "train": "data/reading_binding/answer_only.bin",
+    "loss_weights": "data/reading_binding/answer_only_weights.bin",
+    "validation": "data/reading_binding/validation.bin",
+    "tokenizer": "data/tokenizer_v11/pre1687_bpe.model",
+    "output_dir": "runs/hpc_answer_only_seed1686",
+    "steps": 1000,
+    "batch_size": 16,
+    "context": 512,
+    "width": 768,
+    "heads": 12,
+    "layers": 12,
+    "learning_rate": 3e-05,
+    "warmup_steps": 30,
+    "device": "cuda",
+    "precision": "bf16",
+    "seed": 1686,
+    "label": "synthetic_answer_only_not_historical_only",
+    "log_every": 250,
+    "resume": "runs/hpc_v11_bootstrap_seed1686/model.pt"
+  }
+}

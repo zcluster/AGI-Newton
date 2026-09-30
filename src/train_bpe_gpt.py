@@ -246,7 +246,10 @@ def main():
                 loss = F.cross_entropy(logits, y.flatten())
             else:
                 per_token = F.cross_entropy(logits, y.flatten(), reduction="none")
-                loss = (per_token * weights.flatten()).sum() / weights.sum()
+                denominator = weights.sum()
+                if denominator.item() == 0:
+                    raise ValueError("Sampled batch has no supervised targets; shorten prompts or change sampling")
+                loss = (per_token * weights.flatten()).sum() / denominator
         optimizer.zero_grad(set_to_none=True)
         scaler.scale(loss).backward()
         scaler.unscale_(optimizer)

@@ -13,13 +13,27 @@ import numpy as np
 import sentencepiece as spm
 
 
-def encode_record(row, tokenizer, weighted, focus_final_exponent=False):
+def encode_record(row, tokenizer, weighted, focus_final_exponent=False, answer_only=False):
     text = row["text"]
+    if answer_only and (not weighted or row.get("source") != "procedural" or focus_final_exponent):
+        raise ValueError("answer-only requires weighted procedural data without exponent focusing")
     if weighted and row.get("source") == "procedural":
         question, separator, continuation = text.partition("\n")
         if not separator or not continuation:
             raise ValueError("procedural record must contain a question and continuation")
         boundary = len(question + separator)
+        if answer_only:
+            prompt = row.get("prompt")
+            if prompt is None:
+                prefix, marker, answer = text.rpartition("\nAnswer: ")
+                if not marker or not answer:
+                    raise ValueError("answer-only record needs prompt metadata or an Answer delimiter")
+                if "\n" in prefix:
+                    raise ValueError("Multi-line records need explicit prompt metadata; do not hide reasoning in the prompt")
+                prompt = prefix + marker
+            if not text.startswith(prompt) or len(prompt) >= len(text):
+                raise ValueError("answer-only prompt must be a proper text prefix")
+            boundary = len(prompt)
         final_span = None
         if focus_final_exponent and row.get("family") in {
             "symbolic", "elimination", "diverse_elimination"
@@ -32,9 +46,9 @@ def encode_record(row, tokenizer, weighted, focus_final_exponent=False):
         # and changes the training input, not just its loss weights.
         encoded = tokenizer.encode(text, return_type="offset_mapping")
         ids = [tokenizer.bos_id(), *encoded["ids"], tokenizer.eos_id()]
-        weights = [1]
+        weights = [0 if answer_only else 1]
         for begin, end in encoded["offsets"]:
-            weight = 4 if end > boundary else 1
+            weight = int(end > boundary or begin >= boundary) if answer_only else 4 if end > boundary else 1
             if final_span and begin < final_span[1] and end > final_span[0]:
                 weight = 16
             weights.append(weight)
@@ -54,9 +68,12 @@ def main():
                         help="Optional uint8 token weights: procedural continuations receive weight 4")
     parser.add_argument("--focus-final-exponent", action="store_true",
                         help="Give final reasoning-example exponent tokens weight 16")
+    parser.add_argument("--answer-only", action="store_true", help="Mask all prompt tokens; supervise answer and EOS")
     args = parser.parse_args()
     if args.focus_final_exponent and not args.loss_weights_output:
         parser.error("--focus-final-exponent requires --loss-weights-output")
+    if args.answer_only and (not args.loss_weights_output or args.focus_final_exponent):
+        parser.error("--answer-only requires --loss-weights-output and cannot combine with --focus-final-exponent")
     if args.loss_weights_output and args.loss_weights_output.resolve() == args.output.resolve():
         parser.error("loss weights and token output must be distinct files")
     tokenizer = spm.SentencePieceProcessor(model_file=str(args.tokenizer))
@@ -73,7 +90,7 @@ def main():
             with path.open(encoding="utf-8") as handle:
                 for line in handle:
                     ids, weights = encode_record(json.loads(line), tokenizer,
-                                                 bool(weights_output), args.focus_final_exponent)
+                                                 bool(weights_output), args.focus_final_exponent, args.answer_only)
                     encoded = np.asarray(ids, dtype=np.uint16)
                     encoded.tofile(output)
                     if weights_output:
@@ -92,6 +109,7 @@ def main():
         "dtype": "uint16",
         "loss_weights_output": str(args.loss_weights_output) if args.loss_weights_output else None,
         "focus_final_exponent": args.focus_final_exponent,
+        "answer_only": args.answer_only,
     }
     args.output.with_suffix(args.output.suffix + ".json").write_text(
         json.dumps(audit, indent=2) + "\n"

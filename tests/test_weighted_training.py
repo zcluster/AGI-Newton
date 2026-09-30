@@ -29,6 +29,30 @@ class CharacterTokenizer:
 
 
 class WeightedTrainingTests(unittest.TestCase):
+    def test_answer_only_preserves_input_and_masks_prompt(self):
+        prompt = "A square is assigned to x.\nQuestion: Which power?\nAnswer: "
+        row = {"source": "procedural", "prompt": prompt, "text": prompt + "square of x."}
+        plain, _ = encode_record(row, CharacterTokenizer(), True)
+        ids, weights = encode_record(row, CharacterTokenizer(), True, answer_only=True)
+        self.assertEqual(ids, plain)
+        self.assertEqual(weights[:1+len(prompt)], [0] * (1+len(prompt)))
+        self.assertEqual(weights[1+len(prompt):], [1] * (len(row["text"])-len(prompt)+1))
+        del row["prompt"]
+        with self.assertRaises(ValueError):
+            encode_record(row, CharacterTokenizer(), True, answer_only=True)
+        copy_prompt = "Question: Copy x.\nAnswer: "
+        copy_row = {"source": "procedural", "text": copy_prompt + "x."}
+        self.assertEqual(
+            encode_record(copy_row, CharacterTokenizer(), True, answer_only=True),
+            encode_record({**copy_row, "prompt": copy_prompt}, CharacterTokenizer(), True, answer_only=True))
+        with self.assertRaises(ValueError):
+            encode_record({**row, "source": "historical"}, CharacterTokenizer(), True, answer_only=True)
+        with self.assertRaises(ValueError):
+            encode_record({**row, "prompt": "wrong"}, CharacterTokenizer(), True, answer_only=True)
+        with self.assertRaises(ValueError):
+            encode_record({"source": "procedural", "text": "Question: x?\nReasoning: x.\nAnswer: x."},
+                          CharacterTokenizer(), True, answer_only=True)
+
     def test_identical_questions_cannot_cross_validation_boundary(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

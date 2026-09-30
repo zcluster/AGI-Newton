@@ -1,0 +1,393 @@
+{
+  "checkpoint": "runs/hpc_answer_only_seed1686/model.pt",
+  "label": "synthetic_answer_only_not_historical_only",
+  "source_sha256": "404909fb6b96e4400d367b233e7eb470d1d7a0ce0e7b35481e9c69d0f7b55957",
+  "probes": [
+    {
+      "id": "babe_babi_square_babe_question",
+      "prompt": "The squares of the babe are as the cubes of the babi.\nQuestion: What power of the babe is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the babe.",
+        "cube": "cube of the babe."
+      },
+      "text": "The squares of the babe are as the cubes of the babi.\nQuestion: What power of the babe is compared?\nAnswer: square of the babe.",
+      "source": "procedural",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.002102583646774292,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.6073195934295654,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the babe are as the cubes of the babi.\nQuestion: What power of the babe is compared?\nAnswer: square of the babe."
+    },
+    {
+      "id": "babe_babi_square_babe_continuation",
+      "prompt": "The squares of the babe are as the cubes of the babi.\nThe passage compares the power of the babe, namely the ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the babe.",
+        "cube": "cube of the babe."
+      },
+      "text": "The squares of the babe are as the cubes of the babi.\nThe passage compares the power of the babe, namely the square of the babe.",
+      "source": "procedural",
+      "prompt_tokens": 36,
+      "scores": {
+        "square": {
+          "mean_nll": 0.0017706751823425293,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.6520227193832397,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the babe are as the cubes of the babi.\nThe passage compares the power of the babe, namely the square of the babe."
+    },
+    {
+      "id": "babe_babi_square_babi_question",
+      "prompt": "The squares of the babe are as the cubes of the babi.\nQuestion: What power of the babi is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the babi.",
+        "cube": "cube of the babi."
+      },
+      "text": "The squares of the babe are as the cubes of the babi.\nQuestion: What power of the babi is compared?\nAnswer: cube of the babi.",
+      "source": "procedural",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.2585359811782837,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.03068697452545166,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the babe are as the cubes of the babi.\nQuestion: What power of the babi is compared?\nAnswer: cube of the babi."
+    },
+    {
+      "id": "babe_babi_square_babi_continuation",
+      "prompt": "The squares of the babe are as the cubes of the babi.\nThe passage compares the power of the babi, namely the ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the babi.",
+        "cube": "cube of the babi."
+      },
+      "text": "The squares of the babe are as the cubes of the babi.\nThe passage compares the power of the babi, namely the cube of the babi.",
+      "source": "procedural",
+      "prompt_tokens": 35,
+      "scores": {
+        "square": {
+          "mean_nll": 0.28891292214393616,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.025149663910269737,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the babe are as the cubes of the babi.\nThe passage compares the power of the babi, namely the cube of the babi."
+    },
+    {
+      "id": "babe_babi_cube_babe_question",
+      "prompt": "The cubes of the babe are as the squares of the babi.\nQuestion: What power of the babe is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the babe.",
+        "cube": "cube of the babe."
+      },
+      "text": "The cubes of the babe are as the squares of the babi.\nQuestion: What power of the babe is compared?\nAnswer: cube of the babe.",
+      "source": "procedural",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.30894219875335693,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.013192313723266125,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the babe are as the squares of the babi.\nQuestion: What power of the babe is compared?\nAnswer: cube of the babe."
+    },
+    {
+      "id": "babe_babi_cube_babe_continuation",
+      "prompt": "The cubes of the babe are as the squares of the babi.\nThe passage compares the power of the babe, namely the ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the babe.",
+        "cube": "cube of the babe."
+      },
+      "text": "The cubes of the babe are as the squares of the babi.\nThe passage compares the power of the babe, namely the cube of the babe.",
+      "source": "procedural",
+      "prompt_tokens": 36,
+      "scores": {
+        "square": {
+          "mean_nll": 0.25270694494247437,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.02125338278710842,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the babe are as the squares of the babi.\nThe passage compares the power of the babe, namely the cube of the babe."
+    },
+    {
+      "id": "babe_babi_cube_babi_question",
+      "prompt": "The cubes of the babe are as the squares of the babi.\nQuestion: What power of the babi is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the babi.",
+        "cube": "cube of the babi."
+      },
+      "text": "The cubes of the babe are as the squares of the babi.\nQuestion: What power of the babi is compared?\nAnswer: square of the babi.",
+      "source": "procedural",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.002357619348913431,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.7085647583007812,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the babe are as the squares of the babi.\nQuestion: What power of the babi is compared?\nAnswer: square of the babi."
+    },
+    {
+      "id": "babe_babi_cube_babi_continuation",
+      "prompt": "The cubes of the babe are as the squares of the babi.\nThe passage compares the power of the babi, namely the ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the babi.",
+        "cube": "cube of the babi."
+      },
+      "text": "The cubes of the babe are as the squares of the babi.\nThe passage compares the power of the babi, namely the square of the babi.",
+      "source": "procedural",
+      "prompt_tokens": 35,
+      "scores": {
+        "square": {
+          "mean_nll": 0.001892941421829164,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.7503008842468262,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the babe are as the squares of the babi.\nThe passage compares the power of the babi, namely the square of the babi."
+    },
+    {
+      "id": "babe_baku_square_babe_question",
+      "prompt": "The squares of the babe are as the cubes of the baku.\nQuestion: What power of the babe is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the babe.",
+        "cube": "cube of the babe."
+      },
+      "text": "The squares of the babe are as the cubes of the baku.\nQuestion: What power of the babe is compared?\nAnswer: square of the babe.",
+      "source": "procedural",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 0.003162980079650879,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.5403445959091187,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the babe are as the cubes of the baku.\nQuestion: What power of the babe is compared?\nAnswer: square of the babe."
+    },
+    {
+      "id": "babe_baku_square_babe_continuation",
+      "prompt": "The squares of the babe are as the cubes of the baku.\nThe passage compares the power of the babe, namely the ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the babe.",
+        "cube": "cube of the babe."
+      },
+      "text": "The squares of the babe are as the cubes of the baku.\nThe passage compares the power of the babe, namely the square of the babe.",
+      "source": "procedural",
+      "prompt_tokens": 37,
+      "scores": {
+        "square": {
+          "mean_nll": 0.002773761749267578,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.5649247169494629,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the babe are as the cubes of the baku.\nThe passage compares the power of the babe, namely the square of the babe."
+    },
+    {
+      "id": "babe_baku_square_baku_question",
+      "prompt": "The squares of the babe are as the cubes of the baku.\nQuestion: What power of the baku is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the baku.",
+        "cube": "cube of the baku."
+      },
+      "text": "The squares of the babe are as the cubes of the baku.\nQuestion: What power of the baku is compared?\nAnswer: cube of the baku.",
+      "source": "procedural",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 0.31541454792022705,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.012752226553857327,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the babe are as the cubes of the baku.\nQuestion: What power of the baku is compared?\nAnswer: cube of the baku."
+    },
+    {
+      "id": "babe_baku_square_baku_continuation",
+      "prompt": "The squares of the babe are as the cubes of the baku.\nThe passage compares the power of the baku, namely the ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the baku.",
+        "cube": "cube of the baku."
+      },
+      "text": "The squares of the babe are as the cubes of the baku.\nThe passage compares the power of the baku, namely the cube of the baku.",
+      "source": "procedural",
+      "prompt_tokens": 37,
+      "scores": {
+        "square": {
+          "mean_nll": 0.2746599018573761,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.018595559522509575,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the babe are as the cubes of the baku.\nThe passage compares the power of the baku, namely the cube of the baku."
+    },
+    {
+      "id": "babe_baku_cube_babe_question",
+      "prompt": "The cubes of the babe are as the squares of the baku.\nQuestion: What power of the babe is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the babe.",
+        "cube": "cube of the babe."
+      },
+      "text": "The cubes of the babe are as the squares of the baku.\nQuestion: What power of the babe is compared?\nAnswer: cube of the babe.",
+      "source": "procedural",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 0.3238150477409363,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.012071678414940834,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the babe are as the squares of the baku.\nQuestion: What power of the babe is compared?\nAnswer: cube of the babe."
+    },
+    {
+      "id": "babe_baku_cube_babe_continuation",
+      "prompt": "The cubes of the babe are as the squares of the baku.\nThe passage compares the power of the babe, namely the ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the babe.",
+        "cube": "cube of the babe."
+      },
+      "text": "The cubes of the babe are as the squares of the baku.\nThe passage compares the power of the babe, namely the cube of the babe.",
+      "source": "procedural",
+      "prompt_tokens": 37,
+      "scores": {
+        "square": {
+          "mean_nll": 0.2897029221057892,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.016899313777685165,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the babe are as the squares of the baku.\nThe passage compares the power of the babe, namely the cube of the babe."
+    },
+    {
+      "id": "babe_baku_cube_baku_question",
+      "prompt": "The cubes of the babe are as the squares of the baku.\nQuestion: What power of the baku is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the baku.",
+        "cube": "cube of the baku."
+      },
+      "text": "The cubes of the babe are as the squares of the baku.\nQuestion: What power of the baku is compared?\nAnswer: square of the baku.",
+      "source": "procedural",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 0.005651816725730896,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.4694516658782959,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the babe are as the squares of the baku.\nQuestion: What power of the baku is compared?\nAnswer: square of the baku."
+    },
+    {
+      "id": "babe_baku_cube_baku_continuation",
+      "prompt": "The cubes of the babe are as the squares of the baku.\nThe passage compares the power of the baku, namely the ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the baku.",
+        "cube": "cube of the baku."
+      },
+      "text": "The cubes of the babe are as the squares of the baku.\nThe passage compares the power of the baku, namely the square of the baku.",
+      "source": "procedural",
+      "prompt_tokens": 37,
+      "scores": {
+        "square": {
+          "mean_nll": 0.003586217761039734,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.5477160215377808,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the babe are as the squares of the baku.\nThe passage compares the power of the baku, namely the square of the baku."
+    }
+  ],
+  "probes_file": "data/reading_binding/seen_probes.json",
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}

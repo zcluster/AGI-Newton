@@ -53,6 +53,14 @@ def check():
     final = row["text"].rfind("-2")
     assert all(weights[i+1] == 16 for i, (begin, end) in enumerate(encoded["offsets"])
                if begin < final+2 and end > final)
+    prompt = "Question: Copy the label.\nAnswer: "
+    row = {"source": "procedural", "prompt": prompt, "text": prompt + "δ."}
+    plain, _ = encode_record(row, tokenizer, False)
+    masked, weights = encode_record(row, tokenizer, True, answer_only=True)
+    assert plain == masked and weights[0] == 0 and weights[-1] == 1
+    mapping = tokenizer.encode(row["text"], return_type="offset_mapping")
+    assert all(weights[i+1] == int(end > len(prompt) or begin >= len(prompt))
+               for i, (begin, end) in enumerate(mapping["offsets"]))
     print("Prompt boundary, scoring alignment, exact prefix and EOS checks passed")
 
 
