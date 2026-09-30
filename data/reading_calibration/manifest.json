@@ -1,0 +1,8 @@
+{
+  "train_records": 120,
+  "heldout_records": 32,
+  "historical_data": false,
+  "target_answer_training": false,
+  "train_sha256": "a883d6672664133314cfee182002787759e77ba88984a23051178e51f3f11d34",
+  "test_sha256": "572e96f5571bd90c020b13ba3ee309c36fe6e22d6ebc83195a920a995a513571"
+}

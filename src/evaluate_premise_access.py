@@ -38,12 +38,19 @@ def main():
     parser.add_argument("--checkpoint", type=Path)
     parser.add_argument("--tokenizer", type=Path)
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--probes", type=Path, help="Optional held-out calibration cases")
     parser.add_argument("--self-check", action="store_true")
     args = parser.parse_args()
     probes, source_hash = cases(Path(__file__).resolve().parents[1])
+    if args.probes:
+        probes = json.loads(args.probes.read_text())
+        assert probes and len({p["id"] for p in probes}) == len(probes)
+        assert all(p["target"] in p["candidates"] for p in probes)
+        source_hash = hashlib.sha256(args.probes.read_bytes()).hexdigest()
     if args.self_check:
-        assert probes[2]["target"] != probes[4]["target"]
-        print("8 diagnostic cases and source extraction checked")
+        if not args.probes:
+            assert probes[2]["target"] != probes[4]["target"]
+        print(f"{len(probes)} diagnostic cases checked")
         return
     if not all((args.checkpoint, args.tokenizer, args.output)):
         parser.error("checkpoint, tokenizer and output are required")
@@ -70,6 +77,7 @@ def main():
                                        length=60, temperature=0, minimum_length=0)
     report = {"checkpoint": str(args.checkpoint), "label": saved["label"],
               "source_sha256": source_hash, "probes": probes,
+              "probes_file": str(args.probes) if args.probes else None,
               "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n")

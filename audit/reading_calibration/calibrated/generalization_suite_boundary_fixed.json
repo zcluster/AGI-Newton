@@ -1,0 +1,548 @@
+{
+  "suite_version": 3,
+  "checkpoint": "runs/hpc_reading_calibration_seed1686/model.pt",
+  "label": "synthetic_reading_calibration_not_historical_only",
+  "deterministic_generation": true,
+  "abstract_metrics": {
+    "cases": 12,
+    "candidate_accuracy": 0.16666666666666666,
+    "generation_accuracy": 0.0
+  },
+  "physics_metrics": {
+    "cases": 4,
+    "candidate_accuracy": 0.0,
+    "generation_accuracy": 0.0
+  },
+  "abstract_cases": [
+    {
+      "id": "heldout_a",
+      "prompt": "The square of H scales as q^3. J scales as q^1 divided by that square. After eliminating H, determine the power of q in J.\nReasoning: ",
+      "target": "J",
+      "base": "q",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.390781879425049,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.399630546569824,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.389825344085693,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.312253475189209,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.210690975189209,
+          "tokens": 48
+        }
+      },
+      "generation": "The square of H scales as q^3. J scales as q^1 divided by that square. After eliminating H, determine the power of q in J.\nReasoning: square of the lengths.\n Question: What power of the lengths is compared?\nAnswer: square of the lengths.",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_b",
+      "prompt": "Suppose U^2 is proportional to w^3, whereas V is proportional to w/U^2. Combine both statements and simplify V.\nDerivation: ",
+      "target": "V",
+      "base": "w",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.2471160888671875,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.22116756439209,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.23264741897583,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.074896812438965,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.993272304534912,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose U^2 is proportional to w^3, whereas V is proportional to w/U^2. Combine both statements and simplify V.\nDerivation: What power of the lengths is compared?\nAnswer: cube of the lengths.\n The squares of the lengths are as the cubes of the lengths.\n The passage compares the power of the lengths, namely the cube of the lengths.",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_c",
+      "prompt": "Two facts are given. The cube of C follows s^3. D follows s divided by the cube of C. What exponent of s remains in D?\nWork: ",
+      "target": "D",
+      "base": "s",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.609314918518066,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.577088356018066,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.546177387237549,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.423583984375,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.3270263671875,
+          "tokens": 48
+        }
+      },
+      "generation": "Two facts are given. The cube of C follows s^3. D follows s divided by the cube of C. What exponent of s remains in D?\nWork: square of the lengths.\n The square of the lengths.\n The square of the lengths.\n The square of the lengths.",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_d",
+      "prompt": "Let K^1 vary with t^3 and let L vary with t^1/K^1. Remove K from the relations and give the dependence of L on t.\nSolution: ",
+      "target": "L",
+      "base": "t",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.157906532287598,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.093094825744629,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.10094690322876,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.921043395996094,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.825625419616699,
+          "tokens": 48
+        }
+      },
+      "generation": "Let K^1 vary with t^3 and let L vary with t^1/K^1. Remove K from the relations and give the dependence of L on t.\nSolution: and let the lines K and L be the line K.\nAnd let the lines K and L be the line K.\nAnd let the lines K and L be the line K.\nAnd let the lines K and L be the line K.\nAnd let the lines K and L be the line K.\nAnd let the lines K and L be the line K.\nAnd let the lines K and L be the line K.\nAnd let the lines K and L be the",
+      "generation_correct": false
+    },
+    {
+      "id": "control_2",
+      "prompt": "The square of H scales as q^1. J scales as q^3 divided by that square. Eliminate H and determine J.\nReasoning: ",
+      "target": "J",
+      "base": "q",
+      "expected": 2,
+      "winner": 2,
+      "candidate_correct": true,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.385081768035889,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.319991111755371,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.330434322357178,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.229449272155762,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.125607967376709,
+          "tokens": 48
+        }
+      },
+      "generation": "The square of H scales as q^1. J scales as q^3 divided by that square. Eliminate H and determine J.\nReasoning: square of the lengths.\n The squares of the lengths are as the cubes of the prices.\n The passage compares the power of the lengths, namely the square of the lengths.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_1",
+      "prompt": "Suppose U^2 is proportional to w^1, whereas V is proportional to w^0/U^2. Combine both statements.\nDerivation: ",
+      "target": "V",
+      "base": "w",
+      "expected": -1,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.3113250732421875,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.2803144454956055,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.294265270233154,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.100200653076172,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.999980926513672,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose U^2 is proportional to w^1, whereas V is proportional to w^0/U^2. Combine both statements.\nDerivation: square of the lengths.\n The square of the lengths.\n The square of the lengths.\n The square of the lengths.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_0",
+      "prompt": "The cube of C follows s^2. D follows s^2 divided by the cube of C. What exponent remains?\nWork: ",
+      "target": "D",
+      "base": "s",
+      "expected": 0,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.308653354644775,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.286312103271484,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.280034065246582,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.0867719650268555,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.9771528244018555,
+          "tokens": 48
+        }
+      },
+      "generation": "The cube of C follows s^2. D follows s^2 divided by the cube of C. What exponent remains?\nWork: square of the lengths.\n The squares of the lengths are as the cubes of the weights.\n The passage compares the power of the lengths, namely the square of the lengths.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_other_minus_2",
+      "prompt": "Let K^1 vary with t^1 and let L vary with t^-1/K^1. Remove K and give L's dependence.\nSolution: ",
+      "target": "L",
+      "base": "t",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.029472351074219,
+          "tokens": 50
+        },
+        "-2": {
+          "mean_nll": 4.966425895690918,
+          "tokens": 50
+        },
+        "-1": {
+          "mean_nll": 4.978652000427246,
+          "tokens": 50
+        },
+        "0": {
+          "mean_nll": 4.819933891296387,
+          "tokens": 49
+        },
+        "2": {
+          "mean_nll": 4.712830543518066,
+          "tokens": 49
+        }
+      },
+      "generation": "Let K^1 vary with t^1 and let L vary with t^-1/K^1. Remove K and give L's dependence.\nSolution: What power of the weights is compared?\nAnswer: cube of the weights. \nThe squares of the weights are as the cube of the weights.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_reverse_2",
+      "prompt": "The square of M is proportional to z^-1. N is proportional to z^1 divided by that square. Simplify N.\nReasoning: ",
+      "target": "N",
+      "base": "z",
+      "expected": 2,
+      "winner": 2,
+      "candidate_correct": true,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.413222312927246,
+          "tokens": 50
+        },
+        "-2": {
+          "mean_nll": 5.337040901184082,
+          "tokens": 50
+        },
+        "-1": {
+          "mean_nll": 5.372226238250732,
+          "tokens": 50
+        },
+        "0": {
+          "mean_nll": 5.247648239135742,
+          "tokens": 49
+        },
+        "2": {
+          "mean_nll": 5.140834331512451,
+          "tokens": 49
+        }
+      },
+      "generation": "The square of M is proportional to z^-1. N is proportional to z^1 divided by that square. Simplify N.\nReasoning: square of the lengths.\n The square of the lengths.\n The square of the lengths.\n The square of the lengths.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_3",
+      "prompt": "Suppose A^3 follows x^3 and B follows x^0/A^3. Combine the relations.\nWork: ",
+      "target": "B",
+      "base": "x",
+      "expected": -3,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.475072860717773,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.454704284667969,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.4317851066589355,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.323878288269043,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.2217864990234375,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose A^3 follows x^3 and B follows x^0/A^3. Combine the relations.\nWork: \nAnswer: the cube of the lengths. And the cube of the lengths. \nAnswer: the cube of the lengths.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_zero_2",
+      "prompt": "The first power of P varies as y^-1. Q varies as y^-1 divided by P. Eliminate P.\nDerivation: ",
+      "target": "Q",
+      "base": "y",
+      "expected": 0,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.527824878692627,
+          "tokens": 51
+        },
+        "-2": {
+          "mean_nll": 5.444185256958008,
+          "tokens": 51
+        },
+        "-1": {
+          "mean_nll": 5.472256660461426,
+          "tokens": 51
+        },
+        "0": {
+          "mean_nll": 5.438635349273682,
+          "tokens": 50
+        },
+        "2": {
+          "mean_nll": 5.342775821685791,
+          "tokens": 50
+        }
+      },
+      "generation": "The first power of P varies as y^-1. Q varies as y^-1 divided by P. Eliminate P.\nDerivation: as y.\nM.\nD.\nThe squares of P.\nD.\nThe squares of P.\nD.\nThe squares of P.\nD.\nThe squares of P.\nD.\nThe squares of P.\nD.\nThe squares of P.\nD.\nThe squares of P.\nD.\nThe squares of P.\nD.\nThe s",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_1_b",
+      "prompt": "Let F^2 follow v^3 and G follow v^2/F^2. Determine G after substitution.\nSolution: ",
+      "target": "G",
+      "base": "v",
+      "expected": -1,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.244798183441162,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.210279941558838,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.233836650848389,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.062154293060303,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.96490478515625,
+          "tokens": 48
+        }
+      },
+      "generation": "Let F^2 follow v^3 and G follow v^2/F^2. Determine G after substitution.\nSolution: What power of the areas is compared?\nAnswer: cube of the areas.\n The passage compares the power of the areas, namely the cube of the areas.",
+      "generation_correct": false
+    }
+  ],
+  "physics_cases": [
+    {
+      "id": "physics_0",
+      "prompt": "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: ",
+      "target": "turning tendency",
+      "base": "distance",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.439112663269043,
+          "tokens": 59
+        },
+        "-2": {
+          "mean_nll": 5.447707176208496,
+          "tokens": 59
+        },
+        "-1": {
+          "mean_nll": 5.424416542053223,
+          "tokens": 59
+        },
+        "0": {
+          "mean_nll": 5.351845741271973,
+          "tokens": 58
+        },
+        "2": {
+          "mean_nll": 5.232919692993164,
+          "tokens": 58
+        }
+      },
+      "generation": "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: What power of the lengths is compared?\nAnswer: square of the lengths.\n The passage compares the power of the lengths, namely the square of the lengths.",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_1",
+      "prompt": "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: ",
+      "target": "turning tendency",
+      "base": "mean distance",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.326904296875,
+          "tokens": 62
+        },
+        "-2": {
+          "mean_nll": 5.353786945343018,
+          "tokens": 62
+        },
+        "-1": {
+          "mean_nll": 5.304813385009766,
+          "tokens": 62
+        },
+        "0": {
+          "mean_nll": 5.219386100769043,
+          "tokens": 61
+        },
+        "2": {
+          "mean_nll": 5.128063678741455,
+          "tokens": 61
+        }
+      },
+      "generation": "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: square of the lengths.\n Question: What power of the lengths is compared?\nAnswer: square of the lengths.",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_2",
+      "prompt": "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: ",
+      "target": "C",
+      "base": "R",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.14420223236084,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.130410671234131,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.085827827453613,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.998769283294678,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.917775630950928,
+          "tokens": 48
+        }
+      },
+      "generation": "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: of the widths. of the widths.\n The passage compares the power of the widths, namely the cube of the widths.",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_3",
+      "prompt": "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: ",
+      "target": "A",
+      "base": "d",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.08272123336792,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.072278022766113,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.039194583892822,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.964958190917969,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.8928961753845215,
+          "tokens": 48
+        }
+      },
+      "generation": "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: What power of the weights is compared?\nAnswer: cube of the weights.\n The passage compares the power of the weights, namely the cube of the weights.",
+      "generation_correct": false
+    }
+  ]
+}

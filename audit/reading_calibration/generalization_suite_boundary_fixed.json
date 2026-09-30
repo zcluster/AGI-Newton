@@ -1,0 +1,548 @@
+{
+  "suite_version": 3,
+  "checkpoint": "runs/hpc_v11_bootstrap_seed1686/model.pt",
+  "label": "hpc_v11_primary_scan_plus_general_english",
+  "deterministic_generation": true,
+  "abstract_metrics": {
+    "cases": 12,
+    "candidate_accuracy": 0.16666666666666666,
+    "generation_accuracy": 0.0
+  },
+  "physics_metrics": {
+    "cases": 4,
+    "candidate_accuracy": 0.0,
+    "generation_accuracy": 0.0
+  },
+  "abstract_cases": [
+    {
+      "id": "heldout_a",
+      "prompt": "The square of H scales as q^3. J scales as q^1 divided by that square. After eliminating H, determine the power of q in J.\nReasoning: ",
+      "target": "J",
+      "base": "q",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 4.997603416442871,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.013138771057129,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.011603832244873,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.93945837020874,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.83575963973999,
+          "tokens": 48
+        }
+      },
+      "generation": "The square of H scales as q^3. J scales as q^1 divided by that square. After eliminating H, determine the power of q in J.\nReasoning: After the square of H setting, and the square of H setting, and the square of H setting.\nAfter the square of H setting, and the square of H setting.\nAfter the square of H setting.\nAfter the square of H setting.\nAfter the square of H setting.\nAfter the square of H setting",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_b",
+      "prompt": "Suppose U^2 is proportional to w^3, whereas V is proportional to w/U^2. Combine both statements and simplify V.\nDerivation: ",
+      "target": "V",
+      "base": "w",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.04777193069458,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.032565116882324,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.046097755432129,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.8985395431518555,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.83465576171875,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose U^2 is proportional to w^3, whereas V is proportional to w/U^2. Combine both statements and simplify V.\nDerivation: and if the Union be proportional to the Union, then it is alfo proportional to the Union.\nBut if the Union be proportional to the Union, then it is alfo proportional to the Union.\nAnd if the Union be proportional to the Union, then it is alfo proportional to the Union.\nAnd if the Union be proportional to the Union, then it is alfo proportional to the U",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_c",
+      "prompt": "Two facts are given. The cube of C follows s^3. D follows s divided by the cube of C. What exponent of s remains in D?\nWork: ",
+      "target": "D",
+      "base": "s",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.070955276489258,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.059375762939453,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.025903701782227,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.934229850769043,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.846674919128418,
+          "tokens": 48
+        }
+      },
+      "generation": "Two facts are given. The cube of C follows s^3. D follows s divided by the cube of C. What exponent of s remains in D?\nWork: The whole signifies the whole signification of the whole signification.\nThe whole signification is the whole signification.\nThe whole signification is the whole signification.\nThe whole signification is the whole signification.\nThe whole signification is the whole signification.\nThe whole signification is the whole signification.\nThe whole sign",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_d",
+      "prompt": "Let K^1 vary with t^3 and let L vary with t^1/K^1. Remove K from the relations and give the dependence of L on t.\nSolution: ",
+      "target": "L",
+      "base": "t",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.048832893371582,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.007139682769775,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.02099084854126,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.870448112487793,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.779820919036865,
+          "tokens": 48
+        }
+      },
+      "generation": "Let K^1 vary with t^3 and let L vary with t^1/K^1. Remove K from the relations and give the dependence of L on t.\nSolution: and let the Reader judge.\nAnd if the Reader be not deceived, let him be judged.\nAnd if he be not deceived, let him be judged.\nAnd if he be not deceived, let him be judged.\nAnd if he be not deceived, let him be judged.\nAnd if he be not deceived, let him be judged.\nAnd if he be not deceived,",
+      "generation_correct": false
+    },
+    {
+      "id": "control_2",
+      "prompt": "The square of H scales as q^1. J scales as q^3 divided by that square. Eliminate H and determine J.\nReasoning: ",
+      "target": "J",
+      "base": "q",
+      "expected": 2,
+      "winner": 2,
+      "candidate_correct": true,
+      "scores": {
+        "-3": {
+          "mean_nll": 4.9838714599609375,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 4.94010591506958,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 4.953927040100098,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.872828483581543,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.77899694442749,
+          "tokens": 48
+        }
+      },
+      "generation": "The square of H scales as q^1. J scales as q^3 divided by that square. Eliminate H and determine J.\nReasoning: The square of H scales as thus: The square of H scales as thus: The square of H scales as thus: The square of H scales as thus: The square of H scales as thus: The square of H scales as thus: The square of H scales as thus: The square of H scales as thus: The square of H scales as thus: The",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_1",
+      "prompt": "Suppose U^2 is proportional to w^1, whereas V is proportional to w^0/U^2. Combine both statements.\nDerivation: ",
+      "target": "V",
+      "base": "w",
+      "expected": -1,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.073167324066162,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.0510454177856445,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.0654144287109375,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.888331413269043,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.8176116943359375,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose U^2 is proportional to w^1, whereas V is proportional to w^0/U^2. Combine both statements.\nDerivation: is that which is compofed of the \nfquares of the lines A and B, together with the fquares of the lines A and B, together with the \nfquares of the lines A and B, together with the fquares of the lines A and B, together with the \nfquares of the lines A and B, together with the fquares of the lines A and B, together with the fquares of the \nlines A and B, together with the fquares of the lines A and B, together with the fquares",
+      "generation_correct": false
+    },
+    {
+      "id": "control_0",
+      "prompt": "The cube of C follows s^2. D follows s^2 divided by the cube of C. What exponent remains?\nWork: ",
+      "target": "D",
+      "base": "s",
+      "expected": 0,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 4.946358680725098,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 4.954091548919678,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 4.946358680725098,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.763356685638428,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.6674299240112305,
+          "tokens": 48
+        }
+      },
+      "generation": "The cube of C follows s^2. D follows s^2 divided by the cube of C. What exponent remains?\nWork: The cube of C is the cube of C. Wherefore the cube of C is the cube of C. Wherefore the cube of C is the cube of C. Wherefore the cube of C is the cube of C.\nBut the cube of C is the cube of C.\nWherefore the cube of C is the cube of C.\nBut the cube of C is the cube of C.\nAnd the cube of C is the cube of C.\nAnd the cube of C is the cube",
+      "generation_correct": false
+    },
+    {
+      "id": "control_other_minus_2",
+      "prompt": "Let K^1 vary with t^1 and let L vary with t^-1/K^1. Remove K and give L's dependence.\nSolution: ",
+      "target": "L",
+      "base": "t",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 4.990230560302734,
+          "tokens": 50
+        },
+        "-2": {
+          "mean_nll": 4.933589935302734,
+          "tokens": 50
+        },
+        "-1": {
+          "mean_nll": 4.948238372802734,
+          "tokens": 50
+        },
+        "0": {
+          "mean_nll": 4.828549861907959,
+          "tokens": 49
+        },
+        "2": {
+          "mean_nll": 4.71946382522583,
+          "tokens": 49
+        }
+      },
+      "generation": "Let K^1 vary with t^1 and let L vary with t^-1/K^1. Remove K and give L's dependence.\nSolution: \nS1 v. Its true, that the motion of the Earth is not to be found in \nthe least, but in the least : and therefore the motion of the Earth is to be found in \nthe least, and therefore the motion of the Earth is to be found in the least, and therefore the \nSphere to be found in the least, and therefore the motion of the Earth is to be found in the \nst, and therefore the motion of the Earth is to be",
+      "generation_correct": false
+    },
+    {
+      "id": "control_reverse_2",
+      "prompt": "The square of M is proportional to z^-1. N is proportional to z^1 divided by that square. Simplify N.\nReasoning: ",
+      "target": "N",
+      "base": "z",
+      "expected": 2,
+      "winner": 2,
+      "candidate_correct": true,
+      "scores": {
+        "-3": {
+          "mean_nll": 4.995820045471191,
+          "tokens": 50
+        },
+        "-2": {
+          "mean_nll": 4.938525199890137,
+          "tokens": 50
+        },
+        "-1": {
+          "mean_nll": 4.975678443908691,
+          "tokens": 50
+        },
+        "0": {
+          "mean_nll": 4.85424280166626,
+          "tokens": 49
+        },
+        "2": {
+          "mean_nll": 4.734185695648193,
+          "tokens": 49
+        }
+      },
+      "generation": "The square of M is proportional to z^-1. N is proportional to z^1 divided by that square. Simplify N.\nReasoning: \nN. is antecedent to the negative, but to the negative. And if the negative be not \nsuperiour to the negative, then it is antecedent to the negative. \nBut if the negative be not to the negative, then it is antecedent to the negative. \nAnd if the negative be not to the negative, then it is antecedent to the negative. \nAnd if the",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_3",
+      "prompt": "Suppose A^3 follows x^3 and B follows x^0/A^3. Combine the relations.\nWork: ",
+      "target": "B",
+      "base": "x",
+      "expected": -3,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.125358581542969,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.120794773101807,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.10929536819458,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.9969892501831055,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.91009521484375,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose A^3 follows x^3 and B follows x^0/A^3. Combine the relations.\nWork: \nA.B.C.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D.D",
+      "generation_correct": false
+    },
+    {
+      "id": "control_zero_2",
+      "prompt": "The first power of P varies as y^-1. Q varies as y^-1 divided by P. Eliminate P.\nDerivation: ",
+      "target": "Q",
+      "base": "y",
+      "expected": 0,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.260931491851807,
+          "tokens": 51
+        },
+        "-2": {
+          "mean_nll": 5.191073894500732,
+          "tokens": 51
+        },
+        "-1": {
+          "mean_nll": 5.213223457336426,
+          "tokens": 51
+        },
+        "0": {
+          "mean_nll": 5.184914588928223,
+          "tokens": 50
+        },
+        "2": {
+          "mean_nll": 5.074133396148682,
+          "tokens": 50
+        }
+      },
+      "generation": "The first power of P varies as y^-1. Q varies as y^-1 divided by P. Eliminate P.\nDerivation: as 2.\nP.\nDerivation.\n3.\nP.\nDerivation.\n4.\nP.\nDerivation.\n5.\nP.\nDerivation.\n6.\nP.\nDerivation.\n7.\nP.\nDerivation.\n8.\nP.\nDerivation.\n9.\nDerivation.\n9.\nDerivation.\n9.\nDerivation.\n9.\nDerivation.\n9.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_1_b",
+      "prompt": "Let F^2 follow v^3 and G follow v^2/F^2. Determine G after substitution.\nSolution: ",
+      "target": "G",
+      "base": "v",
+      "expected": -1,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.025111675262451,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 4.993662357330322,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.012217044830322,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.8374433517456055,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.762654781341553,
+          "tokens": 48
+        }
+      },
+      "generation": "Let F^2 follow v^3 and G follow v^2/F^2. Determine G after substitution.\nSolution: \nGi^o'r.j.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.i.",
+      "generation_correct": false
+    }
+  ],
+  "physics_cases": [
+    {
+      "id": "physics_0",
+      "prompt": "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: ",
+      "target": "turning tendency",
+      "base": "distance",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.324386119842529,
+          "tokens": 59
+        },
+        "-2": {
+          "mean_nll": 5.346384048461914,
+          "tokens": 59
+        },
+        "-1": {
+          "mean_nll": 5.328752040863037,
+          "tokens": 59
+        },
+        "0": {
+          "mean_nll": 5.251214504241943,
+          "tokens": 58
+        },
+        "2": {
+          "mean_nll": 5.128988265991211,
+          "tokens": 58
+        }
+      },
+      "generation": "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: (1) Against the first, and the second, and the third.\n(2) Against the third.\n(2) Against the third.\n(3) Against the third.\n(4) Against the fourth.\n(5) Against the fourth.\n(5) Against the fourth.\n(5) Against the fourth.\n(5) Against the fourth.\n(5",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_1",
+      "prompt": "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: ",
+      "target": "turning tendency",
+      "base": "mean distance",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.317355155944824,
+          "tokens": 62
+        },
+        "-2": {
+          "mean_nll": 5.3503217697143555,
+          "tokens": 62
+        },
+        "-1": {
+          "mean_nll": 5.306585311889648,
+          "tokens": 62
+        },
+        "0": {
+          "mean_nll": 5.258020401000977,
+          "tokens": 61
+        },
+        "2": {
+          "mean_nll": 5.139204025268555,
+          "tokens": 61
+        }
+      },
+      "generation": "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_2",
+      "prompt": "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: ",
+      "target": "C",
+      "base": "R",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 4.807098865509033,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 4.798539161682129,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 4.77221155166626,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.659032344818115,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.58185338973999,
+          "tokens": 48
+        }
+      },
+      "generation": "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: \nAnd let the line A be proportional to the line A. And let the line A be proportional to the \nline A. And let the line A be proportional to the line A. And let the line A be \nequall to the line A. And let the line A be equall to the line A. And let the line \nA be equall to the line A. And let the line A be equall to the line A. \nAnd forafmuch as the line A is equall to the line",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_3",
+      "prompt": "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: ",
+      "target": "A",
+      "base": "d",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.0226850509643555,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.023163318634033,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 4.986761569976807,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 4.9433746337890625,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 4.865270137786865,
+          "tokens": 48
+        }
+      },
+      "generation": "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: PP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\nP.\n",
+      "generation_correct": false
+    }
+  ]
+}

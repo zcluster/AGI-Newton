@@ -1,0 +1,195 @@
+{
+  "checkpoint": "runs/hpc_v11_bootstrap_seed1686/model.pt",
+  "label": "hpc_v11_primary_scan_plus_general_english",
+  "source_sha256": "1f9d37d233dd32d2e1c2dc15786bbbdabd0d9bbb5626489a65335da4efcf4585",
+  "probes": [
+    {
+      "id": "original_ocr_question",
+      "prompt": "For Example, The Period of the Revolution of the Earth reduced into \nminutes of time, being 525968. 4. and of Mars. 989247. 5: 1 ſay, as the \nſquare of. 525968. 7. to the ſquare of. 989247.+. ſo the Cube of 100000. \nthe mean diſtance of the Earth, to the Cube of 152369.the Mean diſtance of \nMars, or by artificiall numbers,\nQuestion: What power of the periods is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 147,
+      "scores": {
+        "square": {
+          "mean_nll": 4.197545051574707,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.67578125,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "For Example, The Period of the Revolution of the Earth reduced into \nminutes of time, being 525968. 4. and of Mars. 989247. 5: 1 ſay, as the \nſquare of. 525968. 7. to the ſquare of. 989247.+. ſo the Cube of 100000. \nthe mean diſtance of the Earth, to the Cube of 152369.the Mean diſtance of \nMars, or by artificiall numbers,\nQuestion: What power of the periods is compared?\nAnswer: \nthe line of the Earth, to the Cube of 100000. the whole line of the whole \nline of 100000. the whole line of 100000. the whole line of 100000. the whole line of \nthe whole line of 100000. the whole line of 100000. the"
+    },
+    {
+      "id": "original_ocr_continuation",
+      "prompt": "For Example, The Period of the Revolution of the Earth reduced into \nminutes of time, being 525968. 4. and of Mars. 989247. 5: 1 ſay, as the \nſquare of. 525968. 7. to the ſquare of. 989247.+. ſo the Cube of 100000. \nthe mean diſtance of the Earth, to the Cube of 152369.the Mean diſtance of \nMars, or by artificiall numbers,\nThe passage compares the ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 134,
+      "scores": {
+        "square": {
+          "mean_nll": 3.4129464626312256,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 5.0963544845581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "For Example, The Period of the Revolution of the Earth reduced into \nminutes of time, being 525968. 4. and of Mars. 989247. 5: 1 ſay, as the \nſquare of. 525968. 7. to the ſquare of. 989247.+. ſo the Cube of 100000. \nthe mean diſtance of the Earth, to the Cube of 152369.the Mean diſtance of \nMars, or by artificiall numbers,\nThe passage compares the \ncircle to the Centre of the Earth, to the Centre of the Earth, \nand to the Centre of the Earth, to the Centre of the Earth, \nand to the Centre of the Earth, and to the Centre of the Earth, \nand to the Centre of the Earth, and to"
+    },
+    {
+      "id": "modern_paraphrase_question",
+      "prompt": "The squares of the periods are as the cubes of the distances.\nQuestion: What power of the periods is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 3.5502233505249023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.8043622970581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the periods are as the cubes of the distances.\nQuestion: What power of the periods is compared?\nAnswer: The squares of the squares are as the squares of the squares.\nQuestion.\nWhat is the square of the squares?\nAnswer.\nThe squares of the squares are as the squares"
+    },
+    {
+      "id": "modern_paraphrase_continuation",
+      "prompt": "The squares of the periods are as the cubes of the distances.\nThe passage compares the ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 26,
+      "scores": {
+        "square": {
+          "mean_nll": 2.8638393878936768,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.996419429779053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the periods are as the cubes of the distances.\nThe passage compares the whole length of the squares, and the sides the sides the sides the sides the sides the sides the sides the sides the sides the sides the sides the sides the sides the sides the sides the sides the sides"
+    },
+    {
+      "id": "counterfactual_paraphrase_question",
+      "prompt": "The cubes of the periods are as the squares of the distances.\nQuestion: What power of the periods is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 3.6947546005249023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.805989742279053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the periods are as the squares of the distances.\nQuestion: What power of the periods is compared?\nAnswer: The first is as the squares of the squares, and the second is as the squares of the squares.\nQuestion: What is the squares?\nAnswer.\nThe squares of the squares are as the"
+    },
+    {
+      "id": "counterfactual_paraphrase_continuation",
+      "prompt": "The cubes of the periods are as the squares of the distances.\nThe passage compares the ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 26,
+      "scores": {
+        "square": {
+          "mean_nll": 2.773158550262451,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.7828779220581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the periods are as the squares of the distances.\nThe passage compares the sides of the sides, and the sides of the sides.\nThe sides of the sides are as the sides of the sides.\nThe sides of the sides are as the sides of the sides.\nThe sides of the sides"
+    },
+    {
+      "id": "arithmetic_1_3",
+      "prompt": "Question: What is 1 minus 3?\nAnswer: ",
+      "target": "-2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "-2": {
+          "mean_nll": 7.484375,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 9.25,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 4.8125,
+          "tokens": 1
+        }
+      },
+      "winner": "2",
+      "generation": "Question: What is 1 minus 3?\nAnswer: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 100: 1 minus 4: 100: 100: 100: 100: 1"
+    },
+    {
+      "id": "arithmetic_3_1",
+      "prompt": "Question: What is 3 minus 1?\nAnswer: ",
+      "target": "2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "-2": {
+          "mean_nll": 7.859375,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 9.1875,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 5.3125,
+          "tokens": 1
+        }
+      },
+      "winner": "2",
+      "generation": "Question: What is 3 minus 1?\nAnswer: A scruple to be taken, is a scruple to be taken, and a scruple to be taken, is a scruple to be taken, and a scruple to be taken, is a scruple to be taken, and a scruple to be"
+    }
+  ],
+  "probes_file": null,
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}

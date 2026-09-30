@@ -1,0 +1,23 @@
+{
+  "historical_baseline": {
+    "cases": 32,
+    "exact_answers": 0,
+    "rank_correct": 16,
+    "both_counterfactual_answers_correct": 0,
+    "constant_square_rank_baseline": 16
+  },
+  "synthetic_calibrated": {
+    "cases": 32,
+    "exact_answers": 4,
+    "rank_correct": 17,
+    "both_counterfactual_answers_correct": 0,
+    "constant_square_rank_baseline": 16
+  },
+  "synthetic_calibrated_aligned": {
+    "cases": 32,
+    "exact_answers": 6,
+    "rank_correct": 21,
+    "both_counterfactual_answers_correct": 1,
+    "constant_square_rank_baseline": 16
+  }
+}

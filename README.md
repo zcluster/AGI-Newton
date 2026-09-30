@@ -7,6 +7,13 @@ The latest Tongji HPC baseline and historical-language comparison are in
 [`V11_BOOTSTRAP_RESULTS.md`](V11_BOOTSTRAP_RESULTS.md); language modeling
 improved, but free derivation and the direct Earth–Moon test still failed.
 
+Latest diagnostic: [`READING_CALIBRATION_PROTOCOL.md`](READING_CALIBRATION_PROTOCOL.md).
+A shared SentencePiece prompt-boundary defect was fixed and both baseline and
+synthetic-calibrated models retested. The calibration improves answer formatting,
+not reliable relation transfer or physics discovery. Earlier BPE generation/ranking
+results must be treated as legacy measurements until retested with the corrected
+helper; the original output files are retained for traceability.
+
 The repository includes the pilot OCR text, source manifests, generated
 reasoning curricula, tokenizer, scripts, tests, and JSON evaluation results.
 The full EEBO language archive and large V2--V7 model checkpoints are not in

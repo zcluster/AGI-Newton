@@ -1,0 +1,777 @@
+{
+  "checkpoint": "runs/hpc_v11_bootstrap_seed1686/model.pt",
+  "label": "hpc_v11_primary_scan_plus_general_english",
+  "source_sha256": "572e96f5571bd90c020b13ba3ee309c36fe6e22d6ebc83195a920a995a513571",
+  "probes": [
+    {
+      "id": "heights_breadths_square_heights_question",
+      "prompt": "The squares of the heights are as the cubes of the breadths.\nQuestion: What power of the heights is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the heights.",
+        "cube": "cube of the heights."
+      },
+      "text": "The squares of the heights are as the cubes of the breadths.\nQuestion: What power of the heights is compared?\nAnswer: square of the heights.",
+      "source": "procedural",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 3.1517858505249023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.314453125,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the heights are as the cubes of the breadths.\nQuestion: What power of the heights is compared?\nAnswer: The squares of the height are as the squares of the heights.\nQuestion.\nWhat is the sum of the height?\nAnswer.\nThe squares of the height are as the squares of the height.\nQuestion"
+    },
+    {
+      "id": "heights_breadths_square_heights_continuation",
+      "prompt": "The squares of the heights are as the cubes of the breadths.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the heights.",
+        "cube": "cube of the heights."
+      },
+      "text": "The squares of the heights are as the cubes of the breadths.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: square of the heights.",
+      "source": "procedural",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 2.9888393878936768,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.2018232345581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the heights are as the cubes of the breadths.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: According to the statute, which is the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the s"
+    },
+    {
+      "id": "heights_breadths_square_breadths_question",
+      "prompt": "The squares of the heights are as the cubes of the breadths.\nQuestion: What power of the breadths is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the breadths.",
+        "cube": "cube of the breadths."
+      },
+      "text": "The squares of the heights are as the cubes of the breadths.\nQuestion: What power of the breadths is compared?\nAnswer: cube of the breadths.",
+      "source": "procedural",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 3.302455425262451,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.460286617279053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the heights are as the cubes of the breadths.\nQuestion: What power of the breadths is compared?\nAnswer: The squares of the height are as the squares of the height, and the squares of the height are as the squares of the height.\nQuestion.\nWhat is the square of the height?\nAnswer.\nThe square"
+    },
+    {
+      "id": "heights_breadths_square_breadths_continuation",
+      "prompt": "The squares of the heights are as the cubes of the breadths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the breadths.",
+        "cube": "cube of the breadths."
+      },
+      "text": "The squares of the heights are as the cubes of the breadths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: cube of the breadths.",
+      "source": "procedural",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 3.216517925262451,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.4322919845581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the heights are as the cubes of the breadths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: According to the statute, which is the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the s"
+    },
+    {
+      "id": "heights_breadths_cube_heights_question",
+      "prompt": "The cubes of the heights are as the squares of the breadths.\nQuestion: What power of the heights is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the heights.",
+        "cube": "cube of the heights."
+      },
+      "text": "The cubes of the heights are as the squares of the breadths.\nQuestion: What power of the heights is compared?\nAnswer: cube of the heights.",
+      "source": "procedural",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 3.304687738418579,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.3229169845581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the heights are as the squares of the breadths.\nQuestion: What power of the heights is compared?\nAnswer: The squares of the height are as the squares of the height, and the squares of the height are as the squares of the height.\nQuestion.\nWhat is the square of the height?\nAnswer.\nThe square"
+    },
+    {
+      "id": "heights_breadths_cube_heights_continuation",
+      "prompt": "The cubes of the heights are as the squares of the breadths.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the heights.",
+        "cube": "cube of the heights."
+      },
+      "text": "The cubes of the heights are as the squares of the breadths.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: cube of the heights.",
+      "source": "procedural",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 3.243861675262451,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.3151044845581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the heights are as the squares of the breadths.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: According to the statute, which is the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the s"
+    },
+    {
+      "id": "heights_breadths_cube_breadths_question",
+      "prompt": "The cubes of the heights are as the squares of the breadths.\nQuestion: What power of the breadths is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the breadths.",
+        "cube": "cube of the breadths."
+      },
+      "text": "The cubes of the heights are as the squares of the breadths.\nQuestion: What power of the breadths is compared?\nAnswer: square of the breadths.",
+      "source": "procedural",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 3.4056921005249023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.505859375,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the heights are as the squares of the breadths.\nQuestion: What power of the breadths is compared?\nAnswer: The squares of the squares are as the squares of the squares.\nQuestion.\nWhat is the squares?\nAnswer.\nThe squares of the squares are as the squares of the square"
+    },
+    {
+      "id": "heights_breadths_cube_breadths_continuation",
+      "prompt": "The cubes of the heights are as the squares of the breadths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the breadths.",
+        "cube": "cube of the breadths."
+      },
+      "text": "The cubes of the heights are as the squares of the breadths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: square of the breadths.",
+      "source": "procedural",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 3.342076063156128,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.4752607345581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the heights are as the squares of the breadths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: According to the statute, which is the squares, and the squares of the squares.\nQuestion.\nWhat is the square of the squares?\nAnswer.\nA square is a square of the s"
+    },
+    {
+      "id": "breadths_depths_square_breadths_question",
+      "prompt": "The squares of the breadths are as the cubes of the depths.\nQuestion: What power of the breadths is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the breadths.",
+        "cube": "cube of the breadths."
+      },
+      "text": "The squares of the breadths are as the cubes of the depths.\nQuestion: What power of the breadths is compared?\nAnswer: square of the breadths.",
+      "source": "procedural",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 3.460658550262451,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.3828125,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the breadths are as the cubes of the depths.\nQuestion: What power of the breadths is compared?\nAnswer: The squares of the depths are as the squares of the depths.\nQuestion.\nWhat is the squares of the depths?\nAnswer.\nThe squares of the depths are"
+    },
+    {
+      "id": "breadths_depths_square_breadths_continuation",
+      "prompt": "The squares of the breadths are as the cubes of the depths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the breadths.",
+        "cube": "cube of the breadths."
+      },
+      "text": "The squares of the breadths are as the cubes of the depths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: square of the breadths.",
+      "source": "procedural",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 3.2924108505249023,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.406575679779053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the breadths are as the cubes of the depths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: The squares of the depths are as the sides of the depths.\nQuestion.\nWhat is the square of the depths?\nAnswer.\nThe sides of the depths are as the s"
+    },
+    {
+      "id": "breadths_depths_square_depths_question",
+      "prompt": "The squares of the breadths are as the cubes of the depths.\nQuestion: What power of the depths is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the depths.",
+        "cube": "cube of the depths."
+      },
+      "text": "The squares of the breadths are as the cubes of the depths.\nQuestion: What power of the depths is compared?\nAnswer: cube of the depths.",
+      "source": "procedural",
+      "prompt_tokens": 43,
+      "scores": {
+        "square": {
+          "mean_nll": 2.4916110038757324,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.27313232421875,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the breadths are as the cubes of the depths.\nQuestion: What power of the depths is compared?\nAnswer: The squares of the depths are as the squares of the depths.\nQuestion.\nWhat is the depth of the depth?\nAnswer.\nThe depth of the depth of the de"
+    },
+    {
+      "id": "breadths_depths_square_depths_continuation",
+      "prompt": "The squares of the breadths are as the cubes of the depths.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the depths.",
+        "cube": "cube of the depths."
+      },
+      "text": "The squares of the breadths are as the cubes of the depths.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: cube of the depths.",
+      "source": "procedural",
+      "prompt_tokens": 50,
+      "scores": {
+        "square": {
+          "mean_nll": 2.302415609359741,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.1724109649658203,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the breadths are as the cubes of the depths.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: The depths of the depths are as the depths of the depths.\nQuestion.\nWhat is the depth of the depth of the depth?\nAnswer.\nThe depth of"
+    },
+    {
+      "id": "breadths_depths_cube_breadths_question",
+      "prompt": "The cubes of the breadths are as the squares of the depths.\nQuestion: What power of the breadths is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the breadths.",
+        "cube": "cube of the breadths."
+      },
+      "text": "The cubes of the breadths are as the squares of the depths.\nQuestion: What power of the breadths is compared?\nAnswer: cube of the breadths.",
+      "source": "procedural",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 3.7935268878936768,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.4996747970581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the breadths are as the squares of the depths.\nQuestion: What power of the breadths is compared?\nAnswer: The squares of the depths are as the squares of the depths.\nQuestion.\nWhat is the squares of the depths?\nAnswer.\nThe squares of the depths are"
+    },
+    {
+      "id": "breadths_depths_cube_breadths_continuation",
+      "prompt": "The cubes of the breadths are as the squares of the depths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the breadths.",
+        "cube": "cube of the breadths."
+      },
+      "text": "The cubes of the breadths are as the squares of the depths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: cube of the breadths.",
+      "source": "procedural",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 3.640625238418579,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.596028804779053,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the breadths are as the squares of the depths.\nQuestion: According to the statement, which power applies to the breadths?\nAnswer: The depth of the foot is as the squares of the depths, and the squares of the depths are as the squares of the depths.\nQuestion.\nWhat is the square of the dep"
+    },
+    {
+      "id": "breadths_depths_cube_depths_question",
+      "prompt": "The cubes of the breadths are as the squares of the depths.\nQuestion: What power of the depths is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the depths.",
+        "cube": "cube of the depths."
+      },
+      "text": "The cubes of the breadths are as the squares of the depths.\nQuestion: What power of the depths is compared?\nAnswer: square of the depths.",
+      "source": "procedural",
+      "prompt_tokens": 43,
+      "scores": {
+        "square": {
+          "mean_nll": 2.542222738265991,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.2415313720703125,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the breadths are as the squares of the depths.\nQuestion: What power of the depths is compared?\nAnswer: The depths of the depths of the depths of the depths of the depths of the depths of the depths of the depths of the depths of the depths of"
+    },
+    {
+      "id": "breadths_depths_cube_depths_continuation",
+      "prompt": "The cubes of the breadths are as the squares of the depths.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the depths.",
+        "cube": "cube of the depths."
+      },
+      "text": "The cubes of the breadths are as the squares of the depths.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: square of the depths.",
+      "source": "procedural",
+      "prompt_tokens": 50,
+      "scores": {
+        "square": {
+          "mean_nll": 2.345677614212036,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.168529510498047,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the breadths are as the squares of the depths.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: The depths of the depths of the depths of the depths of the depths of the depths of the depths of the depths of the depths of the depths of"
+    },
+    {
+      "id": "depths_costs_square_depths_question",
+      "prompt": "The squares of the depths are as the cubes of the costs.\nQuestion: What power of the depths is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the depths.",
+        "cube": "cube of the depths."
+      },
+      "text": "The squares of the depths are as the cubes of the costs.\nQuestion: What power of the depths is compared?\nAnswer: square of the depths.",
+      "source": "procedural",
+      "prompt_tokens": 44,
+      "scores": {
+        "square": {
+          "mean_nll": 2.360975503921509,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.119964599609375,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the depths are as the cubes of the costs.\nQuestion: What power of the depths is compared?\nAnswer: The depth of the costs.\nQuestion: What power is in the depth of the cost?\nAnswer: The depth of the costs.\nQuestion: What power is in the depth of the"
+    },
+    {
+      "id": "depths_costs_square_depths_continuation",
+      "prompt": "The squares of the depths are as the cubes of the costs.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the depths.",
+        "cube": "cube of the depths."
+      },
+      "text": "The squares of the depths are as the cubes of the costs.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: square of the depths.",
+      "source": "procedural",
+      "prompt_tokens": 51,
+      "scores": {
+        "square": {
+          "mean_nll": 2.337724447250366,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.1249427795410156,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the depths are as the cubes of the costs.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: According to the statute of the depth of the depth, which is the depth of the depth of the depth of the depth of the depth of the depth of the depth of the depth of"
+    },
+    {
+      "id": "depths_costs_square_costs_question",
+      "prompt": "The squares of the depths are as the cubes of the costs.\nQuestion: What power of the costs is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the costs.",
+        "cube": "cube of the costs."
+      },
+      "text": "The squares of the depths are as the cubes of the costs.\nQuestion: What power of the costs is compared?\nAnswer: cube of the costs.",
+      "source": "procedural",
+      "prompt_tokens": 43,
+      "scores": {
+        "square": {
+          "mean_nll": 2.90911865234375,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.610351800918579,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the depths are as the cubes of the costs.\nQuestion: What power of the costs is compared?\nAnswer: The depth of the costs.\nQuestion: What is the depth of the cost?\nAnswer: The depth of the cost.\nQuestion: What is the depth of the cost?\nA"
+    },
+    {
+      "id": "depths_costs_square_costs_continuation",
+      "prompt": "The squares of the depths are as the cubes of the costs.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the costs.",
+        "cube": "cube of the costs."
+      },
+      "text": "The squares of the depths are as the cubes of the costs.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: cube of the costs.",
+      "source": "procedural",
+      "prompt_tokens": 50,
+      "scores": {
+        "square": {
+          "mean_nll": 2.77069091796875,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.457728862762451,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the depths are as the cubes of the costs.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: The depths of the costs are as the sides of the costs.\nQuestion: The depth of the costs are as the sides of the costs.\nQuestion: The depth of the costs"
+    },
+    {
+      "id": "depths_costs_cube_depths_question",
+      "prompt": "The cubes of the depths are as the squares of the costs.\nQuestion: What power of the depths is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the depths.",
+        "cube": "cube of the depths."
+      },
+      "text": "The cubes of the depths are as the squares of the costs.\nQuestion: What power of the depths is compared?\nAnswer: cube of the depths.",
+      "source": "procedural",
+      "prompt_tokens": 44,
+      "scores": {
+        "square": {
+          "mean_nll": 2.543687582015991,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.1940155029296875,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the depths are as the squares of the costs.\nQuestion: What power of the depths is compared?\nAnswer: The depth of the costs.\nQuestion: What power is in the depth of the cost?\nAnswer: The depth of the costs.\nQuestion: What power is in the depth of the"
+    },
+    {
+      "id": "depths_costs_cube_depths_continuation",
+      "prompt": "The cubes of the depths are as the squares of the costs.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the depths.",
+        "cube": "cube of the depths."
+      },
+      "text": "The cubes of the depths are as the squares of the costs.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: cube of the depths.",
+      "source": "procedural",
+      "prompt_tokens": 51,
+      "scores": {
+        "square": {
+          "mean_nll": 2.534315347671509,
+          "tokens": 9
+        },
+        "cube": {
+          "mean_nll": 3.2520980834960938,
+          "tokens": 8
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the depths are as the squares of the costs.\nQuestion: According to the statement, which power applies to the depths?\nAnswer: According to the statute of the costs.\nQuestion: depth: depth: depth: depth: depth: depth: depth: depth: depth: depth: dep"
+    },
+    {
+      "id": "depths_costs_cube_costs_question",
+      "prompt": "The cubes of the depths are as the squares of the costs.\nQuestion: What power of the costs is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the costs.",
+        "cube": "cube of the costs."
+      },
+      "text": "The cubes of the depths are as the squares of the costs.\nQuestion: What power of the costs is compared?\nAnswer: square of the costs.",
+      "source": "procedural",
+      "prompt_tokens": 43,
+      "scores": {
+        "square": {
+          "mean_nll": 2.633056640625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.476841688156128,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the depths are as the squares of the costs.\nQuestion: What power of the costs is compared?\nAnswer: They are as the squares of the costs.\nQuestion.\nWhat is the squares?\nAnswer.\nThey are as the squares of the costs.\nQuestion.\nWhat is the square"
+    },
+    {
+      "id": "depths_costs_cube_costs_continuation",
+      "prompt": "The cubes of the depths are as the squares of the costs.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the costs.",
+        "cube": "cube of the costs."
+      },
+      "text": "The cubes of the depths are as the squares of the costs.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: square of the costs.",
+      "source": "procedural",
+      "prompt_tokens": 50,
+      "scores": {
+        "square": {
+          "mean_nll": 2.5181884765625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.321568250656128,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the depths are as the squares of the costs.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: According to the statute of the costs.\nQuestion.\nWhat is the sum of the depth of the cost?\nAnswer.\nQuestion.\nWhat is the sum of the depth of the cost?"
+    },
+    {
+      "id": "costs_heights_square_costs_question",
+      "prompt": "The squares of the costs are as the cubes of the heights.\nQuestion: What power of the costs is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the costs.",
+        "cube": "cube of the costs."
+      },
+      "text": "The squares of the costs are as the cubes of the heights.\nQuestion: What power of the costs is compared?\nAnswer: square of the costs.",
+      "source": "procedural",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 2.80963134765625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.5914831161499023,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the costs are as the cubes of the heights.\nQuestion: What power of the costs is compared?\nAnswer: The squares of the costs are as the squares of the costs.\nQuestion.\nWhat is the square of the cost?\nAnswer.\nThe squares of the costs are as the squares of"
+    },
+    {
+      "id": "costs_heights_square_costs_continuation",
+      "prompt": "The squares of the costs are as the cubes of the heights.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the costs.",
+        "cube": "cube of the costs."
+      },
+      "text": "The squares of the costs are as the cubes of the heights.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: square of the costs.",
+      "source": "procedural",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 2.7115478515625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.634974956512451,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the costs are as the cubes of the heights.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: According to the statute, which is the square of the cost, and the square of the costs are as the square of the costs.\nQuestion.\nWhat is the square of the cost?\nAnswer."
+    },
+    {
+      "id": "costs_heights_square_heights_question",
+      "prompt": "The squares of the costs are as the cubes of the heights.\nQuestion: What power of the heights is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the heights.",
+        "cube": "cube of the heights."
+      },
+      "text": "The squares of the costs are as the cubes of the heights.\nQuestion: What power of the heights is compared?\nAnswer: cube of the heights.",
+      "source": "procedural",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 3.416294813156128,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.4140625,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the costs are as the cubes of the heights.\nQuestion: What power of the heights is compared?\nAnswer: The squares of the costs are as the squares of the squares.\nQuestion.\nWhat is the square of the squares?\nAnswer.\nThe squares of the squares are as the squares"
+    },
+    {
+      "id": "costs_heights_square_heights_continuation",
+      "prompt": "The squares of the costs are as the cubes of the heights.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the heights.",
+        "cube": "cube of the heights."
+      },
+      "text": "The squares of the costs are as the cubes of the heights.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: cube of the heights.",
+      "source": "procedural",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.240513563156128,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.62890625,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the costs are as the cubes of the heights.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: According to the statute, which is the summe of the summe, which is the summe, and the summe is the summe, which is the summe, which is the summe, and the summe is the summe, which is the summe,"
+    },
+    {
+      "id": "costs_heights_cube_costs_question",
+      "prompt": "The cubes of the costs are as the squares of the heights.\nQuestion: What power of the costs is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the costs.",
+        "cube": "cube of the costs."
+      },
+      "text": "The cubes of the costs are as the squares of the heights.\nQuestion: What power of the costs is compared?\nAnswer: cube of the costs.",
+      "source": "procedural",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 2.9893798828125,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.6790599822998047,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the costs are as the squares of the heights.\nQuestion: What power of the costs is compared?\nAnswer: They are as the squares of the squares.\nQuestion: What is the squares?\nAnswer: They are as the squares of the squares.\nQuestion: What is the squares?\n"
+    },
+    {
+      "id": "costs_heights_cube_costs_continuation",
+      "prompt": "The cubes of the costs are as the squares of the heights.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the costs.",
+        "cube": "cube of the costs."
+      },
+      "text": "The cubes of the costs are as the squares of the heights.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: cube of the costs.",
+      "source": "procedural",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 2.89306640625,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 3.7991771697998047,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the costs are as the squares of the heights.\nQuestion: According to the statement, which power applies to the costs?\nAnswer: According to the statute, which is the squares.\nQuestion: In the middle of the foot, there is a square of the foot, which is the square of the foot, and the square of the foot, which is the square of the"
+    },
+    {
+      "id": "costs_heights_cube_heights_question",
+      "prompt": "The cubes of the costs are as the squares of the heights.\nQuestion: What power of the heights is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the heights.",
+        "cube": "cube of the heights."
+      },
+      "text": "The cubes of the costs are as the squares of the heights.\nQuestion: What power of the heights is compared?\nAnswer: square of the heights.",
+      "source": "procedural",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 3.279576063156128,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.2926435470581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the costs are as the squares of the heights.\nQuestion: What power of the heights is compared?\nAnswer: The squares of the squares are as the squares of the squares.\nQuestion.\nWhat is the square of the squares?\nAnswer.\nThe squares of the squares are as the squares"
+    },
+    {
+      "id": "costs_heights_cube_heights_continuation",
+      "prompt": "The cubes of the costs are as the squares of the heights.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the heights.",
+        "cube": "cube of the heights."
+      },
+      "text": "The cubes of the costs are as the squares of the heights.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: square of the heights.",
+      "source": "procedural",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 3.1473214626312256,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 4.5270185470581055,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the costs are as the squares of the heights.\nQuestion: According to the statement, which power applies to the heights?\nAnswer: According to the statute, which is the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the s"
+    }
+  ],
+  "probes_file": "data/reading_calibration/probes.json",
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}

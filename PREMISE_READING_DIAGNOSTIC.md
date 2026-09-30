@@ -1,5 +1,13 @@
 # V11 premise-reading diagnostic
 
+**Evaluation correction:** these original outputs used prompts with a standalone
+trailing-space SentencePiece token. They are retained as a historical execution
+record, not the authoritative current measurement. Both shared scoring/generation
+helpers have been corrected and the unchanged checkpoint retested; see
+`READING_CALIBRATION_PROTOCOL.md` and its boundary-fixed JSON outputs. The corrected
+baseline still gives no responsive answer on these eight probes, but causal
+interpretations of the old results must account for the evaluation defect.
+
 Protocol frozen before this diagnostic's outputs, 2026-10-01.
 
 Purpose: identify whether the existing random-initialized historical language model

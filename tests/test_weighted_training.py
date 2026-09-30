@@ -21,7 +21,10 @@ class CharacterTokenizer:
     def eos_id(self):
         return 2
 
-    def encode(self, text, out_type=int):
+    def encode(self, text, out_type=int, return_type=None):
+        if return_type == "offset_mapping":
+            return {"ids": [ord(char) for char in text],
+                    "offsets": [(i, i+1) for i in range(len(text))]}
         return [ord(char) for char in text]
 
 

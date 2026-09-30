@@ -128,7 +128,9 @@ def validation_loss(model, stream, batch_size, context, device, precision, round
 
 @torch.no_grad()
 def score(model, tokenizer, prompt, completion, device, precision):
-    prompt_ids = tokenizer.encode(prompt, out_type=int)
+    # A trailing blank can become a standalone SentencePiece token, whereas
+    # in training it belongs to the next word's leading-space piece.
+    prompt_ids = tokenizer.encode(prompt.rstrip(" \t"), out_type=int)
     completion_ids = tokenizer.encode(completion, out_type=int)
     combined = (prompt_ids + completion_ids)[-model.context :]
     prompt_length = min(len(prompt_ids), len(combined) - len(completion_ids))
@@ -163,7 +165,7 @@ def generate(
     model, tokenizer, prompt, device, precision, length=100, temperature=0.8, minimum_length=0
 ):
     model.eval()
-    tokens = tokenizer.encode(prompt, out_type=int)
+    tokens = tokenizer.encode(prompt.rstrip(" \t"), out_type=int)
     prompt_length = len(tokens)
     forbidden = {tokenizer.pad_id(), tokenizer.bos_id(), tokenizer.unk_id()}
     for _ in range(length):
@@ -186,7 +188,11 @@ def generate(
             else:
                 next_id = torch.argmax(logits).item()
         tokens.append(next_id)
-    return tokenizer.decode(tokens)
+    decoded_prefix = tokenizer.decode(tokens[:prompt_length])
+    suffix = tokenizer.decode(tokens)[len(decoded_prefix):]
+    if prompt.endswith((" ", "\t")):
+        suffix = suffix.lstrip(" \t")
+    return prompt + suffix
 
 
 def main():

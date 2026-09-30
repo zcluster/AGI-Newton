@@ -19,23 +19,25 @@ def encode_record(row, tokenizer, weighted, focus_final_exponent=False):
         question, separator, continuation = text.partition("\n")
         if not separator or not continuation:
             raise ValueError("procedural record must contain a question and continuation")
-        prompt_ids = tokenizer.encode(question + separator, out_type=int)
-        parts = [(continuation, 4)]
+        boundary = len(question + separator)
+        final_span = None
         if focus_final_exponent and row.get("family") in {
             "symbolic", "elimination", "diverse_elimination"
         }:
             match = re.search(r"(-?\d+)(?=\.$)", continuation)
             if not match:
                 raise ValueError("reasoning record lacks a final integer exponent")
-            parts = [(continuation[:match.start()], 4), (match.group(1), 16),
-                     (continuation[match.end():], 4)]
-        ids = [tokenizer.bos_id(), *prompt_ids]
-        weights = [1] * len(ids)
-        for part, weight in parts:
-            encoded = tokenizer.encode(part, out_type=int)
-            ids.extend(encoded)
-            weights.extend([weight] * len(encoded))
-        ids.append(tokenizer.eos_id())
+            final_span = (boundary + match.start(), boundary + match.end())
+        # Encode once: separately encoding pieces inserts dummy-prefix spaces
+        # and changes the training input, not just its loss weights.
+        encoded = tokenizer.encode(text, return_type="offset_mapping")
+        ids = [tokenizer.bos_id(), *encoded["ids"], tokenizer.eos_id()]
+        weights = [1]
+        for begin, end in encoded["offsets"]:
+            weight = 4 if end > boundary else 1
+            if final_span and begin < final_span[1] and end > final_span[0]:
+                weight = 16
+            weights.append(weight)
         weights.append(1)
     else:
         ids = [tokenizer.bos_id(), *tokenizer.encode(text, out_type=int), tokenizer.eos_id()]
