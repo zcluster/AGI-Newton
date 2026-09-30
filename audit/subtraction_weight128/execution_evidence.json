@@ -1,0 +1,12 @@
+{
+  "verified_date": "2026-10-01",
+  "job": {"id": "2863237", "state": "COMPLETED", "exit_code": "0:0", "elapsed": "00:03:35"},
+  "baseline_checkpoint_sha256": "2565030214e3860c16b693523bed43ef4934eee7a5e28194a212dc5a016865ef",
+  "weighted_checkpoint_sha256": "f702004500196a2b822a8f8a1cdc90df1dfff3b18821afd739e78164ec34247b",
+  "identical_input_token_sha256": "ae0d5333b308b95877fb58aa4bd523a7819290c3538b72abe13cbadb321ed39d",
+  "weighted_target_file_sha256": "91f4605b8977b5a6a6dd34b1d852fe514006f007f7a50411ee7e148b68156638",
+  "changed_target_positions": 1394,
+  "weighted_target_sum": 752768,
+  "runtime_weights_checked_on_hpc": true,
+  "matched_training_settings_and_token_budget_verified": true
+}

@@ -1,0 +1,142 @@
+{
+  "data_sha256": "250f1148d3d77132e21f4c5dbecc240d1eac91daf900c34db8481a2c4076f83c",
+  "tokenizer_sha256": "3464f65b26010ca6788f00b4b344e0834c26d2a194e24c27ecb65eb1a7833cc0",
+  "reconstructed_stream_sha256": "8192ba313b8a4b408c48743d4ed6e72a3d793ecb7915683e49d9790d1461d46e",
+  "tokens": 4287350,
+  "role_tokens": {
+    "core_astronomy": 915541,
+    "core_math": 1600825,
+    "core_physics": 1527523,
+    "core_observation": 243461
+  },
+  "language_tokens": {
+    "la": 1587801,
+    "it": 587595,
+    "en": 1856621,
+    "fr": 255333
+  },
+  "sources": {
+    "copernicus_revolutionibus_1543": {
+      "title": "De revolutionibus orbium coelestium",
+      "language": "la",
+      "role": "core_astronomy",
+      "chunks": 96,
+      "tokens": 246625,
+      "characters": 711141
+    },
+    "napier_logarithms_1614": {
+      "title": "Mirifici logarithmorum canonis descriptio",
+      "language": "la",
+      "role": "core_math",
+      "chunks": 32,
+      "tokens": 102609,
+      "characters": 243945
+    },
+    "kepler_astronomia_nova_1609": {
+      "title": "Astronomia nova",
+      "language": "la",
+      "role": "core_astronomy",
+      "chunks": 120,
+      "tokens": 346143,
+      "characters": 925003
+    },
+    "kepler_harmonices_1619": {
+      "title": "Harmonices mundi",
+      "language": "la",
+      "role": "core_astronomy",
+      "chunks": 114,
+      "tokens": 322773,
+      "characters": 862088
+    },
+    "galileo_dialogo_1632": {
+      "title": "Dialogo sopra i due massimi sistemi del mondo",
+      "language": "it",
+      "role": "core_physics",
+      "chunks": 155,
+      "tokens": 399603,
+      "characters": 1158411
+    },
+    "galileo_discorsi_1638": {
+      "title": "Discorsi e dimostrazioni matematiche",
+      "language": "it",
+      "role": "core_physics",
+      "chunks": 75,
+      "tokens": 187992,
+      "characters": 562788
+    },
+    "salusbury_collections_1661": {
+      "title": "Mathematical Collections and Translations",
+      "language": "en",
+      "role": "core_physics",
+      "chunks": 238,
+      "tokens": 543732,
+      "characters": 1782001
+    },
+    "descartes_geometrie_1637": {
+      "title": "La Géométrie",
+      "language": "fr",
+      "role": "core_math",
+      "chunks": 98,
+      "tokens": 255333,
+      "characters": 727038
+    },
+    "wallis_arithmetica_1656": {
+      "title": "Operum mathematicorum, pars altera (including Arithmetica infinitorum)",
+      "language": "la",
+      "role": "core_math",
+      "chunks": 77,
+      "tokens": 221338,
+      "characters": 591455
+    },
+    "barrow_lectiones_1670": {
+      "title": "Lectiones geometricae",
+      "language": "la",
+      "role": "core_math",
+      "chunks": 35,
+      "tokens": 98353,
+      "characters": 258010
+    },
+    "huygens_horologium_1673": {
+      "title": "Horologium oscillatorium",
+      "language": "la",
+      "role": "core_physics",
+      "chunks": 37,
+      "tokens": 93218,
+      "characters": 285909
+    },
+    "gilbert_magnet_1600": {
+      "title": "De magnete",
+      "language": "la",
+      "role": "core_physics",
+      "chunks": 64,
+      "tokens": 156742,
+      "characters": 468467
+    },
+    "hooke_micrographia_1665": {
+      "title": "Micrographia",
+      "language": "en",
+      "role": "core_observation",
+      "chunks": 104,
+      "tokens": 243461,
+      "characters": 764274
+    },
+    "euclid_billingsley_1570": {
+      "title": "The Elements of Geometrie",
+      "language": "en",
+      "role": "core_math",
+      "chunks": 419,
+      "tokens": 923192,
+      "characters": 3171026
+    },
+    "boyle_spring_air_1660": {
+      "title": "New Experiments Physico-Mechanicall, Touching the Spring of the Air",
+      "language": "en",
+      "role": "core_physics",
+      "chunks": 63,
+      "tokens": 146236,
+      "characters": 464277
+    }
+  },
+  "scope": "V11 scientific training stream only; EEBO bootstrap not subject-classified",
+  "limitation": "Whole-source metadata roles; not counts of usable mathematical passages or expert-approved content"
+}

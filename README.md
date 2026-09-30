@@ -46,6 +46,12 @@ Training-prompt subtraction is also mostly unlearned (0/14 and 1/14), and subtra
 accounts for only 0.24% of masked target tokens. The protocol records these limits
 and motivates mathematical family balancing before further scaling.
 
+The subsequent fixed-input subtraction-weight trial does not rescue arithmetic:
+training subtraction accuracy drops from 32/544 to 13/544, with internal validation
+unchanged at 3/30 and all sealed/physics cases still failing. The mathematical
+protocol records this negative result and prioritizes inference-boundary and
+sampled-exposure diagnostics before more training. No discovery success is claimed.
+
 The repository includes the pilot OCR text, source manifests, generated
 reasoning curricula, tokenizer, scripts, tests, and JSON evaluation results.
 The full EEBO language archive and large V2--V7 model checkpoints are not in
@@ -263,6 +269,11 @@ hard answer, a modern term, or even a target-adjacent review flag are withheld;
 they are not silently admitted to the strict language layer.
 
 ## What this version intentionally does not do
+
+The [historical mathematics coverage audit](HISTORICAL_MATH_COVERAGE.md) counts
+the actual V11 training tokens by source and language. Math-role sources contribute
+1.60M tokens (2.28% of the combined bootstrap); this is not a passage-level estimate
+of all mathematical content or proof that scarcity caused the failed derivations.
 
 - It does not claim that a title match is the correct edition.
 - It does not silently translate Latin, Greek, French, or Italian into modern

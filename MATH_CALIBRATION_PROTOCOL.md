@@ -173,3 +173,43 @@ submission; it was left untouched. The new job requests only one scheduler-manag
 L40 and writes exclusively under the AGI-Newton project. Local checks confirm exactly
 1,394 target positions change from weight one to 128, no other weights change, and
 the input bytes remain identical. Submission does not establish an outcome.
+
+## Subtraction weighting results and next checks
+
+Job 2863237 completed with exit 0, elapsed 3m35s. Runtime weight files on HPC
+confirm exactly 1,394 changed target positions and weighted mass 752,768.
+The initializer, seed, architecture, learning rate, warmup, precision and
+8,192,000-token budget match the old masked model. Raw artifacts and checkpoint
+hashes are under `audit/subtraction_weight128/`.
+
+| Metric | Original masked model | Subtraction weight 128 |
+| --- | ---: | ---: |
+| Training subtraction numeric answers | 32/544 | 13/544 |
+| Training operand pairs correct in both wordings | 9/272 | 6/272 |
+| Internal validation numeric answers | 3/30 | 3/30 |
+| Internal validation pairs correct in both wordings | 1/15 | 1/15 |
+| Sealed Newton arithmetic prompts | 0/2 | 0/2 |
+| Sealed reverse arithmetic prompts | 0/2 | 0/2 |
+| Abstract suite final relations | 6/12 | 2/12 |
+| Composition grid final relations | 136/204 | 99/204 |
+| Correct grid arithmetic trace and relation | 61/204 | 54/204 |
+| Sealed grid final relations | 0/6 | 0/6 |
+| Physics final relations | 0/4 | 0/4 |
+| Scientific text mean loss | 5.17364 | 5.15677 |
+
+All full-grid numeric successes also satisfy format-exact grading in this run.
+Neither model passes the operational subtraction gate. The specific weighting
+intervention fails to improve the desired abilities in this paired seed; this is
+not a general refutation of underexposure, balancing, or other weight factors.
+The direct Earth–Moon sample is still an unrelated abstract formula, not a law.
+
+Before further training, inspect two concrete possibilities. First, tokenization
+inserts a BOS marker for each record, whereas current inference starts from the
+raw prompt without explicitly prepending BOS. Random-window training also starts
+inside records, so this discrepancy is a hypothesis to test, not a proven bug.
+Use a labeled BOS/no-BOS inference ablation on identical saved checkpoints and
+prompts before changing defaults. Second, arithmetic records occupy a contiguous
+small tail of the token stream. Static target mass is not the mean per-minibatch
+arithmetic contribution under batchwise normalization; audit sampled exposure
+before deciding between resampling and a larger training budget. Do not launch
+a weight search or model scaling on the basis of these unverified explanations.
