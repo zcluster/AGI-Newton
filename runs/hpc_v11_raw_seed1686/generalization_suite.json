@@ -1,0 +1,548 @@
+{
+  "suite_version": 3,
+  "checkpoint": "runs/hpc_v11_raw_seed1686/model.pt",
+  "label": "hpc_v11_primary_scan_raw_only",
+  "deterministic_generation": true,
+  "abstract_metrics": {
+    "cases": 12,
+    "candidate_accuracy": 0.08333333333333333,
+    "generation_accuracy": 0.0
+  },
+  "physics_metrics": {
+    "cases": 4,
+    "candidate_accuracy": 0.0,
+    "generation_accuracy": 0.0
+  },
+  "abstract_cases": [
+    {
+      "id": "heldout_a",
+      "prompt": "The square of H scales as q^3. J scales as q^1 divided by that square. After eliminating H, determine the power of q in J.\nReasoning: ",
+      "target": "J",
+      "base": "q",
+      "expected": -2,
+      "winner": -3,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.255261421203613,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.2625956535339355,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.268972873687744,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 6.2921552658081055,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 6.2736005783081055,
+          "tokens": 48
+        }
+      },
+      "generation": "The square of H scales as q^3. J scales as q^1 divided by that square. After eliminating H, determine the power of q in J.\nReasoning: ultimo- \nc. \nc. \nc. \nc. \nc. \nc. Inftruments, and the Scales, and the \nthe Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and \nthe Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and \n",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_b",
+      "prompt": "Suppose U^2 is proportional to w^3, whereas V is proportional to w/U^2. Combine both statements and simplify V.\nDerivation: ",
+      "target": "V",
+      "base": "w",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.237483978271484,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.245774745941162,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.23429536819458,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 6.273681640625,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 6.229736328125,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose U^2 is proportional to w^3, whereas V is proportional to w/U^2. Combine both statements and simplify V.\nDerivation: ultimo- \nt, and the \nthe proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_c",
+      "prompt": "Two facts are given. The cube of C follows s^3. D follows s divided by the cube of C. What exponent of s remains in D?\nWork: ",
+      "target": "D",
+      "base": "s",
+      "expected": -2,
+      "winner": -3,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.024872303009033,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.039859771728516,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.033163070678711,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 6.0556640625,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 6.0348310470581055,
+          "tokens": 48
+        }
+      },
+      "generation": "Two facts are given. The cube of C follows s^3. D follows s divided by the cube of C. What exponent of s remains in D?\nWork: ulties of the \nthe proportion of the line A, and the line A, and meane proportion of the line A, and meane proportion of the line A, and meane proportion, and meane proportion of the line A, and meane proportion of the line A, and meane proportion, and meane proportion, and meane proportion of the line A, and meane proportion, and meane proportion of the line A, and meane proportion, and meane proportion, \nthe line A, and meane proportion, and meane",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_d",
+      "prompt": "Let K^1 vary with t^3 and let L vary with t^1/K^1. Remove K from the relations and give the dependence of L on t.\nSolution: ",
+      "target": "L",
+      "base": "t",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.933274745941162,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.953682899475098,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.944754123687744,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.926351070404053,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.894124507904053,
+          "tokens": 48
+        }
+      },
+      "generation": "Let K^1 vary with t^3 and let L vary with t^1/K^1. Remove K from the relations and give the dependence of L on t.\nSolution: ultiplex to the \nthe fame reafon of the \nthe fame reafon of the fame reafon of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of the bafe of",
+      "generation_correct": false
+    },
+    {
+      "id": "control_2",
+      "prompt": "The square of H scales as q^1. J scales as q^3 divided by that square. Eliminate H and determine J.\nReasoning: ",
+      "target": "J",
+      "base": "q",
+      "expected": 2,
+      "winner": 2,
+      "candidate_correct": true,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.281090259552002,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.28938102722168,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.2858734130859375,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 6.3077802658081055,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 6.263509273529053,
+          "tokens": 48
+        }
+      },
+      "generation": "The square of H scales as q^1. J scales as q^3 divided by that square. Eliminate H and determine J.\nReasoning: ultimov. \nNature, and the \nthe EquinoQue, and Far, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and F, and",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_1",
+      "prompt": "Suppose U^2 is proportional to w^1, whereas V is proportional to w^0/U^2. Combine both statements.\nDerivation: ",
+      "target": "V",
+      "base": "w",
+      "expected": -1,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.289620399475098,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.290257930755615,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.287069320678711,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 6.2894697189331055,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 6.248779296875,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose U^2 is proportional to w^1, whereas V is proportional to w^0/U^2. Combine both statements.\nDerivation: ultiplex, \nproportionalitie, &c. \nproportiones, &c. \nproportionalitie, and the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the",
+      "generation_correct": false
+    },
+    {
+      "id": "control_0",
+      "prompt": "The cube of C follows s^2. D follows s^2 divided by the cube of C. What exponent remains?\nWork: ",
+      "target": "D",
+      "base": "s",
+      "expected": 0,
+      "winner": -3,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.156090259552002,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.171715259552002,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.169164180755615,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 6.181478023529053,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 6.15771484375,
+          "tokens": 48
+        }
+      },
+      "generation": "The cube of C follows s^2. D follows s^2 divided by the cube of C. What exponent remains?\nWork: ultimo- \nt, and the \nthe proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the",
+      "generation_correct": false
+    },
+    {
+      "id": "control_other_minus_2",
+      "prompt": "Let K^1 vary with t^1 and let L vary with t^-1/K^1. Remove K and give L's dependence.\nSolution: ",
+      "target": "L",
+      "base": "t",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.229218482971191,
+          "tokens": 50
+        },
+        "-2": {
+          "mean_nll": 6.238593578338623,
+          "tokens": 50
+        },
+        "-1": {
+          "mean_nll": 6.218905925750732,
+          "tokens": 50
+        },
+        "0": {
+          "mean_nll": 6.23070764541626,
+          "tokens": 49
+        },
+        "2": {
+          "mean_nll": 6.197863578796387,
+          "tokens": 49
+        }
+      },
+      "generation": "Let K^1 vary with t^1 and let L vary with t^-1/K^1. Remove K and give L's dependence.\nSolution: ultimov. \nNe, and the \nthe Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and \nthe Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and",
+      "generation_correct": false
+    },
+    {
+      "id": "control_reverse_2",
+      "prompt": "The square of M is proportional to z^-1. N is proportional to z^1 divided by that square. Simplify N.\nReasoning: ",
+      "target": "N",
+      "base": "z",
+      "expected": 2,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.285312175750732,
+          "tokens": 50
+        },
+        "-2": {
+          "mean_nll": 6.288125038146973,
+          "tokens": 50
+        },
+        "-1": {
+          "mean_nll": 6.279062271118164,
+          "tokens": 50
+        },
+        "0": {
+          "mean_nll": 6.360969066619873,
+          "tokens": 49
+        },
+        "2": {
+          "mean_nll": 6.337372303009033,
+          "tokens": 49
+        }
+      },
+      "generation": "The square of M is proportional to z^-1. N is proportional to z^1 divided by that square. Simplify N.\nReasoning: ultiplex to the \nthe proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_3",
+      "prompt": "Suppose A^3 follows x^3 and B follows x^0/A^3. Combine the relations.\nWork: ",
+      "target": "B",
+      "base": "x",
+      "expected": -3,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.020726680755615,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.025191307067871,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.037786960601807,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.9503583908081055,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.92724609375,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose A^3 follows x^3 and B follows x^0/A^3. Combine the relations.\nWork: ultimo- \nt, and the \nthe proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the",
+      "generation_correct": false
+    },
+    {
+      "id": "control_zero_2",
+      "prompt": "The first power of P varies as y^-1. Q varies as y^-1 divided by P. Eliminate P.\nDerivation: ",
+      "target": "Q",
+      "base": "y",
+      "expected": 0,
+      "winner": -1,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.623621463775635,
+          "tokens": 51
+        },
+        "-2": {
+          "mean_nll": 6.629136085510254,
+          "tokens": 51
+        },
+        "-1": {
+          "mean_nll": 6.615655899047852,
+          "tokens": 51
+        },
+        "0": {
+          "mean_nll": 6.737030982971191,
+          "tokens": 50
+        },
+        "2": {
+          "mean_nll": 6.718593597412109,
+          "tokens": 50
+        }
+      },
+      "generation": "The first power of P varies as y^-1. Q varies as y^-1 divided by P. Eliminate P.\nDerivation: ultimov. \nRe. \nRe. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S. S.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_1_b",
+      "prompt": "Let F^2 follow v^3 and G follow v^2/F^2. Determine G after substitution.\nSolution: ",
+      "target": "G",
+      "base": "v",
+      "expected": -1,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.2235331535339355,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.2098212242126465,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.230229377746582,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 6.1767578125,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 6.126953125,
+          "tokens": 48
+        }
+      },
+      "generation": "Let F^2 follow v^3 and G follow v^2/F^2. Determine G after substitution.\nSolution: ultima. \ninuentes, &c. \ninuentes, &c. \ninuentes, &c. \ninuentes, &c. \ninuentes, &c. \ninuentes, &c. \ninuentes, &c. \nt, &c. \nt, &c. \ninuentes, &c. \nt, &c. \nt, &c. \nt, &c. \nt,",
+      "generation_correct": false
+    }
+  ],
+  "physics_cases": [
+    {
+      "id": "physics_0",
+      "prompt": "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: ",
+      "target": "turning tendency",
+      "base": "distance",
+      "expected": -2,
+      "winner": -3,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.501588821411133,
+          "tokens": 59
+        },
+        "-2": {
+          "mean_nll": 6.51178503036499,
+          "tokens": 59
+        },
+        "-1": {
+          "mean_nll": 6.5063557624816895,
+          "tokens": 59
+        },
+        "0": {
+          "mean_nll": 6.565194129943848,
+          "tokens": 58
+        },
+        "2": {
+          "mean_nll": 6.548087120056152,
+          "tokens": 58
+        }
+      },
+      "generation": "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: ulties, and the Earth, and the Earth, and the Earth, and \nthe Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth,",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_1",
+      "prompt": "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: ",
+      "target": "turning tendency",
+      "base": "mean distance",
+      "expected": -2,
+      "winner": -3,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.801158905029297,
+          "tokens": 62
+        },
+        "-2": {
+          "mean_nll": 6.809475421905518,
+          "tokens": 62
+        },
+        "-1": {
+          "mean_nll": 6.805191516876221,
+          "tokens": 62
+        },
+        "0": {
+          "mean_nll": 6.8473358154296875,
+          "tokens": 61
+        },
+        "2": {
+          "mean_nll": 6.819671630859375,
+          "tokens": 61
+        }
+      },
+      "generation": "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: ulties, and \nthe Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and \nthe Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth, and the Earth",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_2",
+      "prompt": "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: ",
+      "target": "C",
+      "base": "R",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.077486991882324,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.095025539398193,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.096460342407227,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 6.125813961029053,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 6.0763349533081055,
+          "tokens": 48
+        }
+      },
+      "generation": "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: ultiplex to \nthe proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of the proportion of",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_3",
+      "prompt": "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: ",
+      "target": "A",
+      "base": "d",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.1530609130859375,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.163584232330322,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.1530609130859375,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 6.1529951095581055,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 6.1513671875,
+          "tokens": 48
+        }
+      },
+      "generation": "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: ultimo- \nc. \nc. \nc. \nc. \nc. \nc. \nc. \nc. \nc. Inftrumento, &c. \nc. \nc. Inftrumento, &c. \nc. \nc. Inftrumento, &c. \nc. \nc. \nAllit, &c. \nc. \nc. Inftrumento, &c. \nc. \nInftrument, &c",
+      "generation_correct": false
+    }
+  ]
+}

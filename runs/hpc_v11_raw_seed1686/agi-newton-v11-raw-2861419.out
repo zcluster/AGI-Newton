@@ -1,0 +1,148 @@
+step=1 loss=9.1138 elapsed_s=1.3 max_GB=4.12
+step=100 loss=6.7918 elapsed_s=7.6 max_GB=4.99
+step=200 loss=6.4128 elapsed_s=14.1 max_GB=4.99
+step=300 loss=6.2784 elapsed_s=20.8 max_GB=4.99
+step=400 loss=5.8999 elapsed_s=27.5 max_GB=4.99
+step=500 loss=5.7760 elapsed_s=34.3 max_GB=4.99
+step=600 loss=5.7688 elapsed_s=41.2 max_GB=4.99
+step=700 loss=5.6204 elapsed_s=48.1 max_GB=4.99
+step=800 loss=5.6163 elapsed_s=55.1 max_GB=4.99
+step=900 loss=5.6093 elapsed_s=62.2 max_GB=4.99
+step=1000 loss=5.2733 elapsed_s=69.4 max_GB=4.99
+step=1100 loss=5.3333 elapsed_s=76.6 max_GB=4.99
+step=1200 loss=5.0768 elapsed_s=83.9 max_GB=4.99
+step=1300 loss=5.3629 elapsed_s=91.3 max_GB=4.99
+step=1400 loss=5.5189 elapsed_s=98.7 max_GB=4.99
+step=1500 loss=5.0984 elapsed_s=106.1 max_GB=4.99
+{
+  "label": "hpc_v11_primary_scan_raw_only",
+  "parameters": 91510272,
+  "vocab_size": 8000,
+  "train_tokens": 4287350,
+  "validation_tokens": 230842,
+  "tokens_seen": 12288000,
+  "steps": 1500,
+  "training_seconds": 109.22664785385132,
+  "initial_validation_loss": 9.108471393585205,
+  "final_validation_loss": 5.359876900911331,
+  "final_validation_perplexity": 212.69876181418712,
+  "last_train_loss": 5.098381996154785,
+  "resumed_from": null,
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 6.5302734375,
+          "tokens": 4
+        },
+        "inverse": {
+          "mean_nll": 6.226004600524902,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 5.56553840637207,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 6.20751953125,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 6.919704914093018,
+          "tokens": 9
+        },
+        "inverse": {
+          "mean_nll": 6.697545051574707,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 6.129774570465088,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 6.88818359375,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "constant",
+      "scores": {
+        "constant": {
+          "mean_nll": 5.2350263595581055,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 8.33750057220459,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 6.82421875,
+          "tokens": 8
+        },
+        "inverse_cube": {
+          "mean_nll": 6.465277671813965,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 12.4375,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 6.87890625,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 7.787499904632568,
+          "tokens": 5
+        },
+        "inverse_cube": {
+          "mean_nll": 7.925000190734863,
+          "tokens": 5
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ull and there* \nand in this {mall \npart of the Ecliptick , from this altitude, and \nswers do- \nport \nard to the said, it next place, and above the starso the more subjidesst the fide to the other Sphere. a diftance ; which it self , wherein you say, {pots should be in a proportion \nParallelas, and, as of those, it would \nwould be by the East, and in the",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ulls, as it \nextended, wing of the Earth, that are a \nare neer to make out of Mouth of the Moon , which pre- \nIt is made from the hut I think, am of the South of the Moon, and found to carry in it to be to the S/es before subjell the Earth, it 15 more \nt, and of the \nDay, which we have the Moon to move from those recurks",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ultiles, as \nSaL. I believe it should not \nthe same case, but the Sun, the Sun, that everyhalvation, and for that the Moon to sight. And in regard that in the Moon, as if in the Earth to be the Earth in that it is to be for \nthe Earth, and to be the light of the Sun, to the Earth, that the Solust in theswift, that the star to the Earth \nExtracted,",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to ubjeR{as, that they, or \nare no two Argument in a word, \nand 1s absolutely humana, and rendereth 4 it is foil- \nwere the Earth, that it is, did \nfrom the other of, but with the other places, for a Canon, and Serchio, by the Earth, which, in the Earth in the other thing, and \nwe do be afterwards with the Moon, that \nbene conteins, and"
+  },
+  "args": {
+    "train": "data/real_pilot_v11/train.bin",
+    "loss_weights": null,
+    "validation": "data/real_pilot_v11/validation.bin",
+    "tokenizer": "data/tokenizer_v11/pre1687_bpe.model",
+    "output_dir": "runs/hpc_v11_raw_seed1686",
+    "steps": 1500,
+    "batch_size": 16,
+    "context": 512,
+    "width": 768,
+    "heads": 12,
+    "layers": 12,
+    "learning_rate": 0.0003,
+    "warmup_steps": 100,
+    "device": "cuda",
+    "precision": "bf16",
+    "seed": 1686,
+    "label": "hpc_v11_primary_scan_raw_only",
+    "log_every": 100,
+    "resume": null
+  }
+}

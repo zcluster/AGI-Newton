@@ -49,15 +49,37 @@ language-competent discovery system.
 | `train.bin` | `8192ba313b8a4b408c48743d4ed6e72a3d793ecb7915683e49d9790d1461d46e` |
 | `validation.bin` | `33533c201026e67bede464481ed2fd6ddf8c9bec4c1c3e73657e8e4eaeccc2de` |
 
-The L40 job in [`hpc/tongji_v11_raw_baseline.sbatch`](hpc/tongji_v11_raw_baseline.sbatch)
-is prepared but **not yet submitted**: campus/VPN routing was unavailable at
-preparation time. It requests one L40 for at most 15 minutes, uses only the
-AGI-Newton directory, and never accesses the separate SSNS project. The
-generated `train.bin` and `validation.bin` are intentionally Git-ignored and
-must be transferred or regenerated before submission. Its validation stream
-is separate from training, unlike the earlier infrastructure smoke test.
-Even if its validation loss improves, only free generation with checked
-physics reasoning and strong answer-prior controls could support discovery.
+## Raw-text-only HPC baseline: negative result
+
+[`hpc/tongji_v11_raw_baseline.sbatch`](hpc/tongji_v11_raw_baseline.sbatch)
+ran as Tongji L40 job **2861419** and completed successfully on 2026-09-30
+in 2m38s (109s in the training loop). It used one 48 GB L40, no synthetic
+reasoning examples, random-initialized 91,510,272-parameter weights, seed
+1686, 1,500 updates, batch 16, and context 512. It saw 12,288,000 tokens,
+about 2.87 passes over the small V11 training stream. Independent validation
+loss fell from 9.1085 to 5.3599 (perplexity 212.7). The checkpoint remains
+under `~/data/AGI-Newton/runs/hpc_v11_raw_seed1686/model.pt` on Tongji HPC;
+its SHA-256 is
+`95c39b96956cf28788321ccbd5f4788e847da8f640fc1dd9c61707ab4b79d2d8`.
+
+The fixed law probes ranked the inverse-square candidate first in two of
+four prompt styles. **This is not a discovery result:** candidate likelihoods
+have tokenization and answer-prior confounds, while all four free generations
+were incoherent and supplied no physical derivation. A separate generalization
+suite ran as L40 job **2861442**. On 12 abstract composition cases, it scored
+1/12 by candidate ranking and 0/12 by free generation; on four physics cases
+with both premises supplied, it scored 0/4 by either measure. Thus this
+raw-text-only model fails even the easier premise-given test. The full
+[training report](runs/hpc_v11_raw_seed1686/report.json),
+[generalization report](runs/hpc_v11_raw_seed1686/generalization_suite.json),
+and [job scripts](hpc/tongji_v11_evaluate.sbatch) are preserved. The next
+justified change is to restore the already-audited pre-1687 general-language
+bootstrap, not to interpret the two candidate wins as scientific progress.
+
+Both jobs used only the AGI-Newton directory and did not access the separate
+SSNS project. The generated token streams remain Git-ignored; reproduce them
+from the committed V11 JSONL and tokenizer, or verify transferred streams
+against the hashes above.
 
 A three-step, 1.43M-parameter local Mac smoke test completed on the V11
 token streams (validation loss 9.007 to 8.925). This checks the new data path,
