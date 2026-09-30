@@ -18,10 +18,13 @@ added. The EEBO ingestion quarantines Newton references and policy-detected
 target/modern terms.
 
 The training budgets differ: raw-only saw 12.3M tokens; the bootstrap job is
-set to see 196.6M tokens. Any change therefore **cannot** be attributed to
-the corpus addition alone. This comparison asks whether the combined regime
-works, not for an isolated treatment effect. A matched-compute ablation would
-be needed before making a causal claim.
+set to see 196.6M tokens. Given uniform random windows in a 70.1M-token
+mixture containing 4.29M scientific tokens, its *expected* scientific-token
+exposure is about 12.0M, close to raw-only's 12.3M. This does **not** equalize
+total compute, optimization trajectory, or sample order. Any change therefore
+cannot be attributed to the corpus addition alone. This comparison asks
+whether the combined regime works, not for an isolated treatment effect. A
+matched-compute ablation would be needed before making a causal claim.
 
 ## Fail-closed data and execution gates
 
@@ -39,11 +42,25 @@ be needed before making a causal claim.
    12 abstract and four premise-given physics cases. Checkpoints stay on HPC;
    reports, hashes, and logs will be committed.
 
-The current dependent Slurm jobs are resumed download **2861859**, CPU
-preparation **2861860**, and L40 training/evaluation **2861861**. The initial
-download chain (2861664, 2861705, 2861706) was cancelled after S3 stalled;
-its 770 MB of partial ranges were retained and the transfer now resumes from
-their byte offsets with low-speed timeouts. The jobs use only
+Steps 1–3 passed. The rebuilt EEBO audit is byte-identical to the earlier
+committed audit (SHA-256
+`4d884454d325e640d8b3ff11132b304cda7b5a165a105fbf178356e05e2a393c`):
+1,179 training documents, 18 validation documents, 1,112 quarantined
+documents, and 200,033,084 training-text bytes. The rebuilt general training
+JSONL hashes to
+`8ff8e4fdc64b36df1dac2f2863b38d3f7c95c3f1b26379240210cfa8a6676bde`.
+The combined token stream has **70,125,444 tokens** and SHA-256
+`6d9bef7d45138291679b0eff11f62c97e0f93129b8831f3265aa1503d023cb8c`.
+The L40 job has started; its scientific results are not yet known.
+
+Download **2861859** passed the archive hash; CPU job **2861860** rebuilt the
+EEBO audit exactly but failed during encoding because the V11 `train.jsonl`
+had not been copied to HPC. That file was transferred and verified against
+its committed SHA-256. The current dependent jobs are CPU encoding
+**2861974** and L40 training/evaluation **2861975**. The earlier download
+chain (2861664, 2861705, 2861706) was cancelled after S3 stalled; its 770 MB
+of partial ranges were retained for the successful resumed transfer. The jobs
+use only
 `~/data/AGI-Newton` and its Python environment. Other project directories
 and environments are outside their paths.
 

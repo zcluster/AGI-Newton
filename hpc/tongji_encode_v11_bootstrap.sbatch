@@ -1,23 +1,15 @@
 #!/bin/bash
-#SBATCH --job-name=agi-newton-v11-prepare
+#SBATCH --job-name=agi-newton-v11-encode
 #SBATCH --partition=intel
 #SBATCH --cpus-per-task=1
-#SBATCH --mem=8G
-#SBATCH --time=01:00:00
+#SBATCH --mem=4G
+#SBATCH --time=00:15:00
 #SBATCH --output=logs/%x-%j.out
 
 set -euo pipefail
 cd "$HOME/data/AGI-Newton"
 PY="$HOME/apps/agi-newton-py312/bin/python"
-archive=data/eebo/pyccle-eebo.tgz
 echo '250f1148d3d77132e21f4c5dbecc240d1eac91daf900c34db8481a2c4076f83c  data/real_pilot_v11/train.jsonl' | sha256sum -c -
-mapfile -t dates < <(tar -tzf "$archive" | grep -E '(^|/)dates-eebo\.csv$')
-[[ ${#dates[@]} -eq 1 ]]
-tar -xOzf "$archive" "${dates[0]}" > data/eebo/dates-eebo.csv
-"$PY" src/ingest_pyccle_eebo.py \
-  --archive "$archive" --dates data/eebo/dates-eebo.csv \
-  --output-dir data/eebo_v11_bootstrap \
-  --sample-documents 5000 --max-train-bytes 200000000
 "$PY" -c 'import json; from pathlib import Path; old=json.loads(Path("data/eebo_pre1687/general_audit.json").read_text()); new=json.loads(Path("data/eebo_v11_bootstrap/general_audit.json").read_text()); assert old==new, "EEBO rebuild differs from prior audit"'
 "$PY" src/tokenize_corpus.py \
   --tokenizer data/tokenizer_v11/pre1687_bpe.model \
