@@ -1,0 +1,302 @@
+{
+  "cutoff_year": 1686,
+  "documents": [
+    {
+      "id": "copernicus_revolutionibus_1543",
+      "raw_file": "copernicus_revolutionibus_1543.txt",
+      "raw_sha256": "0432dab6f35f0cef191c419d5abee7ce4addf44a725a004d1fe696bd60ad4634",
+      "normalized_sha256": "d453d6241e62da6b2a21ca5a67e80054420d277f0c6375d2ace50c17e7133945",
+      "skip_initial_lines": 22,
+      "characters": 771061,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "napier_logarithms_1614",
+      "raw_file": "napier_logarithms_1614.txt",
+      "raw_sha256": "63f62d4f680ce5347246178da601bc8348f5f5688213d988d843e5586900da5d",
+      "normalized_sha256": "6eb0011276500d7d416302d820867f8cff10b77b35b209decf56d0bed9452cb9",
+      "skip_initial_lines": 0,
+      "characters": 287661,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "kepler_astronomia_nova_1609",
+      "raw_file": "kepler_astronomia_nova_1609.txt",
+      "raw_sha256": "4390b3782ed8f08a89699e7983c2aae9fb5e5a3774b9685e75458548ab87e0a5",
+      "normalized_sha256": "61e0666626862748e9dd83ddc10a61dbb4fd554fa68b9fc0fce50cde0716f0e5",
+      "skip_initial_lines": 0,
+      "characters": 994706,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "kepler_harmonices_1619",
+      "raw_file": "kepler_harmonices_1619.txt",
+      "raw_sha256": "34c391a2128707fef617f8283da0c9140f5e3c5ccccc68369f6ac091e545214d",
+      "normalized_sha256": "abf8fe7671a26d005cf87d1c6d6977526c5aaacff8bcf62cde7ddf3d0fce08f8",
+      "skip_initial_lines": 0,
+      "characters": 907091,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "galileo_dialogo_1632",
+      "raw_file": "galileo_dialogo_1632.txt",
+      "raw_sha256": "026f357bfc0499b3d8d16f040c561609909cd30c2316658e7038a0d3bdaf6a08",
+      "normalized_sha256": "eaf758edf44f812fdf4d7b335051b9d0c02633d7b897ba9b216652bd7b2a4deb",
+      "skip_initial_lines": 0,
+      "characters": 1217326,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "galileo_discorsi_1638",
+      "raw_file": "galileo_discorsi_1638.txt",
+      "raw_sha256": "b57e4290f9cb9ef95e4e16ab0de19f716c78257d9216a1caab584b64966fb41e",
+      "normalized_sha256": "d3a625e6571fe4749855753ad67b753b8ffff477dd13eafbfd796783568ac703",
+      "skip_initial_lines": 30,
+      "characters": 594560,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "salusbury_collections_1661",
+      "raw_file": "salusbury_collections_1661.txt",
+      "raw_sha256": "e70ca69cc45d4ed602810019cb8761e2488c2b73180e4c65f6acba25c7243478",
+      "normalized_sha256": "85bd60a47cbab5cdd7a98a04e321eb208df1dcab4e2cb43ec735b6507fd34180",
+      "skip_initial_lines": 0,
+      "characters": 1877502,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": [
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": "h, to  that which runneth, whilst it is low, hath duplicate proportion of  the beight to the height, that 1s, che propor"
+          }
+        ]
+      },
+      "reasons": []
+    },
+    {
+      "id": "descartes_geometrie_1637",
+      "raw_file": "descartes_geometrie_1637.txt",
+      "raw_sha256": "14b9e890e452326079aa0277dc41ec1c763a00befd81f46b7562de2f85d78d66",
+      "normalized_sha256": "fa1fc618140bb9ce6f203d63682a395aa421b81eaea3d7a38fa66d136009b3f6",
+      "skip_initial_lines": 0,
+      "characters": 769681,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "wallis_arithmetica_1656",
+      "raw_file": "wallis_operum_1656_primary_ocr.txt",
+      "raw_sha256": "ac2892be22226485bd42257a2b7351ac1e21ec3243cc7abe6a1bd23fd596d813",
+      "normalized_sha256": "2ac22cb03e72bee14e9a52698b603258e486d5bf3a4594a072ffe526f6ae4180",
+      "skip_initial_lines": 0,
+      "characters": 634323,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": [
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": " «   -— Arithmetica Infinitorum. Prop. 15:  Nempe in ratione duplicata, per Prop.1T.   PROP. XV. Coroll,   ;  | ce f sup"
+          },
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": ". Adeog: quur par-  tibus continue crescentibus ( in ratione duplicata Arithmetic e  proportionalium _) conftat figura i"
+          }
+        ]
+      },
+      "reasons": []
+    },
+    {
+      "id": "barrow_lectiones_1670",
+      "raw_file": "barrow_lectiones_1670.txt",
+      "raw_sha256": "95f6cc2260051edf4d179047e5cf9dc794c4b2aa2b7b45b27d5625444998e142",
+      "normalized_sha256": "dc3abb3d88e292c6dc736ea52eca46ce07904097003ac5fb9dbe02ca6c326329",
+      "skip_initial_lines": 0,
+      "characters": 290275,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "huygens_horologium_1673",
+      "raw_file": "huygens_horologium_1673.txt",
+      "raw_sha256": "83a3f7063b40fba4f2a46aab6ed5daa0d6fa5021f50fe40803697cc0cf8b5f5b",
+      "normalized_sha256": "e05666bcb6d013a24eed5a8bbd72ef7f904818e5b4b6292ffbaea5f410c651ca",
+      "skip_initial_lines": 0,
+      "characters": 310120,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": [
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": "e ab initio defcenJUs accipiatur i  Junt inter fi in ratione duplicata eorundem temporum , firve  ut temporum quadrata ,"
+          },
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": "  que a principio cafus inchoetur , elTe inter fe in ratione duplicata  temporum quibus cafus duravit, fi nempe tempora "
+          },
+          {
+            "pattern": "generic_duplicate_ratio",
+            "context": " vis centrifuga ve-  locioris» ad vim tardioris » in ratione duplicata celeritatum.   IV.   Si mobilia duo aqualia , in "
+          }
+        ]
+      },
+      "reasons": []
+    },
+    {
+      "id": "gilbert_magnet_1600",
+      "raw_file": "gilbert_magnet_1600.txt",
+      "raw_sha256": "431b19d9cf1078807f51c238bc7ab71980e3e17d23e8f3a842b948c830d25f8f",
+      "normalized_sha256": "0020b09f65b5b7831cfe3118dfb9035dd90a5791012d6e45446929940338d2be",
+      "skip_initial_lines": 0,
+      "characters": 489462,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "hooke_micrographia_1665",
+      "raw_file": "hooke_micrographia_1665_primary_ocr.txt",
+      "raw_sha256": "f89e5def4a42a9e12e3141728bbb09fba3a7269d25f6f99b9361ca41607f84bb",
+      "normalized_sha256": "e315e66a45616be98e8b8340875abad294aea77a6f74ae209c7fbfe92a7b2a51",
+      "skip_initial_lines": 0,
+      "characters": 846304,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": [
+          {
+            "pattern": "orbital_attraction",
+            "context": " themare  equally diftant. from the Center of the Moon,’ and confequently, it is  exceedingly probable alfo, that they are equidiftant from the Center of  gravitation; and indeed, the figure of die hupeeRcia! parts o"
+          },
+          {
+            "pattern": "orbital_attraction",
+            "context": "clude therefore, it being very probable, that the Moon has a  principle of gravitation , it affords an excellent diftinguifhing Inftance  in the fearch after the caufe of gravitation, or attraction, to hint, that it   . does not dep"
+          }
+        ]
+      },
+      "reasons": []
+    },
+    {
+      "id": "bullialdus_astronomia_1645",
+      "raw_file": "bullialdus_astronomia_1645.txt",
+      "raw_sha256": "44c46d978fb447c99c3245a78971f9fac48f27fcfa3e89034eebb4f2f37b92e6",
+      "normalized_sha256": "98c4d2c7a4ad9ebd40e6bf551963a06a3454bcbc956949d300f8ef881f192f29",
+      "skip_initial_lines": 0,
+      "characters": 1241912,
+      "precursor": true,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "hooke_motion_earth_1674",
+      "raw_file": "hooke_motion_earth_1674.txt",
+      "raw_sha256": "dde710a88412776db41cecb28cf08e8dffef11889d0ac6946ee84f362fc78620",
+      "normalized_sha256": "a3b562dacbe6e5f1036a37d119dadfb9d1e68511672645c1e6d0df839b198508",
+      "skip_initial_lines": 0,
+      "characters": 83625,
+      "precursor": true,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "euclid_billingsley_1570",
+      "raw_file": "euclid_billingsley_1570.txt",
+      "raw_sha256": "5862a5a3d422943955290ae703272fa43eeea139eb308425785869799faeac2e",
+      "normalized_sha256": "e905727c6db40e6bdf015cedd4d27037d9eb622cbea0b841c17cfad28c663325",
+      "skip_initial_lines": 0,
+      "characters": 3301766,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    },
+    {
+      "id": "boyle_spring_air_1660",
+      "raw_file": "boyle_spring_air_1660.txt",
+      "raw_sha256": "701944c16d5f038da89418dffe4e15cdc4dd5508a5635b87ffb01057a5efe4b6",
+      "normalized_sha256": "32ed110ad178e7784382e9a06f7309081d82ed2e33a38e18f7f9ffeea31f9a1f",
+      "skip_initial_lines": 0,
+      "characters": 489065,
+      "precursor": false,
+      "findings": {
+        "hard": [],
+        "modern": [],
+        "review": []
+      },
+      "reasons": []
+    }
+  ],
+  "counts": {
+    "strict_clean": 1819,
+    "precursor_only": 166,
+    "date_only_all": 1985,
+    "quarantine": 0
+  }
+}

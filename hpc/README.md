@@ -23,3 +23,10 @@ consider A800 only if a future run exceeds 48 GB or measured throughput
 justifies its higher price. Corpus review, split design, and audits belong on
 the Mac or CPU nodes. Longer GPU training should wait for a predeclared
 semantic holdout and approved historical sources.
+
+The V11 primary-scan **pilot** job is in `tongji_v11_raw_baseline.sbatch`.
+Before submission, place its V11 token streams and tokenizer in this project's
+`data/` directory and verify their hashes against
+[`V11_PRIMARY_SCAN_CORPUS.md`](../V11_PRIMARY_SCAN_CORPUS.md). It has a separate
+validation stream and no synthetic reasoning examples. Submit only from
+`~/data/AGI-Newton` after `mkdir -p logs`; do not use a login node for training.

@@ -1,0 +1,9 @@
+{
+  "training_data": [
+    "data/real_pilot_v11/train.jsonl"
+  ],
+  "vocab_size": 8000,
+  "model": "data/tokenizer_v11/pre1687_bpe.model",
+  "pretrained_vocabulary": false,
+  "normalization": "identity"
+}

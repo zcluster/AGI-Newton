@@ -19,9 +19,16 @@ def load_module(name, path):
 
 reasoning = load_module("generate_admissible_reasoning", ROOT / "src" / "generate_admissible_reasoning.py")
 eebo = load_module("ingest_pyccle_eebo", ROOT / "src" / "ingest_pyccle_eebo.py")
+split = load_module("split_curriculum", ROOT / "src" / "split_curriculum.py")
 
 
 class BootstrapPipelineTests(unittest.TestCase):
+    def test_key_premise_can_be_pinned_to_training_split(self):
+        text = next(str(index) for index in range(1000) if split.is_validation(str(index)))
+        row = {"text": text, "sha256": "premise"}
+        self.assertEqual(split.split_name(row, set()), "validation")
+        self.assertEqual(split.split_name(row, {"premise"}), "train")
+
     def test_generated_curriculum_does_not_state_target(self):
         rng = random.Random(1686)
         examples = []

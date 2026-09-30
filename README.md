@@ -174,6 +174,8 @@ single-seed weighting conclusion, are in
 [`V10_MULTISEED_AUDIT.md`](V10_MULTISEED_AUDIT.md).
 The historical-premise accessibility gap and the next controlled comparison
 are documented in [`PREMISE_ACCESS_AUDIT.md`](PREMISE_ACCESS_AUDIT.md).
+The source-corrected V11 pilot corpus and its separate raw-text baseline
+are documented in [`V11_PRIMARY_SCAN_CORPUS.md`](V11_PRIMARY_SCAN_CORPUS.md).
 Tongji L40 deployment and the infrastructure-only benchmark are in
 [`hpc/README.md`](hpc/README.md).
 

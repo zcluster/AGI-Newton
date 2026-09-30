@@ -103,7 +103,13 @@ def build(
         if missing:
             raise ValueError(f"{source.get('id', '<unknown>')}: missing {', '.join(missing)}")
 
-        raw_path = raw_dir / f"{source['id']}.txt"
+        raw_file = source.get("raw_file", f"{source['id']}.txt")
+        if Path(raw_file).name != raw_file:
+            raise ValueError(f"{source['id']}: raw_file must be a filename")
+        skip_initial_lines = source.get("skip_initial_lines", 0)
+        if not isinstance(skip_initial_lines, int) or skip_initial_lines < 0:
+            raise ValueError(f"{source['id']}: skip_initial_lines must be nonnegative")
+        raw_path = raw_dir / raw_file
         reasons = []
         accepted_statuses = {"approved"}
         if allow_machine_reviewed:
@@ -118,7 +124,10 @@ def build(
             reasons.append("missing_text")
 
         raw_bytes = raw_path.read_bytes() if raw_path.exists() else b""
-        text = normalise(raw_bytes.decode("utf-8")) if raw_bytes else ""
+        lines = raw_bytes.decode("utf-8").splitlines(keepends=True) if raw_bytes else []
+        if skip_initial_lines and skip_initial_lines >= len(lines):
+            raise ValueError(f"{source['id']}: skip_initial_lines removes the entire source")
+        text = normalise("".join(lines[skip_initial_lines:])) if lines else ""
         findings = scan(text, policy) if text else {level: [] for level in policy}
         is_precursor = source["role"] == "precursor_target" or source["target_risk"] == "high"
         if findings["hard"] and not is_precursor:
@@ -132,8 +141,10 @@ def build(
 
         doc_audit = {
             "id": source["id"],
+            "raw_file": raw_file,
             "raw_sha256": hashlib.sha256(raw_bytes).hexdigest() if raw_path.exists() else None,
             "normalized_sha256": hashlib.sha256(text.encode()).hexdigest() if text else None,
+            "skip_initial_lines": skip_initial_lines,
             "characters": len(text),
             "precursor": is_precursor,
             "findings": findings,

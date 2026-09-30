@@ -1,0 +1,13 @@
+{
+  "tokenizer": "data/tokenizer_v11/pre1687_bpe.model",
+  "data": [
+    "data/real_pilot_v11/train.jsonl"
+  ],
+  "output": "data/real_pilot_v11/train.bin",
+  "documents": 1727,
+  "tokens": 4287350,
+  "bytes": 8574700,
+  "dtype": "uint16",
+  "loss_weights_output": null,
+  "focus_final_exponent": false
+}

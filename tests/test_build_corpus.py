@@ -12,6 +12,23 @@ from build_corpus import build  # noqa: E402
 
 
 class CorpusBoundaryTest(unittest.TestCase):
+    def test_alternate_scan_and_front_matter_cut_are_audited(self):
+        fixtures = ROOT / "tests" / "fixtures"
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source = json.loads((fixtures / "manifest.jsonl").read_text().splitlines()[0])
+            source.update(raw_file="galileo_fixture.txt", skip_initial_lines=2)
+            manifest = root / "manifest.jsonl"
+            manifest.write_text(json.dumps(source) + "\n")
+            audit = build(manifest, fixtures / "raw", root / "output",
+                          ROOT / "policies" / "leakage_terms.json", 8000)
+            document = audit["documents"][0]
+            self.assertEqual(document["skip_initial_lines"], 2)
+            self.assertEqual(document["raw_sha256"], hashlib.sha256(
+                (fixtures / "raw" / "galileo_fixture.txt").read_bytes()).hexdigest())
+            row = json.loads((root / "output" / "strict_clean.jsonl").read_text())
+            self.assertEqual(row["text"], "Observation and geometrical demonstration must be compared.")
+
     def test_strict_and_precursor_arms_are_isolated(self):
         fixtures = ROOT / "tests" / "fixtures"
         with tempfile.TemporaryDirectory() as temporary:
