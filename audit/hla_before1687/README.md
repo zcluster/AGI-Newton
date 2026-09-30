@@ -37,6 +37,8 @@ The categories are deliberately conservative and not verified training-admission
 
 Run `python3 src/summarise_hla_census.py` to regenerate the catalogue and counts entirely offline, including consistency checks. `src/inspect_hla_candidates.py` retrieves only the 11 candidate rows' text and caches each completed result; it does not repeat the full date scan.
 
+Full-text retrieval was attempted on 2026-10-01. The dataset-viewer single-row endpoint returned HTTP 500; direct Parquet text retrieval produced no completed candidate after several minutes and was stopped. No candidate full text was verified in this attempt. The metadata/title census remains complete; a future retrieval retry must not be mistaken for repeating that census.
+
 ## Reuse rather than repeat
 
 The earlier geometry/schema discussion did not leave a retrievable full date-and-subject census in the local project or in the inspected HPC AGI-Newton directory. That does not establish that no earlier inspection happened. This census makes the scope and evidence explicit. Future subject analysis should use these cached records; a full scan is unnecessary unless the dataset revision or cutoff changes.

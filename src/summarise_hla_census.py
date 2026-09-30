@@ -47,7 +47,7 @@ def main():
                "row_categories": dict(Counter(r["category"] for r in rows)),
                "year_title_categories": dict(Counter(r["category"] for r in unique.values()))}
     with (ROOT / "catalogue.csv").open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(sorted(rows, key=lambda r: (r["year"], r["title"], r["shard"])))
     (ROOT / "subject_summary.json").write_text(json.dumps(summary, indent=2) + "\n")
