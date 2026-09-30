@@ -165,6 +165,8 @@ reasoning interventions, is documented in
 The V6 diversity experiment, blinded deterministic-generation suite, and V7
 curriculum-only stopping result are documented in
 [`V6_V7_DIVERSITY_REPORT.md`](V6_V7_DIVERSITY_REPORT.md).
+The local V8 continuation-weighting ablation and stricter generation audit are
+documented in [`V8_WEIGHTING_PILOT.md`](V8_WEIGHTING_PILOT.md).
 
 Build the pre-1687 EEBO layer from an already downloaded PYCCLE archive:
 

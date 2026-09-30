@@ -1,0 +1,132 @@
+{
+  "label": "v8_clean_weighted_2000",
+  "parameters": 1845504,
+  "vocab_size": 8000,
+  "train_tokens": 3711401,
+  "validation_tokens": 197472,
+  "tokens_seen": 4096000,
+  "steps": 2000,
+  "training_seconds": 165.58067202568054,
+  "initial_validation_loss": 9.010452449321747,
+  "final_validation_loss": 0.6463037766516209,
+  "final_validation_perplexity": 1.9084736312935744,
+  "last_train_loss": 0.1768408864736557,
+  "resumed_from": null,
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 11.67164134979248,
+          "tokens": 3
+        },
+        "inverse": {
+          "mean_nll": 6.029779434204102,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 6.240723133087158,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 5.64583158493042,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_cube",
+      "scores": {
+        "constant": {
+          "mean_nll": 10.442672729492188,
+          "tokens": 8
+        },
+        "inverse": {
+          "mean_nll": 6.174001216888428,
+          "tokens": 6
+        },
+        "inverse_square": {
+          "mean_nll": 6.334609031677246,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 5.785350322723389,
+          "tokens": 7
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 8.504708290100098,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 11.133021354675293,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 8.296553611755371,
+          "tokens": 7
+        },
+        "inverse_cube": {
+          "mean_nll": 9.278738975524902,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 12.144255638122559,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 10.340241432189941,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 10.554075241088867,
+          "tokens": 4
+        },
+        "inverse_cube": {
+          "mean_nll": 10.444038391113281,
+          "tokens": 4
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as ∝ z^0/z^1 = z^0.\nResult: the required exponent is 0.",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as ∝ y^-1/J^1.",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of ∝ s^-3/K^1. Substitute the first relation into the second and simplify.\n Work: Elimination of H^3 leaves powers -3 and 1. Division subtracts them: -3 - (1) = -4.\nAnswer: E is proportional to s^-4.",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to ∝ y^2 and C ∝ y^2/J^1. Substitute the first relation into the second and simplify.\n Derivation: Replace the denominator by the first relation. Thus C ∝ y^2/y^2 = y^0.\nTherefore: C ∝ y^0."
+  },
+  "args": {
+    "train": "/tmp/agi-newton-v8-clean-train.bin",
+    "loss_weights": "/tmp/agi-newton-v8-clean-train.weights",
+    "validation": "/tmp/agi-newton-v8-clean-validation.bin",
+    "tokenizer": "data/tokenizer_v3/pre1687_bpe.model",
+    "output_dir": "/tmp/agi-newton-v8-clean-weighted",
+    "steps": 2000,
+    "batch_size": 8,
+    "context": 256,
+    "width": 128,
+    "heads": 4,
+    "layers": 4,
+    "learning_rate": 0.0003,
+    "warmup_steps": 30,
+    "device": "mps",
+    "precision": "fp32",
+    "seed": 1686,
+    "label": "v8_clean_weighted_2000",
+    "log_every": 500,
+    "resume": null
+  }
+}

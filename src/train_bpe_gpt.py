@@ -92,17 +92,26 @@ def precision_context(device, precision):
 
 
 class TokenStream:
-    def __init__(self, path: Path):
+    def __init__(self, path: Path, weights_path: Path | None = None):
         self.array = np.memmap(path, dtype=np.uint16, mode="r")
         # PyTorch cannot advanced-index UInt16 tensors on CPU.  Keep the file
         # compact, but make one Int32 RAM copy for random batch sampling.
         self.tokens = torch.from_numpy(self.array.astype(np.int32))
+        self.weights = None
+        if weights_path:
+            weights = np.memmap(weights_path, dtype=np.uint8, mode="r")
+            if len(weights) != len(self.tokens):
+                raise ValueError("loss weights must align one-to-one with tokens")
+            self.weights = torch.from_numpy(weights.astype(np.float32))
 
     def batch(self, batch_size, context, device):
         starts = torch.randint(0, len(self.tokens) - context - 1, (batch_size,))
         offsets = torch.arange(context + 1)
         sequences = self.tokens[starts[:, None] + offsets].long().to(device)
-        return sequences[:, :-1], sequences[:, 1:]
+        targets = None
+        if self.weights is not None:
+            targets = self.weights[starts[:, None] + offsets[1:]].to(device)
+        return sequences[:, :-1], sequences[:, 1:], targets
 
 
 @torch.no_grad()
@@ -110,7 +119,7 @@ def validation_loss(model, stream, batch_size, context, device, precision, round
     model.eval()
     values = []
     for _ in range(rounds):
-        x, y = stream.batch(batch_size, context, device)
+        x, y, _ = stream.batch(batch_size, context, device)
         with precision_context(device, precision):
             values.append(F.cross_entropy(model(x).flatten(0, 1), y.flatten()).item())
     model.train()
@@ -183,6 +192,8 @@ def generate(
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--train", type=Path, required=True)
+    parser.add_argument("--loss-weights", type=Path,
+                        help="Optional uint8 file aligned with --train tokens")
     parser.add_argument("--validation", type=Path, required=True)
     parser.add_argument("--tokenizer", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
@@ -209,7 +220,7 @@ def main():
         torch.cuda.manual_seed_all(args.seed)
         torch.backends.cuda.matmul.allow_tf32 = True
     tokenizer = spm.SentencePieceProcessor(model_file=str(args.tokenizer))
-    train = TokenStream(args.train)
+    train = TokenStream(args.train, args.loss_weights)
     validation = TokenStream(args.validation)
     model = GPT(tokenizer.vocab_size(), args.context, args.width, args.heads, args.layers).to(device)
     if args.resume:
@@ -222,9 +233,14 @@ def main():
     started = time.time()
     last_loss = None
     for step in range(1, args.steps + 1):
-        x, y = train.batch(args.batch_size, args.context, device)
+        x, y, weights = train.batch(args.batch_size, args.context, device)
         with precision_context(device, args.precision):
-            loss = F.cross_entropy(model(x).flatten(0, 1), y.flatten())
+            logits = model(x).flatten(0, 1)
+            if weights is None:
+                loss = F.cross_entropy(logits, y.flatten())
+            else:
+                per_token = F.cross_entropy(logits, y.flatten(), reduction="none")
+                loss = (per_token * weights.flatten()).sum() / weights.sum()
         optimizer.zero_grad(set_to_none=True)
         scaler.scale(loss).backward()
         scaler.unscale_(optimizer)

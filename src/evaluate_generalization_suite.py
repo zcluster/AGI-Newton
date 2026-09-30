@@ -50,11 +50,24 @@ def candidates(target, base, known, numerator):
     }
 
 
-def generation_is_correct(text, prompt, base, known, numerator, result):
-    suffix = text[len(prompt) :]
-    equation = re.escape(f"{numerator} - ({known}) = {result}")
-    power = re.escape(f"{base}^{result}")
-    return bool(re.search(equation, suffix) or re.search(power, suffix))
+def generation_is_correct(text, prompt, target, base, result):
+    if not text.startswith(prompt):
+        return False
+    suffix = text[len(prompt) :].strip()
+    final_statement = re.split(r"(?<=[.!?])\s+", suffix)[-1]
+    relation = re.compile(
+        rf"\b{re.escape(target)}\s*(?:is proportional to|∝)\s*"
+        rf"{re.escape(base)}\s*\^\s*(-?\d+)(?!\d|\.\d|/|\s+divided\s+by)", re.I
+    )
+    powers = [int(match.group(1)) for match in relation.finditer(suffix)]
+    if powers:
+        return all(power == result for power in powers) and bool(relation.search(final_statement))
+    return bool(
+        result == -2
+        and target.casefold() in final_statement.casefold()
+        and base.casefold() in final_statement.casefold()
+        and re.search(r"inverse(?:ly)?[- ]square|reciprocal[- ]square", final_statement, re.I)
+    )
 
 
 def evaluate_case(model, tokenizer, device, precision, case):
@@ -81,7 +94,7 @@ def evaluate_case(model, tokenizer, device, precision, case):
         "scores": scores,
         "generation": completion,
         "generation_correct": generation_is_correct(
-            completion, prompt, base, known, numerator, expected
+            completion, prompt, target, base, expected
         ),
     }
 
@@ -116,7 +129,7 @@ def main():
         }
 
     report = {
-        "suite_version": 2,
+        "suite_version": 3,
         "checkpoint": str(args.checkpoint),
         "label": saved["label"],
         "deterministic_generation": True,

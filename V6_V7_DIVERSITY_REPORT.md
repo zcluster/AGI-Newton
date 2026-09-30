@@ -36,23 +36,26 @@ It sees 196,608,000 training tokens in 851.5 seconds on the RTX 5090.
 **Evaluation correction (2026-09-30):** The legacy physics candidate scorer
 used `C/R` in all four candidate completions even when the prompt used other
 symbols or natural language. Those candidate scores are invalid and require a
-checkpoint rerun with suite version 2. The archived JSON is retained for audit.
+checkpoint rerun with suite version 3. The archived JSON is retained for audit.
 Rescoring the saved generation strings against the corrected prompt metadata
-still gives 0/4 physics open generations in each arm.
+and a stricter final-answer check gives 0/4 physics open generations in each
+arm. The stricter check requires the final statement to name the correct
+target, base, and exponent without a contradictory exponent for that relation;
+it is still not a complete proof verifier.
 
 The new suite contains 12 unseen abstract paraphrases and four unseen physics
 paraphrases. It reports both candidate ranking and deterministic greedy
-generation. Open generation must write at least 30 tokens and is counted correct
-only when the resulting exponent or arithmetic equation matches the answer.
+generation. Open generation must write at least 30 tokens. The archived strings
+have been rescored using the stricter target-bound final-answer rule above.
 
 | Model | Abstract candidate | Abstract generation | Physics candidate | Physics generation |
 |---|---:|---:|---:|---:|
-| V5 narrow curriculum | 6/12 (50.0%) | 1/12 (8.3%) | invalid; rerun needed | 0/4 (0%) |
-| V6 diverse curriculum | 3/12 (25.0%) | 3/12 (25.0%) | invalid; rerun needed | 0/4 (0%) |
-| V7 curriculum-only stage | 4/12 (33.3%) | 2/12 (16.7%) | invalid; rerun needed | 0/4 (0%) |
+| V5 narrow curriculum | 6/12 (50.0%) | 0/12 (0%) | invalid; rerun needed | 0/4 (0%) |
+| V6 diverse curriculum | 3/12 (25.0%) | 2/12 (16.7%) | invalid; rerun needed | 0/4 (0%) |
+| V7 curriculum-only stage | 4/12 (33.3%) | 1/12 (8.3%) | invalid; rerun needed | 0/4 (0%) |
 
 V5 selects exponent -2 for many **abstract** candidate questions, including
-controls whose correct answer is not -2. V6 reduces that fixed-answer bias and triples abstract open-generation
+controls whose correct answer is not -2. V6 reduces that fixed-answer bias and improves abstract open-generation
 accuracy, but it still fails all held-out `1 - 3` prompts and all physics open
 generations. Its generated traces have the right shape while replacing the
 prompt's numbers or variables with values recalled from another training
@@ -70,7 +73,7 @@ V7 resumes the V6 checkpoint and trains for 500 additional updates only on the
 | Metric | V6 before stage | V7 after stage |
 |---|---:|---:|
 | pre-1687 validation loss | 3.604 | 3.859 |
-| abstract open generation | 25.0% | 16.7% |
+| abstract open generation (strict rescoring) | 16.7% | 8.3% |
 | physics open generation | 0% | 0% |
 | reasoning-curriculum train loss | about 3.05 in mixed training | 0.20 |
 
@@ -92,12 +95,13 @@ generation suite. The negative result is increasingly specific:
   physical premises.
 
 Scaling the same curriculum to 300M parameters would not isolate whether any
-gain comes from capacity or from memorizing more templates. The next justified
-change is an executable algorithmic curriculum with generated problems checked
-by a symbolic verifier, plus an objective that weights the reasoning and answer
-tokens rather than treating them like arbitrary next-token prose. Only after a
-small model passes that abstract suite should parameter scaling and multi-seed
-physics evaluation resume.
+gain comes from capacity or from memorizing more templates. A later
+[V8 local pilot](V8_WEIGHTING_PILOT.md) added optional continuation weighting
+and exact-text-disjoint validation but did not improve strict open generation.
+The next justified change is an executable algorithmic curriculum with
+template-disjoint tests and a more targeted arithmetic/result objective. Only
+after a small model passes that abstract suite should parameter scaling and
+multi-seed physics evaluation resume.
 
 ## Artifacts
 

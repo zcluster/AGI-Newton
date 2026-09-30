@@ -1,0 +1,75 @@
+import json
+import subprocess
+import sys
+import tempfile
+import unittest
+from pathlib import Path
+
+import numpy as np
+import torch
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+
+from tokenize_corpus import encode_record
+from train_bpe_gpt import TokenStream
+
+
+class CharacterTokenizer:
+    def bos_id(self):
+        return 1
+
+    def eos_id(self):
+        return 2
+
+    def encode(self, text, out_type=int):
+        return [ord(char) for char in text]
+
+
+class WeightedTrainingTests(unittest.TestCase):
+    def test_identical_questions_cannot_cross_validation_boundary(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source, train, validation = (root / name for name in ("all.jsonl", "train.jsonl", "validation.jsonl"))
+            texts = [f"Question: {index}?\nAnswer: {index}." for index in range(200)]
+            source.write_text("".join(json.dumps({"text": text}) + "\n" for text in texts * 2))
+            subprocess.run([
+                sys.executable, str(Path(__file__).resolve().parents[1] / "src" / "split_curriculum.py"),
+                "--input", str(source), "--train", str(train), "--validation", str(validation)
+            ], check=True, capture_output=True)
+            with train.open() as train_file, validation.open() as validation_file:
+                train_texts = {json.loads(line)["text"] for line in train_file}
+                validation_texts = {json.loads(line)["text"] for line in validation_file}
+            self.assertTrue(train_texts and validation_texts)
+            self.assertFalse(train_texts & validation_texts)
+            self.assertEqual(len(train_texts | validation_texts), 200)
+
+    def test_only_procedural_continuation_is_upweighted(self):
+        tokenizer = CharacterTokenizer()
+        row = {"source": "procedural", "text": "Question: x?\nAnswer: y."}
+        ids, weights = encode_record(row, tokenizer, weighted=True)
+        boundary = 1 + len("Question: x?\n")
+        self.assertEqual(len(ids), len(weights))
+        self.assertEqual(weights[:boundary], [1] * boundary)
+        self.assertEqual(weights[boundary:-1], [4] * len("Answer: y."))
+        self.assertEqual(weights[-1], 1)
+        _, historical_weights = encode_record(
+            {"source": "historical", "text": row["text"]}, tokenizer, weighted=True
+        )
+        self.assertEqual(set(historical_weights), {1})
+
+    def test_sampled_weights_follow_next_token_targets(self):
+        with tempfile.TemporaryDirectory() as directory:
+            tokens = Path(directory) / "tokens.bin"
+            weights = Path(directory) / "weights.bin"
+            np.arange(40, dtype=np.uint16).tofile(tokens)
+            np.asarray([1] * 20 + [4] * 20, dtype=np.uint8).tofile(weights)
+            x, y, sampled = TokenStream(tokens, weights).batch(8, 6, torch.device("cpu"))
+            self.assertTrue(torch.equal(y, x + 1))
+            self.assertTrue(torch.equal(sampled, torch.where(y < 20, 1.0, 4.0)))
+            weights.write_bytes(b"\x01")
+            with self.assertRaises(ValueError):
+                TokenStream(tokens, weights)
+
+
+if __name__ == "__main__":
+    unittest.main()
