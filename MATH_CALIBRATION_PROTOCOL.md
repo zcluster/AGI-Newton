@@ -278,3 +278,37 @@ weights one versus 128. Do not mistake global static target mass for this mean,
 or either quantity for a measured gradient contribution. A weighting change cannot
 increase the number of batches that encounter arithmetic. This diagnostic must
 precede selecting another training intervention.
+
+### Exposure result and interpretation
+
+CPU job 2863299 completed with exit 0 in 38s, using PyTorch 2.8.0+cu128. The
+reconstructed 1,000 training draws contain arithmetic target tokens in only
+74 batches; **926 batches (92.6%) contain none**. Across the 1,394 arithmetic
+target positions there are 4,738 sampled exposures, median four per position
+(minimum zero, maximum seven); 67 positions are never encountered. These count
+next-token targets, not full examples or guaranteed intact question context.
+
+| Arithmetic loss-coefficient mass | Original weight | Weight 128 |
+| --- | ---: | ---: |
+| Global static stream fraction | 0.242% | 23.703% |
+| Mean normalized fraction over reconstructed batches | 0.199% | 5.632% |
+
+The difference follows from batchwise normalization and sparse, clustered
+arithmetic targets: a multiplier cannot affect the 926 batches without them.
+This is evidence of underexposure in the reconstructed sampling schedule and
+explains why the static mass overstates average per-update arithmetic weighting.
+It does **not** prove the original training draws exactly matched the reconstruction
+(no original index logs), that gradients have these fractions, or that correcting
+sampling will solve generation or historical discovery.
+
+The next justified capability intervention is a separately labeled, fixed-budget
+balanced curriculum that changes arithmetic exposure rather than another weight
+search. Preserve the historical initializer, sealed operands, train/validation
+split, optimization settings, and generation gates. Freeze the concrete sampling
+construction and comparisons before outcomes, and measure achieved exposure.
+Do not substitute this synthetic control for an improved historical math corpus.
+
+Result hashes, runtime and counts are in `audit/arithmetic_exposure.json`; the job
+output is `audit/arithmetic_exposure_job2863299.out`. Reproduce using
+`python src/audit_arithmetic_exposure.py` on the training host with the saved
+report and streams. Source and language coverage remain a separate audit.

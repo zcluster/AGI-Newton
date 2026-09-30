@@ -1,0 +1,26 @@
+{
+  "scope": "CPU RNG reconstruction on the training host/runtime; no original sampled-index log exists",
+  "limitation": "Loss-coefficient mass is not gradient contribution; no forward or optimizer steps replayed",
+  "torch_version": "2.8.0+cu128",
+  "seed": 1686,
+  "steps": 1000,
+  "batch_size": 16,
+  "context": 512,
+  "report_sha256": "edaa2a95fe5261e1a7cc94ba6d07e1da40ae662ad48207bdb0b88a1dc778d434",
+  "weights_sha256": "91f4605b8977b5a6a6dd34b1d852fe514006f007f7a50411ee7e148b68156638",
+  "sampled_starts_sha256": "fdfa79b22916d8f190b4d6114c7ab055c6f077c1d28558dc92693fa570ea18d2",
+  "arithmetic_target_positions": 1394,
+  "arithmetic_target_exposures": 4738,
+  "positions_never_sampled": 67,
+  "exposure_min_median_max": [
+    0,
+    4.0,
+    7
+  ],
+  "batches_with_arithmetic": 74,
+  "batches_without_arithmetic": 926,
+  "mean_batch_arithmetic_loss_mass_plain": 0.001994989594386425,
+  "mean_batch_arithmetic_loss_mass_weight128": 0.056319353878498075,
+  "global_static_arithmetic_mass_plain": 0.002421273849904537,
+  "global_static_arithmetic_mass_weight128": 0.23703451454639435
+}
