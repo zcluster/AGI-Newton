@@ -12,6 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from tokenize_corpus import encode_record
 from train_bpe_gpt import TokenStream
+from summarise_subtraction_weight import numeric_correct
 
 
 class CharacterTokenizer:
@@ -29,6 +30,30 @@ class CharacterTokenizer:
 
 
 class WeightedTrainingTests(unittest.TestCase):
+    def test_numeric_subtraction_grader_rejects_wrong_or_explanatory_suffix(self):
+        fixture = {"prompt": "Answer: ", "expected": -2}
+        for answer in ("-2.", "-2", " -2. "):
+            self.assertTrue(numeric_correct({**fixture, "generation": "Answer: " + answer}))
+        for answer in ("-1.", "-2.5", "x^-2.", "1 - 3 = -2.", "-2. Then 0."):
+            self.assertFalse(numeric_correct({**fixture, "generation": "Answer: " + answer}))
+
+    def test_subtraction_scaling_changes_only_its_answer_weights(self):
+        row = {"source": "procedural", "family": "math_subtraction",
+               "text": "Question: What is 2 minus 1?\nAnswer: 1."}
+        ids, plain = encode_record(row, CharacterTokenizer(), True, answer_only=True)
+        weighted_ids, scaled = encode_record(row, CharacterTokenizer(), True, answer_only=True, subtraction_weight=128)
+        self.assertEqual(ids, weighted_ids)
+        self.assertEqual(scaled, [w * 128 for w in plain])
+        self.assertEqual(scaled[0], 0)
+        self.assertEqual(scaled[-1], 128)
+        self.assertEqual(encode_record({**row, "family": "math_elimination"}, CharacterTokenizer(), True,
+                                     answer_only=True, subtraction_weight=128), (ids, plain))
+        for bad in (0, 256):
+            with self.assertRaises(ValueError):
+                encode_record(row, CharacterTokenizer(), True, answer_only=True, subtraction_weight=bad)
+        with self.assertRaises(ValueError):
+            encode_record(row, CharacterTokenizer(), True, subtraction_weight=128)
+
     def test_answer_only_preserves_input_and_masks_prompt(self):
         prompt = "A square is assigned to x.\nQuestion: Which power?\nAnswer: "
         row = {"source": "procedural", "prompt": prompt, "text": prompt + "square of x."}

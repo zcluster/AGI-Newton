@@ -13,8 +13,10 @@ import numpy as np
 import sentencepiece as spm
 
 
-def encode_record(row, tokenizer, weighted, focus_final_exponent=False, answer_only=False):
+def encode_record(row, tokenizer, weighted, focus_final_exponent=False, answer_only=False, subtraction_weight=1):
     text = row["text"]
+    if not 1 <= subtraction_weight <= 255 or (subtraction_weight != 1 and not answer_only):
+        raise ValueError("subtraction weight must be 1..255 and requires answer-only supervision")
     if answer_only and (not weighted or row.get("source") != "procedural" or focus_final_exponent):
         raise ValueError("answer-only requires weighted procedural data without exponent focusing")
     if weighted and row.get("source") == "procedural":
@@ -53,6 +55,8 @@ def encode_record(row, tokenizer, weighted, focus_final_exponent=False, answer_o
                 weight = 16
             weights.append(weight)
         weights.append(1)
+        if answer_only and row.get("family") == "math_subtraction":
+            weights = [weight * subtraction_weight for weight in weights]
     else:
         ids = [tokenizer.bos_id(), *tokenizer.encode(text, out_type=int), tokenizer.eos_id()]
         weights = [1] * len(ids)
@@ -69,11 +73,15 @@ def main():
     parser.add_argument("--focus-final-exponent", action="store_true",
                         help="Give final reasoning-example exponent tokens weight 16")
     parser.add_argument("--answer-only", action="store_true", help="Mask all prompt tokens; supervise answer and EOS")
+    parser.add_argument("--subtraction-weight", type=int, default=1,
+                        help="Multiply math_subtraction answer-only target weights (1..255)")
     args = parser.parse_args()
     if args.focus_final_exponent and not args.loss_weights_output:
         parser.error("--focus-final-exponent requires --loss-weights-output")
     if args.answer_only and (not args.loss_weights_output or args.focus_final_exponent):
         parser.error("--answer-only requires --loss-weights-output and cannot combine with --focus-final-exponent")
+    if not 1 <= args.subtraction_weight <= 255 or (args.subtraction_weight != 1 and not args.answer_only):
+        parser.error("--subtraction-weight must be 1..255 and requires --answer-only")
     if args.loss_weights_output and args.loss_weights_output.resolve() == args.output.resolve():
         parser.error("loss weights and token output must be distinct files")
     tokenizer = spm.SentencePieceProcessor(model_file=str(args.tokenizer))
@@ -90,7 +98,8 @@ def main():
             with path.open(encoding="utf-8") as handle:
                 for line in handle:
                     ids, weights = encode_record(json.loads(line), tokenizer,
-                                                 bool(weights_output), args.focus_final_exponent, args.answer_only)
+                                                 bool(weights_output), args.focus_final_exponent, args.answer_only,
+                                                 args.subtraction_weight)
                     encoded = np.asarray(ids, dtype=np.uint16)
                     encoded.tofile(output)
                     if weights_output:
@@ -110,6 +119,7 @@ def main():
         "loss_weights_output": str(args.loss_weights_output) if args.loss_weights_output else None,
         "focus_final_exponent": args.focus_final_exponent,
         "answer_only": args.answer_only,
+        "subtraction_weight": args.subtraction_weight,
     }
     args.output.with_suffix(args.output.suffix + ".json").write_text(
         json.dumps(audit, indent=2) + "\n"

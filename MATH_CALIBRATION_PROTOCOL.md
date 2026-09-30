@@ -135,3 +135,41 @@ size is the limiting factor, while keeping the sealed pair excluded.
 Run `python src/summarise_math_calibration.py` to recompute the paired summary.
 The script checks matched short probes, budgets and grid arithmetic, and recomputes
 the saved grid grading flags from the actual generated text.
+
+## Fixed input subtraction weighting experiment
+
+On 2026-10-01, before new outcomes, fix subtraction target weight at 128 (including
+EOS) and leave other masked target weights at one. Keep every prompt masked, every
+input token unchanged, the same historical initialization, seed 1686 and 1,000-step
+budget. Compare with the existing masked mathematical checkpoint. This tests loss
+allocation without resampling or adding examples. Static weighted target mass for
+subtraction rises from 0.24% to 23.70%; this is not measured gradient contribution
+because the trainer normalizes within each minibatch. The factor is a single planned
+pilot, not a tuned optimum. Changing relative loss can affect clipping and retention.
+
+The deterministic full subtraction grid has 578 prompts: 544 training prompts
+(272 operand pairs), 30 internal-validation prompts (15 pairs), and two wording
+variants each for 1 minus 3 and 3 minus 1. The former is the sealed Newton combination;
+the reverse is excluded only from direct subtraction, not from abstract elimination.
+Report format-exact answers and full-suffix integer accuracy, allowing a missing final
+period but rejecting explanations, expressions and multiple answers. Also report both
+wordings correct per operand pair. Repeated wordings are not independent examples.
+Use the same grid on the old baseline and new model. This is new diagnostic coverage
+of the same task, not an independently sourced scientific benchmark.
+
+The operational next-stage gate is at least 90% correct training subtraction and
+80% correct internal-validation subtraction, plus reporting all four sealed outputs.
+These thresholds decide what to investigate next, not publication sufficiency. If
+training performance remains poor, inspect learning before blaming generalization;
+if arithmetic improves but the sealed algebra and physical transfer still fail,
+focus on composition and binding. Retest the unchanged abstract/physical grid,
+direct Earth–Moon sample and scientific text retention. Do not certify discovery
+from the presence of -2 anywhere in a response. One seed remains insufficient for
+general claims. Run `hpc/tongji_subtraction_weight128.sbatch` on one L40 and reproduce
+the primary comparison with `src/summarise_subtraction_weight.py`.
+
+Submitted as job 2863237. Another user-owned project was already running at
+submission; it was left untouched. The new job requests only one scheduler-managed
+L40 and writes exclusively under the AGI-Newton project. Local checks confirm exactly
+1,394 target positions change from weight one to 128, no other weights change, and
+the input bytes remain identical. Submission does not establish an outcome.

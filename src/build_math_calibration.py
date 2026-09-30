@@ -74,6 +74,22 @@ def main():
     assert len(seen) == 14 and all(p["prompt"] + p["candidates"]["correct"]
                                 in {r["text"] for r in splits[0]} for p in seen)
     (args.output_dir / "seen_subtraction.json").write_text(json.dumps(seen, indent=2) + "\n")
+    membership = {r["prompt"]: name for name, rows in zip(("train", "validation"), splits)
+                  for r in rows if r["family"] == "math_subtraction"}
+    grid = []
+    for a in range(-8, 9):
+        for b in range(-8, 9):
+            for style, question in enumerate((f"Question: What is {a} minus {b}?",
+                                               f"Question: Subtract {b} from {a}.")):
+                prompt = question + "\nAnswer: "
+                group = ("sealed_newton" if (a, b) == (1, 3) else
+                         "sealed_reverse" if (a, b) == (3, 1) else membership[prompt])
+                grid.append({"id": f"sub_{a}_{b}_{style}", "group": group,
+                             "a": a, "b": b, "expected": a-b, "prompt": prompt, "target": "correct",
+                             "candidates": {"correct": f"{a-b}.", "lower": f"{a-b-1}.", "higher": f"{a-b+1}."}})
+    assert len(grid) == 578 and len({p["prompt"] for p in grid}) == 578
+    assert {g: sum(r["group"] == g for r in grid) for g in set(membership.values())} == {"train": 544, "validation": 30}
+    (args.output_dir / "subtraction_grid.json").write_text(json.dumps(grid, indent=2) + "\n")
     (args.output_dir / "audit.json").write_text(json.dumps(audit, indent=2) + "\n")
     print(json.dumps(audit, indent=2))
 
