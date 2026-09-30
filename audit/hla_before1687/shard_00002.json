@@ -1,0 +1,40 @@
+{
+  "base_url": "https://huggingface.co/datasets/mhla/pre1900-corpus/resolve/ff332ef64f896c8d44672b4d1d0c752029e32f29",
+  "shard": 2,
+  "total_rows": 50000,
+  "with_text": false,
+  "rows": [
+    {
+      "file_row_number": 2252,
+      "year": 1634,
+      "title": "The tragedie of King Richard the Third. Contayning his treacherous plots, against his brother Clarence: the pitifull murder of his innocent nephewes: his tyranous vsurpation: with the whole course of his detested life, and most deserued death. As it hath beene acted by the Kings Maiesties seruants.",
+      "source": "institutional-books",
+      "ocr_score": 0.97,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 13251,
+      "year": 1665,
+      "title": "The English rogue: described, in the life of Meriton Latroon, a witty extravagant. Being a compleat history of the most eminent cheats of both sexes...",
+      "source": "institutional-books",
+      "ocr_score": 0.99,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 34172,
+      "year": 1665,
+      "title": "The English rogue: described, in the life of Meriton Latroon, a witty extravagant. Being a compleat history of the most eminent cheats of both sexes...",
+      "source": "institutional-books",
+      "ocr_score": 0.99,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 42096,
+      "year": 1663,
+      "title": "Acts and resolves passed by the General Court.",
+      "source": "institutional-books",
+      "ocr_score": 0.99,
+      "legibility": -1.0
+    }
+  ]
+}

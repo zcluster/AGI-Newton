@@ -1,0 +1,472 @@
+{
+  "base_url": "https://huggingface.co/datasets/mhla/pre1900-corpus/resolve/ff332ef64f896c8d44672b4d1d0c752029e32f29",
+  "shard": 13,
+  "total_rows": 50000,
+  "with_text": false,
+  "rows": [
+    {
+      "file_row_number": 3,
+      "year": 1597,
+      "title": "Syrinx, or A seavenfold historie, handled with varietie of pleasant and profitable, both commicall and tragicall, argument.",
+      "source": "institutional-books",
+      "ocr_score": 0.96,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 923,
+      "year": 1661,
+      "title": "The Virgin Martir, a Tragedie [in five acts and in verse and prose.]",
+      "source": "blbooks",
+      "ocr_score": 0.441,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 2259,
+      "year": 1589,
+      "title": "Scillaes metamorphosis: enterlaced with the unfortunate love of Glaucus. Whereunto is annexed the delectable discourse of the Discontented satyre; with sundrie other most absolute poems and sonnets.",
+      "source": "institutional-books",
+      "ocr_score": 0.94,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 2612,
+      "year": 1656,
+      "title": "The excellent comedy, called The Old Law: or, a new way to please you [in five acts, in verse and prose] by Phil Massinger, T. Middleton, W. Rowley ... Together with an exact and perfect catalogue of all the playes, with the authors names, etc",
+      "source": "blbooks",
+      "ocr_score": 0.382,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 3382,
+      "year": 1679,
+      "title": "A True Widow. A comedy, etc [In five acts and in prose.] (Prologue by Mr. Dryden.)",
+      "source": "blbooks",
+      "ocr_score": 0.653,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 3397,
+      "year": 1673,
+      "title": "The careless lovers: a comedy [in five acts and in prose. Partly taken from Molière's 'Monsieur de Pourceaugnac'] . (Epilogue by Mr. Settle.)",
+      "source": "blbooks",
+      "ocr_score": 0.595,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 4891,
+      "year": 1676,
+      "title": "A king and no king. London 1619",
+      "source": "blbooks",
+      "ocr_score": 0.482,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 5217,
+      "year": 1633,
+      "title": "The Heire. A comedie [in five acts, in verse and prose. Second edition] . Written by T. M (ay)",
+      "source": "blbooks",
+      "ocr_score": 0.503,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 6234,
+      "year": 1678,
+      "title": "The Man of Newmarket, etc [A comedy, in five acts and in prose, with songs.]",
+      "source": "blbooks",
+      "ocr_score": 0.662,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 6950,
+      "year": 1641,
+      "title": "The Divell is an Asse. A comedie acted in the yeare, 1616. By His Majesties Servants",
+      "source": "blbooks",
+      "ocr_score": 0.454,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 7783,
+      "year": 1651,
+      "title": "The Elder Brother: a Comedie ... Written by F. Beaumont and J. Fletcher [or more probably written by Fletcher, and revised by Massinger] ... The second edition, corrected and amended",
+      "source": "blbooks",
+      "ocr_score": 0.52,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 7862,
+      "year": 1633,
+      "title": "The Triumph of Peace. A masque, presented by the foure Honourable Houses, or Innes of Court. Before the King and Queenes Majesties ... February the third, 1633. Invented and written, by James Shirley, of Grayes Inne, Gent",
+      "source": "blbooks",
+      "ocr_score": 0.504,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 8049,
+      "year": 1683,
+      "title": "City Politiques. A comedy, etc",
+      "source": "blbooks",
+      "ocr_score": 0.52,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 8063,
+      "year": 1682,
+      "title": "A Satyrick Poem against those mercenary wretches ... the Authors of Heraclitus and Observator [i.e. T. Flatman and Sir R. L'Estrange] ... By Philopatris",
+      "source": "blbooks",
+      "ocr_score": 0.607,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 8585,
+      "year": 1677,
+      "title": "The Country Innocence: or, The Chambermaid turn'd Quaker. A comedy [in five acts and in prose] . With alterations and amendments [from 'The Countrie Girle ... By T. B.']",
+      "source": "blbooks",
+      "ocr_score": 0.515,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 8732,
+      "year": 1633,
+      "title": "A New Way to pay Old Debts. A comoedie as it hath beene often acted at the Phœnix in Drury-Lane, by the Queenes Maiesties seruants",
+      "source": "blbooks",
+      "ocr_score": 0.416,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 11599,
+      "year": 1665,
+      "title": "The Faithfull Shepherdesse ... The third Edition, with Addition",
+      "source": "blbooks",
+      "ocr_score": 0.559,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 12261,
+      "year": 1637,
+      "title": "The Elder Brother. A comedie, [in five acts and in verse.] Written by J. F [and F. Beaumont?]",
+      "source": "blbooks",
+      "ocr_score": 0.456,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 12936,
+      "year": 1676,
+      "title": "Piso's Conspiracy, a tragedy [in five acts and in verse, altered from Nathaniel Lee's tragedy of Nero, published anonymously in 1624]",
+      "source": "blbooks",
+      "ocr_score": 0.463,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 13720,
+      "year": 1672,
+      "title": "The Dumb Lady: or, The Farriar made Physician, etc [A comedy, in five acts, and in prose, altered from Molière's 'Médecin malgré lui.']",
+      "source": "blbooks",
+      "ocr_score": 0.624,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 13936,
+      "year": 1659,
+      "title": "The London Chaunticleres. A witty Comœdy [in fourteen scenes, and in prose], full of various and delightfull mirth, etc",
+      "source": "blbooks",
+      "ocr_score": 0.525,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 15290,
+      "year": 1655,
+      "title": "The Polititian, a tragedy [in five acts, in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.508,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 16548,
+      "year": 1678,
+      "title": "Henry the Third of France stabb'd by a Fryer; with the Fall of the Guise. A tragedy [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.666,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 17512,
+      "year": 1566,
+      "title": "A summarie of the antiquities and wonders of the world, abstracted out of the sixtene first bookes of the excellente historiographer Plinie, wherein may be seene the wonderful workes of God in his creatures,",
+      "source": "institutional-books",
+      "ocr_score": 0.95,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 21387,
+      "year": 1623,
+      "title": "Neptune's Triumph for the Returne of Albion, celebrated in a Masque at the Court on the Twelfth Night 1623 [By Ben Jonson.]",
+      "source": "blbooks",
+      "ocr_score": 0.427,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 21761,
+      "year": 1682,
+      "title": "The Royalist. A comedy [in five acts and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.495,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 23159,
+      "year": 1639,
+      "title": "The Maides Revenge. A tragedy. As it hath been acted with good applause at the private house in Drury Lane, by her Majesties Servants",
+      "source": "blbooks",
+      "ocr_score": 0.501,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 23240,
+      "year": 1678,
+      "title": "The assignation: or, Love in a nunnery. As it is acted, at the Theatre-Royal",
+      "source": "blbooks",
+      "ocr_score": 0.421,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 24462,
+      "year": 1654,
+      "title": "The Combat of Love and Friendship, a comedy [in five acts, in verse and prose]",
+      "source": "blbooks",
+      "ocr_score": 0.491,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 24512,
+      "year": 1633,
+      "title": "A Fine Companion",
+      "source": "blbooks",
+      "ocr_score": 0.525,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 24945,
+      "year": 1684,
+      "title": "A Joviall Crew: or, the Merry Beggar. Presented in a comedie, etc",
+      "source": "blbooks",
+      "ocr_score": 0.473,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 25605,
+      "year": 1675,
+      "title": "The rival ladies. A tragi-comedy. As it was acted at the Theater-Royal",
+      "source": "blbooks",
+      "ocr_score": 0.574,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 26720,
+      "year": 1634,
+      "title": "Philaster, 1622",
+      "source": "blbooks",
+      "ocr_score": 0.465,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 26919,
+      "year": 1679,
+      "title": "The Ambitious Statesman, or the Loyal favourite, etc",
+      "source": "blbooks",
+      "ocr_score": 0.486,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 27385,
+      "year": 1671,
+      "title": "Juliana, or the Princess of Poland. A tragicomedy, etc",
+      "source": "blbooks",
+      "ocr_score": 0.557,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 29140,
+      "year": 1671,
+      "title": "The Religious-Rebell, or the Pilgrim-Prince. A tragædy [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.539,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 29399,
+      "year": 1630,
+      "title": "A Pleasant conceited Comedie, Wherein is shewed how a man may chuse a good Wife from a bad. As it hath bene sundry times acted by the Earle of Worcesters Seruants [Attributed in a MS. note on the titlepage to Joshua Cooke.]",
+      "source": "blbooks",
+      "ocr_score": 0.538,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 30344,
+      "year": 1608,
+      "title": "The historie of Titana and Theseus. Verie pleasant for age to avoyd drowsie thoughts, etc.",
+      "source": "institutional-books",
+      "ocr_score": 0.96,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 30917,
+      "year": 1591,
+      "title": "Brittons Bowre of delights. Contayning many most delectable and fine devices, of rare epitaphes, pleasant poems, pastoral and sonets.",
+      "source": "institutional-books",
+      "ocr_score": 0.94,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 33233,
+      "year": 1616,
+      "title": "Britannia's pastorals.",
+      "source": "institutional-books",
+      "ocr_score": 0.97,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 33743,
+      "year": 1675,
+      "title": "The Tragedy of Nero, Emperour of Rome, etc [In five acts, in verse and in prose.]",
+      "source": "blbooks",
+      "ocr_score": 0.648,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 34065,
+      "year": 1676,
+      "title": "A Warning to the inhabitants of England, and London in particular ... By M. A [i.e. Mary Adams.]",
+      "source": "blbooks",
+      "ocr_score": 0.471,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 34813,
+      "year": 1679,
+      "title": "Squire Oldsapp: or, The Night-Adventurers. A comedy [in five acts and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.609,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 37922,
+      "year": 1680,
+      "title": "Theodosius: or, the Force of Love, a tragedy [in five acts and in verse] ... With the musick betwixt the acts [by H. Purcell]",
+      "source": "blbooks",
+      "ocr_score": 0.529,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 39900,
+      "year": 1669,
+      "title": "Secret-love, or The maiden-queen: as it is acted by His Majesties Servants, at the Theater-Royal",
+      "source": "blbooks",
+      "ocr_score": 0.578,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 41224,
+      "year": 1660,
+      "title": "The Rump: or the Mirrour of the late times: a new comedy [in five acts and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.502,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 41260,
+      "year": 1677,
+      "title": "Circe, a tragedy. As it is acted at His Royal Highness the Duke of York's theatre",
+      "source": "blbooks",
+      "ocr_score": 0.568,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 41297,
+      "year": 1625,
+      "title": "The Scornful Ladie ... 1616",
+      "source": "blbooks",
+      "ocr_score": 0.535,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 41565,
+      "year": 1649,
+      "title": "A Bartholomew Fairing, new, new, new: sent from the raised siege before Dublin as a preparatory present to the great thanksgiving day. To be communicated onely to Independents [A satirical drama, chiefly in prose.]",
+      "source": "blbooks",
+      "ocr_score": 0.51,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 42213,
+      "year": 1662,
+      "title": "Any Thing for a Quiet Life. A comedy [in five acts, and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.582,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 45431,
+      "year": 1596,
+      "title": "A Spirituall Song: conteining an Historicall Discourse from the infancie of the world, vntill this present time: setting downe the treacherous practises of the wicked, against the children of God, etc",
+      "source": "blbooks",
+      "ocr_score": 0.518,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 45535,
+      "year": 1680,
+      "title": "The Loving Enemies: a comedy [in five acts, in prose and verse]",
+      "source": "blbooks",
+      "ocr_score": 0.642,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 45840,
+      "year": 1623,
+      "title": "The Devils Law-Case; or, When Women go to Law, the Devil is full of Businesse. A new Tragecomœdy [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.474,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 47557,
+      "year": 1659,
+      "title": "Appius and Virginia; a tragedy [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.499,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 47993,
+      "year": 1678,
+      "title": "Friendship in Fashion. A comedy [in five acts and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.628,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 48159,
+      "year": 1674,
+      "title": "Macbeth : a tragedy. With all the alterations, amendments, additions, and new songs [by Sir William Davenant] . As it is now acted at the Dukes Theatre [Anonymous.]",
+      "source": "blbooks",
+      "ocr_score": 0.623,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 49199,
+      "year": 1685,
+      "title": "The Unhappy Favourite: or, the Earl of Essex. A tragedy [Inverse.] etc",
+      "source": "blbooks",
+      "ocr_score": 0.601,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 49558,
+      "year": 1677,
+      "title": "The Wrangling Lovers: or, the Invisible Mistress. A comedy [in five acts, and in prose. By E. Ravenscroft]",
+      "source": "blbooks",
+      "ocr_score": 0.603,
+      "legibility": -1.0
+    }
+  ]
+}

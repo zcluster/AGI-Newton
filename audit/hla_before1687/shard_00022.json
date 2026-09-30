@@ -1,0 +1,40 @@
+{
+  "base_url": "https://huggingface.co/datasets/mhla/pre1900-corpus/resolve/ff332ef64f896c8d44672b4d1d0c752029e32f29",
+  "shard": 22,
+  "total_rows": 50000,
+  "with_text": false,
+  "rows": [
+    {
+      "file_row_number": 596,
+      "year": 1660,
+      "title": "Boscobel, or The history of His Majesties [Charles II.] miraculous preservation after the battle of Worcester, 3 Sept. 1651.",
+      "source": "institutional-books",
+      "ocr_score": 0.99,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 24739,
+      "year": 1634,
+      "title": "The Relation of the death of that great Generalissimo (of his Imperiall Maiestie) the Duke of Meckleburg, Fridland, Sagan, and great Glogaw ...",
+      "source": "institutional-books",
+      "ocr_score": 0.98,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 40116,
+      "year": 1547,
+      "title": "The Ethiques of Aristotle : that is to saye, preceptes of good behavoure and perfighte honestie",
+      "source": "institutional-books",
+      "ocr_score": 0.96,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 48443,
+      "year": 1604,
+      "title": "Gleanings from the records of the royal burgh of Peebles, 1604-52.",
+      "source": "institutional-books",
+      "ocr_score": 0.96,
+      "legibility": -1.0
+    }
+  ]
+}

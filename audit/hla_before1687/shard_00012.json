@@ -1,0 +1,536 @@
+{
+  "base_url": "https://huggingface.co/datasets/mhla/pre1900-corpus/resolve/ff332ef64f896c8d44672b4d1d0c752029e32f29",
+  "shard": 12,
+  "total_rows": 50000,
+  "with_text": false,
+  "rows": [
+    {
+      "file_row_number": 369,
+      "year": 1668,
+      "title": "Money is an Asse; a Comedy [in five acts and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.385,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 726,
+      "year": 1639,
+      "title": "Philaster, 1622",
+      "source": "blbooks",
+      "ocr_score": 0.525,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 958,
+      "year": 1622,
+      "title": "The troublesome Raigne and lamentable Death of Edward the Second, King of England: with the tragicall fall of proud Mortimer: and also the life and death of Peirs Gaveston, the great Earle of Cornewall, and mighty favorite of King Edward the second, etc [A tragedy, in five acts and in verse.]",
+      "source": "blbooks",
+      "ocr_score": 0.545,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 1166,
+      "year": 1678,
+      "title": "The Traitor to Himself, or, Man's Heart his greatest enemy : a moral interlude in heroic verse, etc [By W. Johns.]",
+      "source": "blbooks",
+      "ocr_score": 0.512,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 1492,
+      "year": 1636,
+      "title": "The Great Duke of Florence. A comicall historie [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.587,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 2995,
+      "year": 1678,
+      "title": "The English Lawyer; a comedy, etc [Freely adapted from Codrington's translation of George Ruggle's 'Ignoramus.']",
+      "source": "blbooks",
+      "ocr_score": 0.593,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 3065,
+      "year": 1633,
+      "title": "A tragedy called All's Lost by Lust [In five acts, in verse and prose.]",
+      "source": "blbooks",
+      "ocr_score": 0.493,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 4254,
+      "year": 1665,
+      "title": "A new Play call'd the Pragmatical Jesuit Newleven'd. A comedy [With a portrait.]",
+      "source": "blbooks",
+      "ocr_score": 0.536,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 5292,
+      "year": 1668,
+      "title": "Tarugo's Wiles: or, The Coffee-house. A comedy [in five acts and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.512,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 5584,
+      "year": 1612,
+      "title": "Epithalamia, or Nuptiall poems upon the most blessed and happie mariage betweene the high and mightie Prince Frederick the Fifth, Count Palatine of the Rhein, &c., and Princesse Elizabeth, sole daughter to Iames, by the grace of God, king of Great Britaine, France and Ireland. Celebrated at White-Hall, the fourteenth of Februarie 1612.",
+      "source": "institutional-books",
+      "ocr_score": 0.97,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 6076,
+      "year": 1677,
+      "title": "Madam Fickle: or the Witty False One. A Comedy [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.585,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 7480,
+      "year": 1683,
+      "title": "Eromena: or, The noble stranger. A novel ...",
+      "source": "institutional-books",
+      "ocr_score": 0.98,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 8879,
+      "year": 1672,
+      "title": "The Miser: a comedy [in five acts and in prose: founded on Molière's 'L'Avare'] ... Written by T. Shadwell",
+      "source": "blbooks",
+      "ocr_score": 0.676,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 8882,
+      "year": 1655,
+      "title": "The Twins: a tragi-comedy [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.574,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 9585,
+      "year": 1634,
+      "title": "The Jealous Lovers. A Comedie [in five acts and in verse], presented to their gracious Majesties at Cambridge, by the Students of Trinity College",
+      "source": "blbooks",
+      "ocr_score": 0.491,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 11188,
+      "year": 1637,
+      "title": "The Schoole of Complement [A comedy in five acts, in prose and verse.]",
+      "source": "blbooks",
+      "ocr_score": 0.508,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 11725,
+      "year": 1672,
+      "title": "Cambyses, King of Persia, a tragedy [in five acts and in verse], etc",
+      "source": "blbooks",
+      "ocr_score": 0.505,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 12843,
+      "year": 1648,
+      "title": "Il Pastor Fido. The faithfull Shepheard [Translated from the Italian of Guarini.] With an addition of divers other Poems, concluding with a short discourse of the long Civill Warres of Rome ... by Richard Fanshawe, Esq [With an engraved portrait of Guarini by Thomas Cross.]",
+      "source": "blbooks",
+      "ocr_score": 0.612,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 13186,
+      "year": 1662,
+      "title": "The Poor Scholar. A comedy [in five acts, in prose and verse]",
+      "source": "blbooks",
+      "ocr_score": 0.559,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 13525,
+      "year": 1640,
+      "title": "The Dutchesse of Malfy, etc",
+      "source": "blbooks",
+      "ocr_score": 0.509,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 15683,
+      "year": 1675,
+      "title": "The Mock Tempest; or, the Enchanted Castle",
+      "source": "blbooks",
+      "ocr_score": 0.609,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 15893,
+      "year": 1640,
+      "title": "The Swaggering Damsell. A comedy. Written by R. C. (Rob. Chamberlaine.)",
+      "source": "blbooks",
+      "ocr_score": 0.471,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 15999,
+      "year": 1677,
+      "title": "The Destruction of Jerusalem by Titus Vespasian. In two parts, etc. Few MS. notes",
+      "source": "blbooks",
+      "ocr_score": 0.652,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 16747,
+      "year": 1672,
+      "title": "The white devil, etc",
+      "source": "blbooks",
+      "ocr_score": 0.531,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 17594,
+      "year": 1630,
+      "title": "The Phoenix, etc [A dramatic piece, in verse and prose. By T. Middleton.]",
+      "source": "blbooks",
+      "ocr_score": 0.436,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 17933,
+      "year": 1606,
+      "title": "If you know not me, you know no bodie: or the troubles of Queen Elizabeth [A play in prose and verse by T. H.]",
+      "source": "blbooks",
+      "ocr_score": 0.488,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 18344,
+      "year": 1673,
+      "title": "The Dutch Lover: a comedy ... Written by Mrs. A. Bhen [sic]",
+      "source": "blbooks",
+      "ocr_score": 0.643,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 18423,
+      "year": 1678,
+      "title": "The French Conjuror. A comedy [in five acts and in prose] ... Written by T [homas] P [orter], Gent",
+      "source": "blbooks",
+      "ocr_score": 0.534,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 18907,
+      "year": 1661,
+      "title": "with additions",
+      "source": "blbooks",
+      "ocr_score": 0.499,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 19666,
+      "year": 1637,
+      "title": "Hide Parke, a comedie [in five acts, in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.554,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 20499,
+      "year": 1656,
+      "title": "The Faithfull Shepherdesse ... The third Edition, with Addition",
+      "source": "blbooks",
+      "ocr_score": 0.599,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 20838,
+      "year": 1631,
+      "title": "The Staple of Newes. A comedie acted in the yeare, 1625. By his Maiesties Servants",
+      "source": "blbooks",
+      "ocr_score": 0.463,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 22373,
+      "year": 1668,
+      "title": "The Usurper, a tragedy [in five acts, and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.568,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 22808,
+      "year": 1633,
+      "title": "A match at mid-night : A pleasant comoedie: as it hath beene acted by the Children of the Revells",
+      "source": "blbooks",
+      "ocr_score": 0.396,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 22898,
+      "year": 1655,
+      "title": "Polyeuctes, or the Martyr. A tragedy [in five acts and in verse, translated from Corneille]",
+      "source": "blbooks",
+      "ocr_score": 0.602,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 23039,
+      "year": 1668,
+      "title": "The Rivals : A comedy, etc",
+      "source": "blbooks",
+      "ocr_score": 0.441,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 23334,
+      "year": 1675,
+      "title": "The Mulberry Garden, a comedy [in five acts and in verse], etc",
+      "source": "blbooks",
+      "ocr_score": 0.639,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 25189,
+      "year": 1679,
+      "title": "Noah's Flood; or, The Destruction of the World, an opera [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.472,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 25642,
+      "year": 1682,
+      "title": "The Loyal Brother; or, the Persian Prince. A tragedy [in five acts and in verse. Prologue and epilogue by John Dryden]",
+      "source": "blbooks",
+      "ocr_score": 0.603,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 26059,
+      "year": 1661,
+      "title": "The Mayor of Quinborough; a comedy [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.544,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 26384,
+      "year": 1672,
+      "title": "The Soul's Warfare, comically digested into scenes, acted between the Soul and hr enemies, etc [In three acts and in verse. By R. T, i.e. Richard Tuke.]",
+      "source": "blbooks",
+      "ocr_score": 0.529,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 26692,
+      "year": 1680,
+      "title": "The Woman-Captain: a comedy, etc [in five acts, and in prose, with songs.]",
+      "source": "blbooks",
+      "ocr_score": 0.585,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 26865,
+      "year": 1673,
+      "title": "The conquest of Granada by the Spaniards: in two parts. Acted at the Theater-Royall",
+      "source": "blbooks",
+      "ocr_score": 0.602,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 27389,
+      "year": 1663,
+      "title": "Hic et Ubique: or, The Humors of Dublin. A comedy [in five acts and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.512,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 28201,
+      "year": 1582,
+      "title": "The first booke of the Christian exercise, appertayning to resolution ...",
+      "source": "institutional-books",
+      "ocr_score": 0.95,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 28741,
+      "year": 1615,
+      "title": "Cupid's Revenge [A tragedy, in five acts, and in prose and verse.] By J. F [and F. Beaumont.]",
+      "source": "blbooks",
+      "ocr_score": 0.513,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 29282,
+      "year": 1652,
+      "title": "The voyages and travels of that renowned Captain Sir F. Drake into the West Indies, and round about the world, etc",
+      "source": "blbooks",
+      "ocr_score": 0.418,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 29666,
+      "year": 1673,
+      "title": "Epsom-Wells. A comedy, etc [in five acts and in prose.]",
+      "source": "blbooks",
+      "ocr_score": 0.628,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 30484,
+      "year": 1677,
+      "title": "Antony and Cleopatra; a tragedy [in five acts and in verse], etc",
+      "source": "blbooks",
+      "ocr_score": 0.663,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 30631,
+      "year": 1618,
+      "title": "The pennyles pilgrimage or The money-lesse perambulation of John Taylor, alias the Kings Majesties water-poet. How he travailed on foot from London to Edenborough in Scotland not carrying any money to or fro.",
+      "source": "institutional-books",
+      "ocr_score": 0.99,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 31003,
+      "year": 1670,
+      "title": "Flora's Vagaries; a comedy [in five acts and in prose. By R. Rhodes]",
+      "source": "blbooks",
+      "ocr_score": 0.529,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 32443,
+      "year": 1683,
+      "title": "The Duke of Guise : A tragedy. Acted by their Majesties Servants. Written by Mr. Dryden, and Mr. Lee",
+      "source": "blbooks",
+      "ocr_score": 0.666,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 35039,
+      "year": 1679,
+      "title": "The Tragedy of Sertorius, etc [In verse.]",
+      "source": "blbooks",
+      "ocr_score": 0.616,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 35559,
+      "year": 1633,
+      "title": "The English Traveller [A tragi-comedy in five acts, chiefly in verse.]",
+      "source": "blbooks",
+      "ocr_score": 0.509,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 36751,
+      "year": 1583,
+      "title": "A remembraunce of the precious vertues of the Right Honourable and Reverend Judge, Sir James Dier, who disseased at great Staughton, the 24th of Marche, 1582. The reports of George Whetstons.",
+      "source": "institutional-books",
+      "ocr_score": 0.94,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 37324,
+      "year": 1679,
+      "title": "Troilus and Cressida, or, Truth found too late. A tragedy as it is acted at the Dukes Theatre. To which is prefix'd, a preface containing the grounds of criticism in tragedy",
+      "source": "blbooks",
+      "ocr_score": 0.637,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 39251,
+      "year": 1613,
+      "title": "The Insatiate Countesse. A Tragedie [in five acts, in prose and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.559,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 40168,
+      "year": 1669,
+      "title": "Pluto Furens & Vinctus; or, The raging Devil bound. A modern farce [in three acts in prose] . Per Philocomicum [i.e. C. F.]",
+      "source": "blbooks",
+      "ocr_score": 0.476,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 41092,
+      "year": 1657,
+      "title": "The Queenes Exchange, a comedy, etc [In verse. Edited by H. Brome.]",
+      "source": "blbooks",
+      "ocr_score": 0.608,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 41586,
+      "year": 1681,
+      "title": "Lucius Junius Brutus, Father of his Country. A tragedy [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.649,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 42371,
+      "year": 1669,
+      "title": "The history of Henry the Fifth ... 1668. A facsimile published by Cornmarket Press from the copy in the Birmingham Shakespeare Library",
+      "source": "blbooks",
+      "ocr_score": 0.572,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 42674,
+      "year": 1671,
+      "title": "An evening's love, or The mock astrologer. Acted at the Theater Royal, by His Majesties Servants",
+      "source": "blbooks",
+      "ocr_score": 0.747,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 43855,
+      "year": 1671,
+      "title": "The Womens Conquest : a tragi-comedy : as it was acted by His Highness the Duke of York's servants",
+      "source": "blbooks",
+      "ocr_score": 0.645,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 45679,
+      "year": 1678,
+      "title": "Huntington Divertisement, or, an Enterlude for the generall entertainment at the county-feast, held at Merchant-Taylors Hall, June 20, 1678 [By W. M.]",
+      "source": "blbooks",
+      "ocr_score": 0.613,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 48099,
+      "year": 1685,
+      "title": "A Fond Husband: or, the Plotting Sisters. A comedy [in five acts and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.687,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 48755,
+      "year": 1677,
+      "title": "The Rover, or, the Banish't Cavaliers [A comedy in five acts and in prose, by Aphara Behn. Part the first.]",
+      "source": "blbooks",
+      "ocr_score": 0.634,
+      "legibility": -1.0
+    }
+  ]
+}

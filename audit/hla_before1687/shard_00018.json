@@ -1,0 +1,40 @@
+{
+  "base_url": "https://huggingface.co/datasets/mhla/pre1900-corpus/resolve/ff332ef64f896c8d44672b4d1d0c752029e32f29",
+  "shard": 18,
+  "total_rows": 50000,
+  "with_text": false,
+  "rows": [
+    {
+      "file_row_number": 9707,
+      "year": 1619,
+      "title": "The pleasant history of John Winchcomb, in his younger yeares called lack of Newberie, the famous and worthy clothier of England, declaring his life and love, together with his charitable deeds and great hospitality, etc.",
+      "source": "institutional-books",
+      "ocr_score": 0.96,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 14015,
+      "year": 1659,
+      "title": "Early records of Dedham, Massachusetts.",
+      "source": "institutional-books",
+      "ocr_score": 0.91,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 19892,
+      "year": 1659,
+      "title": "Early records of Dedham, Massachusetts.",
+      "source": "institutional-books",
+      "ocr_score": 0.94,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 41185,
+      "year": 1663,
+      "title": "Acts and resolves passed by the General Court.",
+      "source": "institutional-books",
+      "ocr_score": 1.0,
+      "legibility": -1.0
+    }
+  ]
+}

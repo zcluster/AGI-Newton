@@ -1,0 +1,19 @@
+{
+  "method": "Manual review of every distinct year/title pair; title-level triage, not full-text validation",
+  "rows": 395,
+  "year_title_pairs": 357,
+  "row_categories": {
+    "other_by_title": 384,
+    "ambiguous": 4,
+    "science_adjacent": 2,
+    "science_candidate": 4,
+    "mixed_literary": 1
+  },
+  "year_title_categories": {
+    "other_by_title": 346,
+    "ambiguous": 4,
+    "science_adjacent": 2,
+    "science_candidate": 4,
+    "mixed_literary": 1
+  }
+}

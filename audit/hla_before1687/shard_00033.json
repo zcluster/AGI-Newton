@@ -1,0 +1,16 @@
+{
+  "base_url": "https://huggingface.co/datasets/mhla/pre1900-corpus/resolve/ff332ef64f896c8d44672b4d1d0c752029e32f29",
+  "shard": 33,
+  "total_rows": 50000,
+  "with_text": false,
+  "rows": [
+    {
+      "file_row_number": 48969,
+      "year": 1592,
+      "title": "Pandosto, the triumph of time. Wherein is discovered by a pleasant historie, that although by the means of sinister fortune Truth may be concealed, yet by time in spite of fortune it is most manifestly revealed.",
+      "source": "institutional-books",
+      "ocr_score": 0.97,
+      "legibility": -1.0
+    }
+  ]
+}

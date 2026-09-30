@@ -1,0 +1,472 @@
+{
+  "base_url": "https://huggingface.co/datasets/mhla/pre1900-corpus/resolve/ff332ef64f896c8d44672b4d1d0c752029e32f29",
+  "shard": 10,
+  "total_rows": 50000,
+  "with_text": false,
+  "rows": [
+    {
+      "file_row_number": 95,
+      "year": 1606,
+      "title": "The Isle of Guls. As it hath been often played in the blacke Fryars, by the Children of the Reuels",
+      "source": "blbooks",
+      "ocr_score": 0.472,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 272,
+      "year": 1677,
+      "title": "The Scornful Ladie ... 1616",
+      "source": "blbooks",
+      "ocr_score": 0.691,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 370,
+      "year": 1683,
+      "title": "The vindication: or The parallel of the French Holy-League, and the English League and Covenant, turn'd into a seditious libell against the King and his Royal Highness, by Thomas Hunt and the author of the Reflections upon the pretended parallel in the play called The Duke of Guise. Written by Mr. Dryden",
+      "source": "blbooks",
+      "ocr_score": 0.656,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 1826,
+      "year": 1591,
+      "title": "Sir P.S., his Astrophel and Stella.",
+      "source": "institutional-books",
+      "ocr_score": 0.94,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 2462,
+      "year": 1685,
+      "title": "The Mistaken Beauty, or, the Lyar. A comedy [A translation of P. Corneille's 'Le Menteur.']",
+      "source": "blbooks",
+      "ocr_score": 0.542,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 3043,
+      "year": 1686,
+      "title": "Don Carlos Prince of Spain ... The third edition corrected",
+      "source": "blbooks",
+      "ocr_score": 0.619,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 3328,
+      "year": 1591,
+      "title": "Sir P.S., his Astrophel and Stella.",
+      "source": "institutional-books",
+      "ocr_score": 0.95,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 5666,
+      "year": 1652,
+      "title": "A Joviall Crew: or, the Merry Beggar. Presented in a comedie, etc",
+      "source": "blbooks",
+      "ocr_score": 0.659,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 7427,
+      "year": 1641,
+      "title": "Mercurius Britanicus; or, the English Intelligencer. A Tragic-Comedy, at Paris. Acted with great applause [In four acts and in prose. By R. Braithwait.]",
+      "source": "blbooks",
+      "ocr_score": 0.453,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 7953,
+      "year": 1661,
+      "title": "A Pleasant Comedie, called The Two Merry Milke-Maids. Or, the Best words weare the garland. By I. C",
+      "source": "blbooks",
+      "ocr_score": 0.392,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 9484,
+      "year": 1670,
+      "title": "The Villain, a tragedy [in five acts and in verse], etc",
+      "source": "blbooks",
+      "ocr_score": 0.596,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 9530,
+      "year": 1667,
+      "title": "The Amazon Queen; or, The Amours of Thalestris to Alexander the Great. A tragi-comedy [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.481,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 9721,
+      "year": 1605,
+      "title": "A Pleasant conceited Comedie, Wherein is shewed how a man may chuse a good Wife from a bad. As it hath bene sundry times acted by the Earle of Worcesters Seruants [Attributed in a MS. note on the titlepage to Joshua Cooke.]",
+      "source": "blbooks",
+      "ocr_score": 0.557,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 9791,
+      "year": 1648,
+      "title": "The Woman Hater [a comedy, in five acts, in prose and verse; by J. Fletcher and F. Beaumont?]",
+      "source": "blbooks",
+      "ocr_score": 0.51,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 10619,
+      "year": 1669,
+      "title": "The Tragedie of Hero and Leander [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.565,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 13399,
+      "year": 1646,
+      "title": "Bussy d'Ambois: a tragedie, etc",
+      "source": "blbooks",
+      "ocr_score": 0.438,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 13498,
+      "year": 1597,
+      "title": "Brittons Bowre of delights, contayning many, most delectable and fine devices, of rare epitaphes, pleasant poems, pastoralls sonets.",
+      "source": "institutional-books",
+      "ocr_score": 0.95,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 14347,
+      "year": 1640,
+      "title": "A Mad World my Masters: a comedy. As it hath bin often acted at the Private House in Salisbury Court, by her Majesties Servants. Composed by T. M. Gent [i.e. T. Middleton.]",
+      "source": "blbooks",
+      "ocr_score": 0.509,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 14766,
+      "year": 1680,
+      "title": "The Female Prelate: being the history of the life and death of Pope Joan. A tragedy [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.578,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 15122,
+      "year": 1677,
+      "title": "The Debauchee: or, the Credulous cuckold, a comedy, etc [Adapted by Aphra Behn from Richard Brome's 'Mad Couple well matched.']",
+      "source": "blbooks",
+      "ocr_score": 0.658,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 16685,
+      "year": 1640,
+      "title": "St Patrick for Ireland. The first Part",
+      "source": "blbooks",
+      "ocr_score": 0.487,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 18663,
+      "year": 1678,
+      "title": "The Fool turn'd Critick: a comedy ... By T. D. Gent [i.e. Thomas D'Urfey.]",
+      "source": "blbooks",
+      "ocr_score": 0.57,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 19070,
+      "year": 1661,
+      "title": "The City-Night-Cap: or, Crede quod habes, & habes. A tragi-comedy ... As it was acted with great applause, by Her Majesties servants, at the Phœnix in Drury Lane",
+      "source": "blbooks",
+      "ocr_score": 0.494,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 19701,
+      "year": 1685,
+      "title": "Cuckolds-Haven: or, an Alderman no Conjurer; a farce [in three acts and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.617,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 21871,
+      "year": 1672,
+      "title": "Tyrannick love, or The royal martyr. A tragedy. As it is acted by his Majesties Servants, at the Theatre Royal",
+      "source": "blbooks",
+      "ocr_score": 0.634,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 22123,
+      "year": 1673,
+      "title": "The Empress of Morocco. A tragedy. With sculptures. As it is acted at the Duke's theatre.",
+      "source": "institutional-books",
+      "ocr_score": 0.97,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 23362,
+      "year": 1638,
+      "title": "The Wise-woman of Hogsdon. A Comedie [in five acts and principally in prose], etc",
+      "source": "blbooks",
+      "ocr_score": 0.504,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 23494,
+      "year": 1667,
+      "title": "The English Princess, or, the Death of Richard the III. A tragedy [in five acts and in verse. By J. Caryl]",
+      "source": "blbooks",
+      "ocr_score": 0.654,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 26209,
+      "year": 1674,
+      "title": "The Comical Dream, or, the Tempest: a mock poem, etc",
+      "source": "blbooks",
+      "ocr_score": 0.454,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 26574,
+      "year": 1678,
+      "title": "The Elder Brother: a Comedie ... Written by F. Beaumont and J. Fletcher [or more probably written by Fletcher, and revised by Massinger] ... The second edition, corrected and amended",
+      "source": "blbooks",
+      "ocr_score": 0.56,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 27044,
+      "year": 1679,
+      "title": "Comedies and Tragedies ... Never printed before, and now published by the authours originall copies [With a portrait of Fletcher.]",
+      "source": "blbooks",
+      "ocr_score": 0.677,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 29324,
+      "year": 1638,
+      "title": "The Dukes Mistris [A tragedy, in five acts, in verse.]",
+      "source": "blbooks",
+      "ocr_score": 0.576,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 29767,
+      "year": 1681,
+      "title": "The second part of The Rover [A comedy.]",
+      "source": "blbooks",
+      "ocr_score": 0.529,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 30707,
+      "year": 1661,
+      "title": "The Fatal Contract, a French Tragedy [in five acts and in verse], etc [Edited by A. T. and A. P.]",
+      "source": "blbooks",
+      "ocr_score": 0.488,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 31087,
+      "year": 1670,
+      "title": "Tartuffe; or, the French Puritan, a comedy [in five acts, in verse] render'd into English with much addition and advantage by M. Medbourne, etc",
+      "source": "blbooks",
+      "ocr_score": 0.464,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 31115,
+      "year": 1611,
+      "title": "Catiline his Conspiracy [A tragedy, in five acts and in verse.]",
+      "source": "blbooks",
+      "ocr_score": 0.564,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 32810,
+      "year": 1671,
+      "title": "The Roman Empress. A tragedy [in five acts and in verse]",
+      "source": "blbooks",
+      "ocr_score": 0.633,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 32817,
+      "year": 1656,
+      "title": "The Siege of Rhodes made a representation by the art of prospective in scenes, and the story sung in recitative musick, etc [In verse.]",
+      "source": "blbooks",
+      "ocr_score": 0.584,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 33190,
+      "year": 1667,
+      "title": "The Indian Emperour, or, The conquest of Mexico by the Spaniards. Being the sequel of the Indian Queen",
+      "source": "blbooks",
+      "ocr_score": 0.613,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 34201,
+      "year": 1675,
+      "title": "The citizen turn'd gentleman: a comedy, etc [in five acts and in prose. Taken from Molière's 'Le Bourgeois Gentilhomme' and 'Monsieur de Pourceaugnac.']",
+      "source": "blbooks",
+      "ocr_score": 0.463,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 34756,
+      "year": 1675,
+      "title": "The Siege of Constantinople; a tragedy, etc [In verse. By Henry Neville Payne.]",
+      "source": "blbooks",
+      "ocr_score": 0.58,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 35978,
+      "year": 1660,
+      "title": "The Subjects Joy for the King's Restoration, cheerfully made known in a sacred masque [in verse] . By the author of Inquisitio Anglicana",
+      "source": "blbooks",
+      "ocr_score": 0.579,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 38635,
+      "year": 1685,
+      "title": "Circe, a tragedy. As it is acted at His Royal Highness the Duke of York's theatre",
+      "source": "blbooks",
+      "ocr_score": 0.639,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 39611,
+      "year": 1663,
+      "title": "The Politician cheated. A new comedy [in five acts and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.542,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 40142,
+      "year": 1676,
+      "title": "The Libertine: a tragedy, etc [in five acts, in verse and in prose.]",
+      "source": "blbooks",
+      "ocr_score": 0.608,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 40346,
+      "year": 1667,
+      "title": "The Roman Generalls; or, the Distressed Ladies [A drama, in five acts and in verse.]",
+      "source": "blbooks",
+      "ocr_score": 0.558,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 41094,
+      "year": 1597,
+      "title": "Brittons Bowre of delights, contayning many, most delectable and fine devices, of rare epitaphes, pleasant poems, pastoralls sonets.",
+      "source": "institutional-books",
+      "ocr_score": 0.96,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 41157,
+      "year": 1599,
+      "title": "The passionate pilgrime.",
+      "source": "institutional-books",
+      "ocr_score": 0.93,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 42008,
+      "year": 1638,
+      "title": "The Conspiracy, a tragedy [In five acts, in prose and verse.]",
+      "source": "blbooks",
+      "ocr_score": 0.452,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 43393,
+      "year": 1673,
+      "title": "The Reformation. A comedy [In five acts and in prose. By - Arrowsmith.]",
+      "source": "blbooks",
+      "ocr_score": 0.566,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 43581,
+      "year": 1603,
+      "title": "Saint Marie Magdalens conversion; [a poem.",
+      "source": "institutional-books",
+      "ocr_score": 0.95,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 43875,
+      "year": 1669,
+      "title": "Poems, to which is added ... Corneille's Pompey and Horace, tragedies. With several other translations out of French",
+      "source": "blbooks",
+      "ocr_score": 0.613,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 47567,
+      "year": 1676,
+      "title": "The Man of Mode, or Sr Fopling Flutter; a comedy [in five acts, and in prose]",
+      "source": "blbooks",
+      "ocr_score": 0.649,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 47929,
+      "year": 1636,
+      "title": "A Challenge for Beautie. As it hath beene sundry times acted by the King's Majesties Servants: at the Blackefriers, and at the Globe on the Banke-side",
+      "source": "blbooks",
+      "ocr_score": 0.488,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 48284,
+      "year": 1678,
+      "title": "The rambling Justice, or the jealous husbands. With the humours of Sir John Twiford [A comedy, in five acts, and in prose, by J. Leanerd. Borrowed from T. Middleton's 'More Dissemblers besides Women.']",
+      "source": "blbooks",
+      "ocr_score": 0.526,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 49398,
+      "year": 1668,
+      "title": "The Mulberry Garden, a comedy [in five acts and in verse], etc",
+      "source": "blbooks",
+      "ocr_score": 0.625,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 49786,
+      "year": 1668,
+      "title": "The Great Favourite, or, The Duke of Lerma [A tragedy in five acts, and in verse.]",
+      "source": "blbooks",
+      "ocr_score": 0.461,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 49872,
+      "year": 1631,
+      "title": "A king and no king. London 1619",
+      "source": "blbooks",
+      "ocr_score": 0.49,
+      "legibility": -1.0
+    }
+  ]
+}

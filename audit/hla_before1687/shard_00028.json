@@ -1,0 +1,80 @@
+{
+  "base_url": "https://huggingface.co/datasets/mhla/pre1900-corpus/resolve/ff332ef64f896c8d44672b4d1d0c752029e32f29",
+  "shard": 28,
+  "total_rows": 50000,
+  "with_text": false,
+  "rows": [
+    {
+      "file_row_number": 4528,
+      "year": 1665,
+      "title": "The English rogue: described, in the life of Meriton Latroon, a witty extravagant. Being a compleat history of the most eminent cheats of both sexes...",
+      "source": "institutional-books",
+      "ocr_score": 0.98,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 13689,
+      "year": 1666,
+      "title": "Philosophical transactions.",
+      "source": "institutional-books",
+      "ocr_score": 0.96,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 14103,
+      "year": 1570,
+      "title": "The most excellent and pleasant metaphoricall historie of Pesistratus and Catanea ...",
+      "source": "institutional-books",
+      "ocr_score": 0.95,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 14671,
+      "year": 1606,
+      "title": "A new merry newes, as merry as can bee, from Italy, Barbary, Turkie and Candee.",
+      "source": "institutional-books",
+      "ocr_score": 0.96,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 15738,
+      "year": 1595,
+      "title": "The old wives tale : a pleasant conceited comedie",
+      "source": "institutional-books",
+      "ocr_score": 0.96,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 26179,
+      "year": 1600,
+      "title": "Pasquils mistresse, or The worthie and unworthie woman. With his description and passion of the fine jealousie.",
+      "source": "institutional-books",
+      "ocr_score": 0.96,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 34844,
+      "year": 1665,
+      "title": "The English rogue: described, in the life of Meriton Latroon, a witty extravagant. Being a compleat history of the most eminent cheats of both sexes...",
+      "source": "institutional-books",
+      "ocr_score": 0.99,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 39017,
+      "year": 1609,
+      "title": "Shake-speares Sonnets : neuer before imprinted.",
+      "source": "institutional-books",
+      "ocr_score": 0.97,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 45251,
+      "year": 1613,
+      "title": "The scourge of Venus, or the wanton lady : with the rare birth of Adonis",
+      "source": "institutional-books",
+      "ocr_score": 0.97,
+      "legibility": -1.0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "cutoff_exclusive": 1687,
+  "complete": true,
+  "with_text": false,
+  "base_url": "https://huggingface.co/datasets/mhla/pre1900-corpus/resolve/ff332ef64f896c8d44672b4d1d0c752029e32f29",
+  "shards_read": 42,
+  "total_rows": 2074160,
+  "pre1687_rows": 395,
+  "failures": []
+}

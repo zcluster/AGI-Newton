@@ -158,10 +158,13 @@ scores for both randomly initialized models.
 
 The first complete language-bootstrap experiment is documented in
 [`V2_BOOTSTRAP_EXPERIMENT.md`](V2_BOOTSTRAP_EXPERIMENT.md). It uses PYCCLE's
-public EEBO Phase I release. Hla's public pre-1900 dataset is a plausible
-alternative, but this repository has not completed a source-verified pre-1687
-Hla subset audit or retained its files locally; its suitability for a 200 MB
-bootstrap remains unmeasured here.
+public EEBO Phase I release. A complete, revision-pinned metadata census of
+Hla's public corpus found 395 records dated before 1687 (357 distinct
+year/title pairs). Manual title triage found four science candidates, not
+four verified pre-Newtonian scientific works. See the cached
+[`Hla census`](audit/hla_before1687/README.md) and its per-record catalogue.
+Full-text date/provenance validation and usable-token counts remain unfinished;
+its suitability for a 200 MB bootstrap is not yet established.
 
 The next controlled series, including the learned tokenizer and the V3--V5
 reasoning interventions, is documented in

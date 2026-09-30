@@ -1,0 +1,32 @@
+{
+  "base_url": "https://huggingface.co/datasets/mhla/pre1900-corpus/resolve/ff332ef64f896c8d44672b4d1d0c752029e32f29",
+  "shard": 31,
+  "total_rows": 50000,
+  "with_text": false,
+  "rows": [
+    {
+      "file_row_number": 4725,
+      "year": 1622,
+      "title": "The tragedie of King Richard the third : contayning his treacherous plots against his brother Clarence: the pittifull murder of his innocent nephewes: his tyrannicall vsurpation: with the whole course of his detested life, and most deserued death. As it hath been lately acted by the kings maiesties seruants",
+      "source": "institutional-books",
+      "ocr_score": 0.97,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 20832,
+      "year": 1578,
+      "title": "The wonderfull woorkmanship of the world : wherin is conteined an excellent discourse of Christian naturall philosophie, concernyng the fourme, knowledge, and use of all things created ...",
+      "source": "institutional-books",
+      "ocr_score": 0.97,
+      "legibility": -1.0
+    },
+    {
+      "file_row_number": 45715,
+      "year": 1645,
+      "title": "A consideration of certaine controversies at this time agitated in the kingdome of England, concerning the government of the church of God.",
+      "source": "institutional-books",
+      "ocr_score": 0.99,
+      "legibility": -1.0
+    }
+  ]
+}
