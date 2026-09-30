@@ -105,3 +105,35 @@ knowledge or autonomous discovery. Counterfactual physics cases are deliberately
 not claims about the real world. The old long-form suite is retained unchanged.
 Tongji job 2863130 is submitted with `afterok:2863128`, so it will not run concurrently
 with the replication on another GPU. No diagnostic outcomes are claimed yet.
+
+## Completed replication and interface diagnostic
+
+Job 2863128 completed, exit 0, elapsed 7m58s. Job 2863130 completed, exit 0,
+elapsed 19s. The full per-run outputs are under `audit/objective_replication/`
+and `audit/short_elimination/`. Run `python src/summarise_objective_replication.py`
+to reproduce all seed-level counts; it asserts identical probe identities,
+prompts, targets and candidate texts across all six runs and fails on missing runs.
+
+| Fine-tuning seed | Control exact /96 | Answer-only exact /96 | Control complete pairs /48 | Answer-only complete pairs /48 |
+| --- | ---: | ---: | ---: | ---: |
+| 1686 | 48 | 94 | 0 | 46 |
+| 1687 | 47 | 80 | 11 | 33 |
+| 1688 | 49 | 81 | 2 | 33 |
+
+The objective advantage repeats in both additional seeds but the first seed
+overstates typical performance. The control is not always constant-square:
+seed 1687 gets 11 complete pairs. All six models still score 0/12 abstract and
+0/4 physics generations in the unchanged long-form suite. Scientific loss for
+control/answer-only respectively is 5.05184/5.07719, 5.05206/5.06689 and
+5.05144/5.05299. Retention worsens in each paired seed, by differing amounts.
+No significance claim or independent-test-set confidence interval is made.
+
+In the eight short-answer probes, historical V11, continuation seed 1686 and
+answer-only seed 1686 each produce **0/8 exact answers**, including both arithmetic
+questions. Candidate ranking is 4/8, 4/8 and 3/8 respectively; these do not establish
+derivation. Answer-only outputs are dominated by its learned square/cube answer
+style even for arithmetic and symbolic questions. Thus a short-answer interface
+does not rescue transfer. The next capability intervention must address arithmetic
+and elimination rather than extend relation-reading training. Such modern synthetic
+mathematical calibration must remain explicitly separate from the historical-only
+arm, with the Newton exponent combination sealed and counterfactual tests retained.

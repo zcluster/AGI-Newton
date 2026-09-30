@@ -1,0 +1,233 @@
+{
+  "checkpoint": "runs/hpc_v11_bootstrap_seed1686/model.pt",
+  "label": "hpc_v11_primary_scan_plus_general_english",
+  "source_sha256": "8cad68de3af5bc808fe65e3914281fe0537d84c80d442bb584d48d2550b11baa",
+  "probes": [
+    {
+      "id": "arithmetic_1_3",
+      "group": "arithmetic",
+      "prompt": "Question: What is 1 minus 3?\nAnswer: ",
+      "target": "-2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "-2": {
+          "mean_nll": 7.484375,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 9.25,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 4.8125,
+          "tokens": 1
+        }
+      },
+      "winner": "2",
+      "generation": "Question: What is 1 minus 3?\nAnswer: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 1 minus 4: 100: 1 minus 4: 100: 100: 100: 100: 1"
+    },
+    {
+      "id": "arithmetic_3_1",
+      "group": "arithmetic",
+      "prompt": "Question: What is 3 minus 1?\nAnswer: ",
+      "target": "2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "-2": {
+          "mean_nll": 7.859375,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 9.1875,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 5.3125,
+          "tokens": 1
+        }
+      },
+      "winner": "2",
+      "generation": "Question: What is 3 minus 1?\nAnswer: A scruple to be taken, is a scruple to be taken, and a scruple to be taken, is a scruple to be taken, and a scruple to be taken, is a scruple to be taken, and a scruple to be"
+    },
+    {
+      "id": "abstract_3_1",
+      "group": "abstract",
+      "prompt": "A is proportional to x^3. B is proportional to x^1 divided by A.\nQuestion: What is B proportional to after eliminating A?\nAnswer: ",
+      "target": "-2",
+      "candidates": {
+        "-2": "x^-2.",
+        "0": "x^0.",
+        "2": "x^2."
+      },
+      "prompt_tokens": 43,
+      "scores": {
+        "-2": {
+          "mean_nll": 8.770833969116211,
+          "tokens": 3
+        },
+        "0": {
+          "mean_nll": 7.4479169845581055,
+          "tokens": 3
+        },
+        "2": {
+          "mean_nll": 6.84375,
+          "tokens": 3
+        }
+      },
+      "winner": "2",
+      "generation": "A is proportional to x^3. B is proportional to x^1 divided by A.\nQuestion: What is B proportional to after eliminating A?\nAnswer: What is B?\nAnswer.\nQuestion.\nWhat is B?\nAnswer.\nQuestion.\nWhat is B?\nAnswer.\nQuestion.\nWhat is B?\nAnswer.\nQu"
+    },
+    {
+      "id": "abstract_1_3",
+      "group": "abstract",
+      "prompt": "A is proportional to x^1. B is proportional to x^3 divided by A.\nQuestion: What is B proportional to after eliminating A?\nAnswer: ",
+      "target": "2",
+      "candidates": {
+        "-2": "x^-2.",
+        "0": "x^0.",
+        "2": "x^2."
+      },
+      "prompt_tokens": 43,
+      "scores": {
+        "-2": {
+          "mean_nll": 8.5625,
+          "tokens": 3
+        },
+        "0": {
+          "mean_nll": 7.2916669845581055,
+          "tokens": 3
+        },
+        "2": {
+          "mean_nll": 6.65625,
+          "tokens": 3
+        }
+      },
+      "winner": "2",
+      "generation": "A is proportional to x^1. B is proportional to x^3 divided by A.\nQuestion: What is B proportional to after eliminating A?\nAnswer: What is B?\nAnswer.\nQuestion.\nWhat is B?\nAnswer.\nQuestion.\nWhat is B?\nAnswer.\nQuestion.\nWhat is B?\nAnswer.\nQu"
+    },
+    {
+      "id": "symbolic_physics_3_1",
+      "group": "symbolic_physics",
+      "prompt": "T^2 is proportional to R^3. C is proportional to R^1 divided by T^2.\nQuestion: What is C proportional to after eliminating T?\nAnswer: ",
+      "target": "-2",
+      "candidates": {
+        "-2": "R^-2.",
+        "0": "R^0.",
+        "2": "R^2."
+      },
+      "prompt_tokens": 46,
+      "scores": {
+        "-2": {
+          "mean_nll": 7.21875,
+          "tokens": 3
+        },
+        "0": {
+          "mean_nll": 5.427083492279053,
+          "tokens": 3
+        },
+        "2": {
+          "mean_nll": 4.927083492279053,
+          "tokens": 3
+        }
+      },
+      "winner": "2",
+      "generation": "T^2 is proportional to R^3. C is proportional to R^1 divided by T^2.\nQuestion: What is C proportional to after eliminating T?\nAnswer: What is T?\nAnswer.\nQuestion.\nWhat is T?\nAnswer.\nQuestion.\nWhat is T?\nAnswer.\nQuestion.\nWhat is T?\nAnswer.\nQu"
+    },
+    {
+      "id": "symbolic_physics_1_3",
+      "group": "symbolic_physics",
+      "prompt": "T^2 is proportional to R^1. C is proportional to R^3 divided by T^2.\nQuestion: What is C proportional to after eliminating T?\nAnswer: ",
+      "target": "2",
+      "candidates": {
+        "-2": "R^-2.",
+        "0": "R^0.",
+        "2": "R^2."
+      },
+      "prompt_tokens": 46,
+      "scores": {
+        "-2": {
+          "mean_nll": 7.083333492279053,
+          "tokens": 3
+        },
+        "0": {
+          "mean_nll": 5.2916669845581055,
+          "tokens": 3
+        },
+        "2": {
+          "mean_nll": 4.6875,
+          "tokens": 3
+        }
+      },
+      "winner": "2",
+      "generation": "T^2 is proportional to R^1. C is proportional to R^3 divided by T^2.\nQuestion: What is C proportional to after eliminating T?\nAnswer: What is Required to Resolutions?\nAnswer: What is Required to Resolutions?\nAnswer: What is Required to Resolutions?\nAnswer: What is Required"
+    },
+    {
+      "id": "verbal_physics_3_1",
+      "group": "verbal_physics",
+      "prompt": "The square of the orbital period is as the cube of the distance. The circular turning tendency is as the distance divided by the square of the period.\nQuestion: To what power of distance is the turning tendency proportional?\nAnswer: ",
+      "target": "-2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 65,
+      "scores": {
+        "-2": {
+          "mean_nll": 8.5625,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 10.75,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 5.90625,
+          "tokens": 1
+        }
+      },
+      "winner": "2",
+      "generation": "The square of the orbital period is as the cube of the distance. The circular turning tendency is as the distance divided by the square of the period.\nQuestion: To what power of distance is the turning tendency proportional?\nAnswer: To what end is the difference of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the"
+    },
+    {
+      "id": "verbal_physics_1_3",
+      "group": "verbal_physics",
+      "prompt": "The square of the orbital period is as the distance. The circular turning tendency is as the cube of the distance divided by the square of the period.\nQuestion: To what power of distance is the turning tendency proportional?\nAnswer: ",
+      "target": "2",
+      "candidates": {
+        "-2": "-2.",
+        "0": "0.",
+        "2": "2."
+      },
+      "prompt_tokens": 65,
+      "scores": {
+        "-2": {
+          "mean_nll": 8.59375,
+          "tokens": 2
+        },
+        "0": {
+          "mean_nll": 10.8125,
+          "tokens": 1
+        },
+        "2": {
+          "mean_nll": 5.90625,
+          "tokens": 1
+        }
+      },
+      "winner": "2",
+      "generation": "The square of the orbital period is as the distance. The circular turning tendency is as the cube of the distance divided by the square of the period.\nQuestion: To what power of distance is the turning tendency proportional?\nAnswer: To what end is the difference of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the"
+    }
+  ],
+  "probes_file": "tests/fixtures/short_elimination_probes.json",
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}

@@ -1,0 +1,2409 @@
+{
+  "checkpoint": "runs/hpc_objective_replication_answer_only_seed1688/model.pt",
+  "label": "synthetic_objective_replication_answer_only_not_historical_only",
+  "source_sha256": "aec09bc604000554a74f7787bd5eca6b2c2b439c1cb2474184acf7cb53771707",
+  "probes": [
+    {
+      "id": "baba_bali_square_baba_question",
+      "prompt": "The squares of the baba are as the cubes of the bali.\nQuestion: What power of the baba is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the baba.",
+        "cube": "cube of the baba."
+      },
+      "text": "The squares of the baba are as the cubes of the bali.\nQuestion: What power of the baba is compared?\nAnswer: square of the baba.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.0014361739158630371,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.8758893609046936,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the baba are as the cubes of the bali.\nQuestion: What power of the baba is compared?\nAnswer: square of the baba."
+    },
+    {
+      "id": "baba_bali_square_baba_continuation",
+      "prompt": "The squares of the baba are as the cubes of the bali.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the baba.",
+        "cube": "cube of the baba."
+      },
+      "text": "The squares of the baba are as the cubes of the bali.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: square of the baba.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.005374133586883545,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.8468130826950073,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the baba are as the cubes of the bali.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: square of the baba."
+    },
+    {
+      "id": "baba_bali_square_bali_question",
+      "prompt": "The squares of the baba are as the cubes of the bali.\nQuestion: What power of the bali is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bali.",
+        "cube": "cube of the bali."
+      },
+      "text": "The squares of the baba are as the cubes of the bali.\nQuestion: What power of the bali is compared?\nAnswer: cube of the bali.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.1877276599407196,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.05270254611968994,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the baba are as the cubes of the bali.\nQuestion: What power of the bali is compared?\nAnswer: cube of the bali."
+    },
+    {
+      "id": "baba_bali_square_bali_continuation",
+      "prompt": "The squares of the baba are as the cubes of the bali.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bali.",
+        "cube": "cube of the bali."
+      },
+      "text": "The squares of the baba are as the cubes of the bali.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: cube of the bali.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.11255494505167007,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.11086750030517578,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the baba are as the cubes of the bali.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: cube of the bali."
+    },
+    {
+      "id": "baba_bali_cube_baba_question",
+      "prompt": "The cubes of the baba are as the squares of the bali.\nQuestion: What power of the baba is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the baba.",
+        "cube": "cube of the baba."
+      },
+      "text": "The cubes of the baba are as the squares of the bali.\nQuestion: What power of the baba is compared?\nAnswer: cube of the baba.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.16633589565753937,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.04651231691241264,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the baba are as the squares of the bali.\nQuestion: What power of the baba is compared?\nAnswer: cube of the baba."
+    },
+    {
+      "id": "baba_bali_cube_baba_continuation",
+      "prompt": "The cubes of the baba are as the squares of the bali.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the baba.",
+        "cube": "cube of the baba."
+      },
+      "text": "The cubes of the baba are as the squares of the bali.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: cube of the baba.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.12554170191287994,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.08057165145874023,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the baba are as the squares of the bali.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: cube of the baba."
+    },
+    {
+      "id": "baba_bali_cube_bali_question",
+      "prompt": "The cubes of the baba are as the squares of the bali.\nQuestion: What power of the bali is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bali.",
+        "cube": "cube of the bali."
+      },
+      "text": "The cubes of the baba are as the squares of the bali.\nQuestion: What power of the bali is compared?\nAnswer: square of the bali.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.005124739371240139,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.600377082824707,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the baba are as the squares of the bali.\nQuestion: What power of the bali is compared?\nAnswer: square of the bali."
+    },
+    {
+      "id": "baba_bali_cube_bali_continuation",
+      "prompt": "The cubes of the baba are as the squares of the bali.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bali.",
+        "cube": "cube of the bali."
+      },
+      "text": "The cubes of the baba are as the squares of the bali.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: square of the bali.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.00777072599157691,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.5614244341850281,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the baba are as the squares of the bali.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: square of the bali."
+    },
+    {
+      "id": "bali_beku_square_bali_question",
+      "prompt": "The squares of the bali are as the cubes of the beku.\nQuestion: What power of the bali is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bali.",
+        "cube": "cube of the bali."
+      },
+      "text": "The squares of the bali are as the cubes of the beku.\nQuestion: What power of the bali is compared?\nAnswer: square of the bali.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.0030867543537169695,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.710294246673584,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the bali are as the cubes of the beku.\nQuestion: What power of the bali is compared?\nAnswer: square of the bali."
+    },
+    {
+      "id": "bali_beku_square_bali_continuation",
+      "prompt": "The squares of the bali are as the cubes of the beku.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bali.",
+        "cube": "cube of the bali."
+      },
+      "text": "The squares of the bali are as the cubes of the beku.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: square of the bali.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.004651512484997511,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.6421447992324829,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the bali are as the cubes of the beku.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: square of the bali."
+    },
+    {
+      "id": "bali_beku_square_beku_question",
+      "prompt": "The squares of the bali are as the cubes of the beku.\nQuestion: What power of the beku is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the beku.",
+        "cube": "cube of the beku."
+      },
+      "text": "The squares of the bali are as the cubes of the beku.\nQuestion: What power of the beku is compared?\nAnswer: cube of the beku.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.30119588971138,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.014731288887560368,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the bali are as the cubes of the beku.\nQuestion: What power of the beku is compared?\nAnswer: cube of the beku."
+    },
+    {
+      "id": "bali_beku_square_beku_continuation",
+      "prompt": "The squares of the bali are as the cubes of the beku.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the beku.",
+        "cube": "cube of the beku."
+      },
+      "text": "The squares of the bali are as the cubes of the beku.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: cube of the beku.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.27458828687667847,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.09143973141908646,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the bali are as the cubes of the beku.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: cube of the beku."
+    },
+    {
+      "id": "bali_beku_cube_bali_question",
+      "prompt": "The cubes of the bali are as the squares of the beku.\nQuestion: What power of the bali is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bali.",
+        "cube": "cube of the bali."
+      },
+      "text": "The cubes of the bali are as the squares of the beku.\nQuestion: What power of the bali is compared?\nAnswer: cube of the bali.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.3193933069705963,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.019333284348249435,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the bali are as the squares of the beku.\nQuestion: What power of the bali is compared?\nAnswer: cube of the bali."
+    },
+    {
+      "id": "bali_beku_cube_bali_continuation",
+      "prompt": "The cubes of the bali are as the squares of the beku.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bali.",
+        "cube": "cube of the bali."
+      },
+      "text": "The cubes of the bali are as the squares of the beku.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: cube of the bali.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.25728839635849,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.04772472381591797,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the bali are as the squares of the beku.\nQuestion: According to the statement, which power applies to the bali?\nAnswer: cube of the bali."
+    },
+    {
+      "id": "bali_beku_cube_beku_question",
+      "prompt": "The cubes of the bali are as the squares of the beku.\nQuestion: What power of the beku is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the beku.",
+        "cube": "cube of the beku."
+      },
+      "text": "The cubes of the bali are as the squares of the beku.\nQuestion: What power of the beku is compared?\nAnswer: square of the beku.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.016483575105667114,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.303924560546875,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the bali are as the squares of the beku.\nQuestion: What power of the beku is compared?\nAnswer: square of the beku."
+    },
+    {
+      "id": "bali_beku_cube_beku_continuation",
+      "prompt": "The cubes of the bali are as the squares of the beku.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the beku.",
+        "cube": "cube of the beku."
+      },
+      "text": "The cubes of the bali are as the squares of the beku.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: square of the beku.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.016817420721054077,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.34920841455459595,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the bali are as the squares of the beku.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: square of the beku."
+    },
+    {
+      "id": "beku_bike_square_beku_question",
+      "prompt": "The squares of the beku are as the cubes of the bike.\nQuestion: What power of the beku is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the beku.",
+        "cube": "cube of the beku."
+      },
+      "text": "The squares of the beku are as the cubes of the bike.\nQuestion: What power of the beku is compared?\nAnswer: square of the beku.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.004713892936706543,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.4958752393722534,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the beku are as the cubes of the bike.\nQuestion: What power of the beku is compared?\nAnswer: square of the beku."
+    },
+    {
+      "id": "beku_bike_square_beku_continuation",
+      "prompt": "The squares of the beku are as the cubes of the bike.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the beku.",
+        "cube": "cube of the beku."
+      },
+      "text": "The squares of the beku are as the cubes of the bike.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: square of the beku.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.005447745323181152,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.5499760508537292,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the beku are as the cubes of the bike.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: square of the beku."
+    },
+    {
+      "id": "beku_bike_square_bike_question",
+      "prompt": "The squares of the beku are as the cubes of the bike.\nQuestion: What power of the bike is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bike.",
+        "cube": "cube of the bike."
+      },
+      "text": "The squares of the beku are as the cubes of the bike.\nQuestion: What power of the bike is compared?\nAnswer: cube of the bike.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.29782554507255554,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.024012010544538498,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the beku are as the cubes of the bike.\nQuestion: What power of the bike is compared?\nAnswer: cube of the bike."
+    },
+    {
+      "id": "beku_bike_square_bike_continuation",
+      "prompt": "The squares of the beku are as the cubes of the bike.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bike.",
+        "cube": "cube of the bike."
+      },
+      "text": "The squares of the beku are as the cubes of the bike.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: cube of the bike.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.3154852092266083,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.02517279051244259,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the beku are as the cubes of the bike.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: cube of the bike."
+    },
+    {
+      "id": "beku_bike_cube_beku_question",
+      "prompt": "The cubes of the beku are as the squares of the bike.\nQuestion: What power of the beku is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the beku.",
+        "cube": "cube of the beku."
+      },
+      "text": "The cubes of the beku are as the squares of the bike.\nQuestion: What power of the beku is compared?\nAnswer: cube of the beku.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.3169156014919281,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.012747765518724918,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the beku are as the squares of the bike.\nQuestion: What power of the beku is compared?\nAnswer: cube of the beku."
+    },
+    {
+      "id": "beku_bike_cube_beku_continuation",
+      "prompt": "The cubes of the beku are as the squares of the bike.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the beku.",
+        "cube": "cube of the beku."
+      },
+      "text": "The cubes of the beku are as the squares of the bike.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: cube of the beku.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.4342423379421234,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.12923237681388855,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the beku are as the squares of the bike.\nQuestion: According to the statement, which power applies to the beku?\nAnswer: cube of the bike."
+    },
+    {
+      "id": "beku_bike_cube_bike_question",
+      "prompt": "The cubes of the beku are as the squares of the bike.\nQuestion: What power of the bike is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bike.",
+        "cube": "cube of the bike."
+      },
+      "text": "The cubes of the beku are as the squares of the bike.\nQuestion: What power of the bike is compared?\nAnswer: square of the bike.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.0037075963336974382,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.6946249008178711,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the beku are as the squares of the bike.\nQuestion: What power of the bike is compared?\nAnswer: square of the bike."
+    },
+    {
+      "id": "beku_bike_cube_bike_continuation",
+      "prompt": "The cubes of the beku are as the squares of the bike.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bike.",
+        "cube": "cube of the bike."
+      },
+      "text": "The cubes of the beku are as the squares of the bike.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: square of the bike.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.009685295633971691,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.5432870984077454,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the beku are as the squares of the bike.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: square of the bike."
+    },
+    {
+      "id": "bike_bodo_square_bike_question",
+      "prompt": "The squares of the bike are as the cubes of the bodo.\nQuestion: What power of the bike is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bike.",
+        "cube": "cube of the bike."
+      },
+      "text": "The squares of the bike are as the cubes of the bodo.\nQuestion: What power of the bike is compared?\nAnswer: square of the bike.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.0015593597199767828,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.8655537366867065,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the bike are as the cubes of the bodo.\nQuestion: What power of the bike is compared?\nAnswer: square of the bike."
+    },
+    {
+      "id": "bike_bodo_square_bike_continuation",
+      "prompt": "The squares of the bike are as the cubes of the bodo.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bike.",
+        "cube": "cube of the bike."
+      },
+      "text": "The squares of the bike are as the cubes of the bodo.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: square of the bike.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.002624716144055128,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.8031268119812012,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the bike are as the cubes of the bodo.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: square of the bike."
+    },
+    {
+      "id": "bike_bodo_square_bodo_question",
+      "prompt": "The squares of the bike are as the cubes of the bodo.\nQuestion: What power of the bodo is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bodo.",
+        "cube": "cube of the bodo."
+      },
+      "text": "The squares of the bike are as the cubes of the bodo.\nQuestion: What power of the bodo is compared?\nAnswer: cube of the bodo.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.17050904035568237,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.0627821534872055,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the bike are as the cubes of the bodo.\nQuestion: What power of the bodo is compared?\nAnswer: cube of the bodo."
+    },
+    {
+      "id": "bike_bodo_square_bodo_continuation",
+      "prompt": "The squares of the bike are as the cubes of the bodo.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bodo.",
+        "cube": "cube of the bodo."
+      },
+      "text": "The squares of the bike are as the cubes of the bodo.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: cube of the bodo.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.6066061854362488,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.8389277458190918,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the bike are as the cubes of the bodo.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: cube of the bike."
+    },
+    {
+      "id": "bike_bodo_cube_bike_question",
+      "prompt": "The cubes of the bike are as the squares of the bodo.\nQuestion: What power of the bike is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bike.",
+        "cube": "cube of the bike."
+      },
+      "text": "The cubes of the bike are as the squares of the bodo.\nQuestion: What power of the bike is compared?\nAnswer: cube of the bike.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.25165098905563354,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.033416032791137695,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the bike are as the squares of the bodo.\nQuestion: What power of the bike is compared?\nAnswer: cube of the bike."
+    },
+    {
+      "id": "bike_bodo_cube_bike_continuation",
+      "prompt": "The cubes of the bike are as the squares of the bodo.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bike.",
+        "cube": "cube of the bike."
+      },
+      "text": "The cubes of the bike are as the squares of the bodo.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: cube of the bike.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.23482587933540344,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.04497317597270012,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the bike are as the squares of the bodo.\nQuestion: According to the statement, which power applies to the bike?\nAnswer: cube of the bike."
+    },
+    {
+      "id": "bike_bodo_cube_bodo_question",
+      "prompt": "The cubes of the bike are as the squares of the bodo.\nQuestion: What power of the bodo is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bodo.",
+        "cube": "cube of the bodo."
+      },
+      "text": "The cubes of the bike are as the squares of the bodo.\nQuestion: What power of the bodo is compared?\nAnswer: square of the bodo.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.0041299378499388695,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.6835030317306519,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the bike are as the squares of the bodo.\nQuestion: What power of the bodo is compared?\nAnswer: square of the bodo."
+    },
+    {
+      "id": "bike_bodo_cube_bodo_continuation",
+      "prompt": "The cubes of the bike are as the squares of the bodo.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bodo.",
+        "cube": "cube of the bodo."
+      },
+      "text": "The cubes of the bike are as the squares of the bodo.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: square of the bodo.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.013846431858837605,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.5417289137840271,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the bike are as the squares of the bodo.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: square of the bodo."
+    },
+    {
+      "id": "bodo_buda_square_bodo_question",
+      "prompt": "The squares of the bodo are as the cubes of the buda.\nQuestion: What power of the bodo is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bodo.",
+        "cube": "cube of the bodo."
+      },
+      "text": "The squares of the bodo are as the cubes of the buda.\nQuestion: What power of the bodo is compared?\nAnswer: square of the bodo.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.00395711837336421,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.7041611075401306,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the bodo are as the cubes of the buda.\nQuestion: What power of the bodo is compared?\nAnswer: square of the bodo."
+    },
+    {
+      "id": "bodo_buda_square_bodo_continuation",
+      "prompt": "The squares of the bodo are as the cubes of the buda.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the bodo.",
+        "cube": "cube of the bodo."
+      },
+      "text": "The squares of the bodo are as the cubes of the buda.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: square of the bodo.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.014220238663256168,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.552131175994873,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the bodo are as the cubes of the buda.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: square of the bodo."
+    },
+    {
+      "id": "bodo_buda_square_buda_question",
+      "prompt": "The squares of the bodo are as the cubes of the buda.\nQuestion: What power of the buda is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the buda.",
+        "cube": "cube of the buda."
+      },
+      "text": "The squares of the bodo are as the cubes of the buda.\nQuestion: What power of the buda is compared?\nAnswer: cube of the buda.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.021905047819018364,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.3366774916648865,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the bodo are as the cubes of the buda.\nQuestion: What power of the buda is compared?\nAnswer: square of the buda."
+    },
+    {
+      "id": "bodo_buda_square_buda_continuation",
+      "prompt": "The squares of the bodo are as the cubes of the buda.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the buda.",
+        "cube": "cube of the buda."
+      },
+      "text": "The squares of the bodo are as the cubes of the buda.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: cube of the buda.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.04468577355146408,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.26986655592918396,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the bodo are as the cubes of the buda.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: square of the buda."
+    },
+    {
+      "id": "bodo_buda_cube_bodo_question",
+      "prompt": "The cubes of the bodo are as the squares of the buda.\nQuestion: What power of the bodo is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bodo.",
+        "cube": "cube of the bodo."
+      },
+      "text": "The cubes of the bodo are as the squares of the buda.\nQuestion: What power of the bodo is compared?\nAnswer: cube of the bodo.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.08473668992519379,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.13971060514450073,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the bodo are as the squares of the buda.\nQuestion: What power of the bodo is compared?\nAnswer: square of the bodo."
+    },
+    {
+      "id": "bodo_buda_cube_bodo_continuation",
+      "prompt": "The cubes of the bodo are as the squares of the buda.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the bodo.",
+        "cube": "cube of the bodo."
+      },
+      "text": "The cubes of the bodo are as the squares of the buda.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: cube of the bodo.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.2082584649324417,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.2950980067253113,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the bodo are as the squares of the buda.\nQuestion: According to the statement, which power applies to the bodo?\nAnswer: square of the bodo."
+    },
+    {
+      "id": "bodo_buda_cube_buda_question",
+      "prompt": "The cubes of the bodo are as the squares of the buda.\nQuestion: What power of the buda is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the buda.",
+        "cube": "cube of the buda."
+      },
+      "text": "The cubes of the bodo are as the squares of the buda.\nQuestion: What power of the buda is compared?\nAnswer: square of the buda.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.0006178276962600648,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 1.0210919380187988,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the bodo are as the squares of the buda.\nQuestion: What power of the buda is compared?\nAnswer: square of the buda."
+    },
+    {
+      "id": "bodo_buda_cube_buda_continuation",
+      "prompt": "The cubes of the bodo are as the squares of the buda.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the buda.",
+        "cube": "cube of the buda."
+      },
+      "text": "The cubes of the bodo are as the squares of the buda.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: square of the buda.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.005943809635937214,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.5680992603302002,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the bodo are as the squares of the buda.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: square of the buda."
+    },
+    {
+      "id": "buda_dabi_square_buda_question",
+      "prompt": "The squares of the buda are as the cubes of the dabi.\nQuestion: What power of the buda is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the buda.",
+        "cube": "cube of the buda."
+      },
+      "text": "The squares of the buda are as the cubes of the dabi.\nQuestion: What power of the buda is compared?\nAnswer: square of the buda.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.0007436786545440555,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 1.0839465856552124,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the buda are as the cubes of the dabi.\nQuestion: What power of the buda is compared?\nAnswer: square of the buda."
+    },
+    {
+      "id": "buda_dabi_square_buda_continuation",
+      "prompt": "The squares of the buda are as the cubes of the dabi.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the buda.",
+        "cube": "cube of the buda."
+      },
+      "text": "The squares of the buda are as the cubes of the dabi.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: square of the buda.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.001815421273931861,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.8652529120445251,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the buda are as the cubes of the dabi.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: square of the buda."
+    },
+    {
+      "id": "buda_dabi_square_dabi_question",
+      "prompt": "The squares of the buda are as the cubes of the dabi.\nQuestion: What power of the dabi is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dabi.",
+        "cube": "cube of the dabi."
+      },
+      "text": "The squares of the buda are as the cubes of the dabi.\nQuestion: What power of the dabi is compared?\nAnswer: cube of the dabi.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.05071092024445534,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.21503309905529022,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the buda are as the cubes of the dabi.\nQuestion: What power of the dabi is compared?\nAnswer: square of the dabi."
+    },
+    {
+      "id": "buda_dabi_square_dabi_continuation",
+      "prompt": "The squares of the buda are as the cubes of the dabi.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dabi.",
+        "cube": "cube of the dabi."
+      },
+      "text": "The squares of the buda are as the cubes of the dabi.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: cube of the dabi.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.04645763337612152,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.32520660758018494,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the buda are as the cubes of the dabi.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: square of the dabi."
+    },
+    {
+      "id": "buda_dabi_cube_buda_question",
+      "prompt": "The cubes of the buda are as the squares of the dabi.\nQuestion: What power of the buda is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the buda.",
+        "cube": "cube of the buda."
+      },
+      "text": "The cubes of the buda are as the squares of the dabi.\nQuestion: What power of the buda is compared?\nAnswer: cube of the buda.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.07944827526807785,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.14438551664352417,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the buda are as the squares of the dabi.\nQuestion: What power of the buda is compared?\nAnswer: square of the buda."
+    },
+    {
+      "id": "buda_dabi_cube_buda_continuation",
+      "prompt": "The cubes of the buda are as the squares of the dabi.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the buda.",
+        "cube": "cube of the buda."
+      },
+      "text": "The cubes of the buda are as the squares of the dabi.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: cube of the buda.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.12294124066829681,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.185877725481987,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the buda are as the squares of the dabi.\nQuestion: According to the statement, which power applies to the buda?\nAnswer: square of the buda."
+    },
+    {
+      "id": "buda_dabi_cube_dabi_question",
+      "prompt": "The cubes of the buda are as the squares of the dabi.\nQuestion: What power of the dabi is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dabi.",
+        "cube": "cube of the dabi."
+      },
+      "text": "The cubes of the buda are as the squares of the dabi.\nQuestion: What power of the dabi is compared?\nAnswer: square of the dabi.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.00407763896510005,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.7732035517692566,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the buda are as the squares of the dabi.\nQuestion: What power of the dabi is compared?\nAnswer: square of the dabi."
+    },
+    {
+      "id": "buda_dabi_cube_dabi_continuation",
+      "prompt": "The cubes of the buda are as the squares of the dabi.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dabi.",
+        "cube": "cube of the dabi."
+      },
+      "text": "The cubes of the buda are as the squares of the dabi.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: square of the dabi.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.0090462826192379,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.8819438815116882,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the buda are as the squares of the dabi.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: square of the dabi."
+    },
+    {
+      "id": "dabi_dalu_square_dabi_question",
+      "prompt": "The squares of the dabi are as the cubes of the dalu.\nQuestion: What power of the dabi is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dabi.",
+        "cube": "cube of the dabi."
+      },
+      "text": "The squares of the dabi are as the cubes of the dalu.\nQuestion: What power of the dabi is compared?\nAnswer: square of the dabi.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.003921781666576862,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 1.0344886779785156,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the dabi are as the cubes of the dalu.\nQuestion: What power of the dabi is compared?\nAnswer: square of the dabi."
+    },
+    {
+      "id": "dabi_dalu_square_dabi_continuation",
+      "prompt": "The squares of the dabi are as the cubes of the dalu.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dabi.",
+        "cube": "cube of the dabi."
+      },
+      "text": "The squares of the dabi are as the cubes of the dalu.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: square of the dabi.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.00820248480886221,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.9850799441337585,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the dabi are as the cubes of the dalu.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: square of the dabi."
+    },
+    {
+      "id": "dabi_dalu_square_dalu_question",
+      "prompt": "The squares of the dabi are as the cubes of the dalu.\nQuestion: What power of the dalu is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dalu.",
+        "cube": "cube of the dalu."
+      },
+      "text": "The squares of the dabi are as the cubes of the dalu.\nQuestion: What power of the dalu is compared?\nAnswer: cube of the dalu.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.08329400420188904,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.13897418975830078,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the dabi are as the cubes of the dalu.\nQuestion: What power of the dalu is compared?\nAnswer: square of the dalu."
+    },
+    {
+      "id": "dabi_dalu_square_dalu_continuation",
+      "prompt": "The squares of the dabi are as the cubes of the dalu.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dalu.",
+        "cube": "cube of the dalu."
+      },
+      "text": "The squares of the dabi are as the cubes of the dalu.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: cube of the dalu.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.19649149477481842,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.07796542346477509,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the dabi are as the cubes of the dalu.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: cube of the dalu."
+    },
+    {
+      "id": "dabi_dalu_cube_dabi_question",
+      "prompt": "The cubes of the dabi are as the squares of the dalu.\nQuestion: What power of the dabi is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dabi.",
+        "cube": "cube of the dabi."
+      },
+      "text": "The cubes of the dabi are as the squares of the dalu.\nQuestion: What power of the dabi is compared?\nAnswer: cube of the dabi.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.10622682422399521,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.11309387534856796,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the dabi are as the squares of the dalu.\nQuestion: What power of the dabi is compared?\nAnswer: cube of the dabi."
+    },
+    {
+      "id": "dabi_dalu_cube_dabi_continuation",
+      "prompt": "The cubes of the dabi are as the squares of the dalu.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dabi.",
+        "cube": "cube of the dabi."
+      },
+      "text": "The cubes of the dabi are as the squares of the dalu.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: cube of the dabi.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.2014620155096054,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.2721691131591797,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the dabi are as the squares of the dalu.\nQuestion: According to the statement, which power applies to the dabi?\nAnswer: cube of the dalu."
+    },
+    {
+      "id": "dabi_dalu_cube_dalu_question",
+      "prompt": "The cubes of the dabi are as the squares of the dalu.\nQuestion: What power of the dalu is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dalu.",
+        "cube": "cube of the dalu."
+      },
+      "text": "The cubes of the dabi are as the squares of the dalu.\nQuestion: What power of the dalu is compared?\nAnswer: square of the dalu.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.006260378286242485,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.61258864402771,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the dabi are as the squares of the dalu.\nQuestion: What power of the dalu is compared?\nAnswer: square of the dalu."
+    },
+    {
+      "id": "dabi_dalu_cube_dalu_continuation",
+      "prompt": "The cubes of the dabi are as the squares of the dalu.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dalu.",
+        "cube": "cube of the dalu."
+      },
+      "text": "The cubes of the dabi are as the squares of the dalu.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: square of the dalu.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.014316116459667683,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.47421392798423767,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the dabi are as the squares of the dalu.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: square of the dalu."
+    },
+    {
+      "id": "dalu_dele_square_dalu_question",
+      "prompt": "The squares of the dalu are as the cubes of the dele.\nQuestion: What power of the dalu is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dalu.",
+        "cube": "cube of the dalu."
+      },
+      "text": "The squares of the dalu are as the cubes of the dele.\nQuestion: What power of the dalu is compared?\nAnswer: square of the dalu.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.004207475110888481,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.8687537908554077,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the dalu are as the cubes of the dele.\nQuestion: What power of the dalu is compared?\nAnswer: square of the dalu."
+    },
+    {
+      "id": "dalu_dele_square_dalu_continuation",
+      "prompt": "The squares of the dalu are as the cubes of the dele.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dalu.",
+        "cube": "cube of the dalu."
+      },
+      "text": "The squares of the dalu are as the cubes of the dele.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: square of the dalu.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.009279251098632812,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.5738047957420349,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the dalu are as the cubes of the dele.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: square of the dalu."
+    },
+    {
+      "id": "dalu_dele_square_dele_question",
+      "prompt": "The squares of the dalu are as the cubes of the dele.\nQuestion: What power of the dele is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dele.",
+        "cube": "cube of the dele."
+      },
+      "text": "The squares of the dalu are as the cubes of the dele.\nQuestion: What power of the dele is compared?\nAnswer: cube of the dele.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.25154513120651245,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.03241662308573723,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the dalu are as the cubes of the dele.\nQuestion: What power of the dele is compared?\nAnswer: cube of the dele."
+    },
+    {
+      "id": "dalu_dele_square_dele_continuation",
+      "prompt": "The squares of the dalu are as the cubes of the dele.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dele.",
+        "cube": "cube of the dele."
+      },
+      "text": "The squares of the dalu are as the cubes of the dele.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: cube of the dele.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.3846990764141083,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.4098779559135437,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the dalu are as the cubes of the dele.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: cube of the dalu."
+    },
+    {
+      "id": "dalu_dele_cube_dalu_question",
+      "prompt": "The cubes of the dalu are as the squares of the dele.\nQuestion: What power of the dalu is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dalu.",
+        "cube": "cube of the dalu."
+      },
+      "text": "The cubes of the dalu are as the squares of the dele.\nQuestion: What power of the dalu is compared?\nAnswer: cube of the dalu.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.3039807975292206,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.022063415497541428,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the dalu are as the squares of the dele.\nQuestion: What power of the dalu is compared?\nAnswer: cube of the dalu."
+    },
+    {
+      "id": "dalu_dele_cube_dalu_continuation",
+      "prompt": "The cubes of the dalu are as the squares of the dele.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dalu.",
+        "cube": "cube of the dalu."
+      },
+      "text": "The cubes of the dalu are as the squares of the dele.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: cube of the dalu.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.3922058045864105,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.03093155287206173,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the dalu are as the squares of the dele.\nQuestion: According to the statement, which power applies to the dalu?\nAnswer: cube of the dalu."
+    },
+    {
+      "id": "dalu_dele_cube_dele_question",
+      "prompt": "The cubes of the dalu are as the squares of the dele.\nQuestion: What power of the dele is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dele.",
+        "cube": "cube of the dele."
+      },
+      "text": "The cubes of the dalu are as the squares of the dele.\nQuestion: What power of the dele is compared?\nAnswer: square of the dele.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 39,
+      "scores": {
+        "square": {
+          "mean_nll": 0.006370612885802984,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.5287622213363647,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the dalu are as the squares of the dele.\nQuestion: What power of the dele is compared?\nAnswer: square of the dele."
+    },
+    {
+      "id": "dalu_dele_cube_dele_continuation",
+      "prompt": "The cubes of the dalu are as the squares of the dele.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dele.",
+        "cube": "cube of the dele."
+      },
+      "text": "The cubes of the dalu are as the squares of the dele.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: square of the dele.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 46,
+      "scores": {
+        "square": {
+          "mean_nll": 0.011529956944286823,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.44039028882980347,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the dalu are as the squares of the dele.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: square of the dele."
+    },
+    {
+      "id": "dele_diko_square_dele_question",
+      "prompt": "The squares of the dele are as the cubes of the diko.\nQuestion: What power of the dele is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dele.",
+        "cube": "cube of the dele."
+      },
+      "text": "The squares of the dele are as the cubes of the diko.\nQuestion: What power of the dele is compared?\nAnswer: square of the dele.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.0038431372959166765,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.6199769973754883,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the dele are as the cubes of the diko.\nQuestion: What power of the dele is compared?\nAnswer: square of the dele."
+    },
+    {
+      "id": "dele_diko_square_dele_continuation",
+      "prompt": "The squares of the dele are as the cubes of the diko.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dele.",
+        "cube": "cube of the dele."
+      },
+      "text": "The squares of the dele are as the cubes of the diko.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: square of the dele.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.019314391538500786,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.37797802686691284,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the dele are as the cubes of the diko.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: square of the dele."
+    },
+    {
+      "id": "dele_diko_square_diko_question",
+      "prompt": "The squares of the dele are as the cubes of the diko.\nQuestion: What power of the diko is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the diko.",
+        "cube": "cube of the diko."
+      },
+      "text": "The squares of the dele are as the cubes of the diko.\nQuestion: What power of the diko is compared?\nAnswer: cube of the diko.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.22699879109859467,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.026644503697752953,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the dele are as the cubes of the diko.\nQuestion: What power of the diko is compared?\nAnswer: cube of the diko."
+    },
+    {
+      "id": "dele_diko_square_diko_continuation",
+      "prompt": "The squares of the dele are as the cubes of the diko.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the diko.",
+        "cube": "cube of the diko."
+      },
+      "text": "The squares of the dele are as the cubes of the diko.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: cube of the diko.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.23038172721862793,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.0499790757894516,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the dele are as the cubes of the diko.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: cube of the diko."
+    },
+    {
+      "id": "dele_diko_cube_dele_question",
+      "prompt": "The cubes of the dele are as the squares of the diko.\nQuestion: What power of the dele is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dele.",
+        "cube": "cube of the dele."
+      },
+      "text": "The cubes of the dele are as the squares of the diko.\nQuestion: What power of the dele is compared?\nAnswer: cube of the dele.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.25151190161705017,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.032589077949523926,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the dele are as the squares of the diko.\nQuestion: What power of the dele is compared?\nAnswer: cube of the dele."
+    },
+    {
+      "id": "dele_diko_cube_dele_continuation",
+      "prompt": "The cubes of the dele are as the squares of the diko.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dele.",
+        "cube": "cube of the dele."
+      },
+      "text": "The cubes of the dele are as the squares of the diko.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: cube of the dele.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.29364293813705444,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.031022708863019943,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the dele are as the squares of the diko.\nQuestion: According to the statement, which power applies to the dele?\nAnswer: cube of the dele."
+    },
+    {
+      "id": "dele_diko_cube_diko_question",
+      "prompt": "The cubes of the dele are as the squares of the diko.\nQuestion: What power of the diko is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the diko.",
+        "cube": "cube of the diko."
+      },
+      "text": "The cubes of the dele are as the squares of the diko.\nQuestion: What power of the diko is compared?\nAnswer: square of the diko.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.011051163077354431,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.3618360459804535,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the dele are as the squares of the diko.\nQuestion: What power of the diko is compared?\nAnswer: square of the diko."
+    },
+    {
+      "id": "dele_diko_cube_diko_continuation",
+      "prompt": "The cubes of the dele are as the squares of the diko.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the diko.",
+        "cube": "cube of the diko."
+      },
+      "text": "The cubes of the dele are as the squares of the diko.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: square of the diko.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.02984297275543213,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.39111173152923584,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the dele are as the squares of the diko.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: square of the diko."
+    },
+    {
+      "id": "diko_doka_square_diko_question",
+      "prompt": "The squares of the diko are as the cubes of the doka.\nQuestion: What power of the diko is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the diko.",
+        "cube": "cube of the diko."
+      },
+      "text": "The squares of the diko are as the cubes of the doka.\nQuestion: What power of the diko is compared?\nAnswer: square of the diko.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 0.011135950684547424,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.36178815364837646,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the diko are as the cubes of the doka.\nQuestion: What power of the diko is compared?\nAnswer: square of the diko."
+    },
+    {
+      "id": "diko_doka_square_diko_continuation",
+      "prompt": "The squares of the diko are as the cubes of the doka.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the diko.",
+        "cube": "cube of the diko."
+      },
+      "text": "The squares of the diko are as the cubes of the doka.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: square of the diko.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 0.02844160795211792,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.3620496690273285,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the diko are as the cubes of the doka.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: square of the diko."
+    },
+    {
+      "id": "diko_doka_square_doka_question",
+      "prompt": "The squares of the diko are as the cubes of the doka.\nQuestion: What power of the doka is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the doka.",
+        "cube": "cube of the doka."
+      },
+      "text": "The squares of the diko are as the cubes of the doka.\nQuestion: What power of the doka is compared?\nAnswer: cube of the doka.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 0.289541095495224,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.0172819085419178,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the diko are as the cubes of the doka.\nQuestion: What power of the doka is compared?\nAnswer: cube of the doka."
+    },
+    {
+      "id": "diko_doka_square_doka_continuation",
+      "prompt": "The squares of the diko are as the cubes of the doka.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the doka.",
+        "cube": "cube of the doka."
+      },
+      "text": "The squares of the diko are as the cubes of the doka.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: cube of the doka.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 0.29294896125793457,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.037860020995140076,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the diko are as the cubes of the doka.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: cube of the doka."
+    },
+    {
+      "id": "diko_doka_cube_diko_question",
+      "prompt": "The cubes of the diko are as the squares of the doka.\nQuestion: What power of the diko is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the diko.",
+        "cube": "cube of the diko."
+      },
+      "text": "The cubes of the diko are as the squares of the doka.\nQuestion: What power of the diko is compared?\nAnswer: cube of the diko.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 0.19464251399040222,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.034961070865392685,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the diko are as the squares of the doka.\nQuestion: What power of the diko is compared?\nAnswer: cube of the diko."
+    },
+    {
+      "id": "diko_doka_cube_diko_continuation",
+      "prompt": "The cubes of the diko are as the squares of the doka.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the diko.",
+        "cube": "cube of the diko."
+      },
+      "text": "The cubes of the diko are as the squares of the doka.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: cube of the diko.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 0.18909171223640442,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.046096090227365494,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the diko are as the squares of the doka.\nQuestion: According to the statement, which power applies to the diko?\nAnswer: cube of the diko."
+    },
+    {
+      "id": "diko_doka_cube_doka_question",
+      "prompt": "The cubes of the diko are as the squares of the doka.\nQuestion: What power of the doka is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the doka.",
+        "cube": "cube of the doka."
+      },
+      "text": "The cubes of the diko are as the squares of the doka.\nQuestion: What power of the doka is compared?\nAnswer: square of the doka.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 42,
+      "scores": {
+        "square": {
+          "mean_nll": 0.04872967302799225,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.16312061250209808,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the diko are as the squares of the doka.\nQuestion: What power of the doka is compared?\nAnswer: square of the doka."
+    },
+    {
+      "id": "diko_doka_cube_doka_continuation",
+      "prompt": "The cubes of the diko are as the squares of the doka.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the doka.",
+        "cube": "cube of the doka."
+      },
+      "text": "The cubes of the diko are as the squares of the doka.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: square of the doka.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 49,
+      "scores": {
+        "square": {
+          "mean_nll": 0.03163798153400421,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.2414424866437912,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the diko are as the squares of the doka.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: square of the doka."
+    },
+    {
+      "id": "doka_dudi_square_doka_question",
+      "prompt": "The squares of the doka are as the cubes of the dudi.\nQuestion: What power of the doka is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the doka.",
+        "cube": "cube of the doka."
+      },
+      "text": "The squares of the doka are as the cubes of the dudi.\nQuestion: What power of the doka is compared?\nAnswer: square of the doka.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.010241478681564331,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.36847370862960815,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the doka are as the cubes of the dudi.\nQuestion: What power of the doka is compared?\nAnswer: square of the doka."
+    },
+    {
+      "id": "doka_dudi_square_doka_continuation",
+      "prompt": "The squares of the doka are as the cubes of the dudi.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the doka.",
+        "cube": "cube of the doka."
+      },
+      "text": "The squares of the doka are as the cubes of the dudi.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: square of the doka.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.015107601881027222,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.34638845920562744,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the doka are as the cubes of the dudi.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: square of the doka."
+    },
+    {
+      "id": "doka_dudi_square_dudi_question",
+      "prompt": "The squares of the doka are as the cubes of the dudi.\nQuestion: What power of the dudi is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dudi.",
+        "cube": "cube of the dudi."
+      },
+      "text": "The squares of the doka are as the cubes of the dudi.\nQuestion: What power of the dudi is compared?\nAnswer: cube of the dudi.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.22646717727184296,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.04621025174856186,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the doka are as the cubes of the dudi.\nQuestion: What power of the dudi is compared?\nAnswer: cube of the dudi."
+    },
+    {
+      "id": "doka_dudi_square_dudi_continuation",
+      "prompt": "The squares of the doka are as the cubes of the dudi.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dudi.",
+        "cube": "cube of the dudi."
+      },
+      "text": "The squares of the doka are as the cubes of the dudi.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: cube of the dudi.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.2427961826324463,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.04724947735667229,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the doka are as the cubes of the dudi.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: cube of the dudi."
+    },
+    {
+      "id": "doka_dudi_cube_doka_question",
+      "prompt": "The cubes of the doka are as the squares of the dudi.\nQuestion: What power of the doka is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the doka.",
+        "cube": "cube of the doka."
+      },
+      "text": "The cubes of the doka are as the squares of the dudi.\nQuestion: What power of the doka is compared?\nAnswer: cube of the doka.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.35978928208351135,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.009468589909374714,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the doka are as the squares of the dudi.\nQuestion: What power of the doka is compared?\nAnswer: cube of the doka."
+    },
+    {
+      "id": "doka_dudi_cube_doka_continuation",
+      "prompt": "The cubes of the doka are as the squares of the dudi.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the doka.",
+        "cube": "cube of the doka."
+      },
+      "text": "The cubes of the doka are as the squares of the dudi.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: cube of the doka.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.3616684079170227,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.18221236765384674,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the doka are as the squares of the dudi.\nQuestion: According to the statement, which power applies to the doka?\nAnswer: cube of the dudi."
+    },
+    {
+      "id": "doka_dudi_cube_dudi_question",
+      "prompt": "The cubes of the doka are as the squares of the dudi.\nQuestion: What power of the dudi is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dudi.",
+        "cube": "cube of the dudi."
+      },
+      "text": "The cubes of the doka are as the squares of the dudi.\nQuestion: What power of the dudi is compared?\nAnswer: square of the dudi.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.007902707904577255,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.7945370078086853,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the doka are as the squares of the dudi.\nQuestion: What power of the dudi is compared?\nAnswer: square of the dudi."
+    },
+    {
+      "id": "doka_dudi_cube_dudi_continuation",
+      "prompt": "The cubes of the doka are as the squares of the dudi.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dudi.",
+        "cube": "cube of the dudi."
+      },
+      "text": "The cubes of the doka are as the squares of the dudi.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: square of the dudi.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.011337450705468655,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.6552166938781738,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the doka are as the squares of the dudi.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: square of the dudi."
+    },
+    {
+      "id": "dudi_baba_square_dudi_question",
+      "prompt": "The squares of the dudi are as the cubes of the baba.\nQuestion: What power of the dudi is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dudi.",
+        "cube": "cube of the dudi."
+      },
+      "text": "The squares of the dudi are as the cubes of the baba.\nQuestion: What power of the dudi is compared?\nAnswer: square of the dudi.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.008036545477807522,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.9323939681053162,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the dudi are as the cubes of the baba.\nQuestion: What power of the dudi is compared?\nAnswer: square of the dudi."
+    },
+    {
+      "id": "dudi_baba_square_dudi_continuation",
+      "prompt": "The squares of the dudi are as the cubes of the baba.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the dudi.",
+        "cube": "cube of the dudi."
+      },
+      "text": "The squares of the dudi are as the cubes of the baba.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: square of the dudi.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.011514834128320217,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.7210785150527954,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the dudi are as the cubes of the baba.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: square of the dudi."
+    },
+    {
+      "id": "dudi_baba_square_baba_question",
+      "prompt": "The squares of the dudi are as the cubes of the baba.\nQuestion: What power of the baba is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the baba.",
+        "cube": "cube of the baba."
+      },
+      "text": "The squares of the dudi are as the cubes of the baba.\nQuestion: What power of the baba is compared?\nAnswer: cube of the baba.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.19024085998535156,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.03818719834089279,
+          "tokens": 7
+        }
+      },
+      "winner": "cube",
+      "generation": "The squares of the dudi are as the cubes of the baba.\nQuestion: What power of the baba is compared?\nAnswer: cube of the baba."
+    },
+    {
+      "id": "dudi_baba_square_baba_continuation",
+      "prompt": "The squares of the dudi are as the cubes of the baba.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the baba.",
+        "cube": "cube of the baba."
+      },
+      "text": "The squares of the dudi are as the cubes of the baba.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: cube of the baba.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.2783108949661255,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.4306407868862152,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The squares of the dudi are as the cubes of the baba.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: cube of the dudi."
+    },
+    {
+      "id": "dudi_baba_cube_dudi_question",
+      "prompt": "The cubes of the dudi are as the squares of the baba.\nQuestion: What power of the dudi is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dudi.",
+        "cube": "cube of the dudi."
+      },
+      "text": "The cubes of the dudi are as the squares of the baba.\nQuestion: What power of the dudi is compared?\nAnswer: cube of the dudi.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 40,
+      "scores": {
+        "square": {
+          "mean_nll": 0.2612020671367645,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.03533979505300522,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the dudi are as the squares of the baba.\nQuestion: What power of the dudi is compared?\nAnswer: cube of the dudi."
+    },
+    {
+      "id": "dudi_baba_cube_dudi_continuation",
+      "prompt": "The cubes of the dudi are as the squares of the baba.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the dudi.",
+        "cube": "cube of the dudi."
+      },
+      "text": "The cubes of the dudi are as the squares of the baba.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: cube of the dudi.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 47,
+      "scores": {
+        "square": {
+          "mean_nll": 0.21029038727283478,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.060953300446271896,
+          "tokens": 6
+        }
+      },
+      "winner": "cube",
+      "generation": "The cubes of the dudi are as the squares of the baba.\nQuestion: According to the statement, which power applies to the dudi?\nAnswer: cube of the dudi."
+    },
+    {
+      "id": "dudi_baba_cube_baba_question",
+      "prompt": "The cubes of the dudi are as the squares of the baba.\nQuestion: What power of the baba is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the baba.",
+        "cube": "cube of the baba."
+      },
+      "text": "The cubes of the dudi are as the squares of the baba.\nQuestion: What power of the baba is compared?\nAnswer: square of the baba.",
+      "source": "procedural",
+      "group": "new_labels",
+      "prompt_tokens": 41,
+      "scores": {
+        "square": {
+          "mean_nll": 0.006176024675369263,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.4628422260284424,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the dudi are as the squares of the baba.\nQuestion: What power of the baba is compared?\nAnswer: square of the baba."
+    },
+    {
+      "id": "dudi_baba_cube_baba_continuation",
+      "prompt": "The cubes of the dudi are as the squares of the baba.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the baba.",
+        "cube": "cube of the baba."
+      },
+      "text": "The cubes of the dudi are as the squares of the baba.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: square of the baba.",
+      "source": "procedural",
+      "group": "new_labels_and_template",
+      "prompt_tokens": 48,
+      "scores": {
+        "square": {
+          "mean_nll": 0.008280128240585327,
+          "tokens": 8
+        },
+        "cube": {
+          "mean_nll": 0.5000687837600708,
+          "tokens": 7
+        }
+      },
+      "winner": "square",
+      "generation": "The cubes of the dudi are as the squares of the baba.\nQuestion: According to the statement, which power applies to the baba?\nAnswer: square of the baba."
+    }
+  ],
+  "probes_file": "data/reading_binding/probes.json",
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}

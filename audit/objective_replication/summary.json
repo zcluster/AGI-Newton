@@ -1,0 +1,192 @@
+{
+  "scope": "Three fine-tuning seeds, one historical initialization; repeated fixed test set",
+  "matched_probes_verified": true,
+  "by_seed": {
+    "1686": {
+      "continuation": {
+        "cases": 96,
+        "exact_answers": 48,
+        "rank_correct": 51,
+        "both_counterfactual_answers_correct": 0,
+        "constant_square_rank_baseline": 48,
+        "groups": {
+          "new_labels": {
+            "cases": 48,
+            "exact_answers": 24
+          },
+          "new_labels_and_template": {
+            "cases": 48,
+            "exact_answers": 24
+          }
+        },
+        "copy_exact": 23,
+        "abstract": {
+          "cases": 12,
+          "candidate_accuracy": 0.16666666666666666,
+          "generation_accuracy": 0.0
+        },
+        "physics": {
+          "cases": 4,
+          "candidate_accuracy": 0.0,
+          "generation_accuracy": 0.0
+        },
+        "scientific_mean_loss": 5.051835268735886,
+        "checkpoint": "runs/hpc_reading_binding_seed1686/model.pt"
+      },
+      "answer_only": {
+        "cases": 96,
+        "exact_answers": 94,
+        "rank_correct": 93,
+        "both_counterfactual_answers_correct": 46,
+        "constant_square_rank_baseline": 48,
+        "groups": {
+          "new_labels": {
+            "cases": 48,
+            "exact_answers": 48
+          },
+          "new_labels_and_template": {
+            "cases": 48,
+            "exact_answers": 46
+          }
+        },
+        "copy_exact": 24,
+        "abstract": {
+          "cases": 12,
+          "candidate_accuracy": 0.16666666666666666,
+          "generation_accuracy": 0.0
+        },
+        "physics": {
+          "cases": 4,
+          "candidate_accuracy": 0.0,
+          "generation_accuracy": 0.0
+        },
+        "scientific_mean_loss": 5.077192932367325,
+        "checkpoint": "runs/hpc_answer_only_seed1686/model.pt"
+      }
+    },
+    "1687": {
+      "continuation": {
+        "cases": 96,
+        "exact_answers": 47,
+        "rank_correct": 66,
+        "both_counterfactual_answers_correct": 11,
+        "constant_square_rank_baseline": 48,
+        "groups": {
+          "new_labels": {
+            "cases": 48,
+            "exact_answers": 26
+          },
+          "new_labels_and_template": {
+            "cases": 48,
+            "exact_answers": 21
+          }
+        },
+        "copy_exact": 24,
+        "abstract": {
+          "cases": 12,
+          "candidate_accuracy": 0.16666666666666666,
+          "generation_accuracy": 0.0
+        },
+        "physics": {
+          "cases": 4,
+          "candidate_accuracy": 0.0,
+          "generation_accuracy": 0.0
+        },
+        "scientific_mean_loss": 5.0520627200603485,
+        "checkpoint": "runs/hpc_objective_replication_continuation_seed1687/model.pt"
+      },
+      "answer_only": {
+        "cases": 96,
+        "exact_answers": 80,
+        "rank_correct": 88,
+        "both_counterfactual_answers_correct": 33,
+        "constant_square_rank_baseline": 48,
+        "groups": {
+          "new_labels": {
+            "cases": 48,
+            "exact_answers": 43
+          },
+          "new_labels_and_template": {
+            "cases": 48,
+            "exact_answers": 37
+          }
+        },
+        "copy_exact": 24,
+        "abstract": {
+          "cases": 12,
+          "candidate_accuracy": 0.16666666666666666,
+          "generation_accuracy": 0.0
+        },
+        "physics": {
+          "cases": 4,
+          "candidate_accuracy": 0.0,
+          "generation_accuracy": 0.0
+        },
+        "scientific_mean_loss": 5.066886931657791,
+        "checkpoint": "runs/hpc_objective_replication_answer_only_seed1687/model.pt"
+      }
+    },
+    "1688": {
+      "continuation": {
+        "cases": 96,
+        "exact_answers": 49,
+        "rank_correct": 62,
+        "both_counterfactual_answers_correct": 2,
+        "constant_square_rank_baseline": 48,
+        "groups": {
+          "new_labels": {
+            "cases": 48,
+            "exact_answers": 25
+          },
+          "new_labels_and_template": {
+            "cases": 48,
+            "exact_answers": 24
+          }
+        },
+        "copy_exact": 24,
+        "abstract": {
+          "cases": 12,
+          "candidate_accuracy": 0.16666666666666666,
+          "generation_accuracy": 0.0
+        },
+        "physics": {
+          "cases": 4,
+          "candidate_accuracy": 0.0,
+          "generation_accuracy": 0.0
+        },
+        "scientific_mean_loss": 5.051435202360153,
+        "checkpoint": "runs/hpc_objective_replication_continuation_seed1688/model.pt"
+      },
+      "answer_only": {
+        "cases": 96,
+        "exact_answers": 81,
+        "rank_correct": 82,
+        "both_counterfactual_answers_correct": 33,
+        "constant_square_rank_baseline": 48,
+        "groups": {
+          "new_labels": {
+            "cases": 48,
+            "exact_answers": 43
+          },
+          "new_labels_and_template": {
+            "cases": 48,
+            "exact_answers": 38
+          }
+        },
+        "copy_exact": 24,
+        "abstract": {
+          "cases": 12,
+          "candidate_accuracy": 0.16666666666666666,
+          "generation_accuracy": 0.0
+        },
+        "physics": {
+          "cases": 4,
+          "candidate_accuracy": 0.0,
+          "generation_accuracy": 0.0
+        },
+        "scientific_mean_loss": 5.052993148565292,
+        "checkpoint": "runs/hpc_objective_replication_answer_only_seed1688/model.pt"
+      }
+    }
+  }
+}

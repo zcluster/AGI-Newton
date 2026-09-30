@@ -1,0 +1,548 @@
+{
+  "suite_version": 3,
+  "checkpoint": "runs/hpc_objective_replication_answer_only_seed1687/model.pt",
+  "label": "synthetic_objective_replication_answer_only_not_historical_only",
+  "deterministic_generation": true,
+  "abstract_metrics": {
+    "cases": 12,
+    "candidate_accuracy": 0.16666666666666666,
+    "generation_accuracy": 0.0
+  },
+  "physics_metrics": {
+    "cases": 4,
+    "candidate_accuracy": 0.0,
+    "generation_accuracy": 0.0
+  },
+  "abstract_cases": [
+    {
+      "id": "heldout_a",
+      "prompt": "The square of H scales as q^3. J scales as q^1 divided by that square. After eliminating H, determine the power of q in J.\nReasoning: ",
+      "target": "J",
+      "base": "q",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.615363597869873,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.60441255569458,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.578483581542969,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.5129499435424805,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.4415283203125,
+          "tokens": 48
+        }
+      },
+      "generation": "The square of H scales as q^3. J scales as q^1 divided by that square. After eliminating H, determine the power of q in J.\nReasoning: square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q. square of q.",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_b",
+      "prompt": "Suppose U^2 is proportional to w^3, whereas V is proportional to w/U^2. Combine both statements and simplify V.\nDerivation: ",
+      "target": "V",
+      "base": "w",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.354526996612549,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.313531398773193,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.32030725479126,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.191014766693115,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.1258087158203125,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose U^2 is proportional to w^3, whereas V is proportional to w/U^2. Combine both statements and simplify V.\nDerivation: square of the dili.\nDerivation. square of the dili.\nDerium.\nDerium.\nDerium.",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_c",
+      "prompt": "Two facts are given. The cube of C follows s^3. D follows s divided by the cube of C. What exponent of s remains in D?\nWork: ",
+      "target": "D",
+      "base": "s",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.2209086418151855,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.179135799407959,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.142035007476807,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 6.0943403244018555,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 6.0112104415893555,
+          "tokens": 48
+        }
+      },
+      "generation": "Two facts are given. The cube of C follows s^3. D follows s divided by the cube of C. What exponent of s remains in D?\nWork: square of the stale.\nThe cube of the stale.\nThe cube of the stale.\nThe cube of the stale.",
+      "generation_correct": false
+    },
+    {
+      "id": "heldout_d",
+      "prompt": "Let K^1 vary with t^3 and let L vary with t^1/K^1. Remove K from the relations and give the dependence of L on t.\nSolution: ",
+      "target": "L",
+      "base": "t",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.355359077453613,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.275240898132324,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.280981063842773,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.120168209075928,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.0643415451049805,
+          "tokens": 48
+        }
+      },
+      "generation": "Let K^1 vary with t^3 and let L vary with t^1/K^1. Remove K from the relations and give the dependence of L on t.\nSolution: of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square",
+      "generation_correct": false
+    },
+    {
+      "id": "control_2",
+      "prompt": "The square of H scales as q^1. J scales as q^3 divided by that square. Eliminate H and determine J.\nReasoning: ",
+      "target": "J",
+      "base": "q",
+      "expected": 2,
+      "winner": 2,
+      "candidate_correct": true,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.568508625030518,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.48494291305542,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.48527193069458,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.4311323165893555,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.318328857421875,
+          "tokens": 48
+        }
+      },
+      "generation": "The square of H scales as q^1. J scales as q^3 divided by that square. Eliminate H and determine J.\nReasoning: square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_1",
+      "prompt": "Suppose U^2 is proportional to w^1, whereas V is proportional to w^0/U^2. Combine both statements.\nDerivation: ",
+      "target": "V",
+      "base": "w",
+      "expected": -1,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.548718452453613,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.494289875030518,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.4956254959106445,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.2891950607299805,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.224761962890625,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose U^2 is proportional to w^1, whereas V is proportional to w^0/U^2. Combine both statements.\nDerivation: square of the dili. of the dili. of the dili. of the dili. of the dili. of the dili.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_0",
+      "prompt": "The cube of C follows s^2. D follows s^2 divided by the cube of C. What exponent remains?\nWork: ",
+      "target": "D",
+      "base": "s",
+      "expected": 0,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.918392181396484,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.894364356994629,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.870186805725098,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.705065727233887,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.619956970214844,
+          "tokens": 48
+        }
+      },
+      "generation": "The cube of C follows s^2. D follows s^2 divided by the cube of C. What exponent remains?\nWork: square of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the cube of the",
+      "generation_correct": false
+    },
+    {
+      "id": "control_other_minus_2",
+      "prompt": "Let K^1 vary with t^1 and let L vary with t^-1/K^1. Remove K and give L's dependence.\nSolution: ",
+      "target": "L",
+      "base": "t",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.259232044219971,
+          "tokens": 50
+        },
+        "-2": {
+          "mean_nll": 5.17240571975708,
+          "tokens": 50
+        },
+        "-1": {
+          "mean_nll": 5.186702728271484,
+          "tokens": 50
+        },
+        "0": {
+          "mean_nll": 5.090584754943848,
+          "tokens": 49
+        },
+        "2": {
+          "mean_nll": 4.991732597351074,
+          "tokens": 49
+        }
+      },
+      "generation": "Let K^1 vary with t^1 and let L vary with t^-1/K^1. Remove K and give L's dependence.\nSolution: looking to the square of the looking.\nSolu. looking to the square of the looking.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_reverse_2",
+      "prompt": "The square of M is proportional to z^-1. N is proportional to z^1 divided by that square. Simplify N.\nReasoning: ",
+      "target": "N",
+      "base": "z",
+      "expected": 2,
+      "winner": 2,
+      "candidate_correct": true,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.77810525894165,
+          "tokens": 50
+        },
+        "-2": {
+          "mean_nll": 5.679042816162109,
+          "tokens": 50
+        },
+        "-1": {
+          "mean_nll": 5.710205078125,
+          "tokens": 50
+        },
+        "0": {
+          "mean_nll": 5.640146732330322,
+          "tokens": 49
+        },
+        "2": {
+          "mean_nll": 5.526895046234131,
+          "tokens": 49
+        }
+      },
+      "generation": "The square of M is proportional to z^-1. N is proportional to z^1 divided by that square. Simplify N.\nReasoning: square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_3",
+      "prompt": "Suppose A^3 follows x^3 and B follows x^0/A^3. Combine the relations.\nWork: ",
+      "target": "B",
+      "base": "x",
+      "expected": -3,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 6.04328727722168,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 6.024214744567871,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 6.001654148101807,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.9030561447143555,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.8397216796875,
+          "tokens": 48
+        }
+      },
+      "generation": "Suppose A^3 follows x^3 and B follows x^0/A^3. Combine the relations.\nWork: square of the dabu.ko. \nAbde. square of the dabu. square of the dabu.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_zero_2",
+      "prompt": "The first power of P varies as y^-1. Q varies as y^-1 divided by P. Eliminate P.\nDerivation: ",
+      "target": "Q",
+      "base": "y",
+      "expected": 0,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.472472190856934,
+          "tokens": 51
+        },
+        "-2": {
+          "mean_nll": 5.368056774139404,
+          "tokens": 51
+        },
+        "-1": {
+          "mean_nll": 5.400704383850098,
+          "tokens": 51
+        },
+        "0": {
+          "mean_nll": 5.416667461395264,
+          "tokens": 50
+        },
+        "2": {
+          "mean_nll": 5.314714431762695,
+          "tokens": 50
+        }
+      },
+      "generation": "The first power of P varies as y^-1. Q varies as y^-1 divided by P. Eliminate P.\nDerivation: square of the P.\nDeriv.\nDeriv.\nDeriv.\nDeriv.\nDeriv.",
+      "generation_correct": false
+    },
+    {
+      "id": "control_minus_1_b",
+      "prompt": "Let F^2 follow v^3 and G follow v^2/F^2. Determine G after substitution.\nSolution: ",
+      "target": "G",
+      "base": "v",
+      "expected": -1,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.760612487792969,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.721590042114258,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.746881008148193,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.586476802825928,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.534108638763428,
+          "tokens": 48
+        }
+      },
+      "generation": "Let F^2 follow v^3 and G follow v^2/F^2. Determine G after substitution.\nSolution: square of the dabu. \nSquare of the dabu.l.p.p. square of the dabu.",
+      "generation_correct": false
+    }
+  ],
+  "physics_cases": [
+    {
+      "id": "physics_0",
+      "prompt": "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: ",
+      "target": "turning tendency",
+      "base": "distance",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.849100589752197,
+          "tokens": 59
+        },
+        "-2": {
+          "mean_nll": 5.847291946411133,
+          "tokens": 59
+        },
+        "-1": {
+          "mean_nll": 5.836117744445801,
+          "tokens": 59
+        },
+        "0": {
+          "mean_nll": 5.765256881713867,
+          "tokens": 58
+        },
+        "2": {
+          "mean_nll": 5.6826043128967285,
+          "tokens": 58
+        }
+      },
+      "generation": "Kepler gives period squared proportional to distance cubed. Circular turning tendency is distance divided by period squared. Eliminate the period and state the power of distance.\nReasoning: square of the dili.\nReasoning.\nReasoning.\nReasoning.\nReasoning.\nReasoning.",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_1",
+      "prompt": "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: ",
+      "target": "turning tendency",
+      "base": "mean distance",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.72800350189209,
+          "tokens": 62
+        },
+        "-2": {
+          "mean_nll": 5.7598676681518555,
+          "tokens": 62
+        },
+        "-1": {
+          "mean_nll": 5.706625461578369,
+          "tokens": 62
+        },
+        "0": {
+          "mean_nll": 5.668310642242432,
+          "tokens": 61
+        },
+        "2": {
+          "mean_nll": 5.582271099090576,
+          "tokens": 61
+        }
+      },
+      "generation": "The square of orbital time follows the cube of mean distance; the turning tendency follows mean distance over orbital time squared. Combine the relations.\nDerivation: square of the measures.\nDeriv.le.\nDeriv.le.\nDeriv.le.\nDeriv.",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_2",
+      "prompt": "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: ",
+      "target": "C",
+      "base": "R",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.364437103271484,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.350356578826904,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.290123462677002,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.256383419036865,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.204762935638428,
+          "tokens": 48
+        }
+      },
+      "generation": "Let T^2 be proportional to R^3 and let the circular tendency C be proportional to R/T^2. Express C as a power of R.\nWork: as a cube of the koda.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p.p",
+      "generation_correct": false
+    },
+    {
+      "id": "physics_3",
+      "prompt": "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: ",
+      "target": "A",
+      "base": "d",
+      "expected": -2,
+      "winner": 2,
+      "candidate_correct": false,
+      "scores": {
+        "-3": {
+          "mean_nll": 5.455110549926758,
+          "tokens": 49
+        },
+        "-2": {
+          "mean_nll": 5.440183162689209,
+          "tokens": 49
+        },
+        "-1": {
+          "mean_nll": 5.3986592292785645,
+          "tokens": 49
+        },
+        "0": {
+          "mean_nll": 5.337638854980469,
+          "tokens": 48
+        },
+        "2": {
+          "mean_nll": 5.266471862792969,
+          "tokens": 48
+        }
+      },
+      "generation": "Two observations are supplied: P^2 ∝ d^3 and A ∝ d/P^2. Without using any other law, remove P and determine A's distance exponent.\nSolution: ∴ ☿.\nTwo things.•.•.•.\nTwo things.•.•.•.",
+      "generation_correct": false
+    }
+  ]
+}

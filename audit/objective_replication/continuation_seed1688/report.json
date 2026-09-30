@@ -1,0 +1,132 @@
+{
+  "label": "synthetic_objective_replication_continuation_not_historical_only",
+  "parameters": 91510272,
+  "vocab_size": 8000,
+  "train_tokens": 873604,
+  "validation_tokens": 4928,
+  "tokens_seen": 8192000,
+  "steps": 1000,
+  "training_seconds": 75.06739974021912,
+  "initial_validation_loss": 1.8590134233236313,
+  "final_validation_loss": 1.0261097475886345,
+  "final_validation_perplexity": 2.7901901498769055,
+  "last_train_loss": 0.028071291744709015,
+  "resumed_from": "runs/hpc_v11_bootstrap_seed1686/model.pt",
+  "law_evaluation": [
+    {
+      "id": "kepler_huygens_derivation",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 4.955078125,
+          "tokens": 4
+        },
+        "inverse": {
+          "mean_nll": 2.6970391273498535,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 1.9884134531021118,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 3.5922393798828125,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "modern_direct",
+      "winner": "inverse_square",
+      "scores": {
+        "constant": {
+          "mean_nll": 4.904947757720947,
+          "tokens": 9
+        },
+        "inverse": {
+          "mean_nll": 3.2378551959991455,
+          "tokens": 7
+        },
+        "inverse_square": {
+          "mean_nll": 2.5396416187286377,
+          "tokens": 9
+        },
+        "inverse_cube": {
+          "mean_nll": 3.850815773010254,
+          "tokens": 8
+        }
+      }
+    },
+    {
+      "id": "period_style",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 4.327962398529053,
+          "tokens": 6
+        },
+        "inverse": {
+          "mean_nll": 4.173535346984863,
+          "tokens": 5
+        },
+        "inverse_square": {
+          "mean_nll": 4.85992431640625,
+          "tokens": 8
+        },
+        "inverse_cube": {
+          "mean_nll": 5.324066638946533,
+          "tokens": 9
+        }
+      }
+    },
+    {
+      "id": "law_notation",
+      "winner": "inverse",
+      "scores": {
+        "constant": {
+          "mean_nll": 12.625,
+          "tokens": 1
+        },
+        "inverse": {
+          "mean_nll": 6.1708984375,
+          "tokens": 4
+        },
+        "inverse_square": {
+          "mean_nll": 8.74375057220459,
+          "tokens": 5
+        },
+        "inverse_cube": {
+          "mean_nll": 8.99375057220459,
+          "tokens": 5
+        }
+      }
+    }
+  ],
+  "free_generations": {
+    "kepler_huygens_derivation": "Kepler's observations give that the square of an orbital period is as the cube of its mean distance. For circular motion, the turning tendency is as the distance divided by the square of the period. Combining only these two relations, the turning tendency varies with distance as the square of the period.\nQuestion: What power of the lines is compared?\nAnswer: square of the lines.",
+    "modern_direct": "Question: How does the attractive power between the Earth and Moon vary with their distance? Answer: It varies as the degrees of the difference.\nQuestion: Which power of the difference is compared?\nAnswer: cube of the difference.",
+    "period_style": "The attractive virtue betwixt the Earth and the Moon, as their distance increaseth, is diminished in the proportion of the Water.\nThe squares of the weights are as the cubes of the weights.\nThe passage compares the power of the weights, namely the square of the weights.",
+    "law_notation": "Let r be the distance between the Earth and Moon. The attractive power F is most nearly proportional to the square of the buke.\nThe passage compares the power of the buke, namely the square of the buke."
+  },
+  "args": {
+    "train": "data/reading_binding/train.bin",
+    "loss_weights": "data/reading_binding/weights.bin",
+    "validation": "data/reading_binding/validation.bin",
+    "tokenizer": "data/tokenizer_v11/pre1687_bpe.model",
+    "output_dir": "runs/hpc_objective_replication_continuation_seed1688",
+    "steps": 1000,
+    "batch_size": 16,
+    "context": 512,
+    "width": 768,
+    "heads": 12,
+    "layers": 12,
+    "learning_rate": 3e-05,
+    "warmup_steps": 30,
+    "device": "cuda",
+    "precision": "bf16",
+    "seed": 1688,
+    "label": "synthetic_objective_replication_continuation_not_historical_only",
+    "log_every": 250,
+    "resume": "runs/hpc_v11_bootstrap_seed1686/model.pt"
+  }
+}

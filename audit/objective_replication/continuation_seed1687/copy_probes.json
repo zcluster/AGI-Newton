@@ -1,0 +1,561 @@
+{
+  "checkpoint": "runs/hpc_objective_replication_continuation_seed1687/model.pt",
+  "label": "synthetic_objective_replication_continuation_not_historical_only",
+  "source_sha256": "ff20a579b8aa32496e9610acb7fd7d0b5df0bf6eaeb2c3bd68de30c74d42ddb2",
+  "probes": [
+    {
+      "id": "copy_baba_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label baba.\nAnswer: ",
+      "target": "baba",
+      "candidates": {
+        "baba": "baba.",
+        "bali": "bali."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "baba": {
+          "mean_nll": 0.01745438575744629,
+          "tokens": 4
+        },
+        "bali": {
+          "mean_nll": 4.0674543380737305,
+          "tokens": 3
+        }
+      },
+      "winner": "baba",
+      "generation": "Question: Copy exactly the label baba.\nAnswer: baba."
+    },
+    {
+      "id": "copy_baba_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: baba.\nAnswer: ",
+      "target": "baba",
+      "candidates": {
+        "baba": "baba.",
+        "bali": "bali."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "baba": {
+          "mean_nll": 0.005359172821044922,
+          "tokens": 4
+        },
+        "bali": {
+          "mean_nll": 4.297643184661865,
+          "tokens": 3
+        }
+      },
+      "winner": "baba",
+      "generation": "Question: Please reproduce this name: baba.\nAnswer: baba."
+    },
+    {
+      "id": "copy_bali_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label bali.\nAnswer: ",
+      "target": "bali",
+      "candidates": {
+        "bali": "bali.",
+        "beku": "beku."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "bali": {
+          "mean_nll": 0.0574391707777977,
+          "tokens": 3
+        },
+        "beku": {
+          "mean_nll": 3.1721458435058594,
+          "tokens": 4
+        }
+      },
+      "winner": "bali",
+      "generation": "Question: Copy exactly the label bali.\nAnswer: bali."
+    },
+    {
+      "id": "copy_bali_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: bali.\nAnswer: ",
+      "target": "bali",
+      "candidates": {
+        "bali": "bali.",
+        "beku": "beku."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "bali": {
+          "mean_nll": 0.029083251953125,
+          "tokens": 3
+        },
+        "beku": {
+          "mean_nll": 4.017478942871094,
+          "tokens": 4
+        }
+      },
+      "winner": "bali",
+      "generation": "Question: Please reproduce this name: bali.\nAnswer: bali."
+    },
+    {
+      "id": "copy_beku_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label beku.\nAnswer: ",
+      "target": "beku",
+      "candidates": {
+        "beku": "beku.",
+        "bike": "bike."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "beku": {
+          "mean_nll": 0.012218475341796875,
+          "tokens": 4
+        },
+        "bike": {
+          "mean_nll": 4.444580078125,
+          "tokens": 3
+        }
+      },
+      "winner": "beku",
+      "generation": "Question: Copy exactly the label beku.\nAnswer: beku."
+    },
+    {
+      "id": "copy_beku_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: beku.\nAnswer: ",
+      "target": "beku",
+      "candidates": {
+        "beku": "beku.",
+        "bike": "bike."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "beku": {
+          "mean_nll": 0.010137081146240234,
+          "tokens": 4
+        },
+        "bike": {
+          "mean_nll": 5.053426265716553,
+          "tokens": 3
+        }
+      },
+      "winner": "beku",
+      "generation": "Question: Please reproduce this name: beku.\nAnswer: beku."
+    },
+    {
+      "id": "copy_bike_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label bike.\nAnswer: ",
+      "target": "bike",
+      "candidates": {
+        "bike": "bike.",
+        "bodo": "bodo."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "bike": {
+          "mean_nll": 0.1107279509305954,
+          "tokens": 3
+        },
+        "bodo": {
+          "mean_nll": 3.730438232421875,
+          "tokens": 3
+        }
+      },
+      "winner": "bike",
+      "generation": "Question: Copy exactly the label bike.\nAnswer: bike."
+    },
+    {
+      "id": "copy_bike_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: bike.\nAnswer: ",
+      "target": "bike",
+      "candidates": {
+        "bike": "bike.",
+        "bodo": "bodo."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "bike": {
+          "mean_nll": 0.06705983728170395,
+          "tokens": 3
+        },
+        "bodo": {
+          "mean_nll": 3.3767192363739014,
+          "tokens": 3
+        }
+      },
+      "winner": "bike",
+      "generation": "Question: Please reproduce this name: bike.\nAnswer: bike."
+    },
+    {
+      "id": "copy_bodo_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label bodo.\nAnswer: ",
+      "target": "bodo",
+      "candidates": {
+        "bodo": "bodo.",
+        "buda": "buda."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "bodo": {
+          "mean_nll": 0.005358378402888775,
+          "tokens": 3
+        },
+        "buda": {
+          "mean_nll": 3.6694679260253906,
+          "tokens": 3
+        }
+      },
+      "winner": "bodo",
+      "generation": "Question: Copy exactly the label bodo.\nAnswer: bodo."
+    },
+    {
+      "id": "copy_bodo_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: bodo.\nAnswer: ",
+      "target": "bodo",
+      "candidates": {
+        "bodo": "bodo.",
+        "buda": "buda."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "bodo": {
+          "mean_nll": 0.0046857199631631374,
+          "tokens": 3
+        },
+        "buda": {
+          "mean_nll": 3.33478045463562,
+          "tokens": 3
+        }
+      },
+      "winner": "bodo",
+      "generation": "Question: Please reproduce this name: bodo.\nAnswer: bodo."
+    },
+    {
+      "id": "copy_buda_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label buda.\nAnswer: ",
+      "target": "buda",
+      "candidates": {
+        "buda": "buda.",
+        "dabi": "dabi."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "buda": {
+          "mean_nll": 0.007175127975642681,
+          "tokens": 3
+        },
+        "dabi": {
+          "mean_nll": 5.146993160247803,
+          "tokens": 3
+        }
+      },
+      "winner": "buda",
+      "generation": "Question: Copy exactly the label buda.\nAnswer: buda."
+    },
+    {
+      "id": "copy_buda_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: buda.\nAnswer: ",
+      "target": "buda",
+      "candidates": {
+        "buda": "buda.",
+        "dabi": "dabi."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "buda": {
+          "mean_nll": 0.0052884421311318874,
+          "tokens": 3
+        },
+        "dabi": {
+          "mean_nll": 6.022069454193115,
+          "tokens": 3
+        }
+      },
+      "winner": "buda",
+      "generation": "Question: Please reproduce this name: buda.\nAnswer: buda."
+    },
+    {
+      "id": "copy_dabi_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label dabi.\nAnswer: ",
+      "target": "dabi",
+      "candidates": {
+        "dabi": "dabi.",
+        "dalu": "dalu."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "dabi": {
+          "mean_nll": 0.20431900024414062,
+          "tokens": 3
+        },
+        "dalu": {
+          "mean_nll": 3.6152167320251465,
+          "tokens": 3
+        }
+      },
+      "winner": "dabi",
+      "generation": "Question: Copy exactly the label dabi.\nAnswer: dabi."
+    },
+    {
+      "id": "copy_dabi_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: dabi.\nAnswer: ",
+      "target": "dabi",
+      "candidates": {
+        "dabi": "dabi.",
+        "dalu": "dalu."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "dabi": {
+          "mean_nll": 0.2396443784236908,
+          "tokens": 3
+        },
+        "dalu": {
+          "mean_nll": 4.307701110839844,
+          "tokens": 3
+        }
+      },
+      "winner": "dabi",
+      "generation": "Question: Please reproduce this name: dabi.\nAnswer: dabi."
+    },
+    {
+      "id": "copy_dalu_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label dalu.\nAnswer: ",
+      "target": "dalu",
+      "candidates": {
+        "dalu": "dalu.",
+        "dele": "dele."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "dalu": {
+          "mean_nll": 0.0915578231215477,
+          "tokens": 3
+        },
+        "dele": {
+          "mean_nll": 2.6806640625,
+          "tokens": 3
+        }
+      },
+      "winner": "dalu",
+      "generation": "Question: Copy exactly the label dalu.\nAnswer: dalu."
+    },
+    {
+      "id": "copy_dalu_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: dalu.\nAnswer: ",
+      "target": "dalu",
+      "candidates": {
+        "dalu": "dalu.",
+        "dele": "dele."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "dalu": {
+          "mean_nll": 0.19596481323242188,
+          "tokens": 3
+        },
+        "dele": {
+          "mean_nll": 2.5266928672790527,
+          "tokens": 3
+        }
+      },
+      "winner": "dalu",
+      "generation": "Question: Please reproduce this name: dalu.\nAnswer: dalu."
+    },
+    {
+      "id": "copy_dele_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label dele.\nAnswer: ",
+      "target": "dele",
+      "candidates": {
+        "dele": "dele.",
+        "diko": "diko."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "dele": {
+          "mean_nll": 0.01285552978515625,
+          "tokens": 3
+        },
+        "diko": {
+          "mean_nll": 3.4266204833984375,
+          "tokens": 4
+        }
+      },
+      "winner": "dele",
+      "generation": "Question: Copy exactly the label dele.\nAnswer: dele."
+    },
+    {
+      "id": "copy_dele_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: dele.\nAnswer: ",
+      "target": "dele",
+      "candidates": {
+        "dele": "dele.",
+        "diko": "diko."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "dele": {
+          "mean_nll": 0.01349639892578125,
+          "tokens": 3
+        },
+        "diko": {
+          "mean_nll": 3.1654052734375,
+          "tokens": 4
+        }
+      },
+      "winner": "dele",
+      "generation": "Question: Please reproduce this name: dele.\nAnswer: dele."
+    },
+    {
+      "id": "copy_diko_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label diko.\nAnswer: ",
+      "target": "diko",
+      "candidates": {
+        "diko": "diko.",
+        "doka": "doka."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "diko": {
+          "mean_nll": 0.007053375244140625,
+          "tokens": 4
+        },
+        "doka": {
+          "mean_nll": 4.205373764038086,
+          "tokens": 4
+        }
+      },
+      "winner": "diko",
+      "generation": "Question: Copy exactly the label diko.\nAnswer: diko."
+    },
+    {
+      "id": "copy_diko_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: diko.\nAnswer: ",
+      "target": "diko",
+      "candidates": {
+        "diko": "diko.",
+        "doka": "doka."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "diko": {
+          "mean_nll": 0.009167671203613281,
+          "tokens": 4
+        },
+        "doka": {
+          "mean_nll": 4.185760498046875,
+          "tokens": 4
+        }
+      },
+      "winner": "diko",
+      "generation": "Question: Please reproduce this name: diko.\nAnswer: diko."
+    },
+    {
+      "id": "copy_doka_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label doka.\nAnswer: ",
+      "target": "doka",
+      "candidates": {
+        "doka": "doka.",
+        "dudi": "dudi."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "doka": {
+          "mean_nll": 0.007754325866699219,
+          "tokens": 4
+        },
+        "dudi": {
+          "mean_nll": 4.440267086029053,
+          "tokens": 3
+        }
+      },
+      "winner": "doka",
+      "generation": "Question: Copy exactly the label doka.\nAnswer: doka."
+    },
+    {
+      "id": "copy_doka_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: doka.\nAnswer: ",
+      "target": "doka",
+      "candidates": {
+        "doka": "doka.",
+        "dudi": "dudi."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "doka": {
+          "mean_nll": 0.015062332153320312,
+          "tokens": 4
+        },
+        "dudi": {
+          "mean_nll": 4.2467451095581055,
+          "tokens": 3
+        }
+      },
+      "winner": "doka",
+      "generation": "Question: Please reproduce this name: doka.\nAnswer: doka."
+    },
+    {
+      "id": "copy_dudi_familiar",
+      "group": "copy_familiar",
+      "prompt": "Question: Copy exactly the label dudi.\nAnswer: ",
+      "target": "dudi",
+      "candidates": {
+        "dudi": "dudi.",
+        "baba": "baba."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "dudi": {
+          "mean_nll": 0.1792163848876953,
+          "tokens": 3
+        },
+        "baba": {
+          "mean_nll": 3.6055727005004883,
+          "tokens": 4
+        }
+      },
+      "winner": "dudi",
+      "generation": "Question: Copy exactly the label dudi.\nAnswer: dudi."
+    },
+    {
+      "id": "copy_dudi_novel",
+      "group": "copy_novel",
+      "prompt": "Question: Please reproduce this name: dudi.\nAnswer: ",
+      "target": "dudi",
+      "candidates": {
+        "dudi": "dudi.",
+        "baba": "baba."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "dudi": {
+          "mean_nll": 0.25435131788253784,
+          "tokens": 3
+        },
+        "baba": {
+          "mean_nll": 4.285530090332031,
+          "tokens": 4
+        }
+      },
+      "winner": "dudi",
+      "generation": "Question: Please reproduce this name: dudi.\nAnswer: dudi."
+    }
+  ],
+  "probes_file": "data/reading_binding/copy_probes.json",
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}

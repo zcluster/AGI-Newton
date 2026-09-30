@@ -30,8 +30,11 @@ The matched-input [`answer-only comparison`](ANSWER_ONLY_PROTOCOL.md) subsequent
 reaches 94/96 exact answers and 46/48 complete reversal pairs, versus 48/96 and
 0/48 for that control. This is a single-seed synthetic reading result, not Newton
 rediscovery: original OCR reading, algebraic transfer and physics remain unsuccessful.
-Scientific-text prediction also deteriorates. Paired fine-tuning-seed replication
-is specified before further scaling or capability claims.
+Scientific-text prediction also deteriorates. The two additional paired seeds
+replicate the reading advantage (80/96 and 81/96 versus 47/96 and 49/96), but all
+three seeds fail physics. A short-answer diagnostic also fails all eight arithmetic
+and elimination cases: output length alone does not explain the missing transfer.
+See the same protocol for the full per-seed table and raw artifact locations.
 
 The repository includes the pilot OCR text, source manifests, generated
 reasoning curricula, tokenizer, scripts, tests, and JSON evaluation results.
