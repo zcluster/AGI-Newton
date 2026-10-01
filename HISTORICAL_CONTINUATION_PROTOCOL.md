@@ -29,3 +29,12 @@ logs input hashes and refuses to overwrite the new model. Inspect input hashes
 against original encoding artifacts when retrieving results. The anticipated
 runtime is roughly the prior 32-minute training plus evaluation, not guaranteed.
 Only the isolated AGI-Newton directory is used; no other project is altered.
+
+The original encoding job `2861974` records training-stream SHA-256
+`6d9bef7d45138291679b0eff11f62c97e0f93129b8831f3265aa1503d023cb8c`
+in `runs/hpc_v11_bootstrap_seed1686/agi-newton-v11-encode-2861974.out`.
+The submission script now requires this exact digest, rather than merely logging
+the current file's hash. Checkpoint and training-stream mismatch stop before
+training. Remote upload/submission attempts have not yielded any job ID; the
+latest diagnostic connection closes during key exchange, before authentication.
+Reconcile the remote script and scheduler state before retrying submission.
