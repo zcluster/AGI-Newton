@@ -117,3 +117,51 @@ this extension is exploratory, not an independent blind benchmark. Report full
 generated suffixes, candidate ranking and both complete reversal pairs per model.
 The runnable job is `hpc/tongji_streete_objective_transfer.sbatch`; it refuses
 to overwrite existing results or proceed without a checkpoint.
+
+### Six-model transfer results
+
+Job `2864308` completed, exit `0:0`, elapsed 1m15s. All six reports are retained
+as `streete_{continuation,answer_only}_{1686,1687,1688}.json`. Each report's fixture
+hash, all four prompt/target/candidate identities and no-BOS setting were checked.
+Checkpoint hashes are retained in the raw reports; seed-1686 hashes match the
+previous objective experiment. These are evaluation runs, not new training.
+
+| Objective | Fine-tuning seed | Ranking correct /4 | Exact candidate-text generated suffix /4 |
+|---|---:|---:|---:|
+| continuation | 1686 | 2 | 0 |
+| continuation | 1687 | 2 | 1 |
+| continuation | 1688 | 2 | 1 |
+| answer-only | 1686 | 2 | 0 |
+| answer-only | 1687 | 2 | 1 |
+| answer-only | 1688 | 2 | 1 |
+
+Exact candidate-text matching is a descriptive check, not a universal semantic
+grader. In particular, singular `period` is not a substantive reasoning error.
+Inspection of all generated suffixes supplies an important qualification:
+
+- Continuation seed 1686 produces `square of the period.` and `cube of the period.`
+  on the original/counterfactual **question** pair. This is a semantically correct
+  paired response despite zero exact candidate-string matches. Its continuation
+  pair substitutes `sides` and `totals`, so the complete four-case task still fails.
+- Continuation seeds 1687–1688 answer the original question correctly but substitute
+  `products` in the counterfactual question. Their continuation answers contain
+  truncated `Revolu` labels and, for the original, repeated squares.
+- All three answer-only seeds answer both questions with `cube`: wrong on the
+  original, right on the counterfactual (seed 1686 uses singular `period`). Seeds
+  1687–1688 track the changed power in continuations but bind it to `Earth`, not
+  periods; seed 1686 repeats squares in both continuations.
+
+Thus a post-hoc semantic reading identifies one complete question reversal pair
+in continuation seed 1686 and none in the other five models. This interpretation
+is explicitly manual and not independent blind adjudication. None of the six
+has both interfaces' complete pairs correct. Ranking always gives 2/4 with 0/2
+complete ranking pairs: continuation ranks square everywhere, while answer-only
+ranks cube for questions and square for continuations.
+
+The replicated synthetic reading advantage does **not** transfer as a consistent
+advantage on this four-case historical prose diagnostic. Conversely, calling all
+generations complete failures would overlook the valid seed-1686 question pair.
+The result motivates a broader, predeclared historical reading suite with semantic
+entity binding and independent adjudication, not selecting this seed as a success
+or pooling repeated prompts into an inflated sample size. Force-law discovery
+has not been tested by these four reading questions.

@@ -1,0 +1,99 @@
+{
+  "checkpoint": "runs/hpc_objective_replication_continuation_seed1688/model.pt",
+  "label": "synthetic_objective_replication_continuation_not_historical_only",
+  "source_sha256": "cd270a121c8ee40e9d9104c60c8833af31fdd7dcb0019b4aeb539ee8e9e32a7d",
+  "probes": [
+    {
+      "id": "streete_clean_period_question",
+      "prompt": "For Example, The Period of the Revolution of the Earth reduced into minutes of time, being 525968. 1/2. and of Mars. 989247. 1/2. I say, as the square of. 525968. 1/2. to the square of. 989247. 1/2. so the Cube of 100000. the mean distance of the Earth, to the Cube of 152369.the Mean distance of Mars.\nQuestion: What power of the periods is compared?\nAnswer: ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 123,
+      "scores": {
+        "square": {
+          "mean_nll": 0.24498789012432098,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.9000124335289001,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "For Example, The Period of the Revolution of the Earth reduced into minutes of time, being 525968. 1/2. and of Mars. 989247. 1/2. I say, as the square of. 525968. 1/2. to the square of. 989247. 1/2. so the Cube of 100000. the mean distance of the Earth, to the Cube of 152369.the Mean distance of Mars.\nQuestion: What power of the periods is compared?\nAnswer: square of the periods."
+    },
+    {
+      "id": "streete_clean_period_continuation",
+      "prompt": "For Example, The Period of the Revolution of the Earth reduced into minutes of time, being 525968. 1/2. and of Mars. 989247. 1/2. I say, as the square of. 525968. 1/2. to the square of. 989247. 1/2. so the Cube of 100000. the mean distance of the Earth, to the Cube of 152369.the Mean distance of Mars.\nThe passage compares the ",
+      "target": "square",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 110,
+      "scores": {
+        "square": {
+          "mean_nll": 4.555695533752441,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 6.445516109466553,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "For Example, The Period of the Revolution of the Earth reduced into minutes of time, being 525968. 1/2. and of Mars. 989247. 1/2. I say, as the square of. 525968. 1/2. to the square of. 989247. 1/2. so the Cube of 100000. the mean distance of the Earth, to the Cube of 152369.the Mean distance of Mars.\nThe passage compares the power of the Revolu, namely the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of"
+    },
+    {
+      "id": "streete_counterfactual_period_question",
+      "prompt": "For Example, The Period of the Revolution of the Earth reduced into minutes of time, being 525968. 1/2. and of Mars. 989247. 1/2. I say, as the cube of. 525968. 1/2. to the cube of. 989247. 1/2. so the Square of 100000. the mean distance of the Earth, to the Square of 152369.the Mean distance of Mars.\nQuestion: What power of the periods is compared?\nAnswer: ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 123,
+      "scores": {
+        "square": {
+          "mean_nll": 0.36312758922576904,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 0.5441499352455139,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "For Example, The Period of the Revolution of the Earth reduced into minutes of time, being 525968. 1/2. and of Mars. 989247. 1/2. I say, as the cube of. 525968. 1/2. to the cube of. 989247. 1/2. so the Square of 100000. the mean distance of the Earth, to the Square of 152369.the Mean distance of Mars.\nQuestion: What power of the periods is compared?\nAnswer: cube of the products."
+    },
+    {
+      "id": "streete_counterfactual_period_continuation",
+      "prompt": "For Example, The Period of the Revolution of the Earth reduced into minutes of time, being 525968. 1/2. and of Mars. 989247. 1/2. I say, as the cube of. 525968. 1/2. to the cube of. 989247. 1/2. so the Square of 100000. the mean distance of the Earth, to the Square of 152369.the Mean distance of Mars.\nThe passage compares the ",
+      "target": "cube",
+      "candidates": {
+        "square": "square of the periods.",
+        "cube": "cube of the periods."
+      },
+      "prompt_tokens": 110,
+      "scores": {
+        "square": {
+          "mean_nll": 4.7048234939575195,
+          "tokens": 7
+        },
+        "cube": {
+          "mean_nll": 6.459861755371094,
+          "tokens": 6
+        }
+      },
+      "winner": "square",
+      "generation": "For Example, The Period of the Revolution of the Earth reduced into minutes of time, being 525968. 1/2. and of Mars. 989247. 1/2. I say, as the cube of. 525968. 1/2. to the cube of. 989247. 1/2. so the Square of 100000. the mean distance of the Earth, to the Square of 152369.the Mean distance of Mars.\nThe passage compares the power of the Revolu, namely the cube of the Revolu."
+    }
+  ],
+  "prepend_bos": false,
+  "checkpoint_sha256": "1676b49d902b22374664abd5f8b67fa9601f470e06a86f7f3384a9ac9e1c91a3",
+  "probes_file": "audit/streete_clean_reading_probes.json",
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}
