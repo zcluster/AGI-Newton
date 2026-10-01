@@ -40,3 +40,9 @@ A second search over the entire 120-page modern electronic rendering, used only 
 4. Once both gates pass, compare premise identification, premise-given algebraic composition, and the direct Earth–Moon derivation separately. Never count a supplied modern paraphrase as historical rediscovery.
 
 This is source-acquisition progress, not a new training result. No existing tokenizer, corpus, checkpoint, or GPU job was changed.
+
+A [provisional selected transcription](audit/source_pages/STREETE_TRANSCRIPTION_REVIEW.md)
+now records the original-page worked-example prose and the Jupiter continuation.
+Image hashes were rechecked. It preserves the source's numerical relation without
+adding modern force equations; omitted tables and calculations are explicit.
+Independent review and passage admission remain open, so this is not training data.
