@@ -1,0 +1,8 @@
+{
+  "seed": 1691,
+  "cases": 192,
+  "pairs_per_group": 24,
+  "training_sha256": "d8c1a6e8e015b2a439b70713038b0e046df892b3d844743626d30fd4c40d6958",
+  "probes_sha256": "3d43e28e0b8142318d50ddecd501c0ff600dde83500e1b7720e5f081e01d627b",
+  "scope": "Prospective inference diagnostic on two existing synthetic capability checkpoints; not discovery"
+}

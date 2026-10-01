@@ -1,0 +1,2882 @@
+[
+  {
+    "id": "seen_operands_0_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 0,
+    "b": -6,
+    "expected": 6,
+    "prompt": "Question: What is 0 minus -6?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "6.",
+      "lower": "5.",
+      "higher": "7."
+    }
+  },
+  {
+    "id": "seen_operands_0_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 0,
+    "b": -6,
+    "expected": 6,
+    "prompt": "Question: Subtract -6 from 0.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "6.",
+      "lower": "5.",
+      "higher": "7."
+    }
+  },
+  {
+    "id": "seen_operands_0_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 0,
+    "b": -6,
+    "expected": 6,
+    "prompt": "Question: Calculate the difference obtained by taking -6 away from 0.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "6.",
+      "lower": "5.",
+      "higher": "7."
+    }
+  },
+  {
+    "id": "seen_operands_0_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 0,
+    "b": -6,
+    "expected": 6,
+    "prompt": "Question: Evaluate (0) - (-6).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "6.",
+      "lower": "5.",
+      "higher": "7."
+    }
+  },
+  {
+    "id": "seen_operands_1_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 6,
+    "b": -2,
+    "expected": 8,
+    "prompt": "Question: What is 6 minus -2?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "8.",
+      "lower": "7.",
+      "higher": "9."
+    }
+  },
+  {
+    "id": "seen_operands_1_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 6,
+    "b": -2,
+    "expected": 8,
+    "prompt": "Question: Subtract -2 from 6.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "8.",
+      "lower": "7.",
+      "higher": "9."
+    }
+  },
+  {
+    "id": "seen_operands_1_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 6,
+    "b": -2,
+    "expected": 8,
+    "prompt": "Question: Calculate the difference obtained by taking -2 away from 6.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "8.",
+      "lower": "7.",
+      "higher": "9."
+    }
+  },
+  {
+    "id": "seen_operands_1_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 6,
+    "b": -2,
+    "expected": 8,
+    "prompt": "Question: Evaluate (6) - (-2).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "8.",
+      "lower": "7.",
+      "higher": "9."
+    }
+  },
+  {
+    "id": "seen_operands_2_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 4,
+    "b": -1,
+    "expected": 5,
+    "prompt": "Question: What is 4 minus -1?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "5.",
+      "lower": "4.",
+      "higher": "6."
+    }
+  },
+  {
+    "id": "seen_operands_2_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 4,
+    "b": -1,
+    "expected": 5,
+    "prompt": "Question: Subtract -1 from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "5.",
+      "lower": "4.",
+      "higher": "6."
+    }
+  },
+  {
+    "id": "seen_operands_2_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 4,
+    "b": -1,
+    "expected": 5,
+    "prompt": "Question: Calculate the difference obtained by taking -1 away from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "5.",
+      "lower": "4.",
+      "higher": "6."
+    }
+  },
+  {
+    "id": "seen_operands_2_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 4,
+    "b": -1,
+    "expected": 5,
+    "prompt": "Question: Evaluate (4) - (-1).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "5.",
+      "lower": "4.",
+      "higher": "6."
+    }
+  },
+  {
+    "id": "seen_operands_3_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 4,
+    "b": 3,
+    "expected": 1,
+    "prompt": "Question: What is 4 minus 3?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "1.",
+      "lower": "0.",
+      "higher": "2."
+    }
+  },
+  {
+    "id": "seen_operands_3_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 4,
+    "b": 3,
+    "expected": 1,
+    "prompt": "Question: Subtract 3 from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "1.",
+      "lower": "0.",
+      "higher": "2."
+    }
+  },
+  {
+    "id": "seen_operands_3_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 4,
+    "b": 3,
+    "expected": 1,
+    "prompt": "Question: Calculate the difference obtained by taking 3 away from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "1.",
+      "lower": "0.",
+      "higher": "2."
+    }
+  },
+  {
+    "id": "seen_operands_3_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 4,
+    "b": 3,
+    "expected": 1,
+    "prompt": "Question: Evaluate (4) - (3).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "1.",
+      "lower": "0.",
+      "higher": "2."
+    }
+  },
+  {
+    "id": "seen_operands_4_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 4,
+    "b": 2,
+    "expected": 2,
+    "prompt": "Question: What is 4 minus 2?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "2.",
+      "lower": "1.",
+      "higher": "3."
+    }
+  },
+  {
+    "id": "seen_operands_4_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 4,
+    "b": 2,
+    "expected": 2,
+    "prompt": "Question: Subtract 2 from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "2.",
+      "lower": "1.",
+      "higher": "3."
+    }
+  },
+  {
+    "id": "seen_operands_4_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 4,
+    "b": 2,
+    "expected": 2,
+    "prompt": "Question: Calculate the difference obtained by taking 2 away from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "2.",
+      "lower": "1.",
+      "higher": "3."
+    }
+  },
+  {
+    "id": "seen_operands_4_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 4,
+    "b": 2,
+    "expected": 2,
+    "prompt": "Question: Evaluate (4) - (2).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "2.",
+      "lower": "1.",
+      "higher": "3."
+    }
+  },
+  {
+    "id": "seen_operands_5_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 0,
+    "b": -4,
+    "expected": 4,
+    "prompt": "Question: What is 0 minus -4?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "4.",
+      "lower": "3.",
+      "higher": "5."
+    }
+  },
+  {
+    "id": "seen_operands_5_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 0,
+    "b": -4,
+    "expected": 4,
+    "prompt": "Question: Subtract -4 from 0.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "4.",
+      "lower": "3.",
+      "higher": "5."
+    }
+  },
+  {
+    "id": "seen_operands_5_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 0,
+    "b": -4,
+    "expected": 4,
+    "prompt": "Question: Calculate the difference obtained by taking -4 away from 0.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "4.",
+      "lower": "3.",
+      "higher": "5."
+    }
+  },
+  {
+    "id": "seen_operands_5_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 0,
+    "b": -4,
+    "expected": 4,
+    "prompt": "Question: Evaluate (0) - (-4).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "4.",
+      "lower": "3.",
+      "higher": "5."
+    }
+  },
+  {
+    "id": "seen_operands_6_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 1,
+    "b": 2,
+    "expected": -1,
+    "prompt": "Question: What is 1 minus 2?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_6_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 1,
+    "b": 2,
+    "expected": -1,
+    "prompt": "Question: Subtract 2 from 1.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_6_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 1,
+    "b": 2,
+    "expected": -1,
+    "prompt": "Question: Calculate the difference obtained by taking 2 away from 1.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_6_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 1,
+    "b": 2,
+    "expected": -1,
+    "prompt": "Question: Evaluate (1) - (2).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_7_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 4,
+    "b": -7,
+    "expected": 11,
+    "prompt": "Question: What is 4 minus -7?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "11.",
+      "lower": "10.",
+      "higher": "12."
+    }
+  },
+  {
+    "id": "seen_operands_7_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 4,
+    "b": -7,
+    "expected": 11,
+    "prompt": "Question: Subtract -7 from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "11.",
+      "lower": "10.",
+      "higher": "12."
+    }
+  },
+  {
+    "id": "seen_operands_7_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 4,
+    "b": -7,
+    "expected": 11,
+    "prompt": "Question: Calculate the difference obtained by taking -7 away from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "11.",
+      "lower": "10.",
+      "higher": "12."
+    }
+  },
+  {
+    "id": "seen_operands_7_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 4,
+    "b": -7,
+    "expected": 11,
+    "prompt": "Question: Evaluate (4) - (-7).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "11.",
+      "lower": "10.",
+      "higher": "12."
+    }
+  },
+  {
+    "id": "seen_operands_8_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": -4,
+    "b": -5,
+    "expected": 1,
+    "prompt": "Question: What is -4 minus -5?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "1.",
+      "lower": "0.",
+      "higher": "2."
+    }
+  },
+  {
+    "id": "seen_operands_8_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": -4,
+    "b": -5,
+    "expected": 1,
+    "prompt": "Question: Subtract -5 from -4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "1.",
+      "lower": "0.",
+      "higher": "2."
+    }
+  },
+  {
+    "id": "seen_operands_8_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": -4,
+    "b": -5,
+    "expected": 1,
+    "prompt": "Question: Calculate the difference obtained by taking -5 away from -4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "1.",
+      "lower": "0.",
+      "higher": "2."
+    }
+  },
+  {
+    "id": "seen_operands_8_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": -4,
+    "b": -5,
+    "expected": 1,
+    "prompt": "Question: Evaluate (-4) - (-5).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "1.",
+      "lower": "0.",
+      "higher": "2."
+    }
+  },
+  {
+    "id": "seen_operands_9_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 7,
+    "b": -5,
+    "expected": 12,
+    "prompt": "Question: What is 7 minus -5?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "12.",
+      "lower": "11.",
+      "higher": "13."
+    }
+  },
+  {
+    "id": "seen_operands_9_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 7,
+    "b": -5,
+    "expected": 12,
+    "prompt": "Question: Subtract -5 from 7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "12.",
+      "lower": "11.",
+      "higher": "13."
+    }
+  },
+  {
+    "id": "seen_operands_9_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 7,
+    "b": -5,
+    "expected": 12,
+    "prompt": "Question: Calculate the difference obtained by taking -5 away from 7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "12.",
+      "lower": "11.",
+      "higher": "13."
+    }
+  },
+  {
+    "id": "seen_operands_9_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 7,
+    "b": -5,
+    "expected": 12,
+    "prompt": "Question: Evaluate (7) - (-5).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "12.",
+      "lower": "11.",
+      "higher": "13."
+    }
+  },
+  {
+    "id": "seen_operands_10_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": -2,
+    "b": 3,
+    "expected": -5,
+    "prompt": "Question: What is -2 minus 3?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-5.",
+      "lower": "-6.",
+      "higher": "-4."
+    }
+  },
+  {
+    "id": "seen_operands_10_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": -2,
+    "b": 3,
+    "expected": -5,
+    "prompt": "Question: Subtract 3 from -2.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-5.",
+      "lower": "-6.",
+      "higher": "-4."
+    }
+  },
+  {
+    "id": "seen_operands_10_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": -2,
+    "b": 3,
+    "expected": -5,
+    "prompt": "Question: Calculate the difference obtained by taking 3 away from -2.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-5.",
+      "lower": "-6.",
+      "higher": "-4."
+    }
+  },
+  {
+    "id": "seen_operands_10_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": -2,
+    "b": 3,
+    "expected": -5,
+    "prompt": "Question: Evaluate (-2) - (3).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-5.",
+      "lower": "-6.",
+      "higher": "-4."
+    }
+  },
+  {
+    "id": "seen_operands_11_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 7,
+    "b": 2,
+    "expected": 5,
+    "prompt": "Question: What is 7 minus 2?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "5.",
+      "lower": "4.",
+      "higher": "6."
+    }
+  },
+  {
+    "id": "seen_operands_11_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 7,
+    "b": 2,
+    "expected": 5,
+    "prompt": "Question: Subtract 2 from 7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "5.",
+      "lower": "4.",
+      "higher": "6."
+    }
+  },
+  {
+    "id": "seen_operands_11_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 7,
+    "b": 2,
+    "expected": 5,
+    "prompt": "Question: Calculate the difference obtained by taking 2 away from 7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "5.",
+      "lower": "4.",
+      "higher": "6."
+    }
+  },
+  {
+    "id": "seen_operands_11_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 7,
+    "b": 2,
+    "expected": 5,
+    "prompt": "Question: Evaluate (7) - (2).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "5.",
+      "lower": "4.",
+      "higher": "6."
+    }
+  },
+  {
+    "id": "seen_operands_12_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 4,
+    "b": 1,
+    "expected": 3,
+    "prompt": "Question: What is 4 minus 1?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "seen_operands_12_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 4,
+    "b": 1,
+    "expected": 3,
+    "prompt": "Question: Subtract 1 from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "seen_operands_12_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 4,
+    "b": 1,
+    "expected": 3,
+    "prompt": "Question: Calculate the difference obtained by taking 1 away from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "seen_operands_12_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 4,
+    "b": 1,
+    "expected": 3,
+    "prompt": "Question: Evaluate (4) - (1).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "seen_operands_13_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 5,
+    "b": 6,
+    "expected": -1,
+    "prompt": "Question: What is 5 minus 6?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_13_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 5,
+    "b": 6,
+    "expected": -1,
+    "prompt": "Question: Subtract 6 from 5.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_13_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 5,
+    "b": 6,
+    "expected": -1,
+    "prompt": "Question: Calculate the difference obtained by taking 6 away from 5.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_13_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 5,
+    "b": 6,
+    "expected": -1,
+    "prompt": "Question: Evaluate (5) - (6).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_14_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": -7,
+    "b": 3,
+    "expected": -10,
+    "prompt": "Question: What is -7 minus 3?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-10.",
+      "lower": "-11.",
+      "higher": "-9."
+    }
+  },
+  {
+    "id": "seen_operands_14_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": -7,
+    "b": 3,
+    "expected": -10,
+    "prompt": "Question: Subtract 3 from -7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-10.",
+      "lower": "-11.",
+      "higher": "-9."
+    }
+  },
+  {
+    "id": "seen_operands_14_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": -7,
+    "b": 3,
+    "expected": -10,
+    "prompt": "Question: Calculate the difference obtained by taking 3 away from -7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-10.",
+      "lower": "-11.",
+      "higher": "-9."
+    }
+  },
+  {
+    "id": "seen_operands_14_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": -7,
+    "b": 3,
+    "expected": -10,
+    "prompt": "Question: Evaluate (-7) - (3).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-10.",
+      "lower": "-11.",
+      "higher": "-9."
+    }
+  },
+  {
+    "id": "seen_operands_15_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 5,
+    "b": 2,
+    "expected": 3,
+    "prompt": "Question: What is 5 minus 2?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "seen_operands_15_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 5,
+    "b": 2,
+    "expected": 3,
+    "prompt": "Question: Subtract 2 from 5.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "seen_operands_15_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 5,
+    "b": 2,
+    "expected": 3,
+    "prompt": "Question: Calculate the difference obtained by taking 2 away from 5.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "seen_operands_15_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 5,
+    "b": 2,
+    "expected": 3,
+    "prompt": "Question: Evaluate (5) - (2).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "seen_operands_16_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 2,
+    "b": 8,
+    "expected": -6,
+    "prompt": "Question: What is 2 minus 8?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-6.",
+      "lower": "-7.",
+      "higher": "-5."
+    }
+  },
+  {
+    "id": "seen_operands_16_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 2,
+    "b": 8,
+    "expected": -6,
+    "prompt": "Question: Subtract 8 from 2.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-6.",
+      "lower": "-7.",
+      "higher": "-5."
+    }
+  },
+  {
+    "id": "seen_operands_16_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 2,
+    "b": 8,
+    "expected": -6,
+    "prompt": "Question: Calculate the difference obtained by taking 8 away from 2.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-6.",
+      "lower": "-7.",
+      "higher": "-5."
+    }
+  },
+  {
+    "id": "seen_operands_16_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 2,
+    "b": 8,
+    "expected": -6,
+    "prompt": "Question: Evaluate (2) - (8).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-6.",
+      "lower": "-7.",
+      "higher": "-5."
+    }
+  },
+  {
+    "id": "seen_operands_17_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 7,
+    "b": 8,
+    "expected": -1,
+    "prompt": "Question: What is 7 minus 8?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_17_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 7,
+    "b": 8,
+    "expected": -1,
+    "prompt": "Question: Subtract 8 from 7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_17_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 7,
+    "b": 8,
+    "expected": -1,
+    "prompt": "Question: Calculate the difference obtained by taking 8 away from 7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_17_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 7,
+    "b": 8,
+    "expected": -1,
+    "prompt": "Question: Evaluate (7) - (8).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_18_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": -1,
+    "b": 0,
+    "expected": -1,
+    "prompt": "Question: What is -1 minus 0?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_18_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": -1,
+    "b": 0,
+    "expected": -1,
+    "prompt": "Question: Subtract 0 from -1.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_18_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": -1,
+    "b": 0,
+    "expected": -1,
+    "prompt": "Question: Calculate the difference obtained by taking 0 away from -1.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_18_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": -1,
+    "b": 0,
+    "expected": -1,
+    "prompt": "Question: Evaluate (-1) - (0).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "seen_operands_19_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": -5,
+    "b": 4,
+    "expected": -9,
+    "prompt": "Question: What is -5 minus 4?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-9.",
+      "lower": "-10.",
+      "higher": "-8."
+    }
+  },
+  {
+    "id": "seen_operands_19_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": -5,
+    "b": 4,
+    "expected": -9,
+    "prompt": "Question: Subtract 4 from -5.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-9.",
+      "lower": "-10.",
+      "higher": "-8."
+    }
+  },
+  {
+    "id": "seen_operands_19_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": -5,
+    "b": 4,
+    "expected": -9,
+    "prompt": "Question: Calculate the difference obtained by taking 4 away from -5.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-9.",
+      "lower": "-10.",
+      "higher": "-8."
+    }
+  },
+  {
+    "id": "seen_operands_19_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": -5,
+    "b": 4,
+    "expected": -9,
+    "prompt": "Question: Evaluate (-5) - (4).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-9.",
+      "lower": "-10.",
+      "higher": "-8."
+    }
+  },
+  {
+    "id": "seen_operands_20_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": 7,
+    "b": 1,
+    "expected": 6,
+    "prompt": "Question: What is 7 minus 1?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "6.",
+      "lower": "5.",
+      "higher": "7."
+    }
+  },
+  {
+    "id": "seen_operands_20_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": 7,
+    "b": 1,
+    "expected": 6,
+    "prompt": "Question: Subtract 1 from 7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "6.",
+      "lower": "5.",
+      "higher": "7."
+    }
+  },
+  {
+    "id": "seen_operands_20_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": 7,
+    "b": 1,
+    "expected": 6,
+    "prompt": "Question: Calculate the difference obtained by taking 1 away from 7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "6.",
+      "lower": "5.",
+      "higher": "7."
+    }
+  },
+  {
+    "id": "seen_operands_20_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": 7,
+    "b": 1,
+    "expected": 6,
+    "prompt": "Question: Evaluate (7) - (1).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "6.",
+      "lower": "5.",
+      "higher": "7."
+    }
+  },
+  {
+    "id": "seen_operands_21_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": -8,
+    "b": -8,
+    "expected": 0,
+    "prompt": "Question: What is -8 minus -8?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "0.",
+      "lower": "-1.",
+      "higher": "1."
+    }
+  },
+  {
+    "id": "seen_operands_21_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": -8,
+    "b": -8,
+    "expected": 0,
+    "prompt": "Question: Subtract -8 from -8.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "0.",
+      "lower": "-1.",
+      "higher": "1."
+    }
+  },
+  {
+    "id": "seen_operands_21_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": -8,
+    "b": -8,
+    "expected": 0,
+    "prompt": "Question: Calculate the difference obtained by taking -8 away from -8.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "0.",
+      "lower": "-1.",
+      "higher": "1."
+    }
+  },
+  {
+    "id": "seen_operands_21_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": -8,
+    "b": -8,
+    "expected": 0,
+    "prompt": "Question: Evaluate (-8) - (-8).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "0.",
+      "lower": "-1.",
+      "higher": "1."
+    }
+  },
+  {
+    "id": "seen_operands_22_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": -6,
+    "b": -2,
+    "expected": -4,
+    "prompt": "Question: What is -6 minus -2?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-4.",
+      "lower": "-5.",
+      "higher": "-3."
+    }
+  },
+  {
+    "id": "seen_operands_22_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": -6,
+    "b": -2,
+    "expected": -4,
+    "prompt": "Question: Subtract -2 from -6.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-4.",
+      "lower": "-5.",
+      "higher": "-3."
+    }
+  },
+  {
+    "id": "seen_operands_22_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": -6,
+    "b": -2,
+    "expected": -4,
+    "prompt": "Question: Calculate the difference obtained by taking -2 away from -6.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-4.",
+      "lower": "-5.",
+      "higher": "-3."
+    }
+  },
+  {
+    "id": "seen_operands_22_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": -6,
+    "b": -2,
+    "expected": -4,
+    "prompt": "Question: Evaluate (-6) - (-2).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-4.",
+      "lower": "-5.",
+      "higher": "-3."
+    }
+  },
+  {
+    "id": "seen_operands_23_legacy_minus",
+    "group": "seen_operands",
+    "wording": "legacy_minus",
+    "a": -2,
+    "b": 2,
+    "expected": -4,
+    "prompt": "Question: What is -2 minus 2?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-4.",
+      "lower": "-5.",
+      "higher": "-3."
+    }
+  },
+  {
+    "id": "seen_operands_23_legacy_subtract",
+    "group": "seen_operands",
+    "wording": "legacy_subtract",
+    "a": -2,
+    "b": 2,
+    "expected": -4,
+    "prompt": "Question: Subtract 2 from -2.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-4.",
+      "lower": "-5.",
+      "higher": "-3."
+    }
+  },
+  {
+    "id": "seen_operands_23_new_verbal",
+    "group": "seen_operands",
+    "wording": "new_verbal",
+    "a": -2,
+    "b": 2,
+    "expected": -4,
+    "prompt": "Question: Calculate the difference obtained by taking 2 away from -2.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-4.",
+      "lower": "-5.",
+      "higher": "-3."
+    }
+  },
+  {
+    "id": "seen_operands_23_new_symbolic",
+    "group": "seen_operands",
+    "wording": "new_symbolic",
+    "a": -2,
+    "b": 2,
+    "expected": -4,
+    "prompt": "Question: Evaluate (-2) - (2).\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-4.",
+      "lower": "-5.",
+      "higher": "-3."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_0_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 6,
+    "b": 13,
+    "expected": -7,
+    "prompt": "Question: What is 6 minus 13?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-7.",
+      "lower": "-8.",
+      "higher": "-6."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_0_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 6,
+    "b": 13,
+    "expected": -7,
+    "prompt": "Question: Subtract 13 from 6.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-7.",
+      "lower": "-8.",
+      "higher": "-6."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_1_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": -2,
+    "b": 14,
+    "expected": -16,
+    "prompt": "Question: What is -2 minus 14?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-16.",
+      "lower": "-17.",
+      "higher": "-15."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_1_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": -2,
+    "b": 14,
+    "expected": -16,
+    "prompt": "Question: Subtract 14 from -2.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-16.",
+      "lower": "-17.",
+      "higher": "-15."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_2_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 16,
+    "b": 2,
+    "expected": 14,
+    "prompt": "Question: What is 16 minus 2?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "14.",
+      "lower": "13.",
+      "higher": "15."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_2_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 16,
+    "b": 2,
+    "expected": 14,
+    "prompt": "Question: Subtract 2 from 16.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "14.",
+      "lower": "13.",
+      "higher": "15."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_3_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": -9,
+    "b": 3,
+    "expected": -12,
+    "prompt": "Question: What is -9 minus 3?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-12.",
+      "lower": "-13.",
+      "higher": "-11."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_3_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": -9,
+    "b": 3,
+    "expected": -12,
+    "prompt": "Question: Subtract 3 from -9.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-12.",
+      "lower": "-13.",
+      "higher": "-11."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_4_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 4,
+    "b": 9,
+    "expected": -5,
+    "prompt": "Question: What is 4 minus 9?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-5.",
+      "lower": "-6.",
+      "higher": "-4."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_4_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 4,
+    "b": 9,
+    "expected": -5,
+    "prompt": "Question: Subtract 9 from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-5.",
+      "lower": "-6.",
+      "higher": "-4."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_5_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 13,
+    "b": 9,
+    "expected": 4,
+    "prompt": "Question: What is 13 minus 9?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "4.",
+      "lower": "3.",
+      "higher": "5."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_5_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 13,
+    "b": 9,
+    "expected": 4,
+    "prompt": "Question: Subtract 9 from 13.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "4.",
+      "lower": "3.",
+      "higher": "5."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_6_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": -4,
+    "b": 9,
+    "expected": -13,
+    "prompt": "Question: What is -4 minus 9?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-13.",
+      "lower": "-14.",
+      "higher": "-12."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_6_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": -4,
+    "b": 9,
+    "expected": -13,
+    "prompt": "Question: Subtract 9 from -4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-13.",
+      "lower": "-14.",
+      "higher": "-12."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_7_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": -6,
+    "b": -16,
+    "expected": 10,
+    "prompt": "Question: What is -6 minus -16?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "10.",
+      "lower": "9.",
+      "higher": "11."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_7_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": -6,
+    "b": -16,
+    "expected": 10,
+    "prompt": "Question: Subtract -16 from -6.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "10.",
+      "lower": "9.",
+      "higher": "11."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_8_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": -9,
+    "b": 1,
+    "expected": -10,
+    "prompt": "Question: What is -9 minus 1?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-10.",
+      "lower": "-11.",
+      "higher": "-9."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_8_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": -9,
+    "b": 1,
+    "expected": -10,
+    "prompt": "Question: Subtract 1 from -9.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-10.",
+      "lower": "-11.",
+      "higher": "-9."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_9_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 2,
+    "b": -10,
+    "expected": 12,
+    "prompt": "Question: What is 2 minus -10?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "12.",
+      "lower": "11.",
+      "higher": "13."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_9_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 2,
+    "b": -10,
+    "expected": 12,
+    "prompt": "Question: Subtract -10 from 2.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "12.",
+      "lower": "11.",
+      "higher": "13."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_10_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": -12,
+    "b": -9,
+    "expected": -3,
+    "prompt": "Question: What is -12 minus -9?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-3.",
+      "lower": "-4.",
+      "higher": "-2."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_10_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": -12,
+    "b": -9,
+    "expected": -3,
+    "prompt": "Question: Subtract -9 from -12.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-3.",
+      "lower": "-4.",
+      "higher": "-2."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_11_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": -12,
+    "b": -15,
+    "expected": 3,
+    "prompt": "Question: What is -12 minus -15?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_11_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": -12,
+    "b": -15,
+    "expected": 3,
+    "prompt": "Question: Subtract -15 from -12.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_12_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": -15,
+    "b": -3,
+    "expected": -12,
+    "prompt": "Question: What is -15 minus -3?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-12.",
+      "lower": "-13.",
+      "higher": "-11."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_12_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": -15,
+    "b": -3,
+    "expected": -12,
+    "prompt": "Question: Subtract -3 from -15.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-12.",
+      "lower": "-13.",
+      "higher": "-11."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_13_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": -12,
+    "b": 0,
+    "expected": -12,
+    "prompt": "Question: What is -12 minus 0?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-12.",
+      "lower": "-13.",
+      "higher": "-11."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_13_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": -12,
+    "b": 0,
+    "expected": -12,
+    "prompt": "Question: Subtract 0 from -12.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-12.",
+      "lower": "-13.",
+      "higher": "-11."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_14_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 10,
+    "b": 4,
+    "expected": 6,
+    "prompt": "Question: What is 10 minus 4?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "6.",
+      "lower": "5.",
+      "higher": "7."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_14_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 10,
+    "b": 4,
+    "expected": 6,
+    "prompt": "Question: Subtract 4 from 10.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "6.",
+      "lower": "5.",
+      "higher": "7."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_15_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 10,
+    "b": -6,
+    "expected": 16,
+    "prompt": "Question: What is 10 minus -6?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "16.",
+      "lower": "15.",
+      "higher": "17."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_15_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 10,
+    "b": -6,
+    "expected": 16,
+    "prompt": "Question: Subtract -6 from 10.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "16.",
+      "lower": "15.",
+      "higher": "17."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_16_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 8,
+    "b": 9,
+    "expected": -1,
+    "prompt": "Question: What is 8 minus 9?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_16_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 8,
+    "b": 9,
+    "expected": -1,
+    "prompt": "Question: Subtract 9 from 8.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-1.",
+      "lower": "-2.",
+      "higher": "0."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_17_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 11,
+    "b": 3,
+    "expected": 8,
+    "prompt": "Question: What is 11 minus 3?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "8.",
+      "lower": "7.",
+      "higher": "9."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_17_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 11,
+    "b": 3,
+    "expected": 8,
+    "prompt": "Question: Subtract 3 from 11.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "8.",
+      "lower": "7.",
+      "higher": "9."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_18_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 11,
+    "b": -1,
+    "expected": 12,
+    "prompt": "Question: What is 11 minus -1?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "12.",
+      "lower": "11.",
+      "higher": "13."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_18_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 11,
+    "b": -1,
+    "expected": 12,
+    "prompt": "Question: Subtract -1 from 11.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "12.",
+      "lower": "11.",
+      "higher": "13."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_19_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 16,
+    "b": 13,
+    "expected": 3,
+    "prompt": "Question: What is 16 minus 13?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_19_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 16,
+    "b": 13,
+    "expected": 3,
+    "prompt": "Question: Subtract 13 from 16.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "3.",
+      "lower": "2.",
+      "higher": "4."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_20_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 7,
+    "b": 12,
+    "expected": -5,
+    "prompt": "Question: What is 7 minus 12?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-5.",
+      "lower": "-6.",
+      "higher": "-4."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_20_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 7,
+    "b": 12,
+    "expected": -5,
+    "prompt": "Question: Subtract 12 from 7.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-5.",
+      "lower": "-6.",
+      "higher": "-4."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_21_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 15,
+    "b": 0,
+    "expected": 15,
+    "prompt": "Question: What is 15 minus 0?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "15.",
+      "lower": "14.",
+      "higher": "16."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_21_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 15,
+    "b": 0,
+    "expected": 15,
+    "prompt": "Question: Subtract 0 from 15.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "15.",
+      "lower": "14.",
+      "higher": "16."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_22_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 2,
+    "b": -14,
+    "expected": 16,
+    "prompt": "Question: What is 2 minus -14?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "16.",
+      "lower": "15.",
+      "higher": "17."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_22_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 2,
+    "b": -14,
+    "expected": 16,
+    "prompt": "Question: Subtract -14 from 2.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "16.",
+      "lower": "15.",
+      "higher": "17."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_23_legacy_minus",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_minus",
+    "a": 12,
+    "b": 12,
+    "expected": 0,
+    "prompt": "Question: What is 12 minus 12?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "0.",
+      "lower": "-1.",
+      "higher": "1."
+    }
+  },
+  {
+    "id": "unseen_operands_known_answer_23_legacy_subtract",
+    "group": "unseen_operands_known_answer",
+    "wording": "legacy_subtract",
+    "a": 12,
+    "b": 12,
+    "expected": 0,
+    "prompt": "Question: Subtract 12 from 12.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "0.",
+      "lower": "-1.",
+      "higher": "1."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_0_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -9,
+    "b": 9,
+    "expected": -18,
+    "prompt": "Question: What is -9 minus 9?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-18.",
+      "lower": "-19.",
+      "higher": "-17."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_0_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -9,
+    "b": 9,
+    "expected": -18,
+    "prompt": "Question: Subtract 9 from -9.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-18.",
+      "lower": "-19.",
+      "higher": "-17."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_1_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": 6,
+    "b": -13,
+    "expected": 19,
+    "prompt": "Question: What is 6 minus -13?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "19.",
+      "lower": "18.",
+      "higher": "20."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_1_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": 6,
+    "b": -13,
+    "expected": 19,
+    "prompt": "Question: Subtract -13 from 6.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "19.",
+      "lower": "18.",
+      "higher": "20."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_2_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": 9,
+    "b": -8,
+    "expected": 17,
+    "prompt": "Question: What is 9 minus -8?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "17.",
+      "lower": "16.",
+      "higher": "18."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_2_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": 9,
+    "b": -8,
+    "expected": 17,
+    "prompt": "Question: Subtract -8 from 9.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "17.",
+      "lower": "16.",
+      "higher": "18."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_3_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -10,
+    "b": 11,
+    "expected": -21,
+    "prompt": "Question: What is -10 minus 11?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-21.",
+      "lower": "-22.",
+      "higher": "-20."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_3_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -10,
+    "b": 11,
+    "expected": -21,
+    "prompt": "Question: Subtract 11 from -10.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-21.",
+      "lower": "-22.",
+      "higher": "-20."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_4_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -5,
+    "b": 16,
+    "expected": -21,
+    "prompt": "Question: What is -5 minus 16?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-21.",
+      "lower": "-22.",
+      "higher": "-20."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_4_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -5,
+    "b": 16,
+    "expected": -21,
+    "prompt": "Question: Subtract 16 from -5.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-21.",
+      "lower": "-22.",
+      "higher": "-20."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_5_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": 15,
+    "b": -10,
+    "expected": 25,
+    "prompt": "Question: What is 15 minus -10?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "25.",
+      "lower": "24.",
+      "higher": "26."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_5_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": 15,
+    "b": -10,
+    "expected": 25,
+    "prompt": "Question: Subtract -10 from 15.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "25.",
+      "lower": "24.",
+      "higher": "26."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_6_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -13,
+    "b": 9,
+    "expected": -22,
+    "prompt": "Question: What is -13 minus 9?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-22.",
+      "lower": "-23.",
+      "higher": "-21."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_6_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -13,
+    "b": 9,
+    "expected": -22,
+    "prompt": "Question: Subtract 9 from -13.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-22.",
+      "lower": "-23.",
+      "higher": "-21."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_7_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": 10,
+    "b": -15,
+    "expected": 25,
+    "prompt": "Question: What is 10 minus -15?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "25.",
+      "lower": "24.",
+      "higher": "26."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_7_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": 10,
+    "b": -15,
+    "expected": 25,
+    "prompt": "Question: Subtract -15 from 10.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "25.",
+      "lower": "24.",
+      "higher": "26."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_8_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -2,
+    "b": 16,
+    "expected": -18,
+    "prompt": "Question: What is -2 minus 16?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-18.",
+      "lower": "-19.",
+      "higher": "-17."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_8_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -2,
+    "b": 16,
+    "expected": -18,
+    "prompt": "Question: Subtract 16 from -2.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-18.",
+      "lower": "-19.",
+      "higher": "-17."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_9_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -9,
+    "b": 16,
+    "expected": -25,
+    "prompt": "Question: What is -9 minus 16?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-25.",
+      "lower": "-26.",
+      "higher": "-24."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_9_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -9,
+    "b": 16,
+    "expected": -25,
+    "prompt": "Question: Subtract 16 from -9.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-25.",
+      "lower": "-26.",
+      "higher": "-24."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_10_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -14,
+    "b": 7,
+    "expected": -21,
+    "prompt": "Question: What is -14 minus 7?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-21.",
+      "lower": "-22.",
+      "higher": "-20."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_10_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -14,
+    "b": 7,
+    "expected": -21,
+    "prompt": "Question: Subtract 7 from -14.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-21.",
+      "lower": "-22.",
+      "higher": "-20."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_11_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": 16,
+    "b": -12,
+    "expected": 28,
+    "prompt": "Question: What is 16 minus -12?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "28.",
+      "lower": "27.",
+      "higher": "29."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_11_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": 16,
+    "b": -12,
+    "expected": 28,
+    "prompt": "Question: Subtract -12 from 16.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "28.",
+      "lower": "27.",
+      "higher": "29."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_12_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -13,
+    "b": 4,
+    "expected": -17,
+    "prompt": "Question: What is -13 minus 4?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-17.",
+      "lower": "-18.",
+      "higher": "-16."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_12_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -13,
+    "b": 4,
+    "expected": -17,
+    "prompt": "Question: Subtract 4 from -13.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-17.",
+      "lower": "-18.",
+      "higher": "-16."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_13_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -16,
+    "b": 11,
+    "expected": -27,
+    "prompt": "Question: What is -16 minus 11?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-27.",
+      "lower": "-28.",
+      "higher": "-26."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_13_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -16,
+    "b": 11,
+    "expected": -27,
+    "prompt": "Question: Subtract 11 from -16.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-27.",
+      "lower": "-28.",
+      "higher": "-26."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_14_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": 16,
+    "b": -16,
+    "expected": 32,
+    "prompt": "Question: What is 16 minus -16?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "32.",
+      "lower": "31.",
+      "higher": "33."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_14_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": 16,
+    "b": -16,
+    "expected": 32,
+    "prompt": "Question: Subtract -16 from 16.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "32.",
+      "lower": "31.",
+      "higher": "33."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_15_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": 8,
+    "b": -12,
+    "expected": 20,
+    "prompt": "Question: What is 8 minus -12?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "20.",
+      "lower": "19.",
+      "higher": "21."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_15_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": 8,
+    "b": -12,
+    "expected": 20,
+    "prompt": "Question: Subtract -12 from 8.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "20.",
+      "lower": "19.",
+      "higher": "21."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_16_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": 12,
+    "b": -14,
+    "expected": 26,
+    "prompt": "Question: What is 12 minus -14?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "26.",
+      "lower": "25.",
+      "higher": "27."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_16_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": 12,
+    "b": -14,
+    "expected": 26,
+    "prompt": "Question: Subtract -14 from 12.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "26.",
+      "lower": "25.",
+      "higher": "27."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_17_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -11,
+    "b": 6,
+    "expected": -17,
+    "prompt": "Question: What is -11 minus 6?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-17.",
+      "lower": "-18.",
+      "higher": "-16."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_17_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -11,
+    "b": 6,
+    "expected": -17,
+    "prompt": "Question: Subtract 6 from -11.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-17.",
+      "lower": "-18.",
+      "higher": "-16."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_18_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -5,
+    "b": 12,
+    "expected": -17,
+    "prompt": "Question: What is -5 minus 12?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-17.",
+      "lower": "-18.",
+      "higher": "-16."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_18_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -5,
+    "b": 12,
+    "expected": -17,
+    "prompt": "Question: Subtract 12 from -5.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-17.",
+      "lower": "-18.",
+      "higher": "-16."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_19_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -14,
+    "b": 16,
+    "expected": -30,
+    "prompt": "Question: What is -14 minus 16?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-30.",
+      "lower": "-31.",
+      "higher": "-29."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_19_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -14,
+    "b": 16,
+    "expected": -30,
+    "prompt": "Question: Subtract 16 from -14.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-30.",
+      "lower": "-31.",
+      "higher": "-29."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_20_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": 4,
+    "b": -16,
+    "expected": 20,
+    "prompt": "Question: What is 4 minus -16?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "20.",
+      "lower": "19.",
+      "higher": "21."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_20_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": 4,
+    "b": -16,
+    "expected": 20,
+    "prompt": "Question: Subtract -16 from 4.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "20.",
+      "lower": "19.",
+      "higher": "21."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_21_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -13,
+    "b": 13,
+    "expected": -26,
+    "prompt": "Question: What is -13 minus 13?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-26.",
+      "lower": "-27.",
+      "higher": "-25."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_21_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -13,
+    "b": 13,
+    "expected": -26,
+    "prompt": "Question: Subtract 13 from -13.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-26.",
+      "lower": "-27.",
+      "higher": "-25."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_22_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": -6,
+    "b": 13,
+    "expected": -19,
+    "prompt": "Question: What is -6 minus 13?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-19.",
+      "lower": "-20.",
+      "higher": "-18."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_22_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": -6,
+    "b": 13,
+    "expected": -19,
+    "prompt": "Question: Subtract 13 from -6.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "-19.",
+      "lower": "-20.",
+      "higher": "-18."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_23_legacy_minus",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_minus",
+    "a": 12,
+    "b": -15,
+    "expected": 27,
+    "prompt": "Question: What is 12 minus -15?\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "27.",
+      "lower": "26.",
+      "higher": "28."
+    }
+  },
+  {
+    "id": "unseen_operands_new_answer_23_legacy_subtract",
+    "group": "unseen_operands_new_answer",
+    "wording": "legacy_subtract",
+    "a": 12,
+    "b": -15,
+    "expected": 27,
+    "prompt": "Question: Subtract -15 from 12.\nAnswer: ",
+    "target": "correct",
+    "candidates": {
+      "correct": "27.",
+      "lower": "26.",
+      "higher": "28."
+    }
+  }
+]

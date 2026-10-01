@@ -429,3 +429,26 @@ against the sealed Newton operands. Next use newly frozen operand-range and
 wording tests to distinguish these possibilities before changing the curriculum.
 Keep basic arithmetic precision, algebraic composition, historical premise access,
 and actual discovery as separate requirements.
+
+## Frozen arithmetic transfer diagnostic (before outcomes)
+
+With builder seed 1691, choose 24 distinct synthetic-training operand pairs.
+Evaluate each with both old wordings and two unseen wordings (verbal difference
+and explicit parenthesized subtraction). Separately choose 24 pairs from integers
+-16..16 with at least one operand outside -8..8 but an answer present in synthetic
+training, and 24 such pairs whose answers are absent from synthetic training.
+Use both legacy wordings in each range group. This gives 192 prompts; exclude
+both special sealed operand pairs. "Unseen" refers to the synthetic arithmetic
+curriculum, not to all historical pretraining text. New wording is not a claim
+that its vocabulary was absent from the historical corpus.
+
+Before evaluating outputs, commit the generator, exact probes and manifest hashes.
+Evaluate original masked and resampled checkpoints without training, greedy
+legacy no-BOS inference, at most 60 tokens and no minimum. Primary outcomes:
+exact integer correctness by group/wording and operand-pair correctness across
+both wordings. Secondary outcomes: parseable answers, off-by-one errors, and
+absolute error on parseable outputs (with excluded counts visible). All metrics
+are now specified prospectively for this new suite, but checkpoint selection
+follows earlier diagnostics. This is still one seed, not a confirmatory
+multi-seed study or evidence of historical scientific discovery. No rounding
+corrections, test-set tuning, or new training based on the sealed cases.

@@ -17,6 +17,8 @@ from audit_arithmetic_exposure import batch_shares, audit
 from unittest.mock import patch
 from build_balanced_math import balanced
 from summarise_balanced_math import validation_errors
+from build_arithmetic_transfer import build as build_transfer
+from build_math_calibration import build as build_math
 
 
 class CharacterTokenizer:
@@ -34,6 +36,17 @@ class CharacterTokenizer:
 
 
 class WeightedTrainingTests(unittest.TestCase):
+    def test_transfer_probes_separate_wording_operands_and_answers(self):
+        train, _ = build_math()
+        probes = build_transfer(train)
+        answers = {r['numerator'] - r['known'] for r in train if r['family'] == 'math_subtraction'}
+        self.assertEqual(probes, build_transfer(train))
+        for p in probes:
+            self.assertEqual(p['expected'], p['a'] - p['b'])
+            if p['group'] != 'seen_operands':
+                self.assertGreater(max(abs(p['a']), abs(p['b'])), 8)
+                self.assertEqual(p['expected'] in answers, p['group'] == 'unseen_operands_known_answer')
+
     def test_validation_error_diagnostic_keeps_format_failures_visible(self):
         base = {'group': 'validation', 'prompt': 'A: ', 'a': 1, 'b': 3, 'expected': -2}
         rows = [{**base, 'generation': 'A: ' + answer} for answer in ('-2.', '-1.', '-3.', 'unknown')]
