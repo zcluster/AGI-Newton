@@ -49,3 +49,21 @@ No text from this review is added to the historical training corpus. No syntheti
 questions or modern worked answers have been generated from it. A minimal next
 check is the handful of source images around this worked example and borrowing,
 not an indiscriminate new OCR pass over the book.
+
+## Exact image locator and access check (2026-10-01)
+
+The retained TEI identifies this edition as STC 20802 / ESTC S102132, EEBO citation
+99837932, image-set VID 2279. Paragraph 322 is on `tcp:2279:52` (image 52);
+paragraph 317 crosses images 51–52 and borrowing reaches image 54. The TEI's
+declared prefix resolves the target to
+`http://eebo.chadwyck.com/downloadtiff?vid=2279&page=52`.
+The official repository's image link is
+`https://historicaltexts.jisc.ac.uk/eebo-99837932e`.
+
+Neither image route returned an inspectable image in this check: the web tool
+reported an inaccessible EEBO URL and a 502 for Historical Texts; a direct
+Historical Texts request failed DNS resolution. The Folger catalog search result
+also identifies the 1582 edition, but its full catalog page returned 403 and is
+not image evidence. These are access failures, not evidence that the image is
+absent or that either reading is correct. Source-image verification remains open.
+Other editions cannot establish the reading of this exact copy.
