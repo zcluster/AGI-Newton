@@ -54,6 +54,8 @@ class WeightedTrainingTests(unittest.TestCase):
                     'probes': [{**p, 'generation': p['prompt'] + f"{p['expected']}."} for p in probes]}))
             result = summarise_transfer(root)
             self.assertEqual(result['balanced']['seen_new_wording']['exact'], 48)
+            self.assertEqual(result['balanced']['seen_new_wording']['by_wording']['new_verbal']['exact'], 24)
+            self.assertEqual(result['balanced']['seen_new_wording']['by_wording']['new_symbolic']['cases'], 24)
             self.assertEqual(result['answer_only']['unseen_operands_new_answer']['both_wordings_correct'], 24)
             (root / 'manifest.json').write_text(json.dumps({'probes_sha256': 'wrong'}))
             with self.assertRaises(AssertionError):

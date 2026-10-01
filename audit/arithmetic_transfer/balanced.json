@@ -1,0 +1,6155 @@
+{
+  "checkpoint": "runs/hpc_math_balanced_seed1686/model.pt",
+  "label": "synthetic_math_balanced_not_historical_only",
+  "source_sha256": "3d43e28e0b8142318d50ddecd501c0ff600dde83500e1b7720e5f081e01d627b",
+  "probes": [
+    {
+      "id": "seen_operands_0_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 0,
+      "b": -6,
+      "expected": 6,
+      "prompt": "Question: What is 0 minus -6?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "6.",
+        "lower": "5.",
+        "higher": "7."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.03515625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.90625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 3.53125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 0 minus -6?\nAnswer: 6."
+    },
+    {
+      "id": "seen_operands_0_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 0,
+      "b": -6,
+      "expected": 6,
+      "prompt": "Question: Subtract -6 from 0.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "6.",
+        "lower": "5.",
+        "higher": "7."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.0380859375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.34375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 3.40625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -6 from 0.\nAnswer: 6."
+    },
+    {
+      "id": "seen_operands_0_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 0,
+      "b": -6,
+      "expected": 6,
+      "prompt": "Question: Calculate the difference obtained by taking -6 away from 0.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "6.",
+        "lower": "5.",
+        "higher": "7."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.609375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 2.109375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 2.671875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Calculate the difference obtained by taking -6 away from 0.\nAnswer: 6."
+    },
+    {
+      "id": "seen_operands_0_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 0,
+      "b": -6,
+      "expected": 6,
+      "prompt": "Question: Evaluate (0) - (-6).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "6.",
+        "lower": "5.",
+        "higher": "7."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "correct": {
+          "mean_nll": 8.1875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 7.75,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 8.6875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Evaluate (0) - (-6).\nAnswer: J is proportional to t^0."
+    },
+    {
+      "id": "seen_operands_1_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 6,
+      "b": -2,
+      "expected": 8,
+      "prompt": "Question: What is 6 minus -2?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "8.",
+        "lower": "7.",
+        "higher": "9."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.06103515625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 3.0625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.4375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 6 minus -2?\nAnswer: 8."
+    },
+    {
+      "id": "seen_operands_1_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 6,
+      "b": -2,
+      "expected": 8,
+      "prompt": "Question: Subtract -2 from 6.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "8.",
+        "lower": "7.",
+        "higher": "9."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.0216064453125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.71875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.03125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -2 from 6.\nAnswer: 8."
+    },
+    {
+      "id": "seen_operands_1_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 6,
+      "b": -2,
+      "expected": 8,
+      "prompt": "Question: Calculate the difference obtained by taking -2 away from 6.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "8.",
+        "lower": "7.",
+        "higher": "9."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.053955078125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 3.859375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 3.546875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Calculate the difference obtained by taking -2 away from 6.\nAnswer: 8."
+    },
+    {
+      "id": "seen_operands_1_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 6,
+      "b": -2,
+      "expected": 8,
+      "prompt": "Question: Evaluate (6) - (-2).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "8.",
+        "lower": "7.",
+        "higher": "9."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "correct": {
+          "mean_nll": 8.375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 8.3125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 9.625,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Evaluate (6) - (-2).\nAnswer: Q is proportional to t^2."
+    },
+    {
+      "id": "seen_operands_2_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 4,
+      "b": -1,
+      "expected": 5,
+      "prompt": "Question: What is 4 minus -1?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "5.",
+        "lower": "4.",
+        "higher": "6."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.10302734375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.03125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 2.359375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 4 minus -1?\nAnswer: 5."
+    },
+    {
+      "id": "seen_operands_2_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 4,
+      "b": -1,
+      "expected": 5,
+      "prompt": "Question: Subtract -1 from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "5.",
+        "lower": "4.",
+        "higher": "6."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.255859375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.0,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 1.5078125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -1 from 4.\nAnswer: 5."
+    },
+    {
+      "id": "seen_operands_2_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 4,
+      "b": -1,
+      "expected": 5,
+      "prompt": "Question: Calculate the difference obtained by taking -1 away from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "5.",
+        "lower": "4.",
+        "higher": "6."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.0234375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 3.203125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 0.51953125,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking -1 away from 4.\nAnswer: 6."
+    },
+    {
+      "id": "seen_operands_2_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 4,
+      "b": -1,
+      "expected": 5,
+      "prompt": "Question: Evaluate (4) - (-1).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "5.",
+        "lower": "4.",
+        "higher": "6."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.3125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.71875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 6.65625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Evaluate (4) - (-1).\nAnswer: Q is proportional to t^2."
+    },
+    {
+      "id": "seen_operands_3_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 4,
+      "b": 3,
+      "expected": 1,
+      "prompt": "Question: What is 4 minus 3?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "1.",
+        "lower": "0.",
+        "higher": "2."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.03515625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 4.96875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 3.59375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 4 minus 3?\nAnswer: 1."
+    },
+    {
+      "id": "seen_operands_3_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 4,
+      "b": 3,
+      "expected": 1,
+      "prompt": "Question: Subtract 3 from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "1.",
+        "lower": "0.",
+        "higher": "2."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.0306396484375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 4.40625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.03125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 3 from 4.\nAnswer: 1."
+    },
+    {
+      "id": "seen_operands_3_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 4,
+      "b": 3,
+      "expected": 1,
+      "prompt": "Question: Calculate the difference obtained by taking 3 away from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "1.",
+        "lower": "0.",
+        "higher": "2."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.4375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 7.625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 1.7421875,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 3 away from 4.\nAnswer: 3."
+    },
+    {
+      "id": "seen_operands_3_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 4,
+      "b": 3,
+      "expected": 1,
+      "prompt": "Question: Evaluate (4) - (3).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "1.",
+        "lower": "0.",
+        "higher": "2."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.25,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.59375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 7.46875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Evaluate (4) - (3).\nAnswer: Q is proportional to t^2."
+    },
+    {
+      "id": "seen_operands_4_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 4,
+      "b": 2,
+      "expected": 2,
+      "prompt": "Question: What is 4 minus 2?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "2.",
+        "lower": "1.",
+        "higher": "3."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.0128173828125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.25,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 4 minus 2?\nAnswer: 2."
+    },
+    {
+      "id": "seen_operands_4_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 4,
+      "b": 2,
+      "expected": 2,
+      "prompt": "Question: Subtract 2 from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "2.",
+        "lower": "1.",
+        "higher": "3."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.06787109375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 2.8125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 2 from 4.\nAnswer: 2."
+    },
+    {
+      "id": "seen_operands_4_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 4,
+      "b": 2,
+      "expected": 2,
+      "prompt": "Question: Calculate the difference obtained by taking 2 away from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "2.",
+        "lower": "1.",
+        "higher": "3."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.9375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.9375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 0.4375,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 2 away from 4.\nAnswer: 3."
+    },
+    {
+      "id": "seen_operands_4_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 4,
+      "b": 2,
+      "expected": 2,
+      "prompt": "Question: Evaluate (4) - (2).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "2.",
+        "lower": "1.",
+        "higher": "3."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.0625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 4.53125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 7.28125,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Evaluate (4) - (2).\nAnswer: Q is proportional to t^0."
+    },
+    {
+      "id": "seen_operands_5_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 0,
+      "b": -4,
+      "expected": 4,
+      "prompt": "Question: What is 0 minus -4?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "4.",
+        "lower": "3.",
+        "higher": "5."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.0849609375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 4.28125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 2.828125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 0 minus -4?\nAnswer: 4."
+    },
+    {
+      "id": "seen_operands_5_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 0,
+      "b": -4,
+      "expected": 4,
+      "prompt": "Question: Subtract -4 from 0.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "4.",
+        "lower": "3.",
+        "higher": "5."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.1455078125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 2.828125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 2.703125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -4 from 0.\nAnswer: 4."
+    },
+    {
+      "id": "seen_operands_5_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 0,
+      "b": -4,
+      "expected": 4,
+      "prompt": "Question: Calculate the difference obtained by taking -4 away from 0.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "4.",
+        "lower": "3.",
+        "higher": "5."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.7578125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 2.125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 1.8828125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Calculate the difference obtained by taking -4 away from 0.\nAnswer: 4."
+    },
+    {
+      "id": "seen_operands_5_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 0,
+      "b": -4,
+      "expected": 4,
+      "prompt": "Question: Evaluate (0) - (-4).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "4.",
+        "lower": "3.",
+        "higher": "5."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "correct": {
+          "mean_nll": 9.75,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 8.6875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 8.6875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Evaluate (0) - (-4).\nAnswer: T is proportional to w^5."
+    },
+    {
+      "id": "seen_operands_6_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 1,
+      "b": 2,
+      "expected": -1,
+      "prompt": "Question: What is 1 minus 2?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.0027313232421875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 2.938812255859375,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 6.625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 1 minus 2?\nAnswer: -1."
+    },
+    {
+      "id": "seen_operands_6_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 1,
+      "b": 2,
+      "expected": -1,
+      "prompt": "Question: Subtract 2 from 1.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.02777862548828125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 2.9638671875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 3.046875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 2 from 1.\nAnswer: -1."
+    },
+    {
+      "id": "seen_operands_6_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 1,
+      "b": 2,
+      "expected": -1,
+      "prompt": "Question: Calculate the difference obtained by taking 2 away from 1.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.2189102172851562,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 5.25,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 0.1259765625,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 2 away from 1.\nAnswer: 0."
+    },
+    {
+      "id": "seen_operands_6_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 1,
+      "b": 2,
+      "expected": -1,
+      "prompt": "Question: Evaluate (1) - (2).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "correct": {
+          "mean_nll": 2.04180908203125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 3.9765625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 4.625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Evaluate (1) - (2).\nAnswer: Q is proportional to t^2."
+    },
+    {
+      "id": "seen_operands_7_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 4,
+      "b": -7,
+      "expected": 11,
+      "prompt": "Question: What is 4 minus -7?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "11.",
+        "lower": "10.",
+        "higher": "12."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.0235595703125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 4.84375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.21875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 4 minus -7?\nAnswer: 11."
+    },
+    {
+      "id": "seen_operands_7_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 4,
+      "b": -7,
+      "expected": 11,
+      "prompt": "Question: Subtract -7 from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "11.",
+        "lower": "10.",
+        "higher": "12."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.016845703125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.09375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.65625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -7 from 4.\nAnswer: 11."
+    },
+    {
+      "id": "seen_operands_7_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 4,
+      "b": -7,
+      "expected": 11,
+      "prompt": "Question: Calculate the difference obtained by taking -7 away from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "11.",
+        "lower": "10.",
+        "higher": "12."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.0625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 0.99609375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 3.4375,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Calculate the difference obtained by taking -7 away from 4.\nAnswer: 10."
+    },
+    {
+      "id": "seen_operands_7_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 4,
+      "b": -7,
+      "expected": 11,
+      "prompt": "Question: Evaluate (4) - (-7).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "11.",
+        "lower": "10.",
+        "higher": "12."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.5625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 7.75,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 7.125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Evaluate (4) - (-7).\nAnswer: J is proportional to t^0."
+    },
+    {
+      "id": "seen_operands_8_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": -4,
+      "b": -5,
+      "expected": 1,
+      "prompt": "Question: What is -4 minus -5?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "1.",
+        "lower": "0.",
+        "higher": "2."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.4609375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 0.26953125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 7.6875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -4 minus -5?\nAnswer: 0."
+    },
+    {
+      "id": "seen_operands_8_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": -4,
+      "b": -5,
+      "expected": 1,
+      "prompt": "Question: Subtract -5 from -4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "1.",
+        "lower": "0.",
+        "higher": "2."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.140625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 0.388671875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 7.4375,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract -5 from -4.\nAnswer: 0."
+    },
+    {
+      "id": "seen_operands_8_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": -4,
+      "b": -5,
+      "expected": 1,
+      "prompt": "Question: Calculate the difference obtained by taking -5 away from -4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "1.",
+        "lower": "0.",
+        "higher": "2."
+      },
+      "prompt_tokens": 24,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.78125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 2.21875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 0.404296875,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking -5 away from -4.\nAnswer: 2."
+    },
+    {
+      "id": "seen_operands_8_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": -4,
+      "b": -5,
+      "expected": 1,
+      "prompt": "Question: Evaluate (-4) - (-5).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "1.",
+        "lower": "0.",
+        "higher": "2."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 4.9375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 6.4375,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Evaluate (-4) - (-5).\nAnswer: J is proportional to t^-3."
+    },
+    {
+      "id": "seen_operands_9_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 7,
+      "b": -5,
+      "expected": 12,
+      "prompt": "Question: What is 7 minus -5?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "12.",
+        "lower": "11.",
+        "higher": "13."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.078125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 2.640625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 7 minus -5?\nAnswer: 12."
+    },
+    {
+      "id": "seen_operands_9_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 7,
+      "b": -5,
+      "expected": 12,
+      "prompt": "Question: Subtract -5 from 7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "12.",
+        "lower": "11.",
+        "higher": "13."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.1083984375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.65625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 2.296875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -5 from 7.\nAnswer: 12."
+    },
+    {
+      "id": "seen_operands_9_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 7,
+      "b": -5,
+      "expected": 12,
+      "prompt": "Question: Calculate the difference obtained by taking -5 away from 7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "12.",
+        "lower": "11.",
+        "higher": "13."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "correct": {
+          "mean_nll": 1.125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 0.55859375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.0,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Calculate the difference obtained by taking -5 away from 7.\nAnswer: 11."
+    },
+    {
+      "id": "seen_operands_9_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 7,
+      "b": -5,
+      "expected": 12,
+      "prompt": "Question: Evaluate (7) - (-5).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "12.",
+        "lower": "11.",
+        "higher": "13."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.9375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.25,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 5.8125,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Evaluate (7) - (-5).\nAnswer: J is proportional to t^0."
+    },
+    {
+      "id": "seen_operands_10_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": -2,
+      "b": 3,
+      "expected": -5,
+      "prompt": "Question: What is -2 minus 3?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-5.",
+        "lower": "-6.",
+        "higher": "-4."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.020521163940429688,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 3.5156383514404297,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 1.6484508514404297,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is -2 minus 3?\nAnswer: -5."
+    },
+    {
+      "id": "seen_operands_10_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": -2,
+      "b": 3,
+      "expected": -5,
+      "prompt": "Question: Subtract 3 from -2.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-5.",
+        "lower": "-6.",
+        "higher": "-4."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.007181763648986816,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 2.2812600135803223,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 2.7812600135803223,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 3 from -2.\nAnswer: -5."
+    },
+    {
+      "id": "seen_operands_10_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": -2,
+      "b": 3,
+      "expected": -5,
+      "prompt": "Question: Calculate the difference obtained by taking 3 away from -2.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-5.",
+        "lower": "-6.",
+        "higher": "-4."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.6661376953125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 7.5098876953125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 1.7130126953125,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 3 away from -2.\nAnswer: -3."
+    },
+    {
+      "id": "seen_operands_10_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": -2,
+      "b": 3,
+      "expected": -5,
+      "prompt": "Question: Evaluate (-2) - (3).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-5.",
+        "lower": "-6.",
+        "higher": "-4."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "correct": {
+          "mean_nll": 9.5625,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 9.90625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 10.0,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Evaluate (-2) - (3).\nAnswer: Q is proportional to t^2."
+    },
+    {
+      "id": "seen_operands_11_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 7,
+      "b": 2,
+      "expected": 5,
+      "prompt": "Question: What is 7 minus 2?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "5.",
+        "lower": "4.",
+        "higher": "6."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.1767578125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.25,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 1.8671875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 7 minus 2?\nAnswer: 5."
+    },
+    {
+      "id": "seen_operands_11_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 7,
+      "b": 2,
+      "expected": 5,
+      "prompt": "Question: Subtract 2 from 7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "5.",
+        "lower": "4.",
+        "higher": "6."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.41015625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.90625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 1.09375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 2 from 7.\nAnswer: 5."
+    },
+    {
+      "id": "seen_operands_11_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 7,
+      "b": 2,
+      "expected": 5,
+      "prompt": "Question: Calculate the difference obtained by taking 2 away from 7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "5.",
+        "lower": "4.",
+        "higher": "6."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.0,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 7.8125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 0.625,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 2 away from 7.\nAnswer: 6."
+    },
+    {
+      "id": "seen_operands_11_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 7,
+      "b": 2,
+      "expected": 5,
+      "prompt": "Question: Evaluate (7) - (2).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "5.",
+        "lower": "4.",
+        "higher": "6."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "correct": {
+          "mean_nll": 7.375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 8.1875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 7.59375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Evaluate (7) - (2).\nAnswer: Q is proportional to t^2."
+    },
+    {
+      "id": "seen_operands_12_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 4,
+      "b": 1,
+      "expected": 3,
+      "prompt": "Question: What is 4 minus 1?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.050537109375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.3125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 3.046875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 4 minus 1?\nAnswer: 3."
+    },
+    {
+      "id": "seen_operands_12_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 4,
+      "b": 1,
+      "expected": 3,
+      "prompt": "Question: Subtract 1 from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.11328125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 8.1875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 2.234375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 1 from 4.\nAnswer: 3."
+    },
+    {
+      "id": "seen_operands_12_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 4,
+      "b": 1,
+      "expected": 3,
+      "prompt": "Question: Calculate the difference obtained by taking 1 away from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 2.25,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.5625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 0.318359375,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 1 away from 4.\nAnswer: 4."
+    },
+    {
+      "id": "seen_operands_12_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 4,
+      "b": 1,
+      "expected": 3,
+      "prompt": "Question: Evaluate (4) - (1).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 7.375,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Evaluate (4) - (1).\nAnswer: Q is proportional to t^2."
+    },
+    {
+      "id": "seen_operands_13_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 5,
+      "b": 6,
+      "expected": -1,
+      "prompt": "Question: What is 5 minus 6?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.0034332275390625,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 2.751312255859375,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 6.0,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 5 minus 6?\nAnswer: -1."
+    },
+    {
+      "id": "seen_operands_13_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 5,
+      "b": 6,
+      "expected": -1,
+      "prompt": "Question: Subtract 6 from 5.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.0425567626953125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.2918243408203125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 5.3125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 6 from 5.\nAnswer: -1."
+    },
+    {
+      "id": "seen_operands_13_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 5,
+      "b": 6,
+      "expected": -1,
+      "prompt": "Question: Calculate the difference obtained by taking 6 away from 5.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 2.14105224609375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 5.734375,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 2.84375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Calculate the difference obtained by taking 6 away from 5.\nAnswer: 2."
+    },
+    {
+      "id": "seen_operands_13_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 5,
+      "b": 6,
+      "expected": -1,
+      "prompt": "Question: Evaluate (5) - (6).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "correct": {
+          "mean_nll": 2.5911865234375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 4.03125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 5.0625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Evaluate (5) - (6).\nAnswer: E is proportional to t^-1."
+    },
+    {
+      "id": "seen_operands_14_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": -7,
+      "b": 3,
+      "expected": -10,
+      "prompt": "Question: What is -7 minus 3?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-10.",
+        "lower": "-11.",
+        "higher": "-9."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.007076700683683157,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 1.9066689014434814,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 2.0781352519989014,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is -7 minus 3?\nAnswer: -10."
+    },
+    {
+      "id": "seen_operands_14_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": -7,
+      "b": 3,
+      "expected": -10,
+      "prompt": "Question: Subtract 3 from -7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-10.",
+        "lower": "-11.",
+        "higher": "-9."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.029148301109671593,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 1.7400171756744385,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 1.3203260898590088,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 3 from -7.\nAnswer: -10."
+    },
+    {
+      "id": "seen_operands_14_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": -7,
+      "b": 3,
+      "expected": -10,
+      "prompt": "Question: Calculate the difference obtained by taking 3 away from -7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-10.",
+        "lower": "-11.",
+        "higher": "-9."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.05889066308736801,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 0.7610797882080078,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 1.6408262252807617,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Calculate the difference obtained by taking 3 away from -7.\nAnswer: -10."
+    },
+    {
+      "id": "seen_operands_14_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": -7,
+      "b": 3,
+      "expected": -10,
+      "prompt": "Question: Evaluate (-7) - (3).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-10.",
+        "lower": "-11.",
+        "higher": "-9."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.4438886642456055,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 7.188323974609375,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 9.625,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Evaluate (-7) - (3).\nAnswer: E is proportional to t^0."
+    },
+    {
+      "id": "seen_operands_15_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 5,
+      "b": 2,
+      "expected": 3,
+      "prompt": "Question: What is 5 minus 2?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.060546875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.25,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 2.875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 5 minus 2?\nAnswer: 3."
+    },
+    {
+      "id": "seen_operands_15_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 5,
+      "b": 2,
+      "expected": 3,
+      "prompt": "Question: Subtract 2 from 5.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.130859375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.6875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 2.125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 2 from 5.\nAnswer: 3."
+    },
+    {
+      "id": "seen_operands_15_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 5,
+      "b": 2,
+      "expected": 3,
+      "prompt": "Question: Calculate the difference obtained by taking 2 away from 5.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.9375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 10.1875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 3.3125,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 2 away from 5.\nAnswer: 5."
+    },
+    {
+      "id": "seen_operands_15_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 5,
+      "b": 2,
+      "expected": 3,
+      "prompt": "Question: Evaluate (5) - (2).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "correct": {
+          "mean_nll": 7.125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.1875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 8.1875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Evaluate (5) - (2).\nAnswer: Q is proportional to t^2."
+    },
+    {
+      "id": "seen_operands_16_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 2,
+      "b": 8,
+      "expected": -6,
+      "prompt": "Question: What is 2 minus 8?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-6.",
+        "lower": "-7.",
+        "higher": "-5."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.023883819580078125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.5860176086425781,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 2.750080108642578,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 2 minus 8?\nAnswer: -6."
+    },
+    {
+      "id": "seen_operands_16_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 2,
+      "b": 8,
+      "expected": -6,
+      "prompt": "Question: Subtract 8 from 2.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-6.",
+        "lower": "-7.",
+        "higher": "-5."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.027960777282714844,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.5001287460327148,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 2.906378746032715,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 8 from 2.\nAnswer: -6."
+    },
+    {
+      "id": "seen_operands_16_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 2,
+      "b": 8,
+      "expected": -6,
+      "prompt": "Question: Calculate the difference obtained by taking 8 away from 2.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-6.",
+        "lower": "-7.",
+        "higher": "-5."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.6915721893310547,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 2.6564159393310547,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 0.2853221893310547,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 8 away from 2.\nAnswer: -5."
+    },
+    {
+      "id": "seen_operands_16_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 2,
+      "b": 8,
+      "expected": -6,
+      "prompt": "Question: Evaluate (2) - (8).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-6.",
+        "lower": "-7.",
+        "higher": "-5."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 6.0,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 5.625,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Evaluate (2) - (8).\nAnswer: Q is proportional to t^0."
+    },
+    {
+      "id": "seen_operands_17_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 7,
+      "b": 8,
+      "expected": -1,
+      "prompt": "Question: What is 7 minus 8?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.003787994384765625,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 2.625782012939453,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 6.9375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 7 minus 8?\nAnswer: -1."
+    },
+    {
+      "id": "seen_operands_17_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 7,
+      "b": 8,
+      "expected": -1,
+      "prompt": "Question: Subtract 8 from 7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.015411376953125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.894317626953125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 5.375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 8 from 7.\nAnswer: -1."
+    },
+    {
+      "id": "seen_operands_17_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 7,
+      "b": 8,
+      "expected": -1,
+      "prompt": "Question: Calculate the difference obtained by taking 8 away from 7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 2.7834930419921875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 6.0,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 0.6328125,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 8 away from 7.\nAnswer: 0."
+    },
+    {
+      "id": "seen_operands_17_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 7,
+      "b": 8,
+      "expected": -1,
+      "prompt": "Question: Evaluate (7) - (8).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "correct": {
+          "mean_nll": 3.2384033203125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 4.9921875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 5.4375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Evaluate (7) - (8).\nAnswer: E is proportional to t^0."
+    },
+    {
+      "id": "seen_operands_18_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": -1,
+      "b": 0,
+      "expected": -1,
+      "prompt": "Question: What is -1 minus 0?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.01491546630859375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.8297958374023438,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 5.625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is -1 minus 0?\nAnswer: -1."
+    },
+    {
+      "id": "seen_operands_18_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": -1,
+      "b": 0,
+      "expected": -1,
+      "prompt": "Question: Subtract 0 from -1.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.01314544677734375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 2.88653564453125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 4.15625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 0 from -1.\nAnswer: -1."
+    },
+    {
+      "id": "seen_operands_18_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": -1,
+      "b": 0,
+      "expected": -1,
+      "prompt": "Question: Calculate the difference obtained by taking 0 away from -1.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.894578218460083,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 5.55078125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 0.353515625,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 0 away from -1.\nAnswer: 0."
+    },
+    {
+      "id": "seen_operands_18_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": -1,
+      "b": 0,
+      "expected": -1,
+      "prompt": "Question: Evaluate (-1) - (0).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "correct": {
+          "mean_nll": 2.3754024505615234,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 5.96875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 5.0,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Evaluate (-1) - (0).\nAnswer: Q is proportional to t^1."
+    },
+    {
+      "id": "seen_operands_19_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": -5,
+      "b": 4,
+      "expected": -9,
+      "prompt": "Question: What is -5 minus 4?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-9.",
+        "lower": "-10.",
+        "higher": "-8."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.022837698459625244,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.182682752609253,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 2.0781354904174805,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is -5 minus 4?\nAnswer: -9."
+    },
+    {
+      "id": "seen_operands_19_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": -5,
+      "b": 4,
+      "expected": -9,
+      "prompt": "Question: Subtract 4 from -5.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-9.",
+        "lower": "-10.",
+        "higher": "-8."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.057142019271850586,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 2.2921383380889893,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 1.1172006130218506,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 4 from -5.\nAnswer: -9."
+    },
+    {
+      "id": "seen_operands_19_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": -5,
+      "b": 4,
+      "expected": -9,
+      "prompt": "Question: Calculate the difference obtained by taking 4 away from -5.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-9.",
+        "lower": "-10.",
+        "higher": "-8."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "correct": {
+          "mean_nll": 2.9231643676757812,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.8889617919921875,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 1.0091018676757812,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 4 away from -5.\nAnswer: -6."
+    },
+    {
+      "id": "seen_operands_19_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": -5,
+      "b": 4,
+      "expected": -9,
+      "prompt": "Question: Evaluate (-5) - (4).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-9.",
+        "lower": "-10.",
+        "higher": "-8."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "correct": {
+          "mean_nll": 9.09375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 6.339681148529053,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 9.3125,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Evaluate (-5) - (4).\nAnswer: E is proportional to t^-3."
+    },
+    {
+      "id": "seen_operands_20_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": 7,
+      "b": 1,
+      "expected": 6,
+      "prompt": "Question: What is 7 minus 1?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "6.",
+        "lower": "5.",
+        "higher": "7."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.171875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.84375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 1.859375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 7 minus 1?\nAnswer: 6."
+    },
+    {
+      "id": "seen_operands_20_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": 7,
+      "b": 1,
+      "expected": 6,
+      "prompt": "Question: Subtract 1 from 7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "6.",
+        "lower": "5.",
+        "higher": "7."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.228515625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.78125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 1.6015625,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 1 from 7.\nAnswer: 6."
+    },
+    {
+      "id": "seen_operands_20_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": 7,
+      "b": 1,
+      "expected": 6,
+      "prompt": "Question: Calculate the difference obtained by taking 1 away from 7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "6.",
+        "lower": "5.",
+        "higher": "7."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 3.03125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 7.40625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 1.46875,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 1 away from 7.\nAnswer: 8."
+    },
+    {
+      "id": "seen_operands_20_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": 7,
+      "b": 1,
+      "expected": 6,
+      "prompt": "Question: Evaluate (7) - (1).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "6.",
+        "lower": "5.",
+        "higher": "7."
+      },
+      "prompt_tokens": 20,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.1875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 5.90625,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Evaluate (7) - (1).\nAnswer: Q is proportional to t^2."
+    },
+    {
+      "id": "seen_operands_21_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": -8,
+      "b": -8,
+      "expected": 0,
+      "prompt": "Question: What is -8 minus -8?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "0.",
+        "lower": "-1.",
+        "higher": "1."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.061279296875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 1.4415283203125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 7.375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is -8 minus -8?\nAnswer: 0."
+    },
+    {
+      "id": "seen_operands_21_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": -8,
+      "b": -8,
+      "expected": 0,
+      "prompt": "Question: Subtract -8 from -8.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "0.",
+        "lower": "-1.",
+        "higher": "1."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.02001953125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 2.2801513671875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 6.21875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -8 from -8.\nAnswer: 0."
+    },
+    {
+      "id": "seen_operands_21_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": -8,
+      "b": -8,
+      "expected": 0,
+      "prompt": "Question: Calculate the difference obtained by taking -8 away from -8.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "0.",
+        "lower": "-1.",
+        "higher": "1."
+      },
+      "prompt_tokens": 24,
+      "scores": {
+        "correct": {
+          "mean_nll": 2.59375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 2.184326171875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 6.09375,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Calculate the difference obtained by taking -8 away from -8.\nAnswer: -10."
+    },
+    {
+      "id": "seen_operands_21_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": -8,
+      "b": -8,
+      "expected": 0,
+      "prompt": "Question: Evaluate (-8) - (-8).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "0.",
+        "lower": "-1.",
+        "higher": "1."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.5625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 3.18603515625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 6.46875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Evaluate (-8) - (-8).\nAnswer: E is proportional to t^0."
+    },
+    {
+      "id": "seen_operands_22_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": -6,
+      "b": -2,
+      "expected": -4,
+      "prompt": "Question: What is -6 minus -2?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-4.",
+        "lower": "-5.",
+        "higher": "-3."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.006438016891479492,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 2.3750598430633545,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 2.7500598430633545,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is -6 minus -2?\nAnswer: -4."
+    },
+    {
+      "id": "seen_operands_22_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": -6,
+      "b": -2,
+      "expected": -4,
+      "prompt": "Question: Subtract -2 from -6.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-4.",
+        "lower": "-5.",
+        "higher": "-3."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.015472412109375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 1.921905517578125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 2.359405517578125,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -2 from -6.\nAnswer: -4."
+    },
+    {
+      "id": "seen_operands_22_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": -6,
+      "b": -2,
+      "expected": -4,
+      "prompt": "Question: Calculate the difference obtained by taking -2 away from -6.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-4.",
+        "lower": "-5.",
+        "higher": "-3."
+      },
+      "prompt_tokens": 24,
+      "scores": {
+        "correct": {
+          "mean_nll": 2.0326004028320312,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 2.6576004028320312,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 0.06824493408203125,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking -2 away from -6.\nAnswer: -3."
+    },
+    {
+      "id": "seen_operands_22_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": -6,
+      "b": -2,
+      "expected": -4,
+      "prompt": "Question: Evaluate (-6) - (-2).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-4.",
+        "lower": "-5.",
+        "higher": "-3."
+      },
+      "prompt_tokens": 22,
+      "scores": {
+        "correct": {
+          "mean_nll": 9.8125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 9.625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 6.78125,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Evaluate (-6) - (-2).\nAnswer: L is proportional to t^2."
+    },
+    {
+      "id": "seen_operands_23_legacy_minus",
+      "group": "seen_operands",
+      "wording": "legacy_minus",
+      "a": -2,
+      "b": 2,
+      "expected": -4,
+      "prompt": "Question: What is -2 minus 2?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-4.",
+        "lower": "-5.",
+        "higher": "-3."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.13478171825408936,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 3.718766212463379,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 0.7304848432540894,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is -2 minus 2?\nAnswer: -4."
+    },
+    {
+      "id": "seen_operands_23_legacy_subtract",
+      "group": "seen_operands",
+      "wording": "legacy_subtract",
+      "a": -2,
+      "b": 2,
+      "expected": -4,
+      "prompt": "Question: Subtract 2 from -2.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-4.",
+        "lower": "-5.",
+        "higher": "-3."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.01625192165374756,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 2.359391689300537,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 1.8906415700912476,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 2 from -2.\nAnswer: -4."
+    },
+    {
+      "id": "seen_operands_23_new_verbal",
+      "group": "seen_operands",
+      "wording": "new_verbal",
+      "a": -2,
+      "b": 2,
+      "expected": -4,
+      "prompt": "Question: Calculate the difference obtained by taking 2 away from -2.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-4.",
+        "lower": "-5.",
+        "higher": "-3."
+      },
+      "prompt_tokens": 23,
+      "scores": {
+        "correct": {
+          "mean_nll": 3.58984375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 6.38671875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 0.0625,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Calculate the difference obtained by taking 2 away from -2.\nAnswer: -3."
+    },
+    {
+      "id": "seen_operands_23_new_symbolic",
+      "group": "seen_operands",
+      "wording": "new_symbolic",
+      "a": -2,
+      "b": 2,
+      "expected": -4,
+      "prompt": "Question: Evaluate (-2) - (2).\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-4.",
+        "lower": "-5.",
+        "higher": "-3."
+      },
+      "prompt_tokens": 21,
+      "scores": {
+        "correct": {
+          "mean_nll": 10.671875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 10.015625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 7.421875,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Evaluate (-2) - (2).\nAnswer: Q is proportional to t^2."
+    },
+    {
+      "id": "unseen_operands_known_answer_0_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 6,
+      "b": 13,
+      "expected": -7,
+      "prompt": "Question: What is 6 minus 13?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-7.",
+        "lower": "-8.",
+        "higher": "-6."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 13.96875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 13.78125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 14.65625,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is 6 minus 13?\nAnswer: 6."
+    },
+    {
+      "id": "unseen_operands_known_answer_0_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 6,
+      "b": 13,
+      "expected": -7,
+      "prompt": "Question: Subtract 13 from 6.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-7.",
+        "lower": "-8.",
+        "higher": "-6."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 13.21875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 13.125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 14.03125,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract 13 from 6.\nAnswer: 2."
+    },
+    {
+      "id": "unseen_operands_known_answer_1_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": -2,
+      "b": 14,
+      "expected": -16,
+      "prompt": "Question: What is -2 minus 14?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-16.",
+        "lower": "-17.",
+        "higher": "-15."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.230621337890625,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.063629150390625,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.75116491317749,
+          "tokens": 3
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -2 minus 14?\nAnswer: -4."
+    },
+    {
+      "id": "unseen_operands_known_answer_1_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": -2,
+      "b": 14,
+      "expected": -16,
+      "prompt": "Question: Subtract 14 from -2.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-16.",
+        "lower": "-17.",
+        "higher": "-15."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.146589756011963,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.459165573120117,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.833870887756348,
+          "tokens": 3
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 14 from -2.\nAnswer: -5."
+    },
+    {
+      "id": "unseen_operands_known_answer_2_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 16,
+      "b": 2,
+      "expected": 14,
+      "prompt": "Question: What is 16 minus 2?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "14.",
+        "lower": "13.",
+        "higher": "15."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 12.1875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 11.8125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 12.5,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is 16 minus 2?\nAnswer: 2."
+    },
+    {
+      "id": "unseen_operands_known_answer_2_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 16,
+      "b": 2,
+      "expected": 14,
+      "prompt": "Question: Subtract 2 from 16.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "14.",
+        "lower": "13.",
+        "higher": "15."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 12.875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 13.375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 12.5625,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 2 from 16.\nAnswer: 4."
+    },
+    {
+      "id": "unseen_operands_known_answer_3_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": -9,
+      "b": 3,
+      "expected": -12,
+      "prompt": "Question: What is -9 minus 3?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-12.",
+        "lower": "-13.",
+        "higher": "-11."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.364589691162109,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 6.302089691162109,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.146315574645996,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -9 minus 3?\nAnswer: -9."
+    },
+    {
+      "id": "unseen_operands_known_answer_3_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": -9,
+      "b": 3,
+      "expected": -12,
+      "prompt": "Question: Subtract 3 from -9.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-12.",
+        "lower": "-13.",
+        "higher": "-11."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.239590644836426,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 6.13542366027832,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 3.6461989879608154,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 3 from -9.\nAnswer: -9."
+    },
+    {
+      "id": "unseen_operands_known_answer_4_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 4,
+      "b": 9,
+      "expected": -5,
+      "prompt": "Question: What is 4 minus 9?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-5.",
+        "lower": "-6.",
+        "higher": "-4."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 10.802734375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 10.115234375,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 9.490234375,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is 4 minus 9?\nAnswer: -1."
+    },
+    {
+      "id": "unseen_operands_known_answer_4_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 4,
+      "b": 9,
+      "expected": -5,
+      "prompt": "Question: Subtract 9 from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-5.",
+        "lower": "-6.",
+        "higher": "-4."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 9.000186920166016,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 8.812686920166016,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 6.437686920166016,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 9 from 4.\nAnswer: -2."
+    },
+    {
+      "id": "unseen_operands_known_answer_5_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 13,
+      "b": 9,
+      "expected": 4,
+      "prompt": "Question: What is 13 minus 9?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "4.",
+        "lower": "3.",
+        "higher": "5."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 21.25,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 20.5,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 19.25,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is 13 minus 9?\nAnswer: -2."
+    },
+    {
+      "id": "unseen_operands_known_answer_5_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 13,
+      "b": 9,
+      "expected": 4,
+      "prompt": "Question: Subtract 9 from 13.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "4.",
+        "lower": "3.",
+        "higher": "5."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 19.375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 17.75,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 17.625,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 9 from 13.\nAnswer: 0."
+    },
+    {
+      "id": "unseen_operands_known_answer_6_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": -4,
+      "b": 9,
+      "expected": -13,
+      "prompt": "Question: What is -4 minus 9?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-13.",
+        "lower": "-14.",
+        "higher": "-12."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.072935104370117,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.302102088928223,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 3.697935104370117,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -4 minus 9?\nAnswer: -9."
+    },
+    {
+      "id": "unseen_operands_known_answer_6_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": -4,
+      "b": 9,
+      "expected": -13,
+      "prompt": "Question: Subtract 9 from -4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-13.",
+        "lower": "-14.",
+        "higher": "-12."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 3.8802201747894287,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 3.9427201747894287,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 2.0885534286499023,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 9 from -4.\nAnswer: -10."
+    },
+    {
+      "id": "unseen_operands_known_answer_7_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": -6,
+      "b": -16,
+      "expected": 10,
+      "prompt": "Question: What is -6 minus -16?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "10.",
+        "lower": "9.",
+        "higher": "11."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 24.75,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 25.0,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 23.625,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -6 minus -16?\nAnswer: -3."
+    },
+    {
+      "id": "unseen_operands_known_answer_7_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": -6,
+      "b": -16,
+      "expected": 10,
+      "prompt": "Question: Subtract -16 from -6.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "10.",
+        "lower": "9.",
+        "higher": "11."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 24.5,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 25.0,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 23.125,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract -16 from -6.\nAnswer: -5."
+    },
+    {
+      "id": "unseen_operands_known_answer_8_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": -9,
+      "b": 1,
+      "expected": -10,
+      "prompt": "Question: What is -9 minus 1?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-10.",
+        "lower": "-11.",
+        "higher": "-9."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.125400066375732,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 7.209020614624023,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.468766212463379,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -9 minus 1?\nAnswer: -7."
+    },
+    {
+      "id": "unseen_operands_known_answer_8_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": -9,
+      "b": 1,
+      "expected": -10,
+      "prompt": "Question: Subtract 1 from -9.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-10.",
+        "lower": "-11.",
+        "higher": "-9."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.187985420227051,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.958930492401123,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 3.0625195503234863,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 1 from -9.\nAnswer: -7."
+    },
+    {
+      "id": "unseen_operands_known_answer_9_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 2,
+      "b": -10,
+      "expected": 12,
+      "prompt": "Question: What is 2 minus -10?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "12.",
+        "lower": "11.",
+        "higher": "13."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 11.1875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 11.25,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 11.5,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 2 minus -10?\nAnswer: 6."
+    },
+    {
+      "id": "unseen_operands_known_answer_9_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 2,
+      "b": -10,
+      "expected": 12,
+      "prompt": "Question: Subtract -10 from 2.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "12.",
+        "lower": "11.",
+        "higher": "13."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 11.9375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 13.0625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 12.125,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -10 from 2.\nAnswer: 6."
+    },
+    {
+      "id": "unseen_operands_known_answer_10_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": -12,
+      "b": -9,
+      "expected": -3,
+      "prompt": "Question: What is -12 minus -9?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-3.",
+        "lower": "-4.",
+        "higher": "-2."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 10.03125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 11.65625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 7.15625,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -12 minus -9?\nAnswer: 0."
+    },
+    {
+      "id": "unseen_operands_known_answer_10_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": -12,
+      "b": -9,
+      "expected": -3,
+      "prompt": "Question: Subtract -9 from -12.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-3.",
+        "lower": "-4.",
+        "higher": "-2."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 13.90625,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 15.21875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 10.09375,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract -9 from -12.\nAnswer: 1."
+    },
+    {
+      "id": "unseen_operands_known_answer_11_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": -12,
+      "b": -15,
+      "expected": 3,
+      "prompt": "Question: What is -12 minus -15?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 27.25,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 26.5,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 27.875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -12 minus -15?\nAnswer: -3."
+    },
+    {
+      "id": "unseen_operands_known_answer_11_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": -12,
+      "b": -15,
+      "expected": 3,
+      "prompt": "Question: Subtract -15 from -12.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 9.375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.28125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 14.375,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract -15 from -12.\nAnswer: 0."
+    },
+    {
+      "id": "unseen_operands_known_answer_12_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": -15,
+      "b": -3,
+      "expected": -12,
+      "prompt": "Question: What is -15 minus -3?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-12.",
+        "lower": "-13.",
+        "higher": "-11."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.83335018157959,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 8.104183197021484,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.459367275238037,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -15 minus -3?\nAnswer: -2."
+    },
+    {
+      "id": "unseen_operands_known_answer_12_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": -15,
+      "b": -3,
+      "expected": -12,
+      "prompt": "Question: Subtract -3 from -15.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-12.",
+        "lower": "-13.",
+        "higher": "-11."
+      },
+      "prompt_tokens": 18,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.997518062591553,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 7.1433515548706055,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.966825008392334,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract -3 from -15.\nAnswer: -1."
+    },
+    {
+      "id": "unseen_operands_known_answer_13_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": -12,
+      "b": 0,
+      "expected": -12,
+      "prompt": "Question: What is -12 minus 0?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-12.",
+        "lower": "-13.",
+        "higher": "-11."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.041680335998535,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 7.645846843719482,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.58437442779541,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -12 minus 0?\nAnswer: -5."
+    },
+    {
+      "id": "unseen_operands_known_answer_13_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": -12,
+      "b": 0,
+      "expected": -12,
+      "prompt": "Question: Subtract 0 from -12.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-12.",
+        "lower": "-13.",
+        "higher": "-11."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.000116348266602,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 7.520949840545654,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.417202949523926,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 0 from -12.\nAnswer: -2."
+    },
+    {
+      "id": "unseen_operands_known_answer_14_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 10,
+      "b": 4,
+      "expected": 6,
+      "prompt": "Question: What is 10 minus 4?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "6.",
+        "lower": "5.",
+        "higher": "7."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 14.75,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 14.875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 13.9375,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is 10 minus 4?\nAnswer: 0."
+    },
+    {
+      "id": "unseen_operands_known_answer_14_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 10,
+      "b": 4,
+      "expected": 6,
+      "prompt": "Question: Subtract 4 from 10.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "6.",
+        "lower": "5.",
+        "higher": "7."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 19.125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 17.375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 21.125,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract 4 from 10.\nAnswer: 2."
+    },
+    {
+      "id": "unseen_operands_known_answer_15_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 10,
+      "b": -6,
+      "expected": 16,
+      "prompt": "Question: What is 10 minus -6?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "16.",
+        "lower": "15.",
+        "higher": "17."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 7.28125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 8.9375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 10.375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 10 minus -6?\nAnswer: 12."
+    },
+    {
+      "id": "unseen_operands_known_answer_15_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 10,
+      "b": -6,
+      "expected": 16,
+      "prompt": "Question: Subtract -6 from 10.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "16.",
+        "lower": "15.",
+        "higher": "17."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 9.9375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 7.0,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 9.6875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract -6 from 10.\nAnswer: 14."
+    },
+    {
+      "id": "unseen_operands_known_answer_16_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 8,
+      "b": 9,
+      "expected": -1,
+      "prompt": "Question: What is 8 minus 9?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.283103942871094,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 8.125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 3.296875,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is 8 minus 9?\nAnswer: 2."
+    },
+    {
+      "id": "unseen_operands_known_answer_16_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 8,
+      "b": 9,
+      "expected": -1,
+      "prompt": "Question: Subtract 9 from 8.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-1.",
+        "lower": "-2.",
+        "higher": "0."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.968918800354004,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 11.0,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 3.0625,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 9 from 8.\nAnswer: 2."
+    },
+    {
+      "id": "unseen_operands_known_answer_17_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 11,
+      "b": 3,
+      "expected": 8,
+      "prompt": "Question: What is 11 minus 3?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "8.",
+        "lower": "7.",
+        "higher": "9."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 13.75,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 14.0,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 15.1875,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 11 minus 3?\nAnswer: 0."
+    },
+    {
+      "id": "unseen_operands_known_answer_17_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 11,
+      "b": 3,
+      "expected": 8,
+      "prompt": "Question: Subtract 3 from 11.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "8.",
+        "lower": "7.",
+        "higher": "9."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 21.0,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 20.125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 20.0,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 3 from 11.\nAnswer: 3."
+    },
+    {
+      "id": "unseen_operands_known_answer_18_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 11,
+      "b": -1,
+      "expected": 12,
+      "prompt": "Question: What is 11 minus -1?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "12.",
+        "lower": "11.",
+        "higher": "13."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 12.6875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 12.5625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 11.5,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is 11 minus -1?\nAnswer: 6."
+    },
+    {
+      "id": "unseen_operands_known_answer_18_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 11,
+      "b": -1,
+      "expected": 12,
+      "prompt": "Question: Subtract -1 from 11.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "12.",
+        "lower": "11.",
+        "higher": "13."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 12.6875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 13.8125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 11.9375,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract -1 from 11.\nAnswer: 7."
+    },
+    {
+      "id": "unseen_operands_known_answer_19_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 16,
+      "b": 13,
+      "expected": 3,
+      "prompt": "Question: What is 16 minus 13?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 3.921875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 1.671875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.21875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is 16 minus 13?\nAnswer: 0."
+    },
+    {
+      "id": "unseen_operands_known_answer_19_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 16,
+      "b": 13,
+      "expected": 3,
+      "prompt": "Question: Subtract 13 from 16.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "3.",
+        "lower": "2.",
+        "higher": "4."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 2.96875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 0.466796875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.03125,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract 13 from 16.\nAnswer: 2."
+    },
+    {
+      "id": "unseen_operands_known_answer_20_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 7,
+      "b": 12,
+      "expected": -5,
+      "prompt": "Question: What is 7 minus 12?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-5.",
+        "lower": "-6.",
+        "higher": "-4."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 13.03125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 12.78125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 12.3125,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is 7 minus 12?\nAnswer: 6."
+    },
+    {
+      "id": "unseen_operands_known_answer_20_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 7,
+      "b": 12,
+      "expected": -5,
+      "prompt": "Question: Subtract 12 from 7.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-5.",
+        "lower": "-6.",
+        "higher": "-4."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 15.375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 14.8125,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 15.1875,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract 12 from 7.\nAnswer: 2."
+    },
+    {
+      "id": "unseen_operands_known_answer_21_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 15,
+      "b": 0,
+      "expected": 15,
+      "prompt": "Question: What is 15 minus 0?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "15.",
+        "lower": "14.",
+        "higher": "16."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 8.375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 7.53125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 8.6875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is 15 minus 0?\nAnswer: 6."
+    },
+    {
+      "id": "unseen_operands_known_answer_21_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 15,
+      "b": 0,
+      "expected": 15,
+      "prompt": "Question: Subtract 0 from 15.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "15.",
+        "lower": "14.",
+        "higher": "16."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 11.625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 11.75,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 10.8125,
+          "tokens": 1
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 0 from 15.\nAnswer: 7."
+    },
+    {
+      "id": "unseen_operands_known_answer_22_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 2,
+      "b": -14,
+      "expected": 16,
+      "prompt": "Question: What is 2 minus -14?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "16.",
+        "lower": "15.",
+        "higher": "17."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 12.6875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 12.0,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 13.875,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is 2 minus -14?\nAnswer: 6."
+    },
+    {
+      "id": "unseen_operands_known_answer_22_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 2,
+      "b": -14,
+      "expected": 16,
+      "prompt": "Question: Subtract -14 from 2.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "16.",
+        "lower": "15.",
+        "higher": "17."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 13.25,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 13.9375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 14.75,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -14 from 2.\nAnswer: 5."
+    },
+    {
+      "id": "unseen_operands_known_answer_23_legacy_minus",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_minus",
+      "a": 12,
+      "b": 12,
+      "expected": 0,
+      "prompt": "Question: What is 12 minus 12?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "0.",
+        "lower": "-1.",
+        "higher": "1."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.162109375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 2.44482421875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 2.34375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 12 minus 12?\nAnswer: 0."
+    },
+    {
+      "id": "unseen_operands_known_answer_23_legacy_subtract",
+      "group": "unseen_operands_known_answer",
+      "wording": "legacy_subtract",
+      "a": 12,
+      "b": 12,
+      "expected": 0,
+      "prompt": "Question: Subtract 12 from 12.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "0.",
+        "lower": "-1.",
+        "higher": "1."
+      },
+      "prompt_tokens": 15,
+      "scores": {
+        "correct": {
+          "mean_nll": 0.408203125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 5.937557220458984,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 2.59375,
+          "tokens": 1
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 12 from 12.\nAnswer: 0."
+    },
+    {
+      "id": "unseen_operands_new_answer_0_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -9,
+      "b": 9,
+      "expected": -18,
+      "prompt": "Question: What is -9 minus 9?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-18.",
+        "lower": "-19.",
+        "higher": "-17."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.0840253829956055,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 4.376912593841553,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 3.7506561279296875,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -9 minus 9?\nAnswer: -10."
+    },
+    {
+      "id": "unseen_operands_new_answer_0_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -9,
+      "b": 9,
+      "expected": -18,
+      "prompt": "Question: Subtract 9 from -9.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-18.",
+        "lower": "-19.",
+        "higher": "-17."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.39646053314209,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 4.731472492218018,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.146478652954102,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 9 from -9.\nAnswer: -12."
+    },
+    {
+      "id": "unseen_operands_new_answer_1_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": 6,
+      "b": -13,
+      "expected": 19,
+      "prompt": "Question: What is 6 minus -13?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "19.",
+        "lower": "18.",
+        "higher": "20."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 11.375,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 6.951171875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 10.9375,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is 6 minus -13?\nAnswer: 9."
+    },
+    {
+      "id": "unseen_operands_new_answer_1_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": 6,
+      "b": -13,
+      "expected": 19,
+      "prompt": "Question: Subtract -13 from 6.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "19.",
+        "lower": "18.",
+        "higher": "20."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 13.25,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 7.8525390625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 11.5,
+          "tokens": 1
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract -13 from 6.\nAnswer: 9."
+    },
+    {
+      "id": "unseen_operands_new_answer_2_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": 9,
+      "b": -8,
+      "expected": 17,
+      "prompt": "Question: What is 9 minus -8?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "17.",
+        "lower": "16.",
+        "higher": "18."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 9.0,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 1.296875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.45062255859375,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is 9 minus -8?\nAnswer: 14."
+    },
+    {
+      "id": "unseen_operands_new_answer_2_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": 9,
+      "b": -8,
+      "expected": 17,
+      "prompt": "Question: Subtract -8 from 9.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "17.",
+        "lower": "16.",
+        "higher": "18."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 8.3125,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 0.44140625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.78948974609375,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract -8 from 9.\nAnswer: 16."
+    },
+    {
+      "id": "unseen_operands_new_answer_3_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -10,
+      "b": 11,
+      "expected": -21,
+      "prompt": "Question: What is -10 minus 11?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-21.",
+        "lower": "-22.",
+        "higher": "-20."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.625007629394531,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.208340644836426,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.437507629394531,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -10 minus 11?\nAnswer: -9."
+    },
+    {
+      "id": "unseen_operands_new_answer_3_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -10,
+      "b": 11,
+      "expected": -21,
+      "prompt": "Question: Subtract 11 from -10.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-21.",
+        "lower": "-22.",
+        "higher": "-20."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 7.14584493637085,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 6.940115928649902,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 6.835948944091797,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 11 from -10.\nAnswer: -6."
+    },
+    {
+      "id": "unseen_operands_new_answer_4_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -5,
+      "b": 16,
+      "expected": -21,
+      "prompt": "Question: What is -5 minus 16?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-21.",
+        "lower": "-22.",
+        "higher": "-20."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.770843505859375,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 6.489593505859375,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.723968505859375,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -5 minus 16?\nAnswer: -7."
+    },
+    {
+      "id": "unseen_operands_new_answer_4_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -5,
+      "b": 16,
+      "expected": -21,
+      "prompt": "Question: Subtract 16 from -5.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-21.",
+        "lower": "-22.",
+        "higher": "-20."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.723968029022217,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.200530052185059,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.971363544464111,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 16 from -5.\nAnswer: -8."
+    },
+    {
+      "id": "unseen_operands_new_answer_5_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": 15,
+      "b": -10,
+      "expected": 25,
+      "prompt": "Question: What is 15 minus -10?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "25.",
+        "lower": "24.",
+        "higher": "26."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.779296875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 9.75,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 5.65625,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 15 minus -10?\nAnswer: 8."
+    },
+    {
+      "id": "unseen_operands_new_answer_5_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": 15,
+      "b": -10,
+      "expected": 25,
+      "prompt": "Question: Subtract -10 from 15.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "25.",
+        "lower": "24.",
+        "higher": "26."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.4453125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 7.84375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 6.0546875,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -10 from 15.\nAnswer: 12."
+    },
+    {
+      "id": "unseen_operands_new_answer_6_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -13,
+      "b": 9,
+      "expected": -22,
+      "prompt": "Question: What is -13 minus 9?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-22.",
+        "lower": "-23.",
+        "higher": "-21."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.289072513580322,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 3.872405767440796,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.4062604904174805,
+          "tokens": 3
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -13 minus 9?\nAnswer: -9."
+    },
+    {
+      "id": "unseen_operands_new_answer_6_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -13,
+      "b": 9,
+      "expected": -22,
+      "prompt": "Question: Subtract 9 from -13.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-22.",
+        "lower": "-23.",
+        "higher": "-21."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.848969459533691,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 6.140635967254639,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 8.333344459533691,
+          "tokens": 3
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract 9 from -13.\nAnswer: -8."
+    },
+    {
+      "id": "unseen_operands_new_answer_7_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": 10,
+      "b": -15,
+      "expected": 25,
+      "prompt": "Question: What is 10 minus -15?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "25.",
+        "lower": "24.",
+        "higher": "26."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 7.21875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 13.4375,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 7.84375,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is 10 minus -15?\nAnswer: 9."
+    },
+    {
+      "id": "unseen_operands_new_answer_7_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": 10,
+      "b": -15,
+      "expected": 25,
+      "prompt": "Question: Subtract -15 from 10.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "25.",
+        "lower": "24.",
+        "higher": "26."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.6484375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 7.90625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 6.484375,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -15 from 10.\nAnswer: 9."
+    },
+    {
+      "id": "unseen_operands_new_answer_8_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -2,
+      "b": 16,
+      "expected": -18,
+      "prompt": "Question: What is -2 minus 16?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-18.",
+        "lower": "-19.",
+        "higher": "-17."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.501533031463623,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 6.045305252075195,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.147076606750488,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -2 minus 16?\nAnswer: -4."
+    },
+    {
+      "id": "unseen_operands_new_answer_8_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -2,
+      "b": 16,
+      "expected": -18,
+      "prompt": "Question: Subtract 16 from -2.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-18.",
+        "lower": "-19.",
+        "higher": "-17."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.626101493835449,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 6.043881893157959,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.417605400085449,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 16 from -2.\nAnswer: -5."
+    },
+    {
+      "id": "unseen_operands_new_answer_9_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -9,
+      "b": 16,
+      "expected": -25,
+      "prompt": "Question: What is -9 minus 16?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-25.",
+        "lower": "-26.",
+        "higher": "-24."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.420711040496826,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.065506935119629,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.635432720184326,
+          "tokens": 3
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -9 minus 16?\nAnswer: -7."
+    },
+    {
+      "id": "unseen_operands_new_answer_9_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -9,
+      "b": 16,
+      "expected": -25,
+      "prompt": "Question: Subtract 16 from -9.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-25.",
+        "lower": "-26.",
+        "higher": "-24."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.148578643798828,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 3.794391393661499,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 3.687518835067749,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 16 from -9.\nAnswer: -9."
+    },
+    {
+      "id": "unseen_operands_new_answer_10_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -14,
+      "b": 7,
+      "expected": -21,
+      "prompt": "Question: What is -14 minus 7?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-21.",
+        "lower": "-22.",
+        "higher": "-20."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.635429382324219,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 4.994804382324219,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.114596366882324,
+          "tokens": 3
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -14 minus 7?\nAnswer: -11."
+    },
+    {
+      "id": "unseen_operands_new_answer_10_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -14,
+      "b": 7,
+      "expected": -21,
+      "prompt": "Question: Subtract 7 from -14.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-21.",
+        "lower": "-22.",
+        "higher": "-20."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.572939872741699,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 6.062522888183594,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 6.385439872741699,
+          "tokens": 3
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract 7 from -14.\nAnswer: -11."
+    },
+    {
+      "id": "unseen_operands_new_answer_11_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": 16,
+      "b": -12,
+      "expected": 28,
+      "prompt": "Question: What is 16 minus -12?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "28.",
+        "lower": "27.",
+        "higher": "29."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 7.6875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 7.15625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 8.421875,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is 16 minus -12?\nAnswer: 9."
+    },
+    {
+      "id": "unseen_operands_new_answer_11_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": 16,
+      "b": -12,
+      "expected": 28,
+      "prompt": "Question: Subtract -12 from 16.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "28.",
+        "lower": "27.",
+        "higher": "29."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.40625,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 6.484375,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 6.671875,
+          "tokens": 2
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract -12 from 16.\nAnswer: 16."
+    },
+    {
+      "id": "unseen_operands_new_answer_12_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -13,
+      "b": 4,
+      "expected": -17,
+      "prompt": "Question: What is -13 minus 4?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-17.",
+        "lower": "-18.",
+        "higher": "-16."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.62585973739624,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 4.938436031341553,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.001002311706543,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -13 minus 4?\nAnswer: -8."
+    },
+    {
+      "id": "unseen_operands_new_answer_12_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -13,
+      "b": 4,
+      "expected": -17,
+      "prompt": "Question: Subtract 4 from -13.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-17.",
+        "lower": "-18.",
+        "higher": "-16."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.833766937255859,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 6.250487327575684,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.708657741546631,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 4 from -13.\nAnswer: -5."
+    },
+    {
+      "id": "unseen_operands_new_answer_13_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -16,
+      "b": 11,
+      "expected": -27,
+      "prompt": "Question: What is -16 minus 11?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-27.",
+        "lower": "-28.",
+        "higher": "-26."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.128509044647217,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.670501232147217,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.753203868865967,
+          "tokens": 3
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -16 minus 11?\nAnswer: -7."
+    },
+    {
+      "id": "unseen_operands_new_answer_13_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -16,
+      "b": 11,
+      "expected": -27,
+      "prompt": "Question: Subtract 11 from -16.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-27.",
+        "lower": "-28.",
+        "higher": "-26."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.501838684082031,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.126798629760742,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.543342590332031,
+          "tokens": 3
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract 11 from -16.\nAnswer: -8."
+    },
+    {
+      "id": "unseen_operands_new_answer_14_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": 16,
+      "b": -16,
+      "expected": 32,
+      "prompt": "Question: What is 16 minus -16?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "32.",
+        "lower": "31.",
+        "higher": "33."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 7.734375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 7.765625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 6.828125,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is 16 minus -16?\nAnswer: 7."
+    },
+    {
+      "id": "unseen_operands_new_answer_14_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": 16,
+      "b": -16,
+      "expected": 32,
+      "prompt": "Question: Subtract -16 from 16.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "32.",
+        "lower": "31.",
+        "higher": "33."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.0546875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 6.1171875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 5.2109375,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract -16 from 16.\nAnswer: 16."
+    },
+    {
+      "id": "unseen_operands_new_answer_15_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": 8,
+      "b": -12,
+      "expected": 20,
+      "prompt": "Question: What is 8 minus -12?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "20.",
+        "lower": "19.",
+        "higher": "21."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.5,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 7.8125,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 3.7890625,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is 8 minus -12?\nAnswer: 14."
+    },
+    {
+      "id": "unseen_operands_new_answer_15_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": 8,
+      "b": -12,
+      "expected": 20,
+      "prompt": "Question: Subtract -12 from 8.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "20.",
+        "lower": "19.",
+        "higher": "21."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 7.1875,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 7.625,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 4.55859375,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract -12 from 8.\nAnswer: 14."
+    },
+    {
+      "id": "unseen_operands_new_answer_16_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": 12,
+      "b": -14,
+      "expected": 26,
+      "prompt": "Question: What is 12 minus -14?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "26.",
+        "lower": "25.",
+        "higher": "27."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.34375,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 5.84765625,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 7.359375,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is 12 minus -14?\nAnswer: 8."
+    },
+    {
+      "id": "unseen_operands_new_answer_16_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": 12,
+      "b": -14,
+      "expected": 26,
+      "prompt": "Question: Subtract -14 from 12.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "26.",
+        "lower": "25.",
+        "higher": "27."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.703125,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 5.921875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 7.5625,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract -14 from 12.\nAnswer: 11."
+    },
+    {
+      "id": "unseen_operands_new_answer_17_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -11,
+      "b": 6,
+      "expected": -17,
+      "prompt": "Question: What is -11 minus 6?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-17.",
+        "lower": "-18.",
+        "higher": "-16."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 3.7308080196380615,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 4.022708892822266,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 3.251417636871338,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -11 minus 6?\nAnswer: -10."
+    },
+    {
+      "id": "unseen_operands_new_answer_17_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -11,
+      "b": 6,
+      "expected": -17,
+      "prompt": "Question: Subtract 6 from -11.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-17.",
+        "lower": "-18.",
+        "higher": "-16."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.083944320678711,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 4.438217639923096,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 3.5628819465637207,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 6 from -11.\nAnswer: -12."
+    },
+    {
+      "id": "unseen_operands_new_answer_18_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -5,
+      "b": 12,
+      "expected": -17,
+      "prompt": "Question: What is -5 minus 12?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-17.",
+        "lower": "-18.",
+        "higher": "-16."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.8341145515441895,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.105039596557617,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.500826835632324,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -5 minus 12?\nAnswer: -9."
+    },
+    {
+      "id": "unseen_operands_new_answer_18_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -5,
+      "b": 12,
+      "expected": -17,
+      "prompt": "Question: Subtract 12 from -5.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-17.",
+        "lower": "-18.",
+        "higher": "-16."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.542568206787109,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.87589168548584,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.72977876663208,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 12 from -5.\nAnswer: -9."
+    },
+    {
+      "id": "unseen_operands_new_answer_19_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -14,
+      "b": 16,
+      "expected": -30,
+      "prompt": "Question: What is -14 minus 16?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-30.",
+        "lower": "-31.",
+        "higher": "-29."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.183608055114746,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.583347320556641,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.882094383239746,
+          "tokens": 3
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: What is -14 minus 16?\nAnswer: -6."
+    },
+    {
+      "id": "unseen_operands_new_answer_19_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -14,
+      "b": 16,
+      "expected": -30,
+      "prompt": "Question: Subtract 16 from -14.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-30.",
+        "lower": "-31.",
+        "higher": "-29."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 6.010459899902344,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 7.520876884460449,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 6.294120788574219,
+          "tokens": 3
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 16 from -14.\nAnswer: -5."
+    },
+    {
+      "id": "unseen_operands_new_answer_20_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": 4,
+      "b": -16,
+      "expected": 20,
+      "prompt": "Question: What is 4 minus -16?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "20.",
+        "lower": "19.",
+        "higher": "21."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 13.75,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 13.6875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 8.37109375,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is 4 minus -16?\nAnswer: 7."
+    },
+    {
+      "id": "unseen_operands_new_answer_20_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": 4,
+      "b": -16,
+      "expected": 20,
+      "prompt": "Question: Subtract -16 from 4.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "20.",
+        "lower": "19.",
+        "higher": "21."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 13.0625,
+          "tokens": 1
+        },
+        "lower": {
+          "mean_nll": 13.875,
+          "tokens": 1
+        },
+        "higher": {
+          "mean_nll": 8.453125,
+          "tokens": 2
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract -16 from 4.\nAnswer: 6."
+    },
+    {
+      "id": "unseen_operands_new_answer_21_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -13,
+      "b": 13,
+      "expected": -26,
+      "prompt": "Question: What is -13 minus 13?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-26.",
+        "lower": "-27.",
+        "higher": "-25."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.044997215270996,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.377506256103516,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.921380996704102,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: What is -13 minus 13?\nAnswer: -7."
+    },
+    {
+      "id": "unseen_operands_new_answer_21_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -13,
+      "b": 13,
+      "expected": -26,
+      "prompt": "Question: Subtract 13 from -13.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-26.",
+        "lower": "-27.",
+        "higher": "-25."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.668238639831543,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 6.33435583114624,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 6.12695837020874,
+          "tokens": 3
+        }
+      },
+      "winner": "correct",
+      "generation": "Question: Subtract 13 from -13.\nAnswer: -4."
+    },
+    {
+      "id": "unseen_operands_new_answer_22_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": -6,
+      "b": 13,
+      "expected": -19,
+      "prompt": "Question: What is -6 minus 13?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-19.",
+        "lower": "-20.",
+        "higher": "-18."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 4.628937721252441,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 4.281260967254639,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 4.584254741668701,
+          "tokens": 3
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is -6 minus 13?\nAnswer: -9."
+    },
+    {
+      "id": "unseen_operands_new_answer_22_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": -6,
+      "b": 13,
+      "expected": -19,
+      "prompt": "Question: Subtract 13 from -6.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "-19.",
+        "lower": "-20.",
+        "higher": "-18."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 5.293892860412598,
+          "tokens": 3
+        },
+        "lower": {
+          "mean_nll": 5.109383583068848,
+          "tokens": 3
+        },
+        "higher": {
+          "mean_nll": 5.00087308883667,
+          "tokens": 3
+        }
+      },
+      "winner": "higher",
+      "generation": "Question: Subtract 13 from -6.\nAnswer: -9."
+    },
+    {
+      "id": "unseen_operands_new_answer_23_legacy_minus",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_minus",
+      "a": 12,
+      "b": -15,
+      "expected": 27,
+      "prompt": "Question: What is 12 minus -15?\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "27.",
+        "lower": "26.",
+        "higher": "28."
+      },
+      "prompt_tokens": 17,
+      "scores": {
+        "correct": {
+          "mean_nll": 8.140625,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 7.296875,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 8.46875,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: What is 12 minus -15?\nAnswer: 7."
+    },
+    {
+      "id": "unseen_operands_new_answer_23_legacy_subtract",
+      "group": "unseen_operands_new_answer",
+      "wording": "legacy_subtract",
+      "a": 12,
+      "b": -15,
+      "expected": 27,
+      "prompt": "Question: Subtract -15 from 12.\nAnswer: ",
+      "target": "correct",
+      "candidates": {
+        "correct": "27.",
+        "lower": "26.",
+        "higher": "28."
+      },
+      "prompt_tokens": 16,
+      "scores": {
+        "correct": {
+          "mean_nll": 7.671875,
+          "tokens": 2
+        },
+        "lower": {
+          "mean_nll": 6.984375,
+          "tokens": 2
+        },
+        "higher": {
+          "mean_nll": 7.515625,
+          "tokens": 2
+        }
+      },
+      "winner": "lower",
+      "generation": "Question: Subtract -15 from 12.\nAnswer: 9."
+    }
+  ],
+  "prepend_bos": false,
+  "checkpoint_sha256": "a270638321e841743f5a1a089d52f3ba7ec0776106cd272f430942a196827faa",
+  "probes_file": "audit/arithmetic_transfer/probes.json",
+  "limitation": "Single-checkpoint post-hoc diagnostic; ranking is not free-generation success or discovery."
+}

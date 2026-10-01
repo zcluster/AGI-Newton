@@ -472,3 +472,41 @@ are under `~/data/AGI-Newton/audit/arithmetic_transfer/`. The frozen probes,
 manifest and scoring code remain available locally and on GitHub; 36 local
 unit tests pass. Campus-network/VPN access may need restoration, but network
 configuration has not been changed by this task.
+
+### Transfer results after connectivity restoration
+
+Job 2863624 is now verified COMPLETED, exit 0, elapsed 38s. Both raw reports
+and the job log have been retrieved. The scoring script verifies the frozen
+probe hash, exact checkpoint hashes, all 192 prompt/candidate signatures and
+legacy no-BOS settings before grading free generation.
+
+| Condition (48 prompts each) | Original masked model | Resampled model | Resampled pairs correct in both wordings |
+| --- | ---: | ---: | ---: |
+| Seen operand pairs, original wording | 8/48 | 46/48 | 23/24 |
+| Same seen pairs, new wording | 0/48 | 4/48 | 0/24 |
+| New operand range, familiar answer values | 2/48 | 2/48 | 1/24 |
+| New operand range and new answer values | 0/48 | 0/48 | 0/24 |
+
+The near-perfect performance on the seen control does not transfer to new
+wording or operand ranges. In each range group, only one of the 48 resampled-model
+responses is off by one; the earlier validation off-by-one pattern is
+therefore not range-robust. On the new wording condition only 24/48 outputs
+are parseable integers, so formatting/instruction interpretation is also a
+factor on that condition. The verbal variant is 4/24 exact, with 24/24 parseable
+integers; the parenthesized symbolic variant is 0/24 exact and 0/24 parseable.
+The range conditions each have 48/48 parseable
+integers: their low accuracy cannot be explained by output-format failure.
+
+This is a prospective probe suite on selected existing checkpoints, one seed
+and 24 operand pairs per condition, not an independent confirmatory study.
+It supports a narrow learned arithmetic competence, not an exact general
+subtraction rule. It does not prove memorization is the only mechanism, nor
+that larger or differently trained historical models could never generalize.
+Do not extend the earlier approximate-arithmetic claim beyond the old validation
+domain. Repetition alone is not a demonstrated solution to the missing foundation.
+
+All raw outputs and paired metrics are in `audit/arithmetic_transfer/`.
+Before another training run, distinguish instruction/notation coverage from
+numeric-rule learning, and freeze a method-oriented curriculum comparison with
+unseen operands and wording kept out of training. Historical source fidelity,
+premise access and physics composition still require their own evidence.

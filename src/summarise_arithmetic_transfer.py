@@ -36,7 +36,9 @@ def summarise(root):
                 pairs.setdefault((p['a'], p['b']), []).append(numeric_correct(p))
             assert len(pairs) == 24 and all(len(v) == 2 for v in pairs.values())
             groups[name] = validation_errors(subset, group=None) | {
-                'operand_pairs': 24, 'both_wordings_correct': sum(all(v) for v in pairs.values())}
+                'operand_pairs': 24, 'both_wordings_correct': sum(all(v) for v in pairs.values()),
+                'by_wording': {wording: validation_errors([p for p in subset if p['wording'] == wording], group=None)
+                               for wording in sorted({p['wording'] for p in subset})}}
         result[arm] = groups
     return result
 
