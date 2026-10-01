@@ -40,6 +40,9 @@ The immediate dependency is a small, source-verified historical premise pack:
 2. Circular-motion relation: original Huygens Latin pp. 159–160 already inspected.
    Use a checked Latin transcription in the strict arm. An English translation is
    a separately labeled access control, never silently historical English.
+   A [provisional I–V transcription](audit/source_pages/HUYGENS_TRANSCRIPTION_REVIEW.md)
+   is now available for review; theorem V retains the original string-tension and
+   weight comparison, without treating it as a universal attraction law.
 3. Audit mathematical prerequisites by skill, not by book title. Recorde is a
    candidate; its incomplete worked examples remain quarantined. A missing image
    need not block review of the already retained physics-page images.
