@@ -7,7 +7,36 @@ The latest Tongji HPC baseline and historical-language comparison are in
 [`V11_BOOTSTRAP_RESULTS.md`](V11_BOOTSTRAP_RESULTS.md); language modeling
 improved, but free derivation and the direct Earth–Moon test still failed.
 
-Latest diagnostic: [`READING_CALIBRATION_PROTOCOL.md`](READING_CALIBRATION_PROTOCOL.md).
+## Current evidence and open research gates
+
+The [publication evidence plan](PUBLICATION_EVIDENCE_PLAN.md) separates the
+historical-discovery objective from completed synthetic diagnostics. No run yet
+demonstrates Newtonian rediscovery. The newest [original-English source transfer
+audit](audit/source_pages/STREETE_TRANSCRIPTION_REVIEW.md) evaluates a visually
+transcribed Streete (1661) excerpt and counterfactuals on V11 and all six saved
+objective-comparison models. The synthetic answer-only advantage does not become
+a consistent historical-reading advantage. One continuation seed supplies a
+valid question reversal pair, but no model passes both interfaces' pairs; ranking
+does not capture the same behavior. Four prompts are a diagnostic, not a broad
+benchmark. Full outputs and a hash-checking reproduction script are included.
+
+Historical source admission remains provisional: the [math coverage
+audit](HISTORICAL_MATH_COVERAGE.md) reports actual exposure and missing skill-level
+evidence, while the [Recorde review](audit/historical_arithmetic_recorde/REVIEW.md)
+records missing mathematical layouts and an unresolved numeral contradiction.
+Original Latin Huygens and English Streete transcriptions remain review artifacts,
+not newly added training data. Existing V11 already contains some Latin; the
+English-first future design is not a claim that this checkpoint is English-only.
+
+The [mathematical protocol](MATH_CALIBRATION_PROTOCOL.md) also includes balanced
+sampling and frozen arithmetic transfer: strong familiar-prompt fitting does not
+generalize reliably to changed wording or new operand ranges. These negative
+controls constrain the next experiment; they do not prove that larger historical
+models cannot discover laws.
+
+## Diagnostic history
+
+Earlier diagnostic: [`READING_CALIBRATION_PROTOCOL.md`](READING_CALIBRATION_PROTOCOL.md).
 A shared SentencePiece prompt-boundary defect was fixed and both baseline and
 synthetic-calibrated models retested. The calibration improves answer formatting,
 not reliable relation transfer or physics discovery. Earlier BPE generation/ranking
