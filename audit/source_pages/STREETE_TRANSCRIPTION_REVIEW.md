@@ -104,3 +104,16 @@ text cleanup alone solves the access problem. Establish basic input-sensitive
 English reading on held-out historical passages, retaining the existing
 answer-only control results and counterfactual pair scoring. The English-first
 main line remains distinct from any optional Latin source-access diagnostic.
+
+### Prospective existing-checkpoint transfer comparison
+
+Before viewing new outputs, evaluate the same frozen four prompts on all six
+saved objective-comparison models (continuation and answer-only, fine-tuning
+seeds 1686–1688), using the unchanged evaluator and no-BOS setting. Do not retrain,
+change candidates, or choose a seed. These models share V11 pretraining and use
+synthetic calibration, so this compares transfer of that calibration, not six
+independent historical models. The pilot baseline outputs are already known:
+this extension is exploratory, not an independent blind benchmark. Report full
+generated suffixes, candidate ranking and both complete reversal pairs per model.
+The runnable job is `hpc/tongji_streete_objective_transfer.sbatch`; it refuses
+to overwrite existing results or proceed without a checkpoint.
