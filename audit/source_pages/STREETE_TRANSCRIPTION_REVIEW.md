@@ -74,3 +74,33 @@ Evaluate the unchanged V11 checkpoint, legacy no-BOS interface; inspect full
 generations and both members of each pair. A constant-square answer would get
 2/4 individually but 0/2 pairs. No training or checkpoint selection is authorized
 by this fixture; source text remains pending independent admission review.
+
+## Observed checkpoint-only diagnostic
+
+Job `2864262` completed with exit `0:0` in 25 seconds. The retrieved report is
+`streete_clean_reading_result.json`. Its fixture SHA-256 is
+`cd270a121c8ee40e9d9104c60c8833af31fdd7dcb0019b4aeb539ee8e9e32a7d`;
+checkpoint SHA-256 is
+`10deb0e421e963ce2e715afa37601d6d0bd9a3bc15dbcc624e24fe8d0ab2a480`.
+All four IDs, prompts, targets and candidate strings were checked against the
+frozen local fixture; legacy no-BOS inference was verified. No training occurred.
+
+Candidate ranking selects `square` in all four cases: 2/4 individually and 0/2
+complete counterfactual pairs, equal to a constant-square baseline. Full generated
+answers are repetitive: the original question produces “The square of the whole
+Numbers is 100000” repeatedly; the original continuation repeats “square of the
+square”; both altered passages still produce repetitive Square statements.
+None supplies the complete requested period-power relation. Recognizing a first
+word is not credited as a valid full answer or derivation. The report includes
+the prompt within `generation`; inspect only its generated suffix when grading.
+
+This diagnostic does not isolate a causal OCR effect: it changes surface text
+and has no matched training intervention. It does establish that damaged OCR is
+not necessary for failure on this specific supplied clean excerpt. It is also
+not source retrieval, historical premise learning, or force-law discovery.
+
+Next decision: do not launch physics-source fine-tuning on the assumption that
+text cleanup alone solves the access problem. Establish basic input-sensitive
+English reading on held-out historical passages, retaining the existing
+answer-only control results and counterfactual pair scoring. The English-first
+main line remains distinct from any optional Latin source-access diagnostic.
