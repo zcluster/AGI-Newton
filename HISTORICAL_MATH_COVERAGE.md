@@ -86,3 +86,49 @@ against the actual training binary. The verified stream SHA-256 is
 `8192ba313b8a4b408c48743d4ed6e72a3d793ecb7915683e49d9790d1461d46e`.
 The JSON result retains source totals and input/tokenizer hashes at
 `audit/historical_math_coverage.json`. It does not download or reclassify Hla.
+
+## Historical arithmetic source audit: Recorde (1582)
+
+The next source-quality check uses the existing keyboard transcription of Robert
+Recorde's *The Grounde of Artes*, with additions attributed to John Dee and John
+Mellis. The TEI source bibliography dates this edition to 1582; the modern TCP
+transcription date is not the book's publication date. This is an EEBO-TCP Phase 2
+source, not evidence about its inclusion in Hla or the earlier bootstrap corpus.
+
+The [official TCP repository](https://github.com/textcreationpartnership/A10530)
+is pinned at `af1ffd3fe85d6b00a0178ff42c1236574a10b9f9`. The retained XML is
+`raw/recorde_ground_artes_A10530.xml`, SHA-256
+`2b0f9e5df62cf4b8efdb25221e73bc9d14ea51c3b42564b2d639a02643a9ebe5`.
+Its CC0 transcription contains **505 math gaps**, 585 illegible gaps, two foreign
+gaps, and one symbol gap. Keyboard transcription therefore does not guarantee
+complete mathematical training material.
+
+The body-only inventory contains 2,361 paragraphs and 101 lexical subtraction
+candidates. Of those, 71 contain no explicit gap and 16 contain none of the
+checked gap/glyph/table/figure tags. These are **review counts, not counts of
+usable lessons**: references to subtraction also match, adjacent paragraphs may
+contain essential tables, and unresolved glyphs may simply mark line-end hyphens.
+Modern TEI header metadata is excluded from the inspected body.
+
+There is actual procedural content, rather than only a subject mention:
+paragraphs 309–361 include subtraction definitions, worked examples, borrowing,
+and practice instructions. Paragraph 315 describes subtracting 14 from 18 to
+leave 4. But paragraph 323's laid-out example is marked `[GAP:math]`, and paragraph
+336 has illegible numerals within the borrowing explanation. This chapter is a
+promising review target, **not yet an approved intact lesson**. It also does not
+establish coverage of signed subtraction, the specific failed calibration skill.
+
+Reproduce the inventory with:
+
+```sh
+python src/audit_recorde_transcription.py
+```
+
+Outputs are in `audit/historical_arithmetic_recorde/`. Candidate text retains
+explicit `[GAP:...]` and `[CHAR:...]` markers for review; original TEI is preserved.
+`tcp:2279:...` values are image locators, not verified printed page numbers, and
+a paragraph can span images. Zero leakage-policy matches are not certification
+of historical purity. **Nothing from this audit has been admitted to training.**
+The next step is review of complete procedural context and only the essential
+missing mathematical layouts against source images, not wholesale new OCR or
+modern reconstruction of absent formulas.

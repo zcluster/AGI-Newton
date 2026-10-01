@@ -1,0 +1,22 @@
+{
+  "edition_date": "Anno Dom. 1582.",
+  "paragraphs": 2361,
+  "gaps_by_reason": {
+    "illegible": 585,
+    "foreign": 2,
+    "symbol": 1,
+    "math": 505
+  },
+  "subtraction_candidate_paragraphs": 101,
+  "source_id": "A10530",
+  "commit": "af1ffd3fe85d6b00a0178ff42c1236574a10b9f9",
+  "source_url": "https://raw.githubusercontent.com/textcreationpartnership/A10530/af1ffd3fe85d6b00a0178ff42c1236574a10b9f9/A10530.xml",
+  "xml_sha256": "2b0f9e5df62cf4b8efdb25221e73bc9d14ea51c3b42564b2d639a02643a9ebe5",
+  "policy_finding_counts": {
+    "hard": 0,
+    "modern": 0,
+    "review": 0
+  },
+  "status": "Not admitted to training; bibliographic metadata and transcription are not expert certification",
+  "rendering": "Review display only; preserve explicit GAP and unresolved CHAR markers; original TEI retained"
+}
