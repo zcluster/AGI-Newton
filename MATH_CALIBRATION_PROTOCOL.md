@@ -384,7 +384,7 @@ and 178,432 answer targets; all 752,768 answer targets have weight one, so the
 static arithmetic supervision share is 23.70%. The new stream's weight-file hash
 is `e745b461b38cfa6d43210443c0466904377025dbae0ed4e4338055c4d9309b7b`.
 
-Exposure verification is still pending at this recording. Initial CPU job
+At the initial result recording, exposure verification was pending. Initial CPU job
 2863307 completed, but inspection found that the audit's *hypothetical global
 weight-128* fraction reused the actual weight-one array in the generalized
 records branch. That counterfactual statistic was wrong; the primary weight-one
@@ -395,3 +395,37 @@ lost its SSH response before acknowledgment: inspect the scheduler and
 Do not use the initial counterfactual statistic or claim final exposure verification
 until the corrected output is retrieved. `hpc/tongji_balanced_exposure.sbatch`
 only audits on CPUs and protects the corrected output from overwrite.
+
+### Corrected exposure verification and post-hoc error analysis
+
+The disconnected verification submission was **job 2863312**, now confirmed
+COMPLETED with exit 0 in 44s. Its corrected output and logs have been retrieved
+at `audit/balanced_exposure_verified.json` and
+`audit/balanced_exposure_job2863312.out`. Report, record, and weight hashes match
+the local archived artifacts. The sampling reconstruction encounters arithmetic
+targets in all 1,000 batches, with a mean normalized arithmetic loss-coefficient
+mass of **24.106%** at the actual weight one, versus 0.199% in the original
+sampling reconstruction. The 178,432 repeated target positions receive 446,766
+exposures. These are token-copy exposures, not counts of unique mathematical
+examples or exact logged training indices. The hypothetical weight-128 figures
+in this corrected report are not settings used in the balanced training run.
+
+The primary exact-generation verdict is unchanged: training passes, validation
+fails. A separately labeled **post-hoc** analysis of the same validation prompts
+finds that all 30 resampled-model outputs are parseable integers. Four are exact;
+the other 26 differ from ground truth by precisely one (16 too high, 10 too low).
+The original model has 29 parseable outputs, three exact and no off-by-one errors.
+Mean absolute error on parseable outputs is 5.931 for the original (29 answers)
+and 0.867 for the resampled model (30 answers). Denominators differ; this is not
+a frozen primary comparison or a significance claim. Counts and exclusions are
+preserved in the updated `audit/balanced_math/summary.json`.
+
+The finding rules out output formatting as the main explanation on these
+validation cases and cautions against describing the model as *only* memorizing.
+It is consistent with partial numerical generalization, local interpolation, or
+other answer priors, not proof of an exact subtraction algorithm. It does not
+justify rounding corrections, consulting ground truth at inference, or tuning
+against the sealed Newton operands. Next use newly frozen operand-range and
+wording tests to distinguish these possibilities before changing the curriculum.
+Keep basic arithmetic precision, algebraic composition, historical premise access,
+and actual discovery as separate requirements.

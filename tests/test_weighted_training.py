@@ -16,6 +16,7 @@ from summarise_subtraction_weight import numeric_correct
 from audit_arithmetic_exposure import batch_shares, audit
 from unittest.mock import patch
 from build_balanced_math import balanced
+from summarise_balanced_math import validation_errors
 
 
 class CharacterTokenizer:
@@ -33,6 +34,16 @@ class CharacterTokenizer:
 
 
 class WeightedTrainingTests(unittest.TestCase):
+    def test_validation_error_diagnostic_keeps_format_failures_visible(self):
+        base = {'group': 'validation', 'prompt': 'A: ', 'a': 1, 'b': 3, 'expected': -2}
+        rows = [{**base, 'generation': 'A: ' + answer} for answer in ('-2.', '-1.', '-3.', 'unknown')]
+        result = validation_errors(rows)
+        self.assertEqual(result['cases'], 4)
+        self.assertEqual(result['parseable_integer_answers'], 3)
+        self.assertEqual(result['exact'], 1)
+        self.assertEqual(result['off_by_one'], 2)
+        self.assertAlmostEqual(result['mean_absolute_error_on_parseable'], 2/3)
+
     def test_exposure_record_mask_matches_actual_stream(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

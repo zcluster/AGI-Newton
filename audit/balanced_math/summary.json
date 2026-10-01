@@ -22,6 +22,45 @@
       "balanced": 0
     }
   },
+  "posthoc_validation_errors": {
+    "baseline": {
+      "cases": 30,
+      "parseable_integer_answers": 29,
+      "exact": 3,
+      "off_by_one": 0,
+      "mean_absolute_error_on_parseable": 5.931034482758621,
+      "signed_error_counts": {
+        "-20": 1,
+        "-15": 1,
+        "-14": 2,
+        "-10": 1,
+        "-9": 3,
+        "-5": 1,
+        "-4": 1,
+        "-3": 3,
+        "-2": 3,
+        "0": 3,
+        "2": 3,
+        "4": 2,
+        "6": 1,
+        "7": 4
+      },
+      "limitation": "Post-hoc diagnostic on reused validation cases, not a frozen primary endpoint; MAE excludes unparseable answers"
+    },
+    "balanced": {
+      "cases": 30,
+      "parseable_integer_answers": 30,
+      "exact": 4,
+      "off_by_one": 26,
+      "mean_absolute_error_on_parseable": 0.8666666666666667,
+      "signed_error_counts": {
+        "-1": 10,
+        "0": 4,
+        "1": 16
+      },
+      "limitation": "Post-hoc diagnostic on reused validation cases, not a frozen primary endpoint; MAE excludes unparseable answers"
+    }
+  },
   "train_gate_passed": true,
   "validation_gate_passed": false,
   "limitation": "One seed, modern synthetic capability arm; not historical scientific discovery"
