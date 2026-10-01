@@ -59,3 +59,18 @@ not transcribed in this excerpt.]
 No new tokenizer, corpus binary, model weight or training job is created here.
 This material is a review artifact; its headings and editorial notes are modern
 metadata and are not historical training prose.
+
+## Frozen checkpoint-only reading diagnostic
+
+`streete_clean_reading_probes.json` contains four probes: question/continuation
+interfaces for the selected clean excerpt, and corresponding square/cube-swapped
+counterfactuals. The latter are modern interventions, not historical sources.
+They reuse the existing premise evaluator and candidate answers. This is a
+post-hoc diagnostic chosen after earlier reading failures, not a blind benchmark.
+Only the period-power endpoint is tested; force derivation and source retrieval
+are not tested. The numeric values in counterfactuals are deliberately unchanged,
+so these cases test textual reading rather than numerical physical consistency.
+Evaluate the unchanged V11 checkpoint, legacy no-BOS interface; inspect full
+generations and both members of each pair. A constant-square answer would get
+2/4 individually but 0/2 pairs. No training or checkpoint selection is authorized
+by this fixture; source text remains pending independent admission review.
