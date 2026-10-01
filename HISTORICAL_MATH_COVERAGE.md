@@ -117,6 +117,11 @@ leave 4. But paragraph 323's laid-out example is marked `[GAP:math]`, and paragr
 336 has illegible numerals within the borrowing explanation. This chapter is a
 promising review target, **not yet an approved intact lesson**. It also does not
 establish coverage of signed subtraction, the specific failed calibration skill.
+The [contextual review](audit/historical_arithmetic_recorde/REVIEW.md) additionally
+identifies a numerical contradiction: paragraph 322 prints a remainder of 2 for
+48 minus 36, although preceding prose gives units two and tens one. It is
+quarantined pending image verification, not silently corrected to 12. This is a
+concrete counterexample to accepting paragraphs solely because they lack gap tags.
 
 Reproduce the inventory with:
 
