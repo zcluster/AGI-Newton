@@ -1,0 +1,74 @@
+{
+  "continuation_1686": {
+    "exact_candidate_text": 0,
+    "ranking_correct": 2,
+    "exact_complete_pairs": 0,
+    "ranking_complete_pairs": 0,
+    "generated_suffixes": [
+      "square of the period.",
+      "power of the sides, namely the square of the sides.",
+      "cube of the period.",
+      "power of the totals, namely the cube of the totals."
+    ]
+  },
+  "continuation_1687": {
+    "exact_candidate_text": 1,
+    "ranking_correct": 2,
+    "exact_complete_pairs": 0,
+    "ranking_complete_pairs": 0,
+    "generated_suffixes": [
+      "square of the periods.",
+      "power of the Revolu, namely the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of",
+      "cube of the products.",
+      "power of the Revolu, namely the cube of the Revolu."
+    ]
+  },
+  "continuation_1688": {
+    "exact_candidate_text": 1,
+    "ranking_correct": 2,
+    "exact_complete_pairs": 0,
+    "ranking_complete_pairs": 0,
+    "generated_suffixes": [
+      "square of the periods.",
+      "power of the Revolu, namely the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of",
+      "cube of the products.",
+      "power of the Revolu, namely the cube of the Revolu."
+    ]
+  },
+  "answer_only_1686": {
+    "exact_candidate_text": 0,
+    "ranking_correct": 2,
+    "exact_complete_pairs": 0,
+    "ranking_complete_pairs": 0,
+    "generated_suffixes": [
+      "cube of the periods.",
+      "square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the",
+      "cube of the period.",
+      "square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the square of the"
+    ]
+  },
+  "answer_only_1687": {
+    "exact_candidate_text": 1,
+    "ranking_correct": 2,
+    "exact_complete_pairs": 0,
+    "ranking_complete_pairs": 0,
+    "generated_suffixes": [
+      "cube of the periods.",
+      "square of the Earth.",
+      "cube of the periods.",
+      "cube of the Earth."
+    ]
+  },
+  "answer_only_1688": {
+    "exact_candidate_text": 1,
+    "ranking_correct": 2,
+    "exact_complete_pairs": 0,
+    "ranking_complete_pairs": 0,
+    "generated_suffixes": [
+      "cube of the periods.",
+      "square of the Earth.",
+      "cube of the periods.",
+      "cube of the Earth."
+    ]
+  }
+}

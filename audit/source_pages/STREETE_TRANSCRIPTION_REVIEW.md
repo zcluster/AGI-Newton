@@ -165,3 +165,10 @@ The result motivates a broader, predeclared historical reading suite with semant
 entity binding and independent adjudication, not selecting this seed as a success
 or pooling repeated prompts into an inflated sample size. Force-law discovery
 has not been tested by these four reading questions.
+
+Reproduce the strict counts with `python src/summarise_streete_transfer.py`.
+This checks frozen fixture and checkpoint hashes, all prompt/candidate identities,
+and generated prefixes; it writes `streete_transfer_summary.json`. It deliberately
+does not convert the manual singular/plural interpretation into an automatic
+semantic score. A regression test rejects a changed prompt. All 38 repository
+tests pass after adding this audit.
