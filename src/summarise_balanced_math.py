@@ -7,8 +7,8 @@ from pathlib import Path
 from summarise_subtraction_weight import numeric_correct
 
 
-def validation_errors(rows):
-    selected = [p for p in rows if p['group'] == 'validation']
+def validation_errors(rows, group='validation'):
+    selected = rows if group is None else [p for p in rows if p['group'] == group]
     errors = []
     for row in selected:
         assert row['generation'].startswith(row['prompt'])
@@ -20,7 +20,7 @@ def validation_errors(rows):
             'exact': errors.count(0), 'off_by_one': sum(abs(e) == 1 for e in errors),
             'mean_absolute_error_on_parseable': sum(abs(e) for e in errors) / len(errors) if errors else None,
             'signed_error_counts': {str(e): errors.count(e) for e in sorted(set(errors))},
-            'limitation': 'Post-hoc diagnostic on reused validation cases, not a frozen primary endpoint; MAE excludes unparseable answers'}
+            'limitation': 'MAE excludes unparseable answers; experiment timing and design limitations are documented in the enclosing protocol'}
 
 
 def main():

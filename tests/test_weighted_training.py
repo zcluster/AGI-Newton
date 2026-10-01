@@ -1,4 +1,5 @@
 import json
+import hashlib
 import subprocess
 import sys
 import tempfile
@@ -19,6 +20,7 @@ from build_balanced_math import balanced
 from summarise_balanced_math import validation_errors
 from build_arithmetic_transfer import build as build_transfer
 from build_math_calibration import build as build_math
+from summarise_arithmetic_transfer import summarise as summarise_transfer
 
 
 class CharacterTokenizer:
@@ -36,6 +38,27 @@ class CharacterTokenizer:
 
 
 class WeightedTrainingTests(unittest.TestCase):
+    def test_transfer_summary_scores_generations_and_checks_hashes(self):
+        train, _ = build_math()
+        probes = build_transfer(train)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            content = json.dumps(probes)
+            digest = hashlib.sha256(content.encode()).hexdigest()
+            (root / 'probes.json').write_text(content)
+            (root / 'manifest.json').write_text(json.dumps({'probes_sha256': digest}))
+            for arm, checkpoint in [('answer_only', '2565030214e3860c16b693523bed43ef4934eee7a5e28194a212dc5a016865ef'),
+                                    ('balanced', 'a270638321e841743f5a1a089d52f3ba7ec0776106cd272f430942a196827faa')]:
+                (root / f'{arm}.json').write_text(json.dumps({
+                    'checkpoint_sha256': checkpoint, 'source_sha256': digest, 'prepend_bos': False,
+                    'probes': [{**p, 'generation': p['prompt'] + f"{p['expected']}."} for p in probes]}))
+            result = summarise_transfer(root)
+            self.assertEqual(result['balanced']['seen_new_wording']['exact'], 48)
+            self.assertEqual(result['answer_only']['unseen_operands_new_answer']['both_wordings_correct'], 24)
+            (root / 'manifest.json').write_text(json.dumps({'probes_sha256': 'wrong'}))
+            with self.assertRaises(AssertionError):
+                summarise_transfer(root)
+
     def test_transfer_probes_separate_wording_operands_and_answers(self):
         train, _ = build_math()
         probes = build_transfer(train)
