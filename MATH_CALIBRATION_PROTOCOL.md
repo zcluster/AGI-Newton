@@ -452,3 +452,23 @@ are now specified prospectively for this new suite, but checkpoint selection
 follows earlier diagnostics. This is still one seed, not a confirmatory
 multi-seed study or evidence of historical scientific discovery. No rounding
 corrections, test-set tuning, or new training based on the sealed cases.
+
+### Transfer execution state (results not yet verified)
+
+The frozen probes were pushed in commit `e0cf0ed` before evaluation. Their
+SHA-256, also verified on HPC, is
+`3d43e28e0b8142318d50ddecd501c0ff600dde83500e1b7720e5f081e01d627b`.
+Job **2863624** was submitted successfully. A subsequent log read confirmed
+that `answer_only.json` and `balanced.json` had been written, and the job was
+absent from the queue. Final accounting and raw result retrieval then failed
+because SSH to the HPC private address repeatedly timed out. No generation
+accuracy is reported until the raw files, checkpoint hashes, and paired prompt
+signatures pass `src/summarise_arithmetic_transfer.py`.
+
+Recovery: inspect accounting for **the same job 2863624**, then retrieve the two
+JSON reports and `logs/agi-newton-transfer-2863624.out`. Do not restart training
+or submit another evaluation solely because the connection failed. Both reports
+are under `~/data/AGI-Newton/audit/arithmetic_transfer/`. The frozen probes,
+manifest and scoring code remain available locally and on GitHub; 36 local
+unit tests pass. Campus-network/VPN access may need restoration, but network
+configuration has not been changed by this task.
