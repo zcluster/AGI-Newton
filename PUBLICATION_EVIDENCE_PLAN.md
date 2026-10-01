@@ -30,6 +30,25 @@ replicable benchmark and meaningful controls are added.
 
 ## Next experiment: repair premise accessibility before scaling training
 
+### English-first clarification
+
+The existing V11 historical checkpoint is already multilingual: its scientific
+sources include 1,587,801 Latin tokens (about 2.26% of the combined 70,125,444-token
+corpus). The recent Huygens transcription adds **no** training exposure. Thus
+"keep the main line English-first" is a future design choice, not a claim that
+V11 is English-only. Language competition is a plausible risk, not an effect
+measured by the current experiments. Establishing that effect would require
+matched English-only and multilingual pretraining with explicit English retention
+evaluation; a single fine-tuning comparison cannot identify it.
+
+Prefer a dated English circular-motion witness if one can be verified. The Latin
+source below remains a separately labeled source-access branch, not an automatic
+addition to the main model. A newly English-only model must be trained from clean
+initialization; dropping Latin from future batches cannot remove prior exposure
+from V11. Do not substitute late English translations or Newton's own discovery
+manuscripts merely because their dates precede 1687. Date and target-answer
+exclusion are separate admission conditions.
+
 Do not repeat arithmetic training merely because an earlier training score rose.
 The immediate dependency is a small, source-verified historical premise pack:
 
