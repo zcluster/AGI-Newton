@@ -38,3 +38,23 @@ the current file's hash. Checkpoint and training-stream mismatch stop before
 training. Remote upload/submission attempts have not yielded any job ID; the
 latest diagnostic connection closes during key exchange, before authentication.
 Reconcile the remote script and scheduler state before retrying submission.
+
+## Submission recovered (2026-10-03)
+
+The campus VPN was connected on `utun4`, but normal routing sent HPC traffic
+through Clash TUN `utun9`. Binding this SSH/SCP connection to `utun4` restored
+access without changing system routes or disabling either application. Interface
+names can change after reconnection; this is the observed session, not a permanent
+configuration assumption.
+
+Scheduler queue/history checks found no prior continuation job or saved target
+checkpoint. The uploaded script digest matched
+`492c2259f42582a7c0c3de963462397eab4a5df38da7bb305a25f1577d19dda9`.
+Job **2880205** was submitted once and confirmed RUNNING on gpu4012. Its log
+confirms both starting checkpoint and training-stream checks passed; step 1
+loss was 2.8711. Validation digest is
+`33533c201026e67bede464481ed2fd6ddf8c9bec4c1c3e73657e8e4eaeccc2de`
+and tokenizer digest is
+`3464f65b26010ca6788f00b4b344e0834c26d2a194e24c27ecb65eb1a7833cc0`.
+No final results exist yet. Resume observation of this job ID; do not resubmit
+because of an SSH timeout. No other project was modified.
